@@ -20,13 +20,13 @@
 
 ## **Présentation du Projet et Objectifs finaux**
 
-Le Projet **_BuildYourInfra_** consiste, en partant de bases équivoques, à créer une Infrastructure complète pour l'entreprise **_Ecotech Solutions_**.
+Le Projet **_BuildYourInfra_** consiste, en partant de bases équivoques, à créer une Infrastructure complète pour l'entreprise **_EcoTech Solutions_**.
 
 Le projet est découpé en sprint d'une semaine et s'étalera sur 11 semaines.
 Une présentation de l'avancement du projet sera donnée à chaque fin de sprint, avec une démonstration (dans le cas où cela est possible).
 Le projet devra être finalisé et rendu pour le 25 juillet 2024, une présentation exceptionnelle aura lieu ce jour durant le _Demo Day_.
 
-Les objectifs du projet seront évolutifs, et correspondront aux besoins de **_Ecotech Solutions_**.
+Les objectifs du projet seront évolutifs, et correspondront aux besoins de **_EcoTech Solutions_**.
 
 Les objectifs seront donnés par sprint, ils devront être catégoriser par priorité à chaque début de sprint :
 * Objectif principal : il doit être impérativement atteint à la fin du sprint.
@@ -35,7 +35,7 @@ Les objectifs seront donnés par sprint, ils devront être catégoriser par prio
 
 La documentation jointe au Projet est constituée de différents fichiers (au format markdown), ainsi que d'un dossier dans lequel seront placés toutes les annexes.
 
-Un dépôt GitHub a été créé à cet effet : [TSSR-2402-P3-G2-BuildYourInfra-EcotechSolutions](https://github.com/WildCodeSchool/TSSR-2402-P3-G2-BuildYourInfra-EcoTechSolutions)
+Un dépôt GitHub a été créé à cet effet : [TSSR-2402-P3-G2-BuildYourInfra-EcoTechSolutions](https://github.com/WildCodeSchool/TSSR-2402-P3-G2-BuildYourInfra-EcoTechSolutions)
 
 Seront insérés dans le dépôt :
 * un fichier README.md : documentation générale du projet.
@@ -45,7 +45,7 @@ Seront insérés dans le dépôt :
 
 ## **Mise en contexte**
 
-Notre société **_BurnPS_**a été mandatée par l'entreprise **_EcoTech Solutions_** pour répondre à ses besoins en termes d'infrastructure réseau.
+Notre société **_BurnPS_** a été mandatée par l'entreprise **_EcoTech Solutions_** pour répondre à ses besoins en termes d'infrastructure réseau.
 
 **_EcoTech Solutions_**, basée à Bordeaux, est spécialisée dans le développement de solutions IoT (Internet des objets) pour la gestion intelligente de l'énergie et des ressources. En partenariat avec le gouvernement et les entreprises du secteur de l'énergie, elle déploie des systèmes de surveillance et de contrôle avancés pour optimiser l'utilisation des ressources naturelles, réduire les émissions de carbone et promouvoir la durabilité environnementale. Son expertise technologique et son engagement envers l'innovation en font un acteur clé dans la transition vers une économie verte.
 
@@ -62,7 +62,7 @@ Le groupe du Projet **_BuildYourInfra_** est composé de :
 * **Anthony Javault**
 * **Nicolas Maggiori**
 
-### **Sprint 1 : semaine du 23 au 30 avril 2024**
+### **Sprint 1 : S09 - Semaine du 23 au 30 avril 2024**
 
 |PO|SM|
 |:-:|:-:|
@@ -88,7 +88,7 @@ Activités et répartitions des tâches
 |Préparation slides présentation||||||
 |Présentation|x|x|x|x|x|
 
-### **Sprint 2 : semaine du 13 au 17 mai 2024**
+### **Sprint 2 : S11 - Semaine du 13 au 17 mai 2024**
 
 |PO|SM|
 |:-:|:-:|
@@ -110,7 +110,7 @@ Activités et répartitions des tâches
 |||||||
 |||||||
 
-### **Sprint 3 : semaine du 27 au 31 mai 2024**
+### **Sprint 3 : S12 - Semaine du 27 au 31 mai 2024**
 
 |PO|SM|
 |:-:|:-:|
@@ -132,7 +132,7 @@ Activités et répartitions des tâches
 |||||||
 |||||||
 
-### **Sprint 4 : semaine du 3 au 7 juin 2024**
+### **Sprint 4 : S13 - Semaine du 3 au 7 juin 2024**
 
 |PO|SM|
 |:-:|:-:|
@@ -154,7 +154,7 @@ Activités et répartitions des tâches
 |||||||
 |||||||
 
-### **Sprint 5 : semaine du 10 au 14 juin 2024**
+### **Sprint 5 : S14 - Semaine du 10 au 14 juin 2024**
 
 |PO|SM|
 |:-:|:-:|
@@ -176,7 +176,7 @@ Activités et répartitions des tâches
 |||||||
 |||||||
 
-### **Sprint 6 : semaine du 17 au 21 juin 2024**
+### **Sprint 6 : S15 - Semaine du 17 au 21 juin 2024**
 
 |PO|SM|
 |:-:|:-:|
@@ -198,7 +198,7 @@ Activités et répartitions des tâches
 |||||||
 |||||||
 
-### **Sprint 7 : semaine du 24 au 28 juin 2024**
+### **Sprint 7 : S16 - Semaine du 24 au 28 juin 2024**
 
 |PO|SM|
 |:-:|:-:|
@@ -220,7 +220,7 @@ Activités et répartitions des tâches
 |||||||
 |||||||
 
-### **Sprint 8 : semaine du 1 au 5 juillet 2024**
+### **Sprint 8 : S17 - Semaine du 1 au 5 juillet 2024**
 
 |PO|SM|
 |:-:|:-:|
@@ -242,7 +242,7 @@ Activités et répartitions des tâches
 |||||||
 |||||||
 
-### **Sprint 9 : semaine du 8 au 12 juillet 2024**
+### **Sprint 9 : S18 - Semaine du 8 au 12 juillet 2024**
 
 |PO|SM|
 |:-:|:-:|
@@ -264,7 +264,7 @@ Activités et répartitions des tâches
 |||||||
 |||||||
 
-### **Sprint 10 : semaine du 15 au 19 juillet 2024**
+### **Sprint 10 : S19 - Semaine du 15 au 19 juillet 2024**
 
 |PO|SM|
 |:-:|:-:|
@@ -286,7 +286,7 @@ Activités et répartitions des tâches
 |||||||
 |||||||
 
-### **Sprint 11 : semaine du 22 au 26 juillet 2024**
+### **Sprint 11 : S20 - Semaine du 22 au 26 juillet 2024**
 
 |PO|SM|
 |:-:|:-:|
