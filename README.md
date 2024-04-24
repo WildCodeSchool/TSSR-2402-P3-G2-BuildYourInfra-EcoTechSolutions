@@ -35,7 +35,7 @@ Les objectifs seront donnés par sprint, ils devront être catégoriser par prio
 
 La documentation jointe au Projet est constituée de différents fichiers (au format markdown), ainsi que d'un dossier dans lequel seront placés toutes les annexes.
 
-Un dépôt GitHub a été créé à cet effet : [TSSR-2402-P3-G2-BuiltYourInfra](https://github.com/WildCodeSchool/TSSR-2402-P3-G2-BuiltYourInfra)
+Un dépôt GitHub a été créé à cet effet : [TSSR-2402-P3-G2-BuildYourInfra-EcotechSolutions](https://github.com/WildCodeSchool/TSSR-2402-P3-G2-BuildYourInfra-EcoTechSolutions)
 
 Seront insérés dans le dépôt :
 * un fichier README.md : documentation générale du projet.
