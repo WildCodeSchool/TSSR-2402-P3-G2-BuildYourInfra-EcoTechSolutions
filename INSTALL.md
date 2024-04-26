@@ -41,35 +41,35 @@ A Gauche, sur les clients, nous utilisons le nom abrégé avec la plage de rése
 ![](https://github.com/WildCodeSchool/TSSR-2402-P3-G2-BuildYourInfra-EcoTechSolutions/blob/main/images/DHCP1.jpg)
 
 
-3. Dans *Before you begin* > *Next*
+2. Dans *Before you begin* > *Next*
 ![](https://github.com/WildCodeSchool/TSSR-2402-P3-G2-BuildYourInfra-EcoTechSolutions/blob/main/images/DHCP2.jpg)
 
 
-4. Dans *Installation type* > *Role-based of feature-based installation* > *Next*
+3. Dans *Installation type* > *Role-based of feature-based installation* > *Next*
 ![](https://github.com/WildCodeSchool/TSSR-2402-P3-G2-BuildYourInfra-EcoTechSolutions/blob/main/images/DHCP3.jpg)
 
 
-5. Dans *Server Selection* > *Next*
+4. Dans *Server Selection* > *Next*
 ![](https://github.com/WildCodeSchool/TSSR-2402-P3-G2-BuildYourInfra-EcoTechSolutions/blob/main/images/DHCP4.jpg)
 
 
-6. Dans *Server Roles*, on coche **DHCP Server** puis *Next*
+5. Dans *Server Roles*, on coche **DHCP Server** puis *Next*
 ![](https://github.com/WildCodeSchool/TSSR-2402-P3-G2-BuildYourInfra-EcoTechSolutions/blob/main/images/DHCP5.jpg)
 
 
-7. Cliquer sur *Add Features*
-![](https://github.com/WildCodeSchool/TSSR-2402-P3-G2-BuildYourInfra-EcoTechSolutions/blob/main/images/DHCP6.jpg)
+6. Cliquer sur *Add Features*  
+![](https://github.com/WildCodeSchool/TSSR-2402-P3-G2-BuildYourInfra-EcoTechSolutions/blob/main/images/DHCP6.jpg)  
 
 
-8. Puis *Next*
+7. Puis *Next*  
 ![](https://github.com/WildCodeSchool/TSSR-2402-P3-G2-BuildYourInfra-EcoTechSolutions/blob/main/images/DHCP7.jpg)
 
 
-10. Dans la fenêtre *DHCP Server* > *Next* encore
+8. Dans la fenêtre *DHCP Server* > *Next* encore
 ![](https://github.com/WildCodeSchool/TSSR-2402-P3-G2-BuildYourInfra-EcoTechSolutions/blob/main/images/DHCP8.jpg)
 
 
-12. Enfin, dans *Confirm Installation selections* > **Install**. 
+9. Enfin, dans *Confirm Installation selections* > **Install**. 
 ![](https://github.com/WildCodeSchool/TSSR-2402-P3-G2-BuildYourInfra-EcoTechSolutions/blob/main/images/DHCP9.jpg)
 
 
