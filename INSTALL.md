@@ -76,7 +76,7 @@ A Gauche, sur les clients, nous utilisons le nom abrégé avec la plage de rése
 
 
 3. Donner un **Nom** à l’étendue DHCP et une **Description** (optionnel).
-
+![](https://github.com/WildCodeSchool/TSSR-2402-P3-G2-BuildYourInfra-EcoTechSolutions/blob/main/images/DHCP12.jpg)
 
 
 4. Choisir une plage d’adresse IP, en fonction de l’adresse IP fixe du serveur. Si le serveur a pour adresse IP 192.168.0.1, la plage DHCP sera aussi sur le sous réseau 192.168.0. **Choisir une plage plus ou moins large selon le nombre de postes** et de périphériques (smartphones, tablettes) qui seront connectés. Laisser les valeurs « **Longueur** » et « **Masque de sous-réseau** » **par défaut**.
