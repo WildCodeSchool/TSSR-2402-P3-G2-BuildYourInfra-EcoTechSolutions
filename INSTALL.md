@@ -19,7 +19,7 @@
 
 ## **Installation et Configuration des équipements et ressources**
 ### Plan schématique du futur réseau : 
-![](https://github.com/WildCodeSchool/TSSR-2402-P3-G2-BuildYourInfra-EcoTechSolutions/blob/main/Plan_Sch%C3%A9ma_R%C3%A9seau.png)
+![](https://github.com/WildCodeSchool/TSSR-2402-P3-G2-BuildYourInfra-EcoTechSolutions/blob/main/images/Plan_Sch%C3%A9ma_R%C3%A9seau.png?raw=true)
 #### Nous avons divisé l'entreprise en deux parties : 
 la **direction** et les autres **services**. 
 Ainsi, nous avons un **routeur** pour chaque partie avec des **switch** pour lier les machines au réseau. Un **routeur** principal qui assurera la liaison entre ces deux parties, avec une zone **DMZ**(Zone démilitarisée,  un sous-réseau isolé) pour les **serveurs** et les **conteneurs**, ainsi que le cloud pour la **messagerie**. Il est également prévu une éventuelle fusion, suite aux dernières nouvelles de la direction.
