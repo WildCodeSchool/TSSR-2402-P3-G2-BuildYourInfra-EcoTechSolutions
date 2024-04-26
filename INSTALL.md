@@ -33,7 +33,7 @@ A Gauche, sur les clients, nous utilisons le nom abrégé avec la plage de rése
 - CLI_DRH = Département Direction des Ressources Humaines
 - CLI_DSI = Département Direction des Systèmes Informatiques
 
-#### Installation du rôle DHCP
+### Installation du rôle DHCP
 
 1. Dans *Manage* > *Add Roles and Features*
 ![](https://github.com/WildCodeSchool/TSSR-2402-P3-G2-BuildYourInfra-EcoTechSolutions/blob/main/images/DHCP1.jpg)
@@ -63,7 +63,7 @@ A Gauche, sur les clients, nous utilisons le nom abrégé avec la plage de rése
 ![](https://github.com/WildCodeSchool/TSSR-2402-P3-G2-BuildYourInfra-EcoTechSolutions/blob/main/images/DHCP9.jpg)
 
 
-#### Configuration du rôle DHCP sur Windows Server
+### Configuration du rôle DHCP sur Windows Server
 
 1. Dans le Gestionnaire de serveur, cliquer sur le menu **Outils** puis sur **DHCP**.
 ![](https://github.com/WildCodeSchool/TSSR-2402-P3-G2-BuildYourInfra-EcoTechSolutions/blob/main/images/DHCP10ok.jpg)
@@ -71,7 +71,7 @@ A Gauche, sur les clients, nous utilisons le nom abrégé avec la plage de rése
 
 
 2. Dérouler **DHCP,** nom du serveur, **IPv4**. Fare un **clic droit sur IPv4** et choisir **Nouvelle étendue**.
-![](https://github.com/WildCodeSchool/TSSR-2402-P3-G2-BuildYourInfra-EcoTechSolutions/blob/main/images/DHCP11.jpg)
+![]([https://github.com/WildCodeSchool/TSSR-2402-P3-G2-BuildYourInfra-EcoTechSolutions/blob/main/images/DHCP11ok.jpg)
 
 
 
