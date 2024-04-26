@@ -37,6 +37,7 @@ A Gauche, sur les clients, nous utilisons le nom abrégé avec la plage de rése
 
 1. Dans *Manage* > *Add Roles and Features*
 ![](https://github.com/WildCodeSchool/TSSR-2402-P3-G2-BuildYourInfra-EcoTechSolutions/blob/main/images/DHCP1.jpg)
+
 2. Dans *Before you begin* > *Next*
 ![](https://github.com/WildCodeSchool/TSSR-2402-P3-G2-BuildYourInfra-EcoTechSolutions/blob/main/images/DHCP2.jpg)
 
