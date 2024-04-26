@@ -90,7 +90,7 @@ A Gauche, sur les clients, nous utilisons le nom abrégé avec la plage de rése
 7. Demander la **Configuration des paramètres DHCP** « maintenant » .
 
 8. Votre réseau informatique est certainement équipé d’un routeur ou d’une box pour l’accès à internet. A l’écran **Routeur**, indiquer l’**adresse IP** de ce boitier qui deviendra la passerelle par défaut des postes en [DHCP](https://www.windows8facile.fr/tag/dhcp/). Ainsi, pas besoin de configurer chaque PC pour qu’il puisse aller sur internet.
-
+![](https://github.com/WildCodeSchool/TSSR-2402-P3-G2-BuildYourInfra-EcoTechSolutions/blob/main/images/DHCP14.jpg)
 
 
 9. L’option suivante, **Nom de domaine et serveurs DNS**, doit être préremplie avec le nom du domaine et l’adresse IP du serveur principal. Laisser ainsi et cliquer sur **Suivant**.
