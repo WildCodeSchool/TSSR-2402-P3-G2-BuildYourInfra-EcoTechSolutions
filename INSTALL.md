@@ -33,6 +33,8 @@ A Gauche, sur les clients, nous utilisons le nom abrégé avec la plage de rése
 - CLI_DRH = Département Direction des Ressources Humaines
 - CLI_DSI = Département Direction des Systèmes Informatiques
 
+============================================================================================
+
 ### Installation du rôle DHCP
 
 1. Dans *Manage* > *Add Roles and Features*
