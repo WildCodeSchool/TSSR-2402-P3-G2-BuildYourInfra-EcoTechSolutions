@@ -50,7 +50,7 @@ Ainsi, nous avons un **routeur** pour chaque partie avec des **switch** pour lie
 ![](https://github.com/WildCodeSchool/TSSR-2402-P3-G2-BuildYourInfra-EcoTechSolutions/blob/main/images/DHCP8.jpg)
 
 9. Enfin, dans *Confirm Installation selections* > **Install**. 
-
+![](https://github.com/WildCodeSchool/TSSR-2402-P3-G2-BuildYourInfra-EcoTechSolutions/blob/main/images/DHCP9.jpg)
 
 
 #### Configuration du rôle DHCP sur Windows Server
