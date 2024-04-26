@@ -66,7 +66,7 @@ A Gauche, sur les clients, nous utilisons le nom abrégé avec la plage de rése
 #### Configuration du rôle DHCP sur Windows Server
 
 1. Dans le Gestionnaire de serveur, cliquer sur le menu **Outils** puis sur **DHCP**.
-![](https://github.com/WildCodeSchool/TSSR-2402-P3-G2-BuildYourInfra-EcoTechSolutions/blob/main/images/DHCP10.jpg) 
+![](https://github.com/WildCodeSchool/TSSR-2402-P3-G2-BuildYourInfra-EcoTechSolutions/blob/main/images/DHCP10ok.jpg)
 
 
 
