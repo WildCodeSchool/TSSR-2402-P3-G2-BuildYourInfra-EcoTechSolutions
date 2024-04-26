@@ -27,7 +27,7 @@ Ainsi, nous avons un **routeur** pour chaque partie avec des **switch** pour lie
 #### Installation du rôle DHCP
 
 1. Dans *Manage* > *Add Roles and Features*
-
+![](https://github.com/WildCodeSchool/TSSR-2402-P3-G2-BuildYourInfra-EcoTechSolutions/blob/main/images/DHCP1.jpg)
 2. Dans *Before you begin* > *Next*
 
 
