@@ -23,6 +23,15 @@
 #### Nous avons divisé l'entreprise en deux parties : 
 la **direction** et les autres **services**. 
 Ainsi, nous avons un **routeur** pour chaque partie avec des **switch** pour lier les machines au réseau. Un **routeur** principal qui assurera la liaison entre ces deux parties, avec une zone **DMZ**(Zone démilitarisée,  un sous-réseau isolé) pour les **serveurs** et les **conteneurs**, ainsi que le cloud pour la **messagerie**. Il est également prévu une éventuelle fusion, suite aux dernières nouvelles de la direction.
+A Gauche, sur les clients, nous utilisons le nom abrégé avec la plage de réseau correspondant au service.
+##### Lexique : 
+- CLI_COM = Département Communication
+- CLI_DEV = Département Développement
+- CLI_BUS = Département Service Commercial
+- CLI_FICO = Département Finance et Comptabilité
+- CLI_DIR = Département Direction
+- CLI_DRH = Département Direction des Ressources Humaines
+- CLI_DSI = Département Direction des Systèmes Informatiques
 
 #### Installation du rôle DHCP
 
