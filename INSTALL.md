@@ -35,7 +35,7 @@ Ainsi, nous avons un **routeur** pour chaque partie avec des **switch** pour lie
 ![](https://github.com/WildCodeSchool/TSSR-2402-P3-G2-BuildYourInfra-EcoTechSolutions/blob/main/images/DHCP3.jpg)
 
 4. Dans *Server Selection* > *Next*
-
+![](https://github.com/WildCodeSchool/TSSR-2402-P3-G2-BuildYourInfra-EcoTechSolutions/blob/main/images/DHCP4.jpg)
 
 5. Dans *Server Roles*, on coche **DHCP Server** puis *Next*
 ![](https://github.com/WildCodeSchool/TSSR-2402-P3-G2-BuildYourInfra-EcoTechSolutions/blob/main/images/DHCP5.jpg)
