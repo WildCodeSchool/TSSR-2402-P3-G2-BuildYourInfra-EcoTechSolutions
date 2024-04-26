@@ -4,6 +4,13 @@
 
 1) Pré-requis techniques
 
+- Récapitulatif de la demande client :
+    Entité principale en semaine 1 : population :
+  | EchoTechSolutions | Studio Dlight | UBIHard |
+  |:-:|:-:|:-:|
+  | 48 | 1 | 5 |
+
+
 2) Installation et Configuration des équipements et ressources
 
 3) FAQ : Solutions aux problèmes connus et communs liés à l'installation et à la configuration
