@@ -116,145 +116,145 @@ A Gauche, sur les clients, nous utilisons le nom abrégé avec la plage de rése
 - Installation DNS
 
 1. Aller dans *Start* > *Server Manager*  
-![alt text](file:///c%3A/Users/bugch/Images/DNS1.jpg)
+![alt text](https://github.com/WildCodeSchool/TSSR-2402-P3-G2-BuildYourInfra-EcoTechSolutions/blob/main/images/DNS1.jpg)
 
 2. Aller dans *Manage* > *Add roles and Features*  
-![alt text](file:///c%3A/Users/bugch/Images/DNS2.jpg)
+![alt text](https://github.com/WildCodeSchool/TSSR-2402-P3-G2-BuildYourInfra-EcoTechSolutions/blob/main/images/DNS2.jpg)
 
 3. Dans *Installation type* > *Role-based of feature-based installation* > *Next*  
-![alt text](file:///c%3A/Users/bugch/Images/DNS3.jpg)
+![alt text](https://github.com/WildCodeSchool/TSSR-2402-P3-G2-BuildYourInfra-EcoTechSolutions/blob/main/images/DNS3.jpg)
 
 4. Dans *Server Selection* > *Next*  
-![alt text](file:///c%3A/Users/bugch/Images/DNS4.jpg)
+![alt text](https://github.com/WildCodeSchool/TSSR-2402-P3-G2-BuildYourInfra-EcoTechSolutions/blob/main/images/DNS4.jpg)
 
 5. Dans *Server Roles*, on coche *DNS Server* > *Next*  
-![alt text](file:///c%3A/Users/bugch/Images/DNS5.jpg)
+![alt text](https://github.com/WildCodeSchool/TSSR-2402-P3-G2-BuildYourInfra-EcoTechSolutions/blob/main/images/DNS5.jpg)
 
 6. Cliquer sur *Add Features*  
-![alt text](file:///c%3A/Users/bugch/Images/DNS6.jpg)
+![alt text](https://github.com/WildCodeSchool/TSSR-2402-P3-G2-BuildYourInfra-EcoTechSolutions/blob/main/images/DNS6.jpg)
 
 7. Dans *Feature* > *Next*  
-![alt text](file:///c%3A/Users/bugch/Images/DNS7.jpg)
+![alt text](https://github.com/WildCodeSchool/TSSR-2402-P3-G2-BuildYourInfra-EcoTechSolutions/blob/main/images/DNS7.jpg)
 
 8. Dans *DNS Server* > *Next*  
-![alt text](file:///c%3A/Users/bugch/Images/DNS8.jpg)
+![alt text](https://github.com/WildCodeSchool/TSSR-2402-P3-G2-BuildYourInfra-EcoTechSolutions/blob/main/images/DNS8.jpg)
 
 9. Enfin, dans *Confirm Installation selections* > *Install*.  
-![alt text](file:///c%3A/Users/bugch/Images/DNS9.jpg)
+![alt text](https://github.com/WildCodeSchool/TSSR-2402-P3-G2-BuildYourInfra-EcoTechSolutions/blob/main/images/DNS9.jpg)
 
   - Configuration DNS  
 
 1. Aller dans *Start* > *Server Manager*  
-![alt text](file:///c%3A/Users/bugch/Images/DNS1.jpg)
+![alt text](https://github.com/WildCodeSchool/TSSR-2402-P3-G2-BuildYourInfra-EcoTechSolutions/blob/main/images/DNS1.jpg)
 
 2. Clic-droit sur le serveur et sélectionner *DNS Manager*  
-![alt text](file:///c%3A/Users/bugch/Images/DNS%20manage.jpg)
+![alt text](https://github.com/WildCodeSchool/TSSR-2402-P3-G2-BuildYourInfra-EcoTechSolutions/blob/main/images/DNS%20manage.jpg)
 
 3. Ouvrir l’arborescence du serveur jusqu'à voir "*Forward Lookup Zones*", clic-droit dessus et sélectionner *New Zone*  
-![alt text](file:///c%3A/Users/bugch/Images/DNS_fw%20newzone.jpg)
+![alt text](https://github.com/WildCodeSchool/TSSR-2402-P3-G2-BuildYourInfra-EcoTechSolutions/blob/main/images/DNS_fw%20newzone.jpg)
 
 4. Dans *New Zone Wizard* > *Next*  
-![alt text](file:///c%3A/Users/bugch/Images/DNS_fw1.jpg)
+![alt text](https://github.com/WildCodeSchool/TSSR-2402-P3-G2-BuildYourInfra-EcoTechSolutions/blob/main/images/DNS_fw1.jpg)
 
 5. Dans *Zone Type* > *Primary Zone* > *Next*  
-![alt text](file:///c%3A/Users/bugch/Images/DNS_fw2.jpg)
+![alt text](https://github.com/WildCodeSchool/TSSR-2402-P3-G2-BuildYourInfra-EcoTechSolutions/blob/main/images/DNS_fw2.jpg)
 
 6. Dans *Zone Name*, entrer le nom du domaine (EcoTechSolutions.com) > *Next*  
-![alt text](file:///c%3A/Users/bugch/Images/DNS_fw3.jpg)
+![alt text](https://github.com/WildCodeSchool/TSSR-2402-P3-G2-BuildYourInfra-EcoTechSolutions/blob/main/images/DNS_fw3.jpg)
 
 7. Dans *Zone File* > *Next*  
-![alt text](file:///c%3A/Users/bugch/Images/DNS_fw4.jpg)
+![alt text](https://github.com/WildCodeSchool/TSSR-2402-P3-G2-BuildYourInfra-EcoTechSolutions/blob/main/images/DNS_fw4.jpg)
 
 8. Dans *Dynamic Update* > *Next*  
-![alt text](file:///c%3A/Users/bugch/Images/DNS_fw5.jpg)
+![alt text](https://github.com/WildCodeSchool/TSSR-2402-P3-G2-BuildYourInfra-EcoTechSolutions/blob/main/images/DNS_fw5.jpg)
 
 9. Enfin, cliquer sur *Finish*  
-![alt text](file:///c%3A/Users/bugch/Images/DNS_fw6.jpg)
+![alt text](https://github.com/WildCodeSchool/TSSR-2402-P3-G2-BuildYourInfra-EcoTechSolutions/blob/main/images/DNS_fw6.jpg)
 
 10. Ouvrir l’arborescence du serveur jusqu'à voir "*EcoTechSolutions.com*", clic-droit dessus et sélectionner *New Host (A or AAAA)*  
-![alt text](file:///c%3A/Users/bugch/Images/PTR1.jpg)
+![alt text](https://github.com/WildCodeSchool/TSSR-2402-P3-G2-BuildYourInfra-EcoTechSolutions/blob/main/images/PTR1.jpg)
 
 11. Dans *New Host* entrer l'adresse IP du serveur (10.10.8.2) dans *IP Adrress* et cochez *Create associated pointer (PTR) record* > *Add Host*  
-![alt text](file:///c%3A/Users/bugch/Images/PTR2.jpg)
+![alt text](https://github.com/WildCodeSchool/TSSR-2402-P3-G2-BuildYourInfra-EcoTechSolutions/blob/main/images/PTR2.jpg)
 
 12. Ouvrir l’arborescence du serveur jusqu'à voir "*Reverse Lookup Zones*", clic-droit dessus et sélectionner *New Zone*  
-![alt text](file:///c%3A/Users/bugch/Images/DNS_rw%20newzone.jpg)
+![alt text](https://github.com/WildCodeSchool/TSSR-2402-P3-G2-BuildYourInfra-EcoTechSolutions/blob/main/images/DNS_rw%20newzone.jpg)
 
 13. Dans *New Zone Wizard* > *Next*  
-![alt text](file:///c%3A/Users/bugch/Images/DNS_rw1.jpg)
+![alt text](https://github.com/WildCodeSchool/TSSR-2402-P3-G2-BuildYourInfra-EcoTechSolutions/blob/main/images/DNS_rw1.jpg)
 
 14. Dans *Zone Type* > *Primary Zone* > *Next*  
-![alt text](file:///c%3A/Users/bugch/Images/DNS_rw2.jpg)
+![alt text](https://github.com/WildCodeSchool/TSSR-2402-P3-G2-BuildYourInfra-EcoTechSolutions/blob/main/images/DNS_rw2.jpg)
 
 15. Dans *Reverse Lookup Zone Name* > *IPv4 Reverse Lookup Zone* > *Next*  
-![alt text](file:///c%3A/Users/bugch/Images/DNS_rw3.jpg)
+![alt text](https://github.com/WildCodeSchool/TSSR-2402-P3-G2-BuildYourInfra-EcoTechSolutions/blob/main/images/DNS_rw3.jpg)
 
 16. Dans *Reverse Lookup Zone Name* > *Network ID*, entrer les 3 premiers octets de l'adresse IP en inversé (8.10.10) > *Next*  
-![alt text](file:///c%3A/Users/bugch/Images/DNS_rw4.jpg)
+![alt text](https://github.com/WildCodeSchool/TSSR-2402-P3-G2-BuildYourInfra-EcoTechSolutions/blob/main/images/DNS_rw4.jpg)
 
 17. Dans *Zone File* > *Next*  
-![alt text](file:///c%3A/Users/bugch/Images/DNS_rw5.jpg)
+![alt text](https://github.com/WildCodeSchool/TSSR-2402-P3-G2-BuildYourInfra-EcoTechSolutions/blob/main/images/DNS_rw5.jpg)
 
 18. Dans *Dynamic Update* > *Next*  
-![alt text](file:///c%3A/Users/bugch/Images/DNS_rw6.jpg)
+![alt text](https://github.com/WildCodeSchool/TSSR-2402-P3-G2-BuildYourInfra-EcoTechSolutions/blob/main/images/DNS_rw6.jpg)
 
 19. Enfin, cliquer sur *Finish*  
-![alt text](file:///c%3A/Users/bugch/Images/DNS_rw7.jpg)
+![alt text](https://github.com/WildCodeSchool/TSSR-2402-P3-G2-BuildYourInfra-EcoTechSolutions/blob/main/images/DNS_rw7.jpg)
 
   - Installation Active Directory
 
 1. Aller dans *Start* > *Server Manager*  
-![alt text](file:///c%3A/Users/bugch/Images/AD1.jpg)
+![alt text](https://github.com/WildCodeSchool/TSSR-2402-P3-G2-BuildYourInfra-EcoTechSolutions/blob/main/images/AD1.jpg)
 
 2. Aller dans *Manage* > *Add roles and Features*  
-![alt text](file:///c%3A/Users/bugch/Images/AD2.jpg)
+![alt text](https://github.com/WildCodeSchool/TSSR-2402-P3-G2-BuildYourInfra-EcoTechSolutions/blob/main/images/AD2.jpg)
 
 3. Dans *Installation type* > *Role-based of feature-based installation* > *Next*  
-![alt text](file:///c%3A/Users/bugch/Images/AD3.jpg)
+![alt text](https://github.com/WildCodeSchool/TSSR-2402-P3-G2-BuildYourInfra-EcoTechSolutions/blob/main/images/AD3.jpg)
 
 4. Dans *Server Selection* > *Next*  
-![alt text](file:///c%3A/Users/bugch/Images/AD4.jpg)
+![alt text](https://github.com/WildCodeSchool/TSSR-2402-P3-G2-BuildYourInfra-EcoTechSolutions/blob/main/images/AD4.jpg)
 
 5. Dans *Server Roles*, on coche *Active Directory Domain Services* > *Next*  
-![alt text](file:///c%3A/Users/bugch/Images/AD5.jpg)
+![alt text](https://github.com/WildCodeSchool/TSSR-2402-P3-G2-BuildYourInfra-EcoTechSolutions/blob/main/images/AD5.jpg)
 
 6. Cliquer sur *Add Features*  
-![alt text](file:///c%3A/Users/bugch/Images/AD6.jpg)
+![alt text](https://github.com/WildCodeSchool/TSSR-2402-P3-G2-BuildYourInfra-EcoTechSolutions/blob/main/images/AD6.jpg)
 
-7. Dans *AD DS* > *Next*
-![alt text](file:///c%3A/Users/bugch/Images/AD7.jpg)
+7. Dans *AD DS* > *Next*  
+![alt text](https://github.com/WildCodeSchool/TSSR-2402-P3-G2-BuildYourInfra-EcoTechSolutions/blob/main/images/AD7.jpg)
 
 8. Enfin, dans *Confirm Installation selections* > *Install*.  
-![alt text](file:///c%3A/Users/bugch/Images/AD8.jpg)
+![alt text](https://github.com/WildCodeSchool/TSSR-2402-P3-G2-BuildYourInfra-EcoTechSolutions/blob/main/images/AD8.jpg)
 
   - Configuration Active Directory
 
 1. Aller dans *Start* > *Server Manager*  
-![alt text](file:///c%3A/Users/bugch/Images/AD1.jpg)
+![alt text](https://github.com/WildCodeSchool/TSSR-2402-P3-G2-BuildYourInfra-EcoTechSolutions/blob/main/images/AD1.jpg)
 
 2. Aller sur le drapeau et cliquer sur *Promote this server to a domain controller*  
-![alt text](file:///c%3A/Users/bugch/Images/AD9.jpg)
+![alt text](https://github.com/WildCodeSchool/TSSR-2402-P3-G2-BuildYourInfra-EcoTechSolutions/blob/main/images/AD9.jpg)
 
 3. Dans *Deployement Configuration*, sélectionner *Add a new forest* et saisir le nom du domaine (EcoTechSolutions.com) > *Next*  
-![alt text](file:///c%3A/Users/bugch/Images/AD10.jpg)
+![alt text](https://github.com/WildCodeSchool/TSSR-2402-P3-G2-BuildYourInfra-EcoTechSolutions/blob/main/images/AD10.jpg)
 
 4. Dans *Domain Controller Options*, saisir le mot de passe et le confirmer > *Next*  
-![alt text](file:///c%3A/Users/bugch/Images/AD11.jpg)
+![alt text](https://github.com/WildCodeSchool/TSSR-2402-P3-G2-BuildYourInfra-EcoTechSolutions/blob/main/images/AD11.jpg)
 
 5. Dans *DNS Options* > *Next*  
-![alt text](file:///c%3A/Users/bugch/Images/AD12.jpg)
+![alt text](https://github.com/WildCodeSchool/TSSR-2402-P3-G2-BuildYourInfra-EcoTechSolutions/blob/main/images/AD12.jpg)
 
 6. Dans *Additional Options* > *Next*  
-![alt text](file:///c%3A/Users/bugch/Images/AD13.jpg)
+![alt text](https://github.com/WildCodeSchool/TSSR-2402-P3-G2-BuildYourInfra-EcoTechSolutions/blob/main/images/AD13.jpg)
 
 7. Dans *Path* > *Next*  
-![alt text](file:///c%3A/Users/bugch/Images/AD14.jpg)
+![alt text](https://github.com/WildCodeSchool/TSSR-2402-P3-G2-BuildYourInfra-EcoTechSolutions/blob/main/images/AD14.jpg)
 
 8. Dans *Review Options* > *Next*  
-![alt text](file:///c%3A/Users/bugch/Images/AD15.jpg)
+![alt text](https://github.com/WildCodeSchool/TSSR-2402-P3-G2-BuildYourInfra-EcoTechSolutions/blob/main/images/AD15.jpg)
 
 9. Dans *Prerequisites Check* > *Install*  
-![alt text](file:///c%3A/Users/bugch/Images/AD16.jpg)
+![alt text](https://github.com/WildCodeSchool/TSSR-2402-P3-G2-BuildYourInfra-EcoTechSolutions/blob/main/images/AD16.jpg)
 
 10 . Pour confirmer l'installation, le serveur redémarrera.  
 
