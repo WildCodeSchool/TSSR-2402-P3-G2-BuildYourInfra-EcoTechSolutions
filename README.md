@@ -62,7 +62,7 @@ Le groupe du Projet **_BuildYourInfra_** est composé de :
 * **Anthony Javault**
 * **Nicolas Maggiori**
 
-### **Sprint 1 : S09 - Semaine du 23 au 30 avril 2024**
+### **S09 - Semaine du 23 au 30 avril 2024**
 
 |PO|SM|
 |:-:|:-:|
@@ -72,23 +72,21 @@ Activités et répartitions des tâches
 
 ||Ahmed Ben Rebai|Charles Caulier|Damien Legay|Anthony Javault|Nicolas Maggiori|
 |:-:|:-:|:-:|:-:|:-:|:-:|
-|||||||
-|||||||
-|||||||
-|||||||
-|||||||
-|||||||
-|||||||
-|||||||
-|||||||
-|||||||
-|||||||
-|||||||
-|||||||
-|Préparation slides présentation||||||
+|Nomenclature de nom|x|||x|x|
+|Listing du matériel|||x|x|x|
+|Plan d'adressage réseau|x||x||x|
+|Plan schématique du réseau|x||x|||
+|Création VM Serveurs||x|||x|
+|Création domaine||x||||
+|Création OU||x||||
+|Création Groups/Users||x||||
+|Intégration dans AD||||||
+|Préparation Scripts PS||||x||
+|Documentation||x|x|x|x|
+|Préparation slides Présentation|||x|x||
 |Présentation|x|x|x|x|x|
 
-### **Sprint 2 : S11 - Semaine du 13 au 17 mai 2024**
+### **S11 - Semaine du 13 au 17 mai 2024**
 
 |PO|SM|
 |:-:|:-:|
@@ -109,30 +107,10 @@ Activités et répartitions des tâches
 |||||||
 |||||||
 |||||||
+|Préparation slides Présentation||||||
+|Présentation|x|x|x|x|x|
 
-### **Sprint 3 : S12 - Semaine du 27 au 31 mai 2024**
-
-|PO|SM|
-|:-:|:-:|
-|||
-
-Activités et répartitions des tâches
-
-||Ahmed Ben Rebai|Charles Caulier|Damien Legay|Anthony Javault|Nicolas Maggiori|
-|:-:|:-:|:-:|:-:|:-:|:-:|
-|||||||
-|||||||
-|||||||
-|||||||
-|||||||
-|||||||
-|||||||
-|||||||
-|||||||
-|||||||
-|||||||
-
-### **Sprint 4 : S13 - Semaine du 3 au 7 juin 2024**
+### **S12 - Semaine du 27 au 31 mai 2024**
 
 |PO|SM|
 |:-:|:-:|
@@ -153,30 +131,10 @@ Activités et répartitions des tâches
 |||||||
 |||||||
 |||||||
+|Préparation slides Présentation||||||
+|Présentation|x|x|x|x|x|
 
-### **Sprint 5 : S14 - Semaine du 10 au 14 juin 2024**
-
-|PO|SM|
-|:-:|:-:|
-|||
-
-Activités et répartitions des tâches
-
-||Ahmed Ben Rebai|Charles Caulier|Damien Legay|Anthony Javault|Nicolas Maggiori|
-|:-:|:-:|:-:|:-:|:-:|:-:|
-|||||||
-|||||||
-|||||||
-|||||||
-|||||||
-|||||||
-|||||||
-|||||||
-|||||||
-|||||||
-|||||||
-
-### **Sprint 6 : S15 - Semaine du 17 au 21 juin 2024**
+### **S13 - Semaine du 3 au 7 juin 2024**
 
 |PO|SM|
 |:-:|:-:|
@@ -197,30 +155,10 @@ Activités et répartitions des tâches
 |||||||
 |||||||
 |||||||
+|Préparation slides Présentation||||||
+|Présentation|x|x|x|x|x|
 
-### **Sprint 7 : S16 - Semaine du 24 au 28 juin 2024**
-
-|PO|SM|
-|:-:|:-:|
-|||
-
-Activités et répartitions des tâches
-
-||Ahmed Ben Rebai|Charles Caulier|Damien Legay|Anthony Javault|Nicolas Maggiori|
-|:-:|:-:|:-:|:-:|:-:|:-:|
-|||||||
-|||||||
-|||||||
-|||||||
-|||||||
-|||||||
-|||||||
-|||||||
-|||||||
-|||||||
-|||||||
-
-### **Sprint 8 : S17 - Semaine du 1 au 5 juillet 2024**
+### **S14 - Semaine du 10 au 14 juin 2024**
 
 |PO|SM|
 |:-:|:-:|
@@ -241,30 +179,10 @@ Activités et répartitions des tâches
 |||||||
 |||||||
 |||||||
+|Préparation slides Présentation||||||
+|Présentation|x|x|x|x|x|
 
-### **Sprint 9 : S18 - Semaine du 8 au 12 juillet 2024**
-
-|PO|SM|
-|:-:|:-:|
-|||
-
-Activités et répartitions des tâches
-
-||Ahmed Ben Rebai|Charles Caulier|Damien Legay|Anthony Javault|Nicolas Maggiori|
-|:-:|:-:|:-:|:-:|:-:|:-:|
-|||||||
-|||||||
-|||||||
-|||||||
-|||||||
-|||||||
-|||||||
-|||||||
-|||||||
-|||||||
-|||||||
-
-### **Sprint 10 : S19 - Semaine du 15 au 19 juillet 2024**
+### **S15 - Semaine du 17 au 21 juin 2024**
 
 |PO|SM|
 |:-:|:-:|
@@ -285,8 +203,10 @@ Activités et répartitions des tâches
 |||||||
 |||||||
 |||||||
+|Préparation slides Présentation||||||
+|Présentation|x|x|x|x|x|
 
-### **Sprint 11 : S20 - Semaine du 22 au 26 juillet 2024**
+### **S16 - Semaine du 24 au 28 juin 2024**
 
 |PO|SM|
 |:-:|:-:|
@@ -307,6 +227,104 @@ Activités et répartitions des tâches
 |||||||
 |||||||
 |||||||
+|Préparation slides Présentation||||||
+|Présentation|x|x|x|x|x|
+
+### **S17 - Semaine du 1 au 5 juillet 2024**
+
+|PO|SM|
+|:-:|:-:|
+|||
+
+Activités et répartitions des tâches
+
+||Ahmed Ben Rebai|Charles Caulier|Damien Legay|Anthony Javault|Nicolas Maggiori|
+|:-:|:-:|:-:|:-:|:-:|:-:|
+|||||||
+|||||||
+|||||||
+|||||||
+|||||||
+|||||||
+|||||||
+|||||||
+|||||||
+|||||||
+|||||||
+|Préparation slides Présentation||||||
+|Présentation|x|x|x|x|x|
+
+### **S18 - Semaine du 8 au 12 juillet 2024**
+
+|PO|SM|
+|:-:|:-:|
+|||
+
+Activités et répartitions des tâches
+
+||Ahmed Ben Rebai|Charles Caulier|Damien Legay|Anthony Javault|Nicolas Maggiori|
+|:-:|:-:|:-:|:-:|:-:|:-:|
+|||||||
+|||||||
+|||||||
+|||||||
+|||||||
+|||||||
+|||||||
+|||||||
+|||||||
+|||||||
+|||||||
+|Préparation slides Présentation||||||
+|Présentation|x|x|x|x|x|
+
+### **S19 - Semaine du 15 au 19 juillet 2024**
+
+|PO|SM|
+|:-:|:-:|
+|||
+
+Activités et répartitions des tâches
+
+||Ahmed Ben Rebai|Charles Caulier|Damien Legay|Anthony Javault|Nicolas Maggiori|
+|:-:|:-:|:-:|:-:|:-:|:-:|
+|||||||
+|||||||
+|||||||
+|||||||
+|||||||
+|||||||
+|||||||
+|||||||
+|||||||
+|||||||
+|||||||
+|Préparation slides Présentation||||||
+|Présentation|x|x|x|x|x|
+
+### **S20 - Semaine du 22 au 26 juillet 2024**
+
+|PO|SM|
+|:-:|:-:|
+|||
+
+Activités et répartitions des tâches
+
+||Ahmed Ben Rebai|Charles Caulier|Damien Legay|Anthony Javault|Nicolas Maggiori|
+|:-:|:-:|:-:|:-:|:-:|:-:|
+|||||||
+|||||||
+|||||||
+|||||||
+|||||||
+|||||||
+|||||||
+|||||||
+|||||||
+|||||||
+|||||||
+|Préparation slides Présentation||||||
+|Présentation|x|x|x|x|x|
 
 ## **Choix techniques et contraintes**
 
