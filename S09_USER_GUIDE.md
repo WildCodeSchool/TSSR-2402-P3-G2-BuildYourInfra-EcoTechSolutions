@@ -27,9 +27,11 @@ Nous allons plusieurs éléments au cours des semaines à venir :
 
 Dans le cadre de la Standardisation du réseau, vos ordinateurs vont être renommés, certaines fonctionnalités seront bloqués, elles seront toutefois adaptées à vos besoins professionnels.
 
-Dans le cadre de la Fiabilisation du réseau, les répéteurs actuellement en place vont disparaître, afin de laisser place à une meilleur réseau WIFI, vous disposerez également de connexion via des câbles _Ethernet_ à chaque poste de travail.
+Dans le cadre de la Fiabilisation du réseau, les répéteurs actuellement en place vont disparaître, afin de laisser place à une meilleur réseau WIFI, vous disposerez également de connexion via des câbles _Ethernet_ à chaque postes de travail.
+Des équipements périphériques vont être mis à votre disposition (imprimante, téléphonie via internet)
 
 Dans le cadre de la Sécurisation des données, il vous faudra une fois le projet lancé, vous connecter avec un identifiant personnel, accompagné d'un mot de passe, ces informations seront personnelles et vous seront communiquer individuellement dans votre boîte mail professionelle.
+Ceci permettra de sécuriser et protéger vos données professionnelles et personnelles.
 
 ## **FAQ : Réponses aux éventuelles questions**
 
