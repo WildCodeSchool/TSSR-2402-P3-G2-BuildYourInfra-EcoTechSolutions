@@ -244,7 +244,7 @@ Le serveur dédié au DNS et à l'AD se nomme `SRV-ECO-ADDNS-01` avec l'IP `10.1
 
 ![](./ressource/S09/images/DNS_fw2.jpg)
 
-6. Dans *Zone Name*, entrez le nom du domaine **_EcoTechSolutions.fr_** > *Next*.
+6. Dans *Zone Name*, entrez le nom du domaine **_ecotechsolutions.fr_** > *Next*.
 
 ![](./ressource/S09/images/DNS_fw3.jpg)
 
@@ -260,7 +260,7 @@ Le serveur dédié au DNS et à l'AD se nomme `SRV-ECO-ADDNS-01` avec l'IP `10.1
 
 ![](./ressource/S09/images/DNS_fw6.jpg)
 
-10. Ouvrez l’arborescence du serveur jusqu'à voir "*EcoTechSolutions.com*", _clic-droit_ dessus et sélectionnez *New Host (A or AAAA)*.
+10. Ouvrez l’arborescence du serveur jusqu'à voir "**_ecotechsolutions.fr_**", _clic-droit_ dessus et sélectionnez *New Host (A or AAAA)*.
 
 ![](./ressource/S09/images/PTR1.jpg)
 
@@ -326,11 +326,15 @@ Le serveur dédié au DNS et à l'AD se nomme `SRV-ECO-ADDNS-01` avec l'IP `10.1
 
 ![](./ressource/S09/images/AD6.jpg)
 
-7. Dans *AD DS* > *Next*.
+7. Dans *Feature* > *Next*.
+
+
+ 
+8. Dans *AD DS* > *Next*.
 
 ![](./ressource/S09/images/AD7.jpg)
 
-8. Enfin, dans *Confirm Installation selections* > *Install*.
+9. Enfin, dans *Confirm Installation selections* > *Install*.
 
 ![](./ressource/S09/images/AD8.jpg)
 
@@ -344,7 +348,7 @@ Le serveur dédié au DNS et à l'AD se nomme `SRV-ECO-ADDNS-01` avec l'IP `10.1
 
 ![](./ressource/S09/images/AD9.jpg)
 
-3. Dans *Deployement Configuration*, sélectionnez *Add a new forest* et saisir le nom du domaine (EcoTechSolutions.com) > *Next*
+3. Dans *Deployement Configuration*, sélectionnez *Add a new forest* et saisir le nom du domaine (ecotechsolutions.fr) > *Next*
 
 ![](./ressource/S09/images/AD10.jpg)
 
