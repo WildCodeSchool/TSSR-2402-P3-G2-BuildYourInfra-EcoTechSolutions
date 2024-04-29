@@ -118,7 +118,7 @@ Au vu du potentiel partenariat à venir, il sera ainsi aisé d'intégrer une nou
 
 4. Dans *Server Selection* > *Next*.
 
-![](./ressource/S09/images/DHCP4.jpg)
+![](./ressource/S09/images/DHCP4ok.jpg)
 
 5. Dans *Server Roles*, on coche **_DHCP Server_** puis *Next*.
 
