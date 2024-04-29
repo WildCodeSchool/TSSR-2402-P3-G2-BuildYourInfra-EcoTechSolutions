@@ -152,11 +152,11 @@ Au vu du potentiel partenariat à venir, il sera ainsi aisé d'intégrer une nou
 
 3. Donnez un _Nom_ à l’étendue **DHCP** et une _Description_ (optionnel).
 
-![](./ressource/S09/images/DHCP12.jpg)
+![](./ressource/S09/images/DHCP12ok.jpg)
 
 4. Choisissez une plage d’adresse IP, en fonction de l’adresse IP fixe du serveur. Si le serveur a pour adresse IP 192.168.0.1, la plage DHCP sera aussi sur le sous réseau 192.168.0. Choisissez une plage plus ou moins large selon le nombre de postes et de périphériques (smartphones, tablettes) qui seront connectés. Laissez les valeurs « _Longueur_ » et « _Masque de sous-réseau_ » **_par défaut_**.
 
-![](./ressource/S09/images/DHCP13.jpg)
+![](./ressource/S09/images/DHCP13ok.jpg)
 
 5. S’il y a des adresses IP à **_exclure_** de la plage sélectionnée, les indiquez sur l’écran « _Ajout d’exclusions et de retard_ » .
 
@@ -166,7 +166,7 @@ Au vu du potentiel partenariat à venir, il sera ainsi aisé d'intégrer une nou
 
 8. Votre réseau informatique est certainement équipé d’un routeur ou d’une box pour l’accès à internet. A l’écran **_Routeur_**, indiquer l’**_adresse IP_** de ce boitier qui deviendra la passerelle par défaut des postes en [DHCP](https://www.windows8facile.fr/tag/dhcp/). Ainsi, pas besoin de configurer chaque PC pour qu’il puisse aller sur internet.
 
-![](./ressource/S09/images/DHCP14.jpg)
+![](./ressource/S09/images/DHCP14ok.jpg)
 
 9. L’option suivante, **_Nom de domaine et serveurs DNS_**, doit être préremplie avec le nom du domaine et l’adresse IP du serveur principal. Laisser ainsi et cliquer sur _Suivant_.
 
