@@ -6,19 +6,17 @@
 
 2) Les changements à venir
 
-3) FAQ : Réponses aux éventuelles questions
-
 ## **Préambule à la transition**
 
-Notre société **_BurnPS_** a été mandatée par l'entreprise **_EcoTech Solutions_** pour répondre à ses besoins en termes d'infrastructure réseau.
+Notre société **_DANAteCh_** a été mandatée par l'entreprise **_EcoTech Solutions_** pour répondre à ses besoins en terme d'Infrastructure réseau.
 
-Le Projet _BuildYourInfra_ arrive à grand pas, il va apporter plusieurs changements dans vos méthodes de travail.
+Le Projet _BuildYourInfra_ arrive à grand pas, il va apporter plusieurs changements dans votre méthodologie de travail.
 
-Cette transition s'étalera sur 11 semaines, elle pourra apporter par moment de nombreux changements.
+Cette transition s'étalera sur 11 semaines, soit jusqu'au 26 juillet 2024, elle pourra apporter par moment de nombreux changements.
 
 Cette documenation consiste à vous guider et vous expliquer les changements à venir, afin que vous compreniez l'importance de cette transition pour qu'elle soit plus facile pour vous
 
-Nous allons plusieurs éléments au cours des semaines à venir :
+Nous allons ajouter plusieurs éléments au cours des semaines à venir, voici un petit aperçu :
 * La Standardisation du réseau.
 * Une meilleure Fiabilité.
 * Une Sécurisation des données professionnelles et personnelles.
@@ -33,7 +31,9 @@ Des équipements périphériques vont être mis à votre disposition (imprimante
 Dans le cadre de la Sécurisation des données, il vous faudra une fois le projet lancé, vous connecter avec un identifiant personnel, accompagné d'un mot de passe, ces informations seront personnelles et vous seront communiquer individuellement dans votre boîte mail professionelle.
 Ceci permettra de sécuriser et protéger vos données professionnelles et personnelles.
 
-## **FAQ : Réponses aux éventuelles questions**
+Une Charte de Vigilance et de Sécurité informatique et réseau vous sera remis en main propre par votre responsable direct, durant l'avancée du projet.
+
+Bien entendu, cette documentation s'étoffera chaque semaine pour vous informer de l'avancée du Projet, et ainsi vous préparer dans les meilleures conditions.
 
 
 
