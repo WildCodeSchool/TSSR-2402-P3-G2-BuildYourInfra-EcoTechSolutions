@@ -148,7 +148,7 @@ Au vu du potentiel partenariat à venir, il sera ainsi aisé d'intégrer une nou
 
 2. Déroulez **_DHCP_** nom du serveur, _IPv4_. Faites _clic droit_ sur _IPv4_ et choisissez _Nouvelle étendue_.
 
-![](./ressource/S09/images/DHCP11ok.jpg)
+![](./ressource/S09/images/DHCP11fine.jpg)
 
 3. Donnez un _Nom_ à l’étendue **DHCP** et une _Description_ (optionnel).
 
