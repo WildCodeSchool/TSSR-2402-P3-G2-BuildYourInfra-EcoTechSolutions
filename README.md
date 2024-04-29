@@ -20,7 +20,7 @@
 
 ## **Présentation du Projet et Objectifs finaux**
 
-Le Projet **_BuildYourInfra_** consiste, en partant de bases équivoques, à créer une Infrastructure complète pour l'entreprise **_EcoTech Solutions_**.
+Le Projet **_BuildYourInfra_** consiste, en partant de bases minimalistes, à créer une Infrastructure complète pour l'entreprise **_EcoTech Solutions_**.
 
 Le projet est découpé en sprint d'une semaine et s'étalera sur 11 semaines.
 Une présentation de l'avancement du projet sera donnée à chaque fin de sprint, avec une démonstration (dans le cas où cela est possible).
@@ -45,7 +45,9 @@ Seront insérés dans le dépôt :
 
 ## **Mise en contexte**
 
-Notre société **_BurnPS_** a été mandatée par l'entreprise **_EcoTech Solutions_** pour répondre à ses besoins en termes d'infrastructure réseau.
+Notre société **_DANAteCh_** a été mandatée par l'entreprise **_EcoTech Solutions_** pour répondre à ses besoins en termes d'infrastructure réseau.
+
+![](./ressource/S09/images/Ecotech_Logo.png)
 
 **_EcoTech Solutions_**, basée à Bordeaux, est spécialisée dans le développement de solutions IoT (Internet des objets) pour la gestion intelligente de l'énergie et des ressources. En partenariat avec le gouvernement et les entreprises du secteur de l'énergie, elle déploie des systèmes de surveillance et de contrôle avancés pour optimiser l'utilisation des ressources naturelles, réduire les émissions de carbone et promouvoir la durabilité environnementale. Son expertise technologique et son engagement envers l'innovation en font un acteur clé dans la transition vers une économie verte.
 

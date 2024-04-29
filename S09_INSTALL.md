@@ -10,6 +10,8 @@
 
 ## **Pré-requis techniques**
 
+![](./ressource/S09/images/Ecotech_Logo.png)
+
 Voici la situation originelle de la société **_EcoTech Solutions_**
 * Nombre d'employés : 54 répartis dans 7 départements distincts, incluant 6 personnes extérieures
 * Pas de nomadisme, ni de télétravail
@@ -102,6 +104,8 @@ Au vu du potentiel partenariat à venir, il sera ainsi aisé d'intégrer une nou
 
 ### Installation et configuration du serveur DHCP
 
+Le serveur dédié au DHCP se nomme `SRV-ECO-DHCP-01` avec l'IP `10.10.8.100/25`
+
 #### Installation du rôle DHCP
 
 1. Dans *Manage* > *Add Roles and Features*.
@@ -177,6 +181,8 @@ Au vu du potentiel partenariat à venir, il sera ainsi aisé d'intégrer une nou
 12. Déroulez IPv4, Etendue [] pour voir l’étendue créée (Pool d’adresses), les Baux (c’est-à-dire la liste des postes clients qui recevront une adresse IP automatique), les Réservations et Options précédemment configurées.
 
 ### Installation et Configuration Serveur **DNS** et **Active directory**
+
+Le serveur dédié au DNS et à l'AD se nomme `SRV-ECO-ADDNS-01` avec l'IP `10.10.8.120/25`
 
 #### Installation DNS
 
