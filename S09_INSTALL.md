@@ -182,91 +182,91 @@ Le serveur dédié au DHCP se nomme `SRV-ECO-DHCP-01` avec l'IP `10.10.8.100/25`
 
 ### Installation et Configuration Serveur **DNS** et **Active directory**
 
-Le serveur dédié au DNS et à l'AD se nomme `SRV-ECO-ADDNS-01` avec l'IP `10.10.8.120/25`
+Le serveur dédié au DNS et à l'AD se nomme `ECO-SRV-ADDNS-01` avec l'IP `10.10.8.120/25`
 
 #### Installation DNS
 
 1. Allez dans *Start* > *Server Manager*.
 
-![](./ressource/S09/images/DNS1.jpg)
+![](./ressource/S09/images/DNS-1.jpg)
 
 2. Allez dans *Manage* > *Add roles and Features*.
 
-![](./ressource/S09/images/DNS2.jpg)
+![](./ressource/S09/images/DNS-2.jpg)
 
 3. Dans *Installation type* > *Role-based of feature-based installation* > *Next*.
 
-![](./ressource/S09/images/DNS3.jpg)
+![](./ressource/S09/images/DNS-3.jpg)
 
 4. Dans *Server Selection* > *Next*.
 
-![](./ressource/S09/images/DNS4.jpg)
+![](./ressource/S09/images/DNS-4.jpg)
 
 5. Dans *Server Roles*, cochez *DNS Server* > *Next*.
 
-![](./ressource/S09/images/DNS5.jpg)
+![](./ressource/S09/images/DNS-5.jpg)
 
 6. Cliquez sur *Add Features*.
 
-![](./ressource/S09/images/DNS6.jpg)
+![](./ressource/S09/images/DNS-6.jpg))
 
 7. Dans *Feature* > *Next*.
 
-![](./ressource/S09/images/DNS7.jpg)
+![](./ressource/S09/images/DNS-7.jpg)
 
 8. Dans *DNS Server* > *Next*.
 
-![](./ressource/S09/images/DNS8.jpg)
+![](./ressource/S09/images/DNS-8.jpg)
 
 9. Enfin, dans *Confirm Installation selections* > **_Install_**.
 
-![](./ressource/S09/images/DNS9.jpg)
+![](./ressource/S09/images/DNS-9.jpg)
 
 #### Configuration DNS  
 
 1. Allez dans *Start* > *Server Manager*.
 
-![](./ressource/S09/images/DNS1.jpg)
+![](./ressource/S09/images/DNS-1.jpg)
 
 2. _Clic-droit_ sur le serveur et sélectionner *DNS Manager*.
 
-![](./ressource/S09/DNS_manage.jpg)
+![](./ressource/S09/images/DNS-Manage.jpg)
 
 3. Ouvrez l’arborescence du serveur jusqu'à voir "*Forward Lookup Zones*", _clic-droit_ dessus et sélectionner *New Zone*.
 
-![](./ressource/S09/images/DNS_fw_newzone.jpg)
+![](./ressource/S09/images/DNS-FW%20newzone.jpg)
 
 4. Dans *New Zone Wizard* > *Next*.
 
-![](./ressource/S09/images/DNS_fw1.jpg)
+![](./ressource/S09/images/DNS-FW1.jpg)
 
 5. Dans *Zone Type* > *Primary Zone* > *Next*.
 
-![](./ressource/S09/images/DNS_fw2.jpg)
+![](./ressource/S09/images/DNS-FW2.jpg)
 
 6. Dans *Zone Name*, entrez le nom du domaine **_ecotechsolutions.fr_** > *Next*.
 
-![](./ressource/S09/images/DNS_fw3.jpg)
+![](./main/ressource/S09/images/DNS-FW3.jpg)
 
 7. Dans *Zone File* > *Next*.
 
-![](./ressource/S09/images/DNS_fw4.jpg)
+![](./ressource/S09/images/DNS-FW4.jpg)
 
 8. Dans *Dynamic Update* > *Next*.
 
-![](./ressource/S09/images/DNS_fw5.jpg)
+![](./ressource/S09/images/DNS-FW5.jpg)
 
 9. Enfin, cliquez sur *Finish*.
 
-![](./ressource/S09/images/DNS_fw6.jpg)
+![](./ressource/S09/images/DNS-FW6.jpg)
 
 10. Ouvrez l’arborescence du serveur jusqu'à voir "**_ecotechsolutions.fr_**", _clic-droit_ dessus et sélectionnez *New Host (A or AAAA)*.
 
-![](./ressource/S09/images/PTR1.jpg)
+![](./ressource/S09/images/PTR-1.jpg)
 
 11. Dans *New Host* entrez l'adresse IP du serveur (10.10.8.2) dans *IP Adrress* et cochez *Create associated pointer (PTR) record* > *Add Host*.
 
-![](./ressource/S09/images/PTR2.jpg)
+![](./ressource/S09/images/PTR-2.jpg)
 
 12. Ouvrez l’arborescence du serveur jusqu'à voir "*Reverse Lookup Zones*", _clic-droit_ dessus et sélectionnez *New Zone*.
 
@@ -304,77 +304,77 @@ Le serveur dédié au DNS et à l'AD se nomme `SRV-ECO-ADDNS-01` avec l'IP `10.1
 
 1. Allez dans *Start* > *Server Manager*.
 
-![](./ressource/S09/images/AD1.jpg)
+![](./ressource/S09/images/AD-1.jpg)
 
 2. Allez dans *Manage* > *Add roles and Features*.
 
-![](./ressource/S09/images/AD2.jpg)
+![](./ressource/S09/images/AD-2.jpg)
 
 3. Dans *Installation type* > *Role-based of feature-based installation* > *Next*.
 
-![](./ressource/S09/images/AD3.jpg)
+![](./ressource/S09/images/AD-3.jpg)
 
 4. Dans *Server Selection* > *Next*.
 
-![](./ressource/S09/images/AD4.jpg)
+![](./ressource/S09/images/AD-4.jpg)
 
 5. Dans *Server Roles*, on coche *Active Directory Domain Services* > *Next*.
 
-![](./ressource/S09/images/AD5.jpg)
+![](./ressource/S09/images/AD-5.jpg)
 
 6. Cliquez sur *Add Features*.
 
-![](./ressource/S09/images/AD6.jpg)
+![](./ressource/S09/images/AD-6.jpg)
 
 7. Dans *Feature* > *Next*.
 
-
+![](./ressource/S09/images/AD-7.jpg)
  
 8. Dans *AD DS* > *Next*.
 
-![](./ressource/S09/images/AD7.jpg)
+![](./ressource/S09/images/AD-8.jpg)
 
 9. Enfin, dans *Confirm Installation selections* > *Install*.
 
-![](./ressource/S09/images/AD8.jpg)
+![](./ressource/S09/images/AD-9.jpg)
 
 #### Configuration Active Directory
 
 1. Allerzdans *Start* > *Server Manager*.
 
-![](./ressource/S09/images/AD1.jpg)
+![](./ressource/S09/images/AD-1.jpg)
 
 2. Allez sur le drapeau et cliquez sur *Promote this server to a domain controller*.
 
-![](./ressource/S09/images/AD9.jpg)
+![](./ressource/S09/images/AD-10.jpg)
 
 3. Dans *Deployement Configuration*, sélectionnez *Add a new forest* et saisir le nom du domaine (ecotechsolutions.fr) > *Next*
 
-![](./ressource/S09/images/AD10.jpg)
+![](./ressource/S09/images/AD-11.jpg)
 
 4. Dans *Domain Controller Options*, saisissez le mot de passe et confirmez-le > *Next*.
 
-![](./ressource/S09/images/AD11.jpg)
+![](./ressource/S09/images/AD-12.jpg)
 
 5. Dans *DNS Options* > *Next*.
 
-![](./ressource/S09/images/AD12.jpg)
+![](./ressource/S09/images/AD-13.jpg)
 
 6. Dans *Additional Options* > *Next*.
 
-![](./ressource/S09/images/AD13.jpg)
+![](./ressource/S09/images/AD-14.jpg)
 
 7. Dans *Path* > *Next*.
 
-![](./ressource/S09/images/AD14.jpg)
+![](./ressource/S09/images/AD-15.jpg)
 
 8. Dans *Review Options* > *Next*.
 
-![](./ressource/S09/images/AD15.jpg)
+![](./ressource/S09/images/AD-16.jpg)
 
 9. Dans *Prerequisites Check* > *Install*.
 
-![](./ressource/S09/images/AD16.jpg)
+![](./ressource/S09/images/AD-17.jpg)
 
 10 . Confirmez l'installation, le serveur redémarrera.  
 
