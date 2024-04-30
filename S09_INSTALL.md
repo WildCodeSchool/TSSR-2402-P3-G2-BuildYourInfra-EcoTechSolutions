@@ -208,7 +208,7 @@ Le serveur dédié au DNS et à l'AD se nomme `ECO-SRV-ADDNS-01` avec l'IP `10.1
 
 6. Cliquez sur *Add Features*.
 
-![](./ressource/S09/images/DNS-6.jpg))
+![](./ressource/S09/images/DNS-6.jpg)
 
 7. Dans *Feature* > *Next*.
 
@@ -246,7 +246,7 @@ Le serveur dédié au DNS et à l'AD se nomme `ECO-SRV-ADDNS-01` avec l'IP `10.1
 
 6. Dans *Zone Name*, entrez le nom du domaine **_ecotechsolutions.fr_** > *Next*.
 
-![](./main/ressource/S09/images/DNS-FW3.jpg)
+![](./ressource/S09/images/DNS-FW3.jpg)
 
 7. Dans *Zone File* > *Next*.
 
