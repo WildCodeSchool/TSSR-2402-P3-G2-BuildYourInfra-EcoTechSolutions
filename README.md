@@ -72,21 +72,21 @@ Le groupe du Projet **_BuildYourInfra_** est composé de :
 
 Activités et répartitions des tâches
 
-||Ahmed Ben Rebai|Charles Caulier|Damien Legay|Anthony Javault|Nicolas Maggiori|
-|:-:|:-:|:-:|:-:|:-:|:-:|
-|Nomenclature de nom|x|||x|x|
-|Listing du matériel|||x|x|x|
-|Plan d'adressage réseau|x||x||x|
-|Plan schématique du réseau|x||x|||
-|Création VM Serveurs||x|||x|
-|Création domaine||x||||
-|Création OU||x||||
-|Création Groups/Users||x||||
-|Intégration dans AD||||||
-|Préparation Scripts PS||||x||
-|Documentation||x|x|x|x|
-|Préparation slides Présentation|||x|x||
-|Présentation|x|x|x|x|x|
+|             Tâches              | Ahmed Ben Rebai | Charles Caulier | Damien Legay | Anthony Javault | Nicolas Maggiori |
+| :-----------------------------: | :-------------: | :-------------: | :----------: | :-------------: | :--------------: |
+|       Nomenclature de nom       |        x        |                 |              |        x        |        x         |
+|       Listing du matériel       |                 |                 |      x       |        x        |        x         |
+|     Plan d'adressage réseau     |        x        |                 |      x       |                 |        x         |
+|   Plan schématique du réseau    |        x        |                 |      x       |                 |                  |
+|      Création VM Serveurs       |                 |        x        |              |                 |        x         |
+|        Création domaine         |                 |        x        |              |                 |                  |
+|           Création OU           |                 |        x        |              |                 |                  |
+|      Création Groups/Users      |                 |        x        |              |                 |                  |
+|       Intégration dans AD       |                 |                 |              |                 |                  |
+|     Préparation Scripts PS      |                 |                 |              |        x        |                  |
+|          Documentation          |                 |        x        |      x       |        x        |        x         |
+| Préparation slides Présentation |                 |                 |      x       |        x        |                  |
+|          Présentation           |        x        |        x        |      x       |        x        |        x         |
 
 ### **S11 - Semaine du 13 au 17 mai 2024**
 
@@ -96,21 +96,21 @@ Activités et répartitions des tâches
 
 Activités et répartitions des tâches
 
-||Ahmed Ben Rebai|Charles Caulier|Damien Legay|Anthony Javault|Nicolas Maggiori|
-|:-:|:-:|:-:|:-:|:-:|:-:|
-|||||||
-|||||||
-|||||||
-|||||||
-|||||||
-|||||||
-|||||||
-|||||||
-|||||||
-|||||||
-|||||||
-|Préparation slides Présentation||||||
-|Présentation|x|x|x|x|x|
+|             Tâches              | Ahmed Ben Rebai | Charles Caulier | Damien Legay | Anthony Javault | Nicolas Maggiori |
+| :-----------------------------: | :-------------: | :-------------: | :----------: | :-------------: | :--------------: |
+|                                 |                 |                 |              |                 |                  |
+|                                 |                 |                 |              |                 |                  |
+|                                 |                 |                 |              |                 |                  |
+|                                 |                 |                 |              |                 |                  |
+|                                 |                 |                 |              |                 |                  |
+|                                 |                 |                 |              |                 |                  |
+|                                 |                 |                 |              |                 |                  |
+|                                 |                 |                 |              |                 |                  |
+|                                 |                 |                 |              |                 |                  |
+|                                 |                 |                 |              |                 |                  |
+|                                 |                 |                 |              |                 |                  |
+| Préparation slides Présentation |                 |                 |              |                 |                  |
+|          Présentation           |        x        |        x        |      x       |        x        |        x         |
 
 ### **S12 - Semaine du 27 au 31 mai 2024**
 
@@ -120,21 +120,21 @@ Activités et répartitions des tâches
 
 Activités et répartitions des tâches
 
-||Ahmed Ben Rebai|Charles Caulier|Damien Legay|Anthony Javault|Nicolas Maggiori|
-|:-:|:-:|:-:|:-:|:-:|:-:|
-|||||||
-|||||||
-|||||||
-|||||||
-|||||||
-|||||||
-|||||||
-|||||||
-|||||||
-|||||||
-|||||||
-|Préparation slides Présentation||||||
-|Présentation|x|x|x|x|x|
+|             Tâches              | Ahmed Ben Rebai | Charles Caulier | Damien Legay | Anthony Javault | Nicolas Maggiori |
+| :-----------------------------: | :-------------: | :-------------: | :----------: | :-------------: | :--------------: |
+|                                 |                 |                 |              |                 |                  |
+|                                 |                 |                 |              |                 |                  |
+|                                 |                 |                 |              |                 |                  |
+|                                 |                 |                 |              |                 |                  |
+|                                 |                 |                 |              |                 |                  |
+|                                 |                 |                 |              |                 |                  |
+|                                 |                 |                 |              |                 |                  |
+|                                 |                 |                 |              |                 |                  |
+|                                 |                 |                 |              |                 |                  |
+|                                 |                 |                 |              |                 |                  |
+|                                 |                 |                 |              |                 |                  |
+| Préparation slides Présentation |                 |                 |              |                 |                  |
+|          Présentation           |        x        |        x        |      x       |        x        |        x         |
 
 ### **S13 - Semaine du 3 au 7 juin 2024**
 
