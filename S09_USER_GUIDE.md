@@ -8,7 +8,7 @@
 
 ## **Préambule à la transition**
 
-Notre société **_DANAteCh_** a été mandatée par l'entreprise **_EcoTech Solutions_** pour répondre à ses besoins en terme d'Infrastructure réseau.
+Notre société **_DANA-teC_** a été mandatée par l'entreprise **_EcoTech Solutions_** pour répondre à ses besoins en terme d'Infrastructure réseau.
 
 Le Projet _BuildYourInfra_ arrive à grand pas, il va apporter plusieurs changements dans votre méthodologie de travail.
 

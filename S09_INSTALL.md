@@ -102,83 +102,133 @@ Au vu du potentiel partenariat à venir, il sera ainsi aisé d'intégrer une nou
 
 ## **Installation et Configuration des équipements et des ressources**
 
+Nous aurons ainsi un serveur commun aux rôles DHCP, DNS et AD-DS, celui-ci se nomme `ECO-Maximus` avec l'IP `10.10.8.100/25`
+
+![DHCP](./ressource/S09/images/maximus/Maximus_DHCP_01.PNG)
+
 ### Installation et configuration du serveur DHCP
 
-Le serveur dédié au DHCP se nomme `SRV-ECO-DHCP-01` avec l'IP `10.10.8.100/25`
+#### Installation du rôle DHCP sur Windows Server en GUI
 
-#### Installation du rôle DHCP
+1. Dans le *Server Manager*, cliquez sur *Manage* > *Add Roles and Features*.
 
-1. Dans *Manage* > *Add Roles and Features*.
+![DHCP](./ressource/S09/images/maximus/Maximus_DHCP_02.PNG)
 
-![](./ressource/S09/images/DHCP1ok.jpg)
+2. Dans l'onglet *Before you begin* > *Next*.
 
-2. Dans *Before you begin* > *Next*.
+![DHCP](./ressource/S09/images/maximus/Maximus_DHCP_03.PNG)
 
-![](./ressource/S09/images/DHCP2.jpg)
+3. Dans l'onglet *Installation type* > *Role-based of feature-based installation* > *Next*.
 
-3. Dans *Installation type* > *Role-based of feature-based installation* > *Next*.
+![DHCP](./ressource/S09/images/maximus/Maximus_DHCP_04.PNG)
 
-![](./ressource/S09/images/DHCP3.jpg)
+4. Dans l'onglet *Server Selection* > *Next*.
 
-4. Dans *Server Selection* > *Next*.
+![DHCP](./ressource/S09/images/maximus/Maximus_DHCP_05.PNG)
 
-![](./ressource/S09/images/DHCP4okfine.jpg)
+5. Dans l'onglet *Server Roles*, cochez *DHCP Server* puis *Next*.
 
-5. Dans *Server Roles*, on coche **_DHCP Server_** puis *Next*.
-
-![](./ressource/S09/images/DHCP5.jpg)
+![DHCP](./ressource/S09/images/maximus/Maximus_DHCP_06.PNG)
 
 6. Cliquez sur *Add Features*.
 
-![](./ressource/S09/images/DHCP6.jpg)  
+![DHCP](./ressource/S09/images/maximus/Maximus_DHCP_07.PNG)
 
 7. Puis *Next*.
 
-![](./ressource/S09/images/DHCP7.jpg)
+![DHCP](./ressource/S09/images/maximus/Maximus_DHCP_08.PNG)
 
-8. Dans la fenêtre *DHCP Server* > *Next*.
+8. Dans l'onglet *Features* > *Next*.
 
-![](./ressource/S09/images/DHCP8.jpg)
+![DHCP](./ressource/S09/images/maximus/Maximus_DHCP_09.PNG)
 
-9. Enfin, dans *Confirm Installation selections* > **_Install_**.
+9. Dans l'onglet *DHCP Server* > *Next*
 
-![](./ressource/S09/images/DHCP9.jpg)
+![DHCP](./ressource/S09/images/maximus/Maximus_DHCP_10.PNG)
 
-#### Configuration du rôle DHCP sur Windows Server
+10. Enfin, dans l'onglet *Confirmation* > **_Install_**.
 
-1. Dans le Gestionnaire de serveur, cliquez sur le menu _Outils_ puis sur **_DHCP_**.
+![DHCP](./ressource/S09/images/maximus/Maximus_DHCP_11.PNG)
 
-![](./ressource/S09/images/DHCP10ok.jpg)
+11. A la fin de l'installation > *Close*
 
-2. Déroulez **_DHCP_** nom du serveur, _IPv4_. Faites _clic droit_ sur _IPv4_ et choisissez _Nouvelle étendue_.
+![DHCP](./ressource/S09/images/maximus/Maximus_DHCP_12.PNG)
 
-![](./ressource/S09/images/DHCP11fine.jpg)
+12. De retour sur le *Server Manager*, cliquez sur le triangle jaune, puis *Complete DHCP Configuration*
 
-3. Donnez un _Nom_ à l’étendue **DHCP** et une _Description_ (optionnel).
+![DHCP](./ressource/S09/images/maximus/Maximus_DHCP_13.PNG)
 
-![](./ressource/S09/images/DHCP12ok.jpg)
+13. Cliquez sur *Next*
 
-4. Choisissez une plage d’adresse IP, en fonction de l’adresse IP fixe du serveur. Si le serveur a pour adresse IP 192.168.0.1, la plage DHCP sera aussi sur le sous réseau 192.168.0. Choisissez une plage plus ou moins large selon le nombre de postes et de périphériques (smartphones, tablettes) qui seront connectés. Laissez les valeurs « _Longueur_ » et « _Masque de sous-réseau_ » **_par défaut_**.
+![DHCP](./ressource/S09/images/maximus/Maximus_DHCP_14.PNG)
 
-![](./ressource/S09/images/DHCP13ok.jpg)
+14. Cliquez sur *Close*
 
-5. S’il y a des adresses IP à **_exclure_** de la plage sélectionnée, les indiquez sur l’écran « _Ajout d’exclusions et de retard_ » .
+![DHCP](./ressource/S09/images/maximus/Maximus_DHCP_15.PNG)
 
-6. Par défaut, la **_Durée du bail_** est de 8 jours. Modifiez cette durée si nécessaire. La durée du bail est la durée pendant laquelle une adresse IP sera réservée à un appareil. Par exemple, si l’ordinateur de Michel se connecte le lundi matin, son adresse IP lui sera attribuée jusqu’au lundi suivant, même s’il ne se connecte pas. Le renouvellement se fera donc chaque semaine avec la valeur par défaut.
+Votre Rôle *_DHCP_* est désormais fonctionnel
 
-7. Demandez la **_Configuration des paramètres DHCP_** « _maintenant_ » .
+#### Configuration du rôle DHCP sur Windows Server en GUI
 
-8. Votre réseau informatique est certainement équipé d’un routeur ou d’une box pour l’accès à internet. A l’écran **_Routeur_**, indiquer l’**_adresse IP_** de ce boitier qui deviendra la passerelle par défaut des postes en [DHCP](https://www.windows8facile.fr/tag/dhcp/). Ainsi, pas besoin de configurer chaque PC pour qu’il puisse aller sur internet.
+1. Dans le *Server Manager*, cliquez sur *Tools* puis **_DHCP_**.
 
-![](./ressource/S09/images/DHCP14ok.jpg)
+![DHCP](./ressource/S09/images/maximus/Maximus_DHCP_16.PNG)
 
-9. L’option suivante, **_Nom de domaine et serveurs DNS_**, doit être préremplie avec le nom du domaine et l’adresse IP du serveur principal. Laisser ainsi et cliquer sur _Suivant_.
+2. Déroulez le menu du serveur jusqu'à voir _IPv4_.
 
-10. S’il y a nécessité d’indiquer un serveur **_WINS_** (du temps de Windows NT 4.0, avant _Active Directory_), sinon laisser vide et _Suivant_.
+![DHCP](./ressource/S09/images/maximus/Maximus_DHCP_17.PNG)
 
-11. Validez « _Oui, je veux activer cette étendue maintenant_ » pour commencer à utiliser le serveur DHCP.
+3. Faites *Clic-droit* sur _IPv4_ > *New Scope*
 
-12. Déroulez IPv4, Etendue [] pour voir l’étendue créée (Pool d’adresses), les Baux (c’est-à-dire la liste des postes clients qui recevront une adresse IP automatique), les Réservations et Options précédemment configurées.
+![DHCP](./ressource/S09/images/maximus/Maximus_DHCP_18.PNG)
+
+4. Cliquez sur *Next*
+
+![DHCP](./ressource/S09/images/maximus/Maximus_DHCP_19.PNG)
+
+4. Donnez un *Nom* à l’étendue **_DHCP_**, la *Description* est optionnelle. Dans notre cas, nous créons notre première étendue qui correspond au Service _Communication_. Cliquez sur *Next*.
+
+![DHCP](./ressource/S09/images/maximus/Maximus_DHCP_20.PNG)
+
+5. Saisissez les champs tous les champs, en lien avec le plan d'adressage réseau, fourni ci-dessus. Dans notre cas, le Service _Communication_ est sur le réseau 10.10.8.128/25. Cliquez sur *Next*.
+
+![DHCP](./ressource/S09/images/maximus/Maximus_DHCP_21.PNG)
+
+6. S’il y a des adresses IP à **_exclure_** de la plage sélectionnée, indiquez-les sur la fenêtre *Add Exclusions and Delay*. Cliquez sur *Next*.
+
+![DHCP](./ressource/S09/images/maximus/Maximus_DHCP_22.PNG)
+
+7. Par défaut, la **_Durée du bail_** est de 8 jours. Modifiez cette durée si nécessaire. La durée du bail est la durée pendant laquelle une adresse IP sera réservée à un appareil. Cliquez sur *Next*.
+
+![DHCP](./ressource/S09/images/maximus/Maximus_DHCP_23.PNG)
+
+8. Sélectionnez *Yes, I want ton configure these options now*, puis cliquez sur *Next*.
+
+![DHCP](./ressource/S09/images/maximus/Maximus_DHCP_24.PNG)
+
+9. Votre réseau informatique est certainement équipé d’un routeur ou d’une box pour l’accès à internet. A la fenêtre **_Router_**, indiquez l’**_adresse IP_** de ce boitier qui deviendra la passerelle par défaut des postes en [DHCP](https://www.windows8facile.fr/tag/dhcp/). Ainsi, pas besoin de configurer chaque PC pour qu’il puisse aller sur internet.
+
+![DHCP](./ressource/S09/images/maximus/Maximus_DHCP_25.PNG)
+
+10. Dans la fenêtre *Domain Name et DNS Servers*, cliquez sur *Next*. Le rôle DNS sera attribué plus tard dans la procédure.
+
+![DHCP](./ressource/S09/images/maximus/Maximus_DHCP_26.PNG)
+
+11. Sur la fenêtre *WINS Servers*, cliquez sur *Next*.
+
+![DHCP](./ressource/S09/images/maximus/Maximus_DHCP_27.PNG)
+
+12. Séelctionnez *Yes, I want ton activate this scope now* puis cliquez sur *Next*.
+
+![DHCP](./ressource/S09/images/maximus/Maximus_DHCP_28.PNG)
+
+13. Cliquez sur *Finish*
+
+![DHCP](./ressource/S09/images/maximus/Maximus_DHCP_29.PNG)
+
+14. Reproduisez la même procédure pour configurer toutes les étendues nécessaires à votre Infrastructure Réseau.
+
+![DHCP](./ressource/S09/images/maximus/Maximus_DHCP_30.PNG)
 
 ### Installation et Configuration Serveur **DNS** et **Active directory**
 

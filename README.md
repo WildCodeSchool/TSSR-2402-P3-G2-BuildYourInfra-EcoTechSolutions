@@ -18,7 +18,7 @@
 
 8) Conclusion
 
-## **Présentation du Projet et Objectifs finaux**
+## **1. Présentation du Projet et Objectifs finaux**
 
 Le Projet **_BuildYourInfra_** consiste, en partant de bases minimalistes, à créer une Infrastructure complète pour l'entreprise **_EcoTech Solutions_**.
 
@@ -41,11 +41,11 @@ Seront insérés dans le dépôt :
 * un fichier README.md : documentation générale du projet.
 * un fichier INSTALL.md par sprint (avec la nomenclature Sxx_INSTALL.md) : documentation administrateur.
 * un fichier USER_GUIDE.md par sprint (avec la nomenclature Sxx_USER_GUIDE.md) : documentation utilisateur.
-* un dossier _Ressource_ où seront placés toutes les annexes (images, scripts,...).
+* un dossier _ressource_ où seront placés toutes les annexes (images, scripts,...).
 
-## **Mise en contexte**
+## **2. Mise en contexte**
 
-Notre société **_DANAteCh_** a été mandatée par l'entreprise **_EcoTech Solutions_** pour répondre à ses besoins en termes d'infrastructure réseau.
+Notre société **_DANA-teC_** a été mandatée par l'entreprise **_EcoTech Solutions_** pour répondre à ses besoins en termes d'infrastructure réseau.
 
 ![](./ressource/S09/images/Ecotech_Logo.png)
 
@@ -55,7 +55,7 @@ Nous devons ainsi aider à la mise en place d'une infrastructure réseau complè
 
 Cette infrastructure respectera également les [bonnes pratiques de la cybersécurité pour les TPE/TME](https://cyber.gouv.fr/publications/la-cybersecurite-pour-les-tpepme-en-treize-questions) publiées par l'ANSSI.
 
-## **Présentation des membres du groupe et rôles par Sprint**
+## **3. Présentation des membres du groupe et rôles par Sprint**
 
 Le groupe du Projet **_BuildYourInfra_** est composé de :
 * **Ahmed Ben Rebai**
@@ -88,7 +88,31 @@ Activités et répartitions des tâches
 | Préparation slides Présentation |                 |                 |      x       |        x        |                  |
 |          Présentation           |        x        |        x        |      x       |        x        |        x         |
 
-### **S11 - Semaine du 13 au 17 mai 2024**
+### **S10 - Semaine du 13 au 17 mai 2024**
+
+|PO|SM|
+|:-:|:-:|
+|Anthony Javault|Damien Legay|
+
+Activités et répartitions des tâches
+
+|             Tâches              | Ahmed Ben Rebai | Charles Caulier | Damien Legay | Anthony Javault | Nicolas Maggiori |
+| :-----------------------------: | :-------------: | :-------------: | :----------: | :-------------: | :--------------: |
+| Serveur Maximus : DHCP/DNS/AD-DS |        x        |                 |        x        |                 |                  |
+| Serveur Moldaver : AD en core |        x        |              |                 |        x        |
+| Création du Client de test |                 |                 |              |        x        |                  |
+| Réplication entre Maximus et Moldaver |                 |                 |              |                 |                  |
+| Gestion de l'arborescence AD |                 |                 |              |                 |                  |
+|                                 |                 |                 |              |                 |                  |
+|                                 |                 |                 |              |                 |                  |
+|                                 |                 |                 |              |                 |                  |
+|                                 |                 |                 |              |                 |                  |
+|                                 |                 |                 |              |                 |                  |
+|                                 |                 |                 |              |                 |                  |
+| Préparation slides Présentation |                 |                 |              |                 |                  |
+|          Présentation           |        x        |        x        |      x       |        x        |        x         |
+
+### **S11 - Semaine du 27 au 31 mai 2024**
 
 |PO|SM|
 |:-:|:-:|
@@ -112,7 +136,7 @@ Activités et répartitions des tâches
 | Préparation slides Présentation |                 |                 |              |                 |                  |
 |          Présentation           |        x        |        x        |      x       |        x        |        x         |
 
-### **S12 - Semaine du 27 au 31 mai 2024**
+### **S12 - Semaine du 3 au 7 juin 2024**
 
 |PO|SM|
 |:-:|:-:|
@@ -136,7 +160,7 @@ Activités et répartitions des tâches
 | Préparation slides Présentation |                 |                 |              |                 |                  |
 |          Présentation           |        x        |        x        |      x       |        x        |        x         |
 
-### **S13 - Semaine du 3 au 7 juin 2024**
+### **S13 - Semaine du 10 au 14 juin 2024**
 
 |PO|SM|
 |:-:|:-:|
@@ -144,47 +168,23 @@ Activités et répartitions des tâches
 
 Activités et répartitions des tâches
 
-||Ahmed Ben Rebai|Charles Caulier|Damien Legay|Anthony Javault|Nicolas Maggiori|
-|:-:|:-:|:-:|:-:|:-:|:-:|
-|||||||
-|||||||
-|||||||
-|||||||
-|||||||
-|||||||
-|||||||
-|||||||
-|||||||
-|||||||
-|||||||
-|Préparation slides Présentation||||||
-|Présentation|x|x|x|x|x|
+|             Tâches              | Ahmed Ben Rebai | Charles Caulier | Damien Legay | Anthony Javault | Nicolas Maggiori |
+| :-----------------------------: | :-------------: | :-------------: | :----------: | :-------------: | :--------------: |
+|                                 |                 |                 |              |                 |                  |
+|                                 |                 |                 |              |                 |                  |
+|                                 |                 |                 |              |                 |                  |
+|                                 |                 |                 |              |                 |                  |
+|                                 |                 |                 |              |                 |                  |
+|                                 |                 |                 |              |                 |                  |
+|                                 |                 |                 |              |                 |                  |
+|                                 |                 |                 |              |                 |                  |
+|                                 |                 |                 |              |                 |                  |
+|                                 |                 |                 |              |                 |                  |
+|                                 |                 |                 |              |                 |                  |
+| Préparation slides Présentation |                 |                 |              |                 |                  |
+|          Présentation           |        x        |        x        |      x       |        x        |        x         |
 
-### **S14 - Semaine du 10 au 14 juin 2024**
-
-|PO|SM|
-|:-:|:-:|
-|||
-
-Activités et répartitions des tâches
-
-||Ahmed Ben Rebai|Charles Caulier|Damien Legay|Anthony Javault|Nicolas Maggiori|
-|:-:|:-:|:-:|:-:|:-:|:-:|
-|||||||
-|||||||
-|||||||
-|||||||
-|||||||
-|||||||
-|||||||
-|||||||
-|||||||
-|||||||
-|||||||
-|Préparation slides Présentation||||||
-|Présentation|x|x|x|x|x|
-
-### **S15 - Semaine du 17 au 21 juin 2024**
+### **S14 - Semaine du 17 au 21 juin 2024**
 
 |PO|SM|
 |:-:|:-:|
@@ -192,47 +192,23 @@ Activités et répartitions des tâches
 
 Activités et répartitions des tâches
 
-||Ahmed Ben Rebai|Charles Caulier|Damien Legay|Anthony Javault|Nicolas Maggiori|
-|:-:|:-:|:-:|:-:|:-:|:-:|
-|||||||
-|||||||
-|||||||
-|||||||
-|||||||
-|||||||
-|||||||
-|||||||
-|||||||
-|||||||
-|||||||
-|Préparation slides Présentation||||||
-|Présentation|x|x|x|x|x|
+|             Tâches              | Ahmed Ben Rebai | Charles Caulier | Damien Legay | Anthony Javault | Nicolas Maggiori |
+| :-----------------------------: | :-------------: | :-------------: | :----------: | :-------------: | :--------------: |
+|                                 |                 |                 |              |                 |                  |
+|                                 |                 |                 |              |                 |                  |
+|                                 |                 |                 |              |                 |                  |
+|                                 |                 |                 |              |                 |                  |
+|                                 |                 |                 |              |                 |                  |
+|                                 |                 |                 |              |                 |                  |
+|                                 |                 |                 |              |                 |                  |
+|                                 |                 |                 |              |                 |                  |
+|                                 |                 |                 |              |                 |                  |
+|                                 |                 |                 |              |                 |                  |
+|                                 |                 |                 |              |                 |                  |
+| Préparation slides Présentation |                 |                 |              |                 |                  |
+|          Présentation           |        x        |        x        |      x       |        x        |        x         |
 
-### **S16 - Semaine du 24 au 28 juin 2024**
-
-|PO|SM|
-|:-:|:-:|
-|||
-
-Activités et répartitions des tâches
-
-||Ahmed Ben Rebai|Charles Caulier|Damien Legay|Anthony Javault|Nicolas Maggiori|
-|:-:|:-:|:-:|:-:|:-:|:-:|
-|||||||
-|||||||
-|||||||
-|||||||
-|||||||
-|||||||
-|||||||
-|||||||
-|||||||
-|||||||
-|||||||
-|Préparation slides Présentation||||||
-|Présentation|x|x|x|x|x|
-
-### **S17 - Semaine du 1 au 5 juillet 2024**
+### **S15 - Semaine du 24 au 28 juin 2024**
 
 |PO|SM|
 |:-:|:-:|
@@ -240,47 +216,23 @@ Activités et répartitions des tâches
 
 Activités et répartitions des tâches
 
-||Ahmed Ben Rebai|Charles Caulier|Damien Legay|Anthony Javault|Nicolas Maggiori|
-|:-:|:-:|:-:|:-:|:-:|:-:|
-|||||||
-|||||||
-|||||||
-|||||||
-|||||||
-|||||||
-|||||||
-|||||||
-|||||||
-|||||||
-|||||||
-|Préparation slides Présentation||||||
-|Présentation|x|x|x|x|x|
+|             Tâches              | Ahmed Ben Rebai | Charles Caulier | Damien Legay | Anthony Javault | Nicolas Maggiori |
+| :-----------------------------: | :-------------: | :-------------: | :----------: | :-------------: | :--------------: |
+|                                 |                 |                 |              |                 |                  |
+|                                 |                 |                 |              |                 |                  |
+|                                 |                 |                 |              |                 |                  |
+|                                 |                 |                 |              |                 |                  |
+|                                 |                 |                 |              |                 |                  |
+|                                 |                 |                 |              |                 |                  |
+|                                 |                 |                 |              |                 |                  |
+|                                 |                 |                 |              |                 |                  |
+|                                 |                 |                 |              |                 |                  |
+|                                 |                 |                 |              |                 |                  |
+|                                 |                 |                 |              |                 |                  |
+| Préparation slides Présentation |                 |                 |              |                 |                  |
+|          Présentation           |        x        |        x        |      x       |        x        |        x         |
 
-### **S18 - Semaine du 8 au 12 juillet 2024**
-
-|PO|SM|
-|:-:|:-:|
-|||
-
-Activités et répartitions des tâches
-
-||Ahmed Ben Rebai|Charles Caulier|Damien Legay|Anthony Javault|Nicolas Maggiori|
-|:-:|:-:|:-:|:-:|:-:|:-:|
-|||||||
-|||||||
-|||||||
-|||||||
-|||||||
-|||||||
-|||||||
-|||||||
-|||||||
-|||||||
-|||||||
-|Préparation slides Présentation||||||
-|Présentation|x|x|x|x|x|
-
-### **S19 - Semaine du 15 au 19 juillet 2024**
+### **S16 - Semaine du 1 au 5 juillet 2024**
 
 |PO|SM|
 |:-:|:-:|
@@ -288,23 +240,23 @@ Activités et répartitions des tâches
 
 Activités et répartitions des tâches
 
-||Ahmed Ben Rebai|Charles Caulier|Damien Legay|Anthony Javault|Nicolas Maggiori|
-|:-:|:-:|:-:|:-:|:-:|:-:|
-|||||||
-|||||||
-|||||||
-|||||||
-|||||||
-|||||||
-|||||||
-|||||||
-|||||||
-|||||||
-|||||||
-|Préparation slides Présentation||||||
-|Présentation|x|x|x|x|x|
+|             Tâches              | Ahmed Ben Rebai | Charles Caulier | Damien Legay | Anthony Javault | Nicolas Maggiori |
+| :-----------------------------: | :-------------: | :-------------: | :----------: | :-------------: | :--------------: |
+|                                 |                 |                 |              |                 |                  |
+|                                 |                 |                 |              |                 |                  |
+|                                 |                 |                 |              |                 |                  |
+|                                 |                 |                 |              |                 |                  |
+|                                 |                 |                 |              |                 |                  |
+|                                 |                 |                 |              |                 |                  |
+|                                 |                 |                 |              |                 |                  |
+|                                 |                 |                 |              |                 |                  |
+|                                 |                 |                 |              |                 |                  |
+|                                 |                 |                 |              |                 |                  |
+|                                 |                 |                 |              |                 |                  |
+| Préparation slides Présentation |                 |                 |              |                 |                  |
+|          Présentation           |        x        |        x        |      x       |        x        |        x         |
 
-### **S20 - Semaine du 22 au 26 juillet 2024**
+### **S17 - Semaine du 8 au 12 juillet 2024**
 
 |PO|SM|
 |:-:|:-:|
@@ -312,28 +264,76 @@ Activités et répartitions des tâches
 
 Activités et répartitions des tâches
 
-||Ahmed Ben Rebai|Charles Caulier|Damien Legay|Anthony Javault|Nicolas Maggiori|
-|:-:|:-:|:-:|:-:|:-:|:-:|
-|||||||
-|||||||
-|||||||
-|||||||
-|||||||
-|||||||
-|||||||
-|||||||
-|||||||
-|||||||
-|||||||
-|Préparation slides Présentation||||||
-|Présentation|x|x|x|x|x|
+|             Tâches              | Ahmed Ben Rebai | Charles Caulier | Damien Legay | Anthony Javault | Nicolas Maggiori |
+| :-----------------------------: | :-------------: | :-------------: | :----------: | :-------------: | :--------------: |
+|                                 |                 |                 |              |                 |                  |
+|                                 |                 |                 |              |                 |                  |
+|                                 |                 |                 |              |                 |                  |
+|                                 |                 |                 |              |                 |                  |
+|                                 |                 |                 |              |                 |                  |
+|                                 |                 |                 |              |                 |                  |
+|                                 |                 |                 |              |                 |                  |
+|                                 |                 |                 |              |                 |                  |
+|                                 |                 |                 |              |                 |                  |
+|                                 |                 |                 |              |                 |                  |
+|                                 |                 |                 |              |                 |                  |
+| Préparation slides Présentation |                 |                 |              |                 |                  |
+|          Présentation           |        x        |        x        |      x       |        x        |        x         |
 
-## **Choix techniques et contraintes**
+### **S18 - Semaine du 15 au 19 juillet 2024**
 
-## **Difficultés rencontrées**
+|PO|SM|
+|:-:|:-:|
+|||
 
-## **Solutions et/ou alternatives trouvées pour palier aux problèmes**
+Activités et répartitions des tâches
 
-## **Next-step : Améliorations possibles envisagées**
+|             Tâches              | Ahmed Ben Rebai | Charles Caulier | Damien Legay | Anthony Javault | Nicolas Maggiori |
+| :-----------------------------: | :-------------: | :-------------: | :----------: | :-------------: | :--------------: |
+|                                 |                 |                 |              |                 |                  |
+|                                 |                 |                 |              |                 |                  |
+|                                 |                 |                 |              |                 |                  |
+|                                 |                 |                 |              |                 |                  |
+|                                 |                 |                 |              |                 |                  |
+|                                 |                 |                 |              |                 |                  |
+|                                 |                 |                 |              |                 |                  |
+|                                 |                 |                 |              |                 |                  |
+|                                 |                 |                 |              |                 |                  |
+|                                 |                 |                 |              |                 |                  |
+|                                 |                 |                 |              |                 |                  |
+| Préparation slides Présentation |                 |                 |              |                 |                  |
+|          Présentation           |        x        |        x        |      x       |        x        |        x         |
 
-## **Conclusion**
+### **S19 - Semaine du 22 au 26 juillet 2024**
+
+|PO|SM|
+|:-:|:-:|
+|||
+
+Activités et répartitions des tâches
+
+|             Tâches              | Ahmed Ben Rebai | Charles Caulier | Damien Legay | Anthony Javault | Nicolas Maggiori |
+| :-----------------------------: | :-------------: | :-------------: | :----------: | :-------------: | :--------------: |
+|                                 |                 |                 |              |                 |                  |
+|                                 |                 |                 |              |                 |                  |
+|                                 |                 |                 |              |                 |                  |
+|                                 |                 |                 |              |                 |                  |
+|                                 |                 |                 |              |                 |                  |
+|                                 |                 |                 |              |                 |                  |
+|                                 |                 |                 |              |                 |                  |
+|                                 |                 |                 |              |                 |                  |
+|                                 |                 |                 |              |                 |                  |
+|                                 |                 |                 |              |                 |                  |
+|                                 |                 |                 |              |                 |                  |
+| Préparation slides Présentation |                 |                 |              |                 |                  |
+|          Présentation           |        x        |        x        |      x       |        x        |        x         |
+
+## **4. Choix techniques et contraintes**
+
+## **5. Difficultés rencontrées**
+
+## **6. Solutions et/ou alternatives trouvées pour palier aux problèmes**
+
+## **7. Next-step : Améliorations possibles envisagées**
+
+## **8. Conclusion**
