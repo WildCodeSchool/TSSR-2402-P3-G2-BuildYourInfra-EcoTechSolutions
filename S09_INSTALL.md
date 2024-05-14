@@ -106,7 +106,7 @@ Nous aurons ainsi un serveur commun aux rôles DHCP, DNS et AD-DS, celui-ci se n
 
 ![DHCP](./ressource/S09/images/maximus/Maximus_DHCP_01.PNG)
 
-### Installation et configuration du serveur DHCP
+### Installation et configuration du rôle DHCP
 
 #### Installation du rôle DHCP sur Windows Server en GUI
 
@@ -142,7 +142,7 @@ Nous aurons ainsi un serveur commun aux rôles DHCP, DNS et AD-DS, celui-ci se n
 
 ![DHCP](./ressource/S09/images/maximus/Maximus_DHCP_09.PNG)
 
-9. Dans l'onglet *DHCP Server* > *Next*
+9. Dans l'onglet *DHCP Server* > *Next*.
 
 ![DHCP](./ressource/S09/images/maximus/Maximus_DHCP_10.PNG)
 
@@ -150,23 +150,23 @@ Nous aurons ainsi un serveur commun aux rôles DHCP, DNS et AD-DS, celui-ci se n
 
 ![DHCP](./ressource/S09/images/maximus/Maximus_DHCP_11.PNG)
 
-11. A la fin de l'installation > *Close*
+11. A la fin de l'installation > *Close*.
 
 ![DHCP](./ressource/S09/images/maximus/Maximus_DHCP_12.PNG)
 
-12. De retour sur le *Server Manager*, cliquez sur le triangle jaune, puis *Complete DHCP Configuration*
+12. De retour sur le *Server Manager*, cliquez sur le triangle jaune, puis *Complete DHCP Configuration*.
 
 ![DHCP](./ressource/S09/images/maximus/Maximus_DHCP_13.PNG)
 
-13. Cliquez sur *Next*
+13. Cliquez sur *Next*.
 
 ![DHCP](./ressource/S09/images/maximus/Maximus_DHCP_14.PNG)
 
-14. Cliquez sur *Close*
+14. Cliquez sur *Close*.
 
 ![DHCP](./ressource/S09/images/maximus/Maximus_DHCP_15.PNG)
 
-Votre Rôle *_DHCP_* est désormais fonctionnel
+Votre Rôle *_DHCP_* est désormais fonctionnel.
 
 #### Configuration du rôle DHCP sur Windows Server en GUI
 
@@ -178,11 +178,11 @@ Votre Rôle *_DHCP_* est désormais fonctionnel
 
 ![DHCP](./ressource/S09/images/maximus/Maximus_DHCP_17.PNG)
 
-3. Faites *Clic-droit* sur _IPv4_ > *New Scope*
+3. Faites *Clic-droit* sur _IPv4_ > *New Scope*.
 
 ![DHCP](./ressource/S09/images/maximus/Maximus_DHCP_18.PNG)
 
-4. Cliquez sur *Next*
+4. Cliquez sur *Next*.
 
 ![DHCP](./ressource/S09/images/maximus/Maximus_DHCP_19.PNG)
 
@@ -222,7 +222,7 @@ Votre Rôle *_DHCP_* est désormais fonctionnel
 
 ![DHCP](./ressource/S09/images/maximus/Maximus_DHCP_28.PNG)
 
-13. Cliquez sur *Finish*
+13. Cliquez sur *Finish*.
 
 ![DHCP](./ressource/S09/images/maximus/Maximus_DHCP_29.PNG)
 
@@ -230,202 +230,220 @@ Votre Rôle *_DHCP_* est désormais fonctionnel
 
 ![DHCP](./ressource/S09/images/maximus/Maximus_DHCP_30.PNG)
 
-### Installation et Configuration Serveur **DNS** et **Active directory**
+### Installation et configuration du rôle DNS
 
-Le serveur dédié au DNS et à l'AD se nomme `ECO-SRV-ADDNS-01` avec l'IP `10.10.8.120/25`
+#### Installation du rôle DNS sur Windows Server en GUI
 
-#### Installation DNS
+1. Dans le *Server Manager*, cliquez sur *Manage* > *Add Roles and Features*.
 
-1. Allez dans *Start* > *Server Manager*.
+![DNS](./ressource/S09/images/maximus/Maximus_DNS_01.PNG)
 
-![](./ressource/S09/images/DNS-1.jpg)
+2. Dans l'onglet *Before you begin* > *Next*.
 
-2. Allez dans *Manage* > *Add roles and Features*.
+![DNS](./ressource/S09/images/maximus/Maximus_DNS_02.PNG)
 
-![](./ressource/S09/images/DNS-2.jpg)
+3. Dans l'onglet *Installation type* > *Role-based of feature-based installation* > *Next*.
 
-3. Dans *Installation type* > *Role-based of feature-based installation* > *Next*.
+![DNS](./ressource/S09/images/maximus/Maximus_DNS_03.PNG)
 
-![](./ressource/S09/images/DNS-3.jpg)
+4. Dans l'onglet *Server Selection* > *Next*.
 
-4. Dans *Server Selection* > *Next*.
+![DNS](./ressource/S09/images/maximus/Maximus_DNS_04.PNG)
 
-![](./ressource/S09/images/DNS-4.jpg)
+5. Dans l'onglet *Server Roles*, cochez *DNS Server* puis *Next*.
 
-5. Dans *Server Roles*, cochez *DNS Server* > *Next*.
-
-![](./ressource/S09/images/DNS-5.jpg)
+![DNS](./ressource/S09/images/maximus/Maximus_DNS_05.PNG)
 
 6. Cliquez sur *Add Features*.
 
-![](./ressource/S09/images/DNS-6.jpg)
+![DNS](./ressource/S09/images/maximus/Maximus_DNS_06.PNG)
 
-7. Dans *Feature* > *Next*.
+7. Puis *Next*.
 
-![](./ressource/S09/images/DNS-7.jpg)
+![DNS](./ressource/S09/images/maximus/Maximus_DNS_07.PNG)
 
-8. Dans *DNS Server* > *Next*.
+8. Dans l'onglet *Features* > *Next*.
 
-![](./ressource/S09/images/DNS-8.jpg)
+![DNS](./ressource/S09/images/maximus/Maximus_DNS_08.PNG)
 
-9. Enfin, dans *Confirm Installation selections* > **_Install_**.
+9. Dans l'onglet *DNS Server* > *Next*.
 
-![](./ressource/S09/images/DNS-9.jpg)
+![DNS](./ressource/S09/images/maximus/Maximus_DNS_09.PNG)
 
-#### Configuration DNS  
+10. Enfin, dans l'onglet *Confirmation* > **_Install_**.
 
-1. Allez dans *Start* > *Server Manager*.
+![DNS](./ressource/S09/images/maximus/Maximus_DNS_10.PNG)
 
-![](./ressource/S09/images/DNS-1.jpg)
+11. A la fin de l'installation > *Close*.
 
-2. _Clic-droit_ sur le serveur et sélectionner *DNS Manager*.
+![DNS](./ressource/S09/images/maximus/Maximus_DNS_11.PNG)
 
-![](./ressource/S09/images/DNS-Manage.jpg)
+Votre Rôle *_DNS_* est désormais fonctionnel.
 
-3. Ouvrez l’arborescence du serveur jusqu'à voir "*Forward Lookup Zones*", _clic-droit_ dessus et sélectionner *New Zone*.
+#### Configuration du rôle DNS sur Windows Server en GUI
 
-![](./ressource/S09/images/DNS-FW%20newzone.jpg)
+1. Dans le *Server Manager*, cliquez sur *Tools* puis **_DNS_**.
 
-4. Dans *New Zone Wizard* > *Next*.
+![DNS](./ressource/S09/images/maximus/Maximus_DNS_12.PNG)
 
-![](./ressource/S09/images/DNS-FW1.jpg)
+2. Déroulez le menu du serveur jusqu'à voir _Forward Lookup Zones_.
 
-5. Dans *Zone Type* > *Primary Zone* > *Next*.
+![DNS](./ressource/S09/images/maximus/Maximus_DNS_13.PNG)
 
-![](./ressource/S09/images/DNS-FW2.jpg)
+3. Faites *Clic-droit* sur _Forward Lookup Zones_ > *New Zone*.
 
-6. Dans *Zone Name*, entrez le nom du domaine **_ecotechsolutions.fr_** > *Next*.
+![DNS](./ressource/S09/images/maximus/Maximus_DNS_14.PNG)
 
-![](./ressource/S09/images/DNS-FW3.jpg)
+4. Cliquez sur *Next*.
 
-7. Dans *Zone File* > *Next*.
+![DNS](./ressource/S09/images/maximus/Maximus_DNS_15.PNG)
 
-![](./ressource/S09/images/DNS-FW4.jpg)
+5. Sélectionnez *Primary Zone*, puis *Next*.
 
-8. Dans *Dynamic Update* > *Next*.
+![DNS](./ressource/S09/images/maximus/Maximus_DNS_16.PNG)
 
-![](./ressource/S09/images/DNS-FW5.jpg)
+6. Remplissez le champ *Zone Name*, dans notre cas ce sera **_ecotechsolutions.fr_**, puis *Next*.
 
-9. Enfin, cliquez sur *Finish*.
+![DNS](./ressource/S09/images/maximus/Maximus_DNS_17.PNG)
 
-![](./ressource/S09/images/DNS-FW6.jpg)
+7. Sélectionnez *Create a new file with this file name*, le champ est automatiquement rempli grâce à ce que vous avez saisi précédemment, puis *Next*.
 
-10. Ouvrez l’arborescence du serveur jusqu'à voir "**_ecotechsolutions.fr_**", _clic-droit_ dessus et sélectionnez *New Host (A or AAAA)*.
+![DNS](./ressource/S09/images/maximus/Maximus_DNS_18.PNG)
 
-![](./ressource/S09/images/PTR-1.jpg)
+8. Sélectionnez *Do not allow dynamic updates*, puis *Next*.
 
-11. Dans *New Host* entrez l'adresse IP du serveur (10.10.8.2) dans *IP Adrress* et cochez *Create associated pointer (PTR) record* > *Add Host*.
+![DNS](./ressource/S09/images/maximus/Maximus_DNS_19.PNG)
 
-![](./ressource/S09/images/PTR-2.jpg)
+9. Cliquez sur *Finish*.
 
-12. Ouvrez l’arborescence du serveur jusqu'à voir "*Reverse Lookup Zones*", _clic-droit_ dessus et sélectionnez *New Zone*.
+![DNS](./ressource/S09/images/maximus/Maximus_DNS_20.PNG)
 
-![](./ressource/S09/images/DNS_rw_newzone.jpg)
+10. Ouvrez l’arborescence du serveur jusqu'à voir "**_ecotechsolutions.fr_**". Faites *clic-droit* et sélectionnez *New Host (A or AAAA)*.
 
-13. Dans *New Zone Wizard* > *Next*.
+![DNS](./ressource/S09/images/maximus/Maximus_DNS_21.PNG)
 
-![](./ressource/S09/images/DNS_rw1.jpg)
+11. Remplissez le champ *IP adress* avec l'adresse IP du serveur (dans notre cas : 10.10.8.100), cochez *Create associated pointer (PTR) record*, puis *Add Host*.
 
-14. Dans *Zone Type* > *Primary Zone* > *Next*.
+![DNS](./ressource/S09/images/maximus/Maximus_DNS_22.PNG)
 
-![](./ressource/S09/images/DNS_rw2.jpg)
+![DNS](./ressource/S09/images/maximus/Maximus_DNS_23.PNG)
 
-15. Dans *Reverse Lookup Zone Name* > *IPv4 Reverse Lookup Zone* > *Next*.
+12. Ouvrez l’arborescence du serveur jusqu'à voir "*Reverse Lookup Zones*. Faites *clic-droit* et sélectionnez *New Zone*.
 
-![](./ressource/S09/images/DNS_rw3.jpg)
+![DNS](./ressource/S09/images/maximus/Maximus_DNS_24.PNG)
 
-16. Dans *Reverse Lookup Zone Name* > *Network ID*, entrer les 3 premiers octets de l'adresse IP en inversé (8.10.10) > *Next*.
+13. Cliquez sur *Next*.
 
-![](./ressource/S09/images/DNS_rw4.jpg)
+![DNS](./ressource/S09/images/maximus/Maximus_DNS_25.PNG)
 
-17. Dans *Zone File* > *Next*.
+14. Sélectionnez *Primary Zone* puis *Next*.
 
-![](./ressource/S09/images/DNS_rw5.jpg)
+![DNS](./ressource/S09/images/maximus/Maximus_DNS_26.PNG)
 
-18. Dans *Dynamic Update* > *Next*.
+15. Sélectionnez *IPv4 Reverse Lookup Zone* > *Next*.
 
-![](./ressource/S09/images/DNS_rw6.jpg)
+![DNS](./ressource/S09/images/maximus/Maximus_DNS_27.PNG)
 
-19. Enfin, cliquez sur *Finish*.
+16. Remplissez le champ *Network ID*, saisissez les 3 premiers octets de l'adresse IP en inversé (Dans notre cas : 8.10.10), puis *Next*.
 
-![](./ressource/S09/images/DNS_rw7.jpg)
+![DNS](./ressource/S09/images/maximus/Maximus_DNS_28.PNG)
 
-#### Installation Active Directory
+17. Sélectionnez *Create a new file with this file name*, le champ est automatiquement remplli avec ce que vous avez saisi précédemment, puis *Next*.
 
-1. Allez dans *Start* > *Server Manager*.
+![DNS](./ressource/S09/images/maximus/Maximus_DNS_29.PNG)
 
-![](./ressource/S09/images/AD-1.jpg)
+18. Sélectionnez *Do not allow dynamic updates* puis *Next*.
 
-2. Allez dans *Manage* > *Add roles and Features*.
+![DNS](./ressource/S09/images/maximus/Maximus_DNS_30.PNG)
 
-![](./ressource/S09/images/AD-2.jpg)
+19. Cliquez sur *Finish*.
 
-3. Dans *Installation type* > *Role-based of feature-based installation* > *Next*.
+![DNS](./ressource/S09/images/maximus/Maximus_DNS_31.PNG)
 
-![](./ressource/S09/images/AD-3.jpg)
+Votre rôle _DNS_ est désormais configuré.
 
-4. Dans *Server Selection* > *Next*.
+![DNS](./ressource/S09/images/maximus/Maximus_DNS_32.PNG)
 
-![](./ressource/S09/images/AD-4.jpg)
+#### Installation du rôle AD-DS sur Windows Server en GUI
 
-5. Dans *Server Roles*, on coche *Active Directory Domain Services* > *Next*.
+1. Dans le *Server Manager*, cliquez sur *Manage* > *Add Roles and Features*.
 
-![](./ressource/S09/images/AD-5.jpg)
+![AD](./ressource/S09/images/maximus/Maximus_AD_01.PNG)
+
+2. Dans l'onglet *Before you begin* > *Next*.
+
+![AD](./ressource/S09/images/maximus/Maximus_AD_02.PNG)
+
+3. Dans l'onglet *Installation type* > *Role-based of feature-based installation* > *Next*.
+
+![AD](./ressource/S09/images/maximus/Maximus_AD_03.PNG)
+
+4. Dans l'onglet *Server Selection* > *Next*.
+
+![AD](./ressource/S09/images/maximus/Maximus_AD_04.PNG)
+
+5. Dans l'onglet *Server Roles*, cochez *Active Directory Domain Services*, puis *Next*.
+
+![AD](./ressource/S09/images/maximus/Maximus_AD_05.PNG)
 
 6. Cliquez sur *Add Features*.
 
-![](./ressource/S09/images/AD-6.jpg)
+![AD](./ressource/S09/images/maximus/Maximus_AD_06.PNG)
 
-7. Dans *Feature* > *Next*.
+7. Cliquez sur *Next*.
 
-![](./ressource/S09/images/AD-7.jpg)
+![AD](./ressource/S09/images/maximus/Maximus_AD_07.PNG)
+
+8. Dans l'onglet *Feature* > *Next*.
+
+![AD](./ressource/S09/images/maximus/Maximus_AD_08.PNG)
  
-8. Dans *AD DS* > *Next*.
+9. Dans l'onglet *AD DS* > *Next*.
 
-![](./ressource/S09/images/AD-8.jpg)
+![AD](./ressource/S09/images/maximus/Maximus_AD_09.PNG)
 
-9. Enfin, dans *Confirm Installation selections* > *Install*.
+10. Dans l'onglet *Confirmation* > **_Install_**.
 
-![](./ressource/S09/images/AD-9.jpg)
+![AD](./ressource/S09/images/maximus/Maximus_AD_10.PNG)
 
-#### Configuration Active Directory
+11. A la fin de l'installation, cliquez sur *Close*.
 
-1. Allerzdans *Start* > *Server Manager*.
+![AD](./ressource/S09/images/maximus/Maximus_AD_11.PNG)
 
-![](./ressource/S09/images/AD-1.jpg)
+12. De retour sur le *Server Manager*, cliquez sur le triangle jaune, puis *Promote this server to a domain controller*.
 
-2. Allez sur le drapeau et cliquez sur *Promote this server to a domain controller*.
+![AD](./ressource/S09/images/maximus/Maximus_AD_12.PNG)
 
-![](./ressource/S09/images/AD-10.jpg)
+13. Sélectionnez * Add a new forest*. Remplissez le champ *Root domain name* (Dans notre cas, ce sera **_ecotechsoltutions.fr_**), puis *Next*.
 
-3. Dans *Deployement Configuration*, sélectionnez *Add a new forest* et saisir le nom du domaine (ecotechsolutions.fr) > *Next*
+![AD](./ressource/S09/images/maximus/Maximus_AD_13.PNG)
 
-![](./ressource/S09/images/AD-11.jpg)
+14. Remplissez les champs *Password* et *Confirm password* puis *Next*.
 
-4. Dans *Domain Controller Options*, saisissez le mot de passe et confirmez-le > *Next*.
+![AD](./ressource/S09/images/maximus/Maximus_AD_14.PNG)
 
-![](./ressource/S09/images/AD-12.jpg)
+15. Cliquez sur *Next*.
 
-5. Dans *DNS Options* > *Next*.
+![AD](./ressource/S09/images/maximus/Maximus_AD_15.PNG)
 
-![](./ressource/S09/images/AD-13.jpg)
+16. Dans l'onglet *Additional Options*, le champ *The NetBIOS doamin name* est rempli automatiquement, cliquez sur *Next*.
 
-6. Dans *Additional Options* > *Next*.
+![AD](./ressource/S09/images/maximus/Maximus_AD_16.PNG)
 
-![](./ressource/S09/images/AD-14.jpg)
+17. Cliquez sur *Next*.
 
-7. Dans *Path* > *Next*.
+![AD](./ressource/S09/images/maximus/Maximus_AD_17.PNG)
 
-![](./ressource/S09/images/AD-15.jpg)
+18. Cliquez sur *Next*.
 
-8. Dans *Review Options* > *Next*.
+![AD](./ressource/S09/images/maximus/Maximus_AD_18.PNG)
 
-![](./ressource/S09/images/AD-16.jpg)
+19. Dans l'onglet *Prerequisites Check*, cliquez sur **_Install_**.
 
-9. Dans *Prerequisites Check* > *Install*.
+![AD](./ressource/S09/images/maximus/Maximus_AD_19.PNG)
 
-![](./ressource/S09/images/AD-17.jpg)
+20. A la fin de l'installation, le serveur demandera à redémarrer pour prendre en compte les modifications. Cliquez sur *Close*.
 
-10 . Confirmez l'installation, le serveur redémarrera.  
+![AD](./ressource/S09/images/maximus/Maximus_AD_20.PNG)
 
-## **FAQ : Solutions aux problèmes connus et communs liés à l'installation et à la configuration**
+Votre Rôle _AD-DS_ est désormais fonctionnel.
