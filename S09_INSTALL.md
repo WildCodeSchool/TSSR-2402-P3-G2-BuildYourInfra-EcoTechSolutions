@@ -6,9 +6,7 @@
 
 2) Installation et Configuration des équipements et des ressources
 
-3) FAQ : Solutions aux problèmes connus et communs liés à l'installation et à la configuration
-
-## **Pré-requis techniques**
+## **1. Pré-requis techniques**
 
 ![](./ressource/S09/images/Ecotech_Logo.png)
 
@@ -45,7 +43,7 @@ Cette liste est un premier jet qui servira de base à la construction de l'infra
 
 ![Materiel_EcoTech](./ressource/S09/images/Listing_Materiel.JPG)
 
-### La nomenclature de nom
+#### La nomenclature de nom
 
 Cette nomenclature a été établie afin de standardiser l'infrastructure et les évolutions possibles de celle-ci.
 
@@ -71,7 +69,7 @@ En ce qui concerne la standardisation du domaine _Active Directory_ :
 * Les groupes seront sous la forme `GRP_EcoT_cible` (où la cible peut être un matériel ou un utilisateur).
 * Les stratégies de Groupes (GPO pour Group Policy Object) seront sous la forme `GPO_EcoT_cible_motif` (où la cible pourra être un OU, un groupe, un matériel, un utilisateur ET le motif facilitera la compréhension du GPO pour les Administrateurs).
 
-### Le plan schématique du réseau
+#### Le plan schématique du réseau
 
 ![Schéma_Réseau](./ressource/S09/images/Plan_Schema_Reseau.png)
 
@@ -94,19 +92,19 @@ Un _Routeur_ principal qui assurera la liaison entre ces deux parties, avec une 
 
 Au vu du potentiel partenariat à venir, il sera ainsi aisé d'intégrer une nouvelle partie.
 
-### Le plan d'adressage du réseau
+#### Le plan d'adressage du réseau
 
 ![Plan_Adressage](./ressource/S09/images/Plan_Adressage.JPG)
 
 ![Table_Routage](./ressource/S09/images/Table_Routage.JPG)
 
-## **Installation et Configuration des équipements et des ressources**
+## **2. Installation et Configuration des équipements et des ressources**
 
 Nous aurons ainsi un serveur commun aux rôles DHCP, DNS et AD-DS, celui-ci se nomme `ECO-Maximus` avec l'IP `10.10.8.100/25`
 
 ![DHCP](./ressource/S09/images/maximus/Maximus_DHCP_01.PNG)
 
-### Installation et configuration du rôle DHCP
+### a. Installation et configuration du rôle DHCP
 
 #### Installation du rôle DHCP sur Windows Server en GUI
 
@@ -230,7 +228,7 @@ Votre Rôle *_DHCP_* est désormais fonctionnel.
 
 ![DHCP](./ressource/S09/images/maximus/Maximus_DHCP_30.PNG)
 
-### Installation et configuration du rôle DNS
+### b. Installation et configuration du rôle DNS
 
 #### Installation du rôle DNS sur Windows Server en GUI
 
@@ -364,7 +362,7 @@ Votre rôle _DNS_ est désormais configuré.
 
 ![DNS](./ressource/S09/images/maximus/Maximus_DNS_32.PNG)
 
-#### Installation du rôle AD-DS sur Windows Server en GUI
+### c. Installation du rôle AD-DS sur Windows Server en GUI
 
 1. Dans le *Server Manager*, cliquez sur *Manage* > *Add Roles and Features*.
 

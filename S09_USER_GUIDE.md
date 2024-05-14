@@ -6,7 +6,7 @@
 
 2) Les changements à venir
 
-## **Préambule à la transition**
+## **1. Préambule à la transition**
 
 Notre société **_DANA-teC_** a été mandatée par l'entreprise **_EcoTech Solutions_** pour répondre à ses besoins en terme d'Infrastructure réseau.
 
@@ -21,7 +21,7 @@ Nous allons ajouter plusieurs éléments au cours des semaines à venir, voici u
 * Une meilleure Fiabilité.
 * Une Sécurisation des données professionnelles et personnelles.
 
-## **Les changements à venir**
+## **2. Les changements à venir**
 
 Dans le cadre de la Standardisation du réseau, vos ordinateurs vont être renommés, certaines fonctionnalités seront bloqués, elles seront toutefois adaptées à vos besoins professionnels.
 
