@@ -8,7 +8,7 @@
 
 ## **1. Pré-requis techniques**
 
-![](./ressource/S09/images/Ecotech_Logo.png)
+![](./ressource/Ecotech_Logo.png)
 
 Voici la situation originelle de la société **_EcoTech Solutions_**
 * Nombre d'employés : 54 répartis dans 7 départements distincts, incluant 6 personnes extérieures
@@ -100,7 +100,7 @@ Au vu du potentiel partenariat à venir, il sera ainsi aisé d'intégrer une nou
 
 ## **2. Installation et Configuration des équipements et des ressources**
 
-Nous aurons ainsi un serveur commun aux rôles DHCP, DNS et AD-DS, celui-ci se nomme `ECO-Maximus` avec l'IP `10.10.8.100/25`
+Nous aurons ainsi un serveur commun aux rôles DHCP, DNS et AD-DS, celui-ci se nomme `ECO-Maximus` avec l'IP `10.10.8.100/16`
 
 ![DHCP](./ressource/S09/images/maximus/Maximus_DHCP_01.PNG)
 
