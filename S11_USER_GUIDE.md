@@ -8,8 +8,8 @@
 
 3) FAQ : Solutions aux problèmes connus et communs liés à l'utilisation
 
-## **Utilisation de base : Comment utiliser les fonctionnalités clés**
+## **1. Utilisation de base : Comment utiliser les fonctionnalités clés**
 
-## **Utilisation avancée : Comment utilliser au mieux les options**
+## **2. Utilisation avancée : Comment utilliser au mieux les options**
 
-## **FAQ : Solutions aux problèmes connus et communs liés à l'utilisation**
+## **3. FAQ : Solutions aux problèmes connus et communs liés à l'utilisation**
