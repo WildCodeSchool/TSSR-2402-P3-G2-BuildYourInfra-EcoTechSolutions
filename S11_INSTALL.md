@@ -78,4 +78,29 @@ Pour accéder au fichier de configuration SSH, vous devez modifier le fichier si
 
 #### Configuration de GLPI
 
+### Création GPO dans l'Active Directory
+
+
+Pour créer un GPO, nous allons d'abord dans **`Server Manager`** --> **`All Servers`**, 
+sélectionner le serveur où l'Active Directory est installé et aller dans **`Tools`** --> **`Group Policy Management`** 
+comme dans l'image ci-dessous :
+
+![](https://github.com/WildCodeSchool/TSSR-2402-P3-G2-BuildYourInfra-EcoTechSolutions/blob/main/ressource/S11/images/GPO/Serv%20Manag%20TOOLS.png)
+
+Maintenant que la fenêtre **Group Policy Management** est ouverte, allons dans **`Group Policy Objects`** : 
+
+![](https://github.com/WildCodeSchool/TSSR-2402-P3-G2-BuildYourInfra-EcoTechSolutions/blob/main/ressource/S11/images/GPO/Group%20Policy%20Management%20interface.png)
+
+clique droit puis **`New`** :
+
+![](https://github.com/WildCodeSchool/TSSR-2402-P3-G2-BuildYourInfra-EcoTechSolutions/blob/main/ressource/S11/images/GPO/New%20GPO.png)
+
+Donnons un nom à notre GPO :
+
+Une fois validé, nous la voyons dans la liste. Clique droit dessus puis **`Edit`** :
+
+Une fois à ce niveau, selon nos besoins, nous recherchons les règles, les restrictions, les accès ou les filtres à activer ou désactiver.
+
+
+
 ## **3. FAQ : Solutions aux problèmes connus et communs liés à l'installation et à la configuration**
