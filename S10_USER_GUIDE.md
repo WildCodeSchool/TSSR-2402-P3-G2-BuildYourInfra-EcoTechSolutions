@@ -40,7 +40,7 @@ Lors du changement de Mot de Passe, je rencontre une erreur et mon nouveau Mot d
 
 1. Assurez-vous d'avoir rempli les champs `Nouveau mot de passe` et `Confirmez mot de passe` avec la même donnée. Vous pouvez vous en assurer en cliquant sur l'oeil dans la barre correspondante.
 
-2. Les Mot de passe considérés à risque sont interdit, nous avons pour cela instaurer une règle concernant le Mot de Passe, votre Mot de passe doit :
+2. Les Mot de passe considérés à risque sont interdits, nous avons pour cela instaurer une règle concernant le Mot de Passe. votre Mot de passe doit :
 * Être composé de 8 caractères minimum
 * Avoir au moins une lettre Majuscule et une lettre minuscule
 * Avoir au moins un chiffre
