@@ -104,13 +104,13 @@ Une fois à ce niveau, selon nos besoins, nous recherchons les règles, les rest
 ### GPO standard
 
 #### Fond d'Écran
-Tous les utilisateurs de l'OU ou du domaine spécifié verront le fond d'écran défini, assurant ainsi une image de marque cohérente et la communication efficace d'informations importantes.
+Tous les utilisateurs de l'OU spécifié verront le fond d'écran défini, renforcer la sécurité et assurer la conformité avec les politiques internes ou les exigences réglementaires.
 
 #### Mappage de Lecteurs Réseau
 Les lecteurs réseau spécifiés seront automatiquement mappés pour tous les utilisateurs de l'OU ou du domaine, simplifiant ainsi l'accès aux ressources partagées et améliorant l'efficacité et la productivité.
 
 #### Gestion de l'Alimentation
-Les ordinateurs de bureau dans le domaine ou l'OU spécifié appliqueront les paramètres de gestion de l'alimentation configurés, réduisant ainsi la consommation d'énergie en activant les modes veille, arrêt d'affichage et arrêt du disque dur après des périodes d'inactivité définies.
+Les ordinateurs de bureau dans l'OU spécifié appliqueront les paramètres de gestion de l'alimentation configurés, réduisant ainsi la consommation d'énergie en activant les modes veille, arrêt du disque dur après des périodes d'inactivité définies.
 
 #### Redirection de Dossiers
 Les dossiers utilisateurs seront automatiquement redirigés vers l'emplacement réseau centralisé spécifié, facilitant ainsi la sauvegarde, la gestion et l'accès aux données des utilisateurs.
@@ -120,4 +120,6 @@ Définir une page d'accueil par défaut pour tous les utilisateurs afin de garan
 
 #### Désactiver l'exécution automatique des périphériques amovibles
 Empêche l'exécution automatique de programmes potentiellement malveillants lorsqu'un périphérique amovible est connecté, réduisant ainsi les risques de propagation de logiciels malveillants
+
+
 ## **3. FAQ : Solutions aux problèmes connus et communs liés à l'installation et à la configuration**
