@@ -64,7 +64,7 @@ Le groupe du Projet **_BuildYourInfra_** est composé de :
 * **Anthony Javault**
 * **Nicolas Maggiori**
 
-### **S09 - Semaine du 23 au 30 avril 2024**
+### **S09 - Semaine du 23 au 30 Avril 2024**
 
 |PO|SM|
 |:-:|:-:|
@@ -88,7 +88,7 @@ Activités et répartitions des tâches
 |    Préparation slides Présentation    |                 |                 |      x       |        x        |                  |
 |             Présentation              |        x        |        x        |      x       |        x        |        x         |
 
-### **S10 - Semaine du 13 au 17 mai 2024**
+### **S10 - Semaine du 13 au 17 Mai 2024**
 
 |PO|SM|
 |:-:|:-:|
@@ -103,16 +103,31 @@ Activités et répartitions des tâches
 |      Création du Client de test       |                 |                 |      x       |                 |                  |
 | Réplication entre Maximus et Moldaver |                 |        x        |      x       |                 |        x         |
 |      Gestion de l'arborescence AD     |        x        |        x        |      x       |        x        |        x         |
-|                                       |                 |                 |              |                 |                  |
-|                                       |                 |                 |              |                 |                  |
-|                                       |                 |                 |              |                 |                  |
-|                                       |                 |                 |              |                 |                  |
-|                                       |                 |                 |              |                 |                  |
 |             Documentation             |                 |                 |              |        x        |                  |
 |    Préparation slides Présentation    |                 |                 |      x       |                 |                  |
 |             Présentation              |        x        |        x        |      x       |        x        |        x         |
 
-### **S11 - Semaine du 27 au 31 mai 2024**
+### **S11 - Semaine du 21 au 24 Mai 2024**
+
+|PO|SM|
+|:-:|:-:|
+|Charles Caulier|Ahmed Ben Rebai|
+
+Activités et répartitions des tâches
+
+|                Tâches                 | Ahmed Ben Rebai | Charles Caulier | Damien Legay | Anthony Javault | Nicolas Maggiori |
+| :-----------------------------------: | :-------------: | :-------------: | :----------: | :-------------: | :--------------: |
+| Création & configuration Serveur GLPI |                 |                 |              |                 |        x         |
+|  Création des GPO de Sécurité         |                 |                 |      x       |                 |                  |
+|  Création des GPO Standard            |       x         |                 |              |                 |                  |
+|  Création VM Debian sur le domaine AD et accessible en SSH |     |    x   |              |                 |                  |
+|  Scripting Automatisation pour l'AD   |                 |        x        |      x       |        x        |                  |
+|  Intégration des données dans l'AD    |                 |                 |              |                 |                  |
+|             Documentation             |                 |                 |              |                 |                  |
+|    Préparation slides Présentation    |                 |                 |              |                 |                  |
+|             Présentation              |        x        |        x        |      x       |        x        |        x         |
+
+### **S12 - Semaine du 27 au 31 Mai 2024**
 
 |PO|SM|
 |:-:|:-:|
@@ -137,7 +152,7 @@ Activités et répartitions des tâches
 |    Préparation slides Présentation    |                 |                 |              |                 |                  |
 |             Présentation              |        x        |        x        |      x       |        x        |        x         |
 
-### **S12 - Semaine du 3 au 7 juin 2024**
+### **S13 - Semaine du 3 au 7 Juin 2024**
 
 |PO|SM|
 |:-:|:-:|
@@ -162,7 +177,7 @@ Activités et répartitions des tâches
 |    Préparation slides Présentation    |                 |                 |              |                 |                  |
 |             Présentation              |        x        |        x        |      x       |        x        |        x         |
 
-### **S13 - Semaine du 10 au 14 juin 2024**
+### **S14 - Semaine du 10 au 14 Juin 2024**
 
 |PO|SM|
 |:-:|:-:|
@@ -187,7 +202,7 @@ Activités et répartitions des tâches
 |    Préparation slides Présentation    |                 |                 |              |                 |                  |
 |             Présentation              |        x        |        x        |      x       |        x        |        x         |
 
-### **S14 - Semaine du 17 au 21 juin 2024**
+### **S15 - Semaine du 17 au 21 Juin 2024**
 
 |PO|SM|
 |:-:|:-:|
@@ -212,7 +227,7 @@ Activités et répartitions des tâches
 |    Préparation slides Présentation    |                 |                 |              |                 |                  |
 |             Présentation              |        x        |        x        |      x       |        x        |        x         |
 
-### **S15 - Semaine du 24 au 28 juin 2024**
+### **S16 - Semaine du 24 au 28 Juin 2024**
 
 |PO|SM|
 |:-:|:-:|
@@ -237,7 +252,7 @@ Activités et répartitions des tâches
 |    Préparation slides Présentation    |                 |                 |              |                 |                  |
 |             Présentation              |        x        |        x        |      x       |        x        |        x         |
 
-### **S16 - Semaine du 1 au 5 juillet 2024**
+### **S17 - Semaine du 1 au 05 Juillet 2024**
 
 |PO|SM|
 |:-:|:-:|
@@ -262,7 +277,7 @@ Activités et répartitions des tâches
 |    Préparation slides Présentation    |                 |                 |              |                 |                  |
 |             Présentation              |        x        |        x        |      x       |        x        |        x         |
 
-### **S17 - Semaine du 8 au 12 juillet 2024**
+### **S18 - Semaine du 8 au 12 Juillet 2024**
 
 |PO|SM|
 |:-:|:-:|
@@ -287,32 +302,7 @@ Activités et répartitions des tâches
 |    Préparation slides Présentation    |                 |                 |              |                 |                  |
 |             Présentation              |        x        |        x        |      x       |        x        |        x         |
 
-### **S18 - Semaine du 15 au 19 juillet 2024**
-
-|PO|SM|
-|:-:|:-:|
-|||
-
-Activités et répartitions des tâches
-
-|                Tâches                 | Ahmed Ben Rebai | Charles Caulier | Damien Legay | Anthony Javault | Nicolas Maggiori |
-| :-----------------------------------: | :-------------: | :-------------: | :----------: | :-------------: | :--------------: |
-|                                       |                 |                 |              |                 |                  |
-|                                       |                 |                 |              |                 |                  |
-|                                       |                 |                 |              |                 |                  |
-|                                       |                 |                 |              |                 |                  |
-|                                       |                 |                 |              |                 |                  |
-|                                       |                 |                 |              |                 |                  |
-|                                       |                 |                 |              |                 |                  |
-|                                       |                 |                 |              |                 |                  |
-|                                       |                 |                 |              |                 |                  |
-|                                       |                 |                 |              |                 |                  |
-|                                       |                 |                 |              |                 |                  |
-|             Documentation             |                 |                 |              |                 |                  |
-|    Préparation slides Présentation    |                 |                 |              |                 |                  |
-|             Présentation              |        x        |        x        |      x       |        x        |        x         |
-
-### **S19 - Semaine du 22 au 26 juillet 2024**
+### **S19 - Semaine du 15 au 19 Juillet 2024**
 
 |PO|SM|
 |:-:|:-:|
