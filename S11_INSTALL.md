@@ -73,7 +73,143 @@ Pour accéder au fichier de configuration SSH, vous devez modifier le fichier si
 
 
 ### Installation et Configuration du Service GLPI sur _ECO-Lucy_
+#### Préparation du serveur pour installation de GLPI
 
+*Dans cette partie la plupart des commandes évoquées sont présentées sans la commande **sudo** les précédant. En effet nous partons du principe que nous sommes déjà en élévation de privilèges lors du début de ces manipulations. Le cas échéant, il suffira de placer ladite commande devant la commande souhaitée.*  
+
+Avant d'évoquer l'installation, il est d'usage d'établir les pré-requis et besoins de cette opération.
+GLPI a besoin d'un serveur web, de PHP et d'une base de données pour fonctionner correctement. Sous Linux, ce trio est appelé socle **LAMP**.
+Dans le cas présent, nous allons nous servir d'une machine sous Debian 12, et nous allons installer dessus Apache2, PHP 8.3 ainsi que MariaDB.
+Ici, nous assemblons les versions 8.2 de PHP (par défaut dans les dépôts de Debian 12) et 15.1 de MariaDB.  
+  
+Nous commencons par la mise à jour des paquets sur la machine Debian 12:
+
+ 
+``apt-get update && apt-get upgrade -y``
+  
+Maintenant, nous installons le socle LAMP:  
+  
+``apt-get install apache2 php mariadb-server``  
+  
+Puis l'ensemble des extensions nécessaires au bon fonctionnement de GLPI:
+  
+``apt-get install php-xml php-common php-json php-mysql php-mbstring php-curl php-gd php-intl php-zip php-bz2 php-imap php-apcu``
+  
+Si l'on envisage d'associer GLPI avec un annuaire LDAP comme l'Active Directory, nous devons installer l'extension LDAP de PHP.
+  
+``sudo apt-install php-ldap``
+  
+Nous venons donc d'installer les pré-requis pour installer le serveur GLPI.
+Nous allons passer à la préparation de la base de données GLPI. Il s'agit donc de préparer MariaDB pour qu'il puisse héberger la base de données de GLPI.
+Il s'agit ici du minimum syndical en matière de sécurisation de la base de données:
+  
+``mysql_secure_installation``
+  
+Vous serez invité à changer le mot de passe root, mais aussi à supprimer les utilisateurs anonymes, désactiver l'accès root à distance, etc...
+Voici une capture d'écran exposant la configuration proposée à titre d'exemple:
+
+![]()
+
+Ensuite, nous allons créer une base de données dédiée pour GLPI et celle-ci sera accessible par un utilisateur dédié.
+Nous nous connectons donc à notre instance MariaDB:
+  
+``mysql -u root -p``
+  
+Nous saisissons le mot de passe root de MariaDB, définit juste avant.
+  
+Puis, nous allons exécuter les requêtes SQL ci-dessous pour créer la base de données "ecotechsolutions_glpi" ainsi que l'utilisateur "glpi_admin" avec le mot de passe "Azerty1*". Cet utilisateur aura tous les droits sur cette base de données (et uniquement sur celle-ci).
+  
+```
+CREATE DATABASE db23_glpi;
+GRANT ALL PRIVILEGES ON ecotechsolutions_glpi.* TO glpi_admin@localhost IDENTIFIED BY "Azerty1*";
+FLUSH PRIVILEGES;
+EXIT
+```
+  
+  
+Notre prochaine étape consiste à télécharger l'archive ".tgz" qui contient les sources d'installation de GLPI.
+Voici le lien GitHub de GLPI (abritant la version 10.0.15). 
+  
+[GLPI GitHub](https://github.com/glpi-project/glpi/releases/)
+  
+On va télécharger l'archive dans le répertoire /tmp:
+  
+``cd /tmp``
+``wget https://github.com/glpi-project/glpi/releases/download/10.0.15/glpi-10.0.15.tgz``
+  
+Puis, nous allons exécuter la commande ci-dessous pour décompresser l'archive .tgz dans le répertoire "/var/www/", ce qui donnera le chemin d'accès "/var/www/glpi" pour GLPI.
+  
+``sudo tar -xzvf glpi-10.0.15.tgz -C /var/www/``
+  
+Nous allons définir l'utilisateur "www-data" correspondant à Apache2, en tant que propriétaire sur les fichiers GLPI.
+  
+``sudo chown www-data /var/www/glpi/ -R``
+  
+Ensuite, nous allons devoir créer plusieurs dossiers et sortir des données de la racine Web (/var/www/glpi) de manière à les stocker dans les nouveaux dossiers que nous allons créer. Ceci va permettre de faire une installation sécurisée de GLPI, qui suit les recommandations de l'éditeur.
+**Le répertoire /etc/glpi**
+  
+Commencez par créer le répertoire "/etc/glpi" qui va recevoir les fichiers de configuration de GLPI. Nous donnons des autorisations à www-data sur ce répertoire car il a besoin de pouvoir y accéder.
+  
+``sudo mkdir /etc/glpi``
+``sudo chown www-data /etc/glpi/``
+  
+Puis, nous allons déplacer le répertoire "config" de GLPI vers ce nouveau dossier :
+  
+``sudo mv /var/www/glpi/config /etc/glpi``
+  
+**Le répertoire /var/lib/glpi**
+  
+Répétons la même opération avec la création du répertoire "/var/lib/glpi" :
+  
+``sudo mkdir /var/lib/glpi``
+``sudo chown www-data /var/lib/glpi/``
+  
+Dans lequel nous déplaçons également le dossier "files" qui contient la majorité des fichiers de GLPI : CSS, plugins, etc.
+  
+``sudo mv /var/www/glpi/files /var/lib/glpi``
+  
+**Le répertoire /var/log/glpi**
+  
+Terminons par la création du répertoire "/var/log/glpi" destiné à stocker les journaux de GLPI. Toujours sur le même principe :
+  
+``sudo mkdir /var/log/glpi``
+``sudo chown www-data /var/log/glpi``
+  
+Nous n'avons rien à déplacer dans ce répertoire.
+  
+Maintenant nous procédons à la création des fichiers de configuration.
+Nous devons configurer GLPI pour qu'il sache où aller chercher les données. Autrement dit, nous allons déclarer les nouveaux répertoires fraichement créés.
+
+Nous allons créer ce premier fichier :
+  
+``sudo nano /var/www/glpi/inc/downstream.php``
+  
+Afin d'ajouter le contenu ci-dessous qui indique le chemin vers le répertoire de configuration :
+  
+```
+<?php
+define('GLPI_CONFIG_DIR', '/etc/glpi/');
+if (file_exists(GLPI_CONFIG_DIR . '/local_define.php')) {
+    require_once GLPI_CONFIG_DIR . '/local_define.php';
+}
+```
+  
+Ensuite, nous allons créer ce second fichier :
+  
+``sudo nano /etc/glpi/local_define.php``
+  
+Afin d'ajouter le contenu ci-dessous permettant de déclarer deux variables permettant de préciser les chemins vers les répertoires "files" et "log" que l'on a préparé précédemment.
+  
+```
+<?php
+define('GLPI_VAR_DIR', '/var/lib/glpi/files');
+define('GLPI_LOG_DIR', '/var/log/glpi');
+```
+
+Cette étape est terminée.
+
+
+#### Préparation de la configuration d'Apache2
 #### Installation de GLPI
 
 #### Configuration de GLPI
