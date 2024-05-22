@@ -115,6 +115,6 @@ Les ordinateurs de bureau dans le domaine ou l'OU spécifié appliqueront les pa
 #### Redirection de Dossiers
 Les dossiers utilisateurs seront automatiquement redirigés vers l'emplacement réseau centralisé spécifié, facilitant ainsi la sauvegarde, la gestion et l'accès aux données des utilisateurs.
 
-
-
+#### Définir une Page d'Accueil dans Internet Explorer
+Définir une page d'accueil par défaut pour tous les utilisateurs afin de garantir une expérience de navigation cohérente.
 ## **3. FAQ : Solutions aux problèmes connus et communs liés à l'installation et à la configuration**
