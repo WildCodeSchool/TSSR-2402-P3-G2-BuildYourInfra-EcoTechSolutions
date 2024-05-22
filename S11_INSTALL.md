@@ -210,7 +210,84 @@ Cette étape est terminée.
 
 
 #### Préparation de la configuration d'Apache2
-#### Installation de GLPI
+
+Passons à la configuration du serveur web Apache2. Nous allons créer un nouveau fichier de configuration qui va permettre de configurer le VirtualHost dédié à GLPI.
+Dans notre cas, le fichier s'appelle "ecotechsolutions.fr.conf" en référence au nom de domaine choisi pour accéder à GLPI : **ecotechsolutions.fr**.
+  
+``sudo nano /etc/apache2/sites-available/ecotechsolutions.fr.conf``
+  
+En suivant la documentation GLPI, cela devrait donner la configuration suivante:
+  
+![]()
+  
+On enregistre le fichier, puis, nous allons activer ce nouveau site dans apache2:
+  
+``sudo a2ensite ecotechsolutions.fr.conf``
+  
+En même temps, nous désactivons le site par défaut car il n'est plus utile:
+  
+``sudo a2dissite 000-default.conf``
+  
+Nous allons aussi activer le module "rewrite" (pour les règles de réécriture) car on l'a utilisé dans le fichier de configuration du VirtualHost (RewriteCond / RewriteRule).
+  
+``sudo a2enmod rewrite``
+  
+Il ne reste plus qu'à redémarrer le service Apache2 :
+  
+``sudo systemctl restart apache2``
+  
+  
+#### Gestion de PHP avec Apache2
+  
+Pour utiliser PHP en tant que moteur de scripts avec Apache2, il y a deux possibilités : utiliser le module PHP pour Apache2 (libapache2-mod-php8.2) ou utiliser PHP-FPM.
+Il est recommandé d'utiliser PHP-FPM car il est plus performant et se présente comme un service indépendant. Dans l'autre mode, chaque processus Apache2 exécute son propre moteur de scripts PHP.
+Si vous souhaitez utiliser PHP-FPM, suivez les étapes ci-dessous. Sinon, passez à la suite mais veillez à configurer l'option "session.cookie_httponly" évoquée ci-dessous.
+Nous allons commencer par installer PHP8.2-FPM avec la commande suivante :
+  
+``sudo  apt-get install php8.2-fpm``
+  
+Puis, nous allons activer deux modules dans Apache et la configuration de PHP-FPM, avant de recharger Apache2 :
+  
+``sudo a2enmod proxy_fcgi setenvif``
+``sudo a2enconf php8.2-fpm``
+``sudo systemctl reload apache2``
+  
+Pour configurer PHP-FPM pour Apache2, nous n'allons pas éditer le fichier "/etc/php/8.2/apache2/php.ini" mais plutôt ce fichier :
+  
+``sudo nano /etc/php/8.2/fpm/php.ini``
+  
+Dans ce fichier, recherchez l'option "session.cookie_httponly" et indiquez la valeur "on" pour l'activer, afin de protéger les cookies de GLPI (elle se situe plus dans la seconde partie du fichier).
+  
+```
+; Whether or not to add the httpOnly flag to the cookie, which makes it
+; inaccessible to browser scripting languages such as JavaScript.
+; https://php.net/session.cookie-httponly
+session.cookie_httponly = on
+```
+  
+Enregistrez le fichier quand c'est fait. Par la suite, vous pourriez être amené à effectuer d'autres modifications, notamment pour augmenter la taille des uploads sur GLPI, etc.
+
+Pour appliquer les modifications, nous devons redémarrer PHP-FPM :
+  
+``sudo systemctl restart php8.2-fpm.service``
+  
+Pour finir, nous devons modifier notre VirtualHost pour préciser à Apache2 que PHP-FPM doit être utilisé pour les fichiers PHP :
+**Vous trouverez les lignes déjà inscrites sur la capture d'écran plus haut**
+  
+```
+<FilesMatch \.php$>
+    SetHandler "proxy:unix:/run/php/php8.2-fpm.sock|fcgi://localhost/"
+</FilesMatch>
+```
+  
+Quand c'est fait, on relance apache2:
+  
+``sudo systemctl restart apache2``
+  
+Nous pouvons à présent passer à l'installation de GLPI.
+  
+
+### Installation de GLPI
 
 #### Configuration de GLPI
 
