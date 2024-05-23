@@ -426,7 +426,7 @@ Nous poursuivons.
   
 Nous venons alors d'installer GLPI. Comme le précise la dernière étape, le compte **administrateur** par défaut est "glpi/glpi".
   
-![]()
+![GLPI_conf](./ressource/S11/images/lucy/glpi_config9.jpg)
   
 ![]()
   
