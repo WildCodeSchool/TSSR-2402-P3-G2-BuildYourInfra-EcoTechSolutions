@@ -320,7 +320,7 @@ Dans notre cas, le fichier s'appelle "ecotechsolutions.fr.conf" en référence a
 
 En suivant la documentation GLPI, cela devrait donner la configuration suivante:
 
-![]()
+![prep_serveur_apache2](./ressource/S11/images/lucy/prep_serveru_glpi2.jpg)
 
 On enregistre le fichier, puis, nous allons activer ce nouveau site dans apache2:
 
