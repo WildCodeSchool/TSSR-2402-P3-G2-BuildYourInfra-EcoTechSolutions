@@ -520,9 +520,20 @@ L'accès des PC client à l'agent d'inventaire est réalisé.
 
 ![agent_GLPI](./ressource/S11/images/lucy/agent_glpi4.jpg)
 
+Nous confirmons nos manipulations.
+A présent, nous allons modifier nos règles de parefeu, notamment ajouter une règle 'entrante' pour la communication entre serveurs et clients.
+
+![modif_parefeu]()
+
+![modif_parefeu]()
+
+![modif_parefeu]()
+
+![modif_parefeu]()
+
+![modif_parefeu]()
 
 
-![agent_GLPI]()
 
 
 ### Création GPO dans l'Active Directory
