@@ -409,11 +409,17 @@ clique droit puis **`New`** :
 
 ![GPO](./ressource/S11/images/GPO/New_GPO.png)
 
-Donnons un nom à notre GPO :
+Donnons un nom à notre GPO en suivant la nomenclature :
 
-Une fois validé, nous la voyons dans la liste. Clique droit dessus puis **`Edit`** :
+![](https://github.com/WildCodeSchool/TSSR-2402-P3-G2-BuildYourInfra-EcoTechSolutions/blob/main/ressource/S11/images/GPO/New_Name_GPO.png)
 
-Une fois à ce niveau, selon nos besoins, nous recherchons les règles, les restrictions, les accès ou les filtres à activer ou désactiver.
+Une fois le nom établit validons, nous la voyons dans la liste. Clique droit dessus puis **`Edit`** :
+
+![](https://github.com/WildCodeSchool/TSSR-2402-P3-G2-BuildYourInfra-EcoTechSolutions/blob/main/ressource/S11/images/GPO/Edit_GPO.png)
+
+Une fois à ce niveau, selon nos besoins, nous recherchons les règles, les restrictions, les accès ou les filtres à activer ou désactiver. Exemple :
+
+![](https://github.com/WildCodeSchool/TSSR-2402-P3-G2-BuildYourInfra-EcoTechSolutions/blob/main/ressource/S11/images/GPO/Navig_Rule_for_GPO.png)
 
 #### Mise en place de GPO de Sécurité
 
