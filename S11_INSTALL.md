@@ -540,7 +540,7 @@ Là, nous précisons que nous voulons "Autoriser la connexion" dans tous les cas
 
 Comme le serveur à un profil privé, nous pouvons décocher les cases "Domain" et "Public"
 
-![modif_parefeu]()
+![modif_parefeu](./ressource/S11/images/lucy/modif_parefeu_glpi_agent5.jpg)
 
 Après l'avoir nommée "ATcp80", nous pouvons voir dans la fenêtre qui suit qu'elle se trouve bien en haut de notre tableau des règles entrantes:
 
