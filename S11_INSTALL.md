@@ -522,17 +522,29 @@ L'accès des PC client à l'agent d'inventaire est réalisé.
 
 Nous confirmons nos manipulations.
 A présent, nous allons modifier nos règles de parefeu, notamment ajouter une règle 'entrante' pour la communication entre serveurs et clients.
+Dans la barre de recherhe Windows en bas à gauche de notr eécran d'accueil, nous tapons "Parefeu" ou "Firewall" pour accèder au "Paramètres avancés" ou "Advanced Settings" de ce dernier. Nous avons alors la fenêtre suivante qui s'ouvre:
 
 ![modif_parefeu](./ressource/S11/images/lucy/modif_parefeu_glpi_agent1.jpg)
 
-![modif_parefeu]()
+Nous poursuivons en sélectionnant "Port" pour définir le type de règle que nous voulons appliquer ou plutôt ce sur quoi elle va intéragir.
 
 ![modif_parefeu]()
 
-![modif_parefeu]()
+Ici, nous laissons cocher la case correspondant au protocole "TCP" et nous précisons le port en question, ici le port "80".
 
 ![modif_parefeu]()
 
+Là, nous précisons que nous voulons "Autoriser la connexion" dans tous les cas.
+
+![modif_parefeu]()
+
+Comme le serveur à un profil privé, nous pouvons décocher les cases "Domain" et "Public"
+
+![modif_parefeu]()
+
+Après l'avoir nommée "ATcp80", nous pouvons voir dans la fenêtre qui suit qu'elle se trouve bien en haut de notre tableau des règles entrantes:
+
+![modif_parefeu]()
 
 
 
