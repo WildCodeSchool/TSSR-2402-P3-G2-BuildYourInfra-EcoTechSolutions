@@ -422,7 +422,7 @@ Après avoir cliqué sur "Continuer", nous devons choisir la base de données "e
   
 Nous poursuivons.
   
-![]()
+![GLPI_conf](./ressource/S11/images/lucy/glpi_config8.jpg)
   
 Nous venons alors d'installer GLPI. Comme le précise la dernière étape, le compte **administrateur** par défaut est "glpi/glpi".
   
