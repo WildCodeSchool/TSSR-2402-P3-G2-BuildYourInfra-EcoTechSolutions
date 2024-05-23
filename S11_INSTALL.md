@@ -523,7 +523,7 @@ L'accès des PC client à l'agent d'inventaire est réalisé.
 Nous confirmons nos manipulations.
 A présent, nous allons modifier nos règles de parefeu, notamment ajouter une règle 'entrante' pour la communication entre serveurs et clients.
 
-![modif_parefeu]()
+![modif_parefeu](./ressource/S11/images/lucy/modif_parefeu_glpi_agent1.jpg)
 
 ![modif_parefeu]()
 
