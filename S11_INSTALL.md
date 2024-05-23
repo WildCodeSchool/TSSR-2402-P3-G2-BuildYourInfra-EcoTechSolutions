@@ -532,7 +532,7 @@ Nous poursuivons en sélectionnant "Port" pour définir le type de règle que no
 
 Ici, nous laissons cocher la case correspondant au protocole "TCP" et nous précisons le port en question, ici le port "80".
 
-![modif_parefeu]()
+![modif_parefeu](./ressource/S11/images/lucy/modif_parefeu_glpi_agent3.jpg)
 
 Là, nous précisons que nous voulons "Autoriser la connexion" dans tous les cas.
 
