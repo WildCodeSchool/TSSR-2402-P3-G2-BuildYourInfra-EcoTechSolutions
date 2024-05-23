@@ -117,13 +117,18 @@ Activités et répartitions des tâches
 
 |                Tâches                 | Ahmed Ben Rebai | Charles Caulier | Damien Legay | Anthony Javault | Nicolas Maggiori |
 | :-----------------------------------: | :-------------: | :-------------: | :----------: | :-------------: | :--------------: |
-| Création & configuration Serveur GLPI |                 |                 |              |                 |        x         |
-|  Création des GPO de Sécurité         |                 |                 |      x       |                 |                  |
-|  Création des GPO Standard            |       x         |                 |              |                 |                  |
-|  Création VM Debian sur le domaine AD et accessible en SSH |     |    x   |              |                 |                  |
-|  Scripting Automatisation pour l'AD   |                 |        x        |      x       |        x        |                  |
-|  Intégration des données dans l'AD    |                 |                 |              |                 |                  |
-|             Documentation             |                 |                 |              |                 |                  |
+|      Création d'un serveur SSH        |                 |                 |              |        x        |                  |
+|      Création d'un serveur GLPI       |                 |                 |              |                 |        x         |
+|    Mise en place de GPO de Sécurité   |                 |                 |              |                 |                  |
+|     Mise en place de GPO standard     |        x        |                 |              |                 |                  |
+|      Automatisation AD par Script     |                 |        x        |      x       |        x        |                  |
+|                                       |                 |                 |              |                 |                  |
+|                                       |                 |                 |              |                 |                  |
+|                                       |                 |                 |              |                 |                  |
+|                                       |                 |                 |              |                 |                  |
+|                                       |                 |                 |              |                 |                  |
+|                                       |                 |                 |              |                 |                  |
+|             Documentation             |        x        |                 |      x       |        x        |        x         |
 |    Préparation slides Présentation    |                 |                 |              |                 |                  |
 |             Présentation              |        x        |        x        |      x       |        x        |        x         |
 
@@ -328,6 +333,29 @@ Activités et répartitions des tâches
 |             Présentation              |        x        |        x        |      x       |        x        |        x         |
 
 ## **4. Choix techniques et contraintes**
+
+### Les Serveurs et leurs rôles
+
+1) Serveur **_ECO-MAXIMUS_**
+    * Windows Server 2022 en version Graphique
+    * Rôle **_DHCP_** **_DNS_** **_ADDS_**
+    * IP fixe : 10.10.8.120/16
+    * Powershell 7.4.2 installé
+
+2) Serveur **_ECO-MOLDAVER_**
+    * Windows Server 2022 en version Core
+    * Rôle **_ADDS_** pour réplication
+    * IP fixe : 10.10.8.120/16
+
+3) Serveur **_ECO-COOPER_**
+    * Debian 12 en CLI
+    * Service **_SSH_**
+    * IP fixe : 10.10.8.40/16
+
+4) Serveur **_ECO-LUCY_**
+    * Debian 12 en CLI
+    * Service **_GLPI_**
+    * IP fixe : 10.10.8.50/16
 
 ## **5. Difficultés rencontrées**
 

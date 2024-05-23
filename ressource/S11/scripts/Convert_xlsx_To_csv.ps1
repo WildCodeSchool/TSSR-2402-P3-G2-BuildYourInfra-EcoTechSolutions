@@ -1,5 +1,5 @@
 ﻿# Ce script vise à convertir un fichier de Listing Personnel Ecotech du format .xlsx en format .csv
-# Le fichier final sera sous la nomenclature "Horodatage"-Ecotech-Listing.csv
+# Le fichier final sera sous la nomenclature <Horodatage>-Ecotech-Listing.csv
 
 # Installation du Module ImportExcel (si celui-ci n'est pas présent)
 If (-not(Get-Module -Name ImportExcel))
@@ -8,6 +8,7 @@ If (-not(Get-Module -Name ImportExcel))
 }
 
 Start-Sleep 1
+
 
 # Création de variable du chemin du fichier par défaut
 $filePathToConvert = "C:\Users\$env:USERNAME\Documents"
