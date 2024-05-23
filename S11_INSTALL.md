@@ -596,7 +596,7 @@ Ce qui donne :
 
 Répétez l'opération pour la valeur "tag" en indiquant la valeur que vous voulez pour le tag :
 
-![registre]()
+![registre](./ressource/S11/images/lucy/registre3.jpg)
 
 Ce qui donne ce résultat :
 
