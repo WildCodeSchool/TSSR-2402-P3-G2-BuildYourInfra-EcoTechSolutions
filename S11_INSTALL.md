@@ -592,7 +592,7 @@ Commencez par configurer la valeur "server".
 
 Ce qui donne :
 
-![registre]()
+![registre](./ressource/S11/images/lucy/registre2.jpg)
 
 Répétez l'opération pour la valeur "tag" en indiquant la valeur que vous voulez pour le tag :
 
