@@ -561,7 +561,7 @@ Une fois la GPO créée, on clic droit sur son nom qui s'affiche dans l'encadré
 Ici, nous reprenons l'arborescence comme indiquée dans la capture d'écran plus bas pour reprendre le chemin qui mène jusqu'à notre logiciel agent.
 On valide. A la question "Selectionner le type de déploiement", on choisit "Attribué" et on poursuit.
 
-![crea_GPO]()
+![crea_GPO](./ressource/S11/images/lucy/creation_GPO_GLPI4.jpg)
 
 L'agent est maintenant prêt à être déployé.
 
