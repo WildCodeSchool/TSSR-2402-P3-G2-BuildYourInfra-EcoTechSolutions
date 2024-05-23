@@ -608,10 +608,24 @@ Pour faire évoluer la configuration de vos agents GLPI par la suite, il vous su
 
 A présent il ne nous reste plus qu'à tester la GPO !
 
-![test](./ressource/S11/images/lucy/agent_glpi_ok1.jpg)
+Pour tester le bon fonctionnement de cette GPO, nous devons utiliser une machine située dans l'OU "EcoT_Computers".
+Avant tout, nous pouvons mettre à jour les GPO sur la machine grâce à la commande suivante : ``gpupdate /force``.  
+Après **redémarrage de la machine**, l'agent GLPI sera installé et nous pourrons le vérifier dans la liste des applications installées sur le poste via la barre de recherche Windows en tapant "Applications" > "Applications et fonctionnalités".  
 
+En revanche, nous remarquerons que dans l'interface web de GLPI, il n'y a toujours pas d' "Ordinateurs" !  
+Soit nous patientons jusqu'au prochain inventaire (par défaut 1h après l'installation), **soit** nous forçons un inventaire à la main.
+Nous procédons alors à la deuxième solution pour confirmer que cela fonctionne correctement.  
+On ouvre alors un navigateur sur la machine qui appartient à l'OU "EcoT_Computers" afin d'accèder à l'interface de l'agent GLPI à partir de l'URL suivante : ``http://127.0.0.1:62354``.  
+Il s'agit d'une URL par défaut qui fonctionnera sur toutes les machines où l'agent GLPI est installé. Cette page indique pour quand est prévu le prochain inventaire et il y a un bouton pour forcer un inventaire. Cliquez sur "Force an inventory".
+
+![test](./ressource/S11/images/lucy/agent_glpi_ok1.jpg)
+  
+Quelques instants plus tard, l'agent GLPI doit apparaître sur l'interface de GLPI:
+  
 ![test](./ressource/S11/images/lucy/agent_glpi_ok2.jpg)
 
+De la même façon, notre parc doit alors avoir une machine dans son inventaire:
+  
 ![test](./ressource/S11/images/lucy/agent_glpi_ok3.jpg)
 
 
