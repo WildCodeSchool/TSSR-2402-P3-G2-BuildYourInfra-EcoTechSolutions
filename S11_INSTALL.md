@@ -549,6 +549,7 @@ Après l'avoir nommée "ATcp80", nous pouvons voir dans la fenêtre qui suit qu'
 
 Maintenant que notre agent est rendu accessible via le partage de dossier et que notre parefeu est correctement configuré, nous allons procéder à l'élaboration de la GPO permettant la mise a exécution de l'agent sur les PC du domaine !
 Nous allons vouloir que l'agent s'installe sur chaque PC via le package MSI que nous avons placé dans notre dossier partagé sur MAXIMUS.
+
 Voici les étapes de création de ladite GPO:
 
 Nous nous rendons dans Windows Server Manager > **Group Policy Management**. Ici nous voulons déployer l'agent GLPI uniquement sur les "Computers" du domaine, donc nous allons lier cette GPO à l'UO Computer d'EcotechSolutions soit "EcoT_Computers".
