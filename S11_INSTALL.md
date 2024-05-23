@@ -434,7 +434,7 @@ Une dernière étape à ne pas omettre pour finaliser l'installation:
  - Changer le mot de passe de tous les comptes par défaut (lien mis dans l'encadré orange);
  - Supprimer le fichier "install.php" puisqu'il n'est plus nécessaire et peut représenter un risque (relander l'installation) !
   
-![]()
+![GLPI_conf](./ressource/S11/images/lucy/glpi_config10.jpg)
   
 
 
