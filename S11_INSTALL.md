@@ -536,7 +536,7 @@ Ici, nous laissons cocher la case correspondant au protocole "TCP" et nous préc
 
 Là, nous précisons que nous voulons "Autoriser la connexion" dans tous les cas.
 
-![modif_parefeu]()
+![modif_parefeu](./ressource/S11/images/lucy/modif_parefeu_glpi_agent4.jpg)
 
 Comme le serveur à un profil privé, nous pouvons décocher les cases "Domain" et "Public"
 
