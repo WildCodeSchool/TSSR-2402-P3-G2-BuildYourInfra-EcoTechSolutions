@@ -415,7 +415,21 @@ Une fois validé, nous la voyons dans la liste. Clique droit dessus puis **`Edit
 
 Une fois à ce niveau, selon nos besoins, nous recherchons les règles, les restrictions, les accès ou les filtres à activer ou désactiver.
 
-#### Mise en plce de GPO de Sécurité
+#### Mise en place de GPO de Sécurité
+
+|Nom|Affectation|Description|
+|:-:|:-:|:-:|
+|GPO_EcoT_Client_Restriction_Periph_Usb|EcoT_Users(Sauf DSI)|Bloquer tous les périphériques de stockage USB|
+|GPO_EcoT_Users_Deco_RDP_Apres_Inactiv|EcoT_Computers|Déconnecte le bureau a distance apres 5min d'inactivité|
+|GPO_EcoT_Computer_Desactiver_Hachages_LM|EcoT_Computers|Methode de stockage de mot de passes des utilisateurs désactivée|
+|GPO_EcoT_Computer_Ecran_veille_par_MDP|EcoT_Computers|Après 5 min s'inactivité l'écran se vérouille|
+|GPO_EcoT_FireWall_Bloc_Connection_|?|?|
+|GPO_EcoT_Windows_Update_Planified|EcoT_Users|Lancement des mises à jour les samedi a 3:00 heures|
+|GPO_EcoT_Users_Restriction_Install_Software|EcoT_Users(Sauf DSI)|bloquer des programmes et empêcher l’installation de logiciels(Sauf administrateurs local)|
+|GPO_EcoT_Users_Security_Controlpanel_Deny|EcoT_Users(Sauf DSI)|Restriction d'accès au panneau de configuration|
+|GPO_EcoT_Users_Complexite_MDP|EcoT_Users|Le mot de passe doit avoir des personnages de trois des quatre catégories suivantes (A à Z),(a à z),(0 à 9),Caractères non alphabétiques|
+|GPO_EcoT_Computer_Desactiv_Wifi_si_Ethernet|EcoT_Users|Désactiver le WiFi lorsque le câble Ethernet est connecté|
+|GPO_EcoT_Computer_Gestion_Alim_Haute_perfo|EcoT_Users(Developpement)|Maximisation de la puissance de traitement|
 
 #### Mise en place de GPO Standard
 
