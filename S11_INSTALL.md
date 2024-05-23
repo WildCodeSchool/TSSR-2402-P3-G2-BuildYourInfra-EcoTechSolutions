@@ -428,7 +428,7 @@ Nous venons alors d'installer GLPI. Comme le précise la dernière étape, le co
   
 ![GLPI_conf](./ressource/S11/images/lucy/glpi_config9.jpg)
   
-![]()
+![GLPI_conf](./ressource/S11/images/lucy/glpi_config6.jpg)
   
 Une dernière étape à ne pas omettre pour finaliser l'installation:
  - Changer le mot de passe de tous les comptes par défaut (lien mis dans l'encadré orange);
