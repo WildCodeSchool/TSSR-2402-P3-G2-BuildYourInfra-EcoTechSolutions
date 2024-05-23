@@ -389,7 +389,51 @@ Quand c'est fait, on relance Apache2:
 
 Nous pouvons à présent passer à l'installation de GLPI.
 
-### Installation de GLPI
+
+## Installation de GLPI
+
+
+Pour effectuer l'installation de GLPI, nous devons utiliser un navigateur Web afin d'accéder à l'adresse du GLPI. Il s'agit de l'adresse déclarée dans le fichier de configuration Apache2 (ServerName). 
+  
+Si vous avez suivi toutes les étapes correctement, vous devriez arriver sur cette page. Nous allons commencer par choisir la langue.
+  
+![]()
+  
+On accepte la licence : **Continuer**.
+  
+![]()
+  
+Puisqu'il s'agit d'une nouvelle installation, nous cliquons sur "Installer".
+  
+Etape importante : GLPI vérifie la configuration de notre serveur pour déterminer si tous les prérequis sont respectés. Tout est bon, donc nous pouvons continuer.
+  
+![]()
+  
+A l'étape suivante, nous devons renseigner les informations pour se connecter à la base de données. Nous indiquons "localhost" en tant que serveur SQL puisque MariaDB est installé en local, sur le même serveur que GLPI. Puis, nous indiquons notre utilisateur "glpi_admin" et le mot de passe associé.
+  
+![]()
+  
+Après avoir cliqué sur "Continuer", nous devons choisir la base de données "ecotechsolutions_glpi" créée précédemment.
+  
+![]()
+  
+Nous poursuivons.
+  
+![]()
+  
+Nous venons alors d'installer GLPI. Comme le précise la dernière étape, le compte **administrateur** par défaut est "glpi/glpi".
+  
+![]()
+  
+![]()
+  
+Une dernière étape à ne pas omettre pour finaliser l'installation:
+ - Changer le mot de passe de tous les comptes par défaut (lien mis dans l'encadré orange);
+ - Supprimer le fichier "install.php" puisqu'il n'est plus nécessaire et peut représenter un risque (relander l'installation) !
+  
+![]()
+  
+
 
 #### Configuration de GLPI
 
