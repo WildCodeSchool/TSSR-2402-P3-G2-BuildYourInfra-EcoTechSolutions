@@ -555,7 +555,7 @@ Voici les étapes de création de ladite GPO:
 Nous nous rendons dans Windows Server Manager > **Group Policy Management**. Ici nous voulons déployer l'agent GLPI uniquement sur les "Computers" du domaine, donc nous allons lier cette GPO à l'UO Computer d'EcotechSolutions soit "EcoT_Computers".
 Donc ici, clic droit sur l'OU ciblée > *Create a GPO in this domain, and link it here*. On lui donnera le nom "AgentGLPI" (attention à ne pas lier l'OU au domaine AD sinon il sera déployé sur l'ensemble des machines ! i.e. postes de travail et serveurs).
 
-![crea_GPO]()
+![crea_GPO](./ressource/S11/images/lucy/creation_GPO_GLPI1.jpg)
 
 Une fois la GPO créée, on clic droit sur son nom qui s'affiche dans l'encadré de droite > **Edit**.
 Ici, nous reprenons l'arborescence comme indiquée dans la capture d'écran plus bas pour reprendre le chemin qui mène jusqu'à notre logiciel agent.
