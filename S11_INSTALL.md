@@ -207,7 +207,7 @@ Il s'agit ici du minimum syndical en matière de sécurisation de la base de don
 Vous serez invité à changer le mot de passe root, mais aussi à supprimer les utilisateurs anonymes, désactiver l'accès root à distance, etc...
 Voici une capture d'écran exposant la configuration proposée à titre d'exemple:
 
-![]()
+![prep_db](./ressource/S11/images/lucy/prep_serveru_glpi1.jpg)
 
 Ensuite, nous allons créer une base de données dédiée pour GLPI et celle-ci sera accessible par un utilisateur dédié.
 Nous nous connectons donc à notre instance MariaDB:
