@@ -600,7 +600,7 @@ Répétez l'opération pour la valeur "tag" en indiquant la valeur que vous voul
 
 Ce qui donne ce résultat :
 
-![registre]()
+![registre](./ressource/S11/images/lucy/registre4.jpg)
 
 Voilà, la GPO est entièrement prête : l'agent GLPI sera installé et configuré !
 
