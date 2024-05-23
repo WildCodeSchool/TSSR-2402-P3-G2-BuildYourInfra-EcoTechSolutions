@@ -438,12 +438,47 @@ Une dernière étape à ne pas omettre pour finaliser l'installation:
   
 
 
-#### Configuration de GLPI
+### Configuration de GLPI
 
+#### Ajout d'un annuaire LDAP dans GLPI
 
+Désormais, nous allons ajouter notre annuaire Active Directory à GLPI. Connectez-vous à GLPI avec un compte administrateur, puis dans le menu "Configuration", cliquez sur "Authentification".
+Ensuite, cliquer sur "Annuaire LDAP" puis sur le symbole "+" en haut de l'écran pour 'Ajouter'.
+  
 ![config_GLPI](./ressource/S11/images/lucy/config_glpi1.jpg)
 
+Un formulaire s'affiche alors à l'écran. 
+
+
+
 ![config_GLPI](./ressource/S11/images/lucy/config_glpi2.jpg)
+
+Voici ce à quoi correspond chaque encadré:
+  
+**Nom** : le nom de cet annuaire LDAP, vous pouvez utiliser un nom convivial, ce n'est pas obligatoirement le nom du domaine, ni le nom du serveur.
+
+**Serveur par défaut** : faut-il s'appuyer sur ce serveur par défaut pour l'authentification LDAP ? Il ne peut y avoir qu'un seul serveur LDAP défini par défaut.
+  
+**Actif** : nous allons indiquer "Oui", sinon ce sera déclaré, mais non utilisé.
+  
+**Serveur** : adresse IP du contrôleur de domaine à interroger. Avec le nom DNS, cela ne semble pas fonctionner (malheureusement).
+  
+**Port** : 389, qui est le port par défaut du protocole LDAP. Si vous utilisez TLS, il faudra le préciser à postériori, dans l'onglet "Informations avancées", du nouveau serveur LDAP.
+  
+**Filtre de connexion** : requête LDAP pour rechercher les objets dans l'annuaire Active Directory. Généralement, nous faisons en sorte de récupérer les objets utilisateurs ("objectClass=user") en prenant uniquement les utilisateurs actifs (via un filtre sur l'attribut UserAccountControl).
+  
+**BaseDN** : où faut-il se positionner dans l'annuaire pour rechercher les utilisateurs ? Ce n'est pas nécessaire la racine du domaine, tout dépend comment est organisé votre annuaire et où se situent les utilisateurs qui doivent pouvoir se connecter. Il faut indiquer le DistinguishedName de l'OU.
+  
+**Utiliser bind** : à positionner sur "Oui" pour du LDAP classique (sans TLS)
+  
+**DN du compte** : le nom du compte à utiliser pour se connecter à l'Active Directory. En principe, vous ne pouvez pas utiliser de connexion anonyme ! Ici, il ne faut pas indiquer uniquement le nom du compte, mais la valeur de son attribut DistinguishedName.
+  
+**Mot de passe du compte** : le mot de passe du compte renseigné ci-dessus
+  
+**Champ de l'identifiant** : dans l'Active Directory, quel attribut doit être utilisé comme identifiant de connexion pour le futur compte GLPI ? Généralement, UserPrincipalName ou SamAccountName, selon vos besoins.
+  
+**Champ de synchronisation** : GLPI a besoin d'un champ sur lequel s'appuyer pour synchroniser les objets. Ici, nous allons utiliser l'objectGuid de façon à avoir une valeur unique pour chaque utilisateur. Ainsi, si un utilisateur est modifié dans l'Active Directory, GLPI pourra se repérer grâce à cet attribut qui lui n'évoluera pas (sauf si le compte est supprimé puis recréé dans l'AD).
+
 
 ![config_GLPI](./ressource/S11/images/lucy/config_glpi3.jpg)
 
