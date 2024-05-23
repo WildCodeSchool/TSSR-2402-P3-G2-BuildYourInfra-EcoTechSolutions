@@ -440,6 +440,19 @@ Une dernière étape à ne pas omettre pour finaliser l'installation:
 
 #### Configuration de GLPI
 
+
+![config_GLPI](./ressource/S11/images/lucy/config_glpi1.jpg)
+
+![config_GLPI]()
+
+![config_GLPI]()
+
+![config_GLPI]()
+
+![config_GLPI]()
+
+
+
 ### Création GPO dans l'Active Directory
 
 Pour créer un GPO, nous allons d'abord dans **`Server Manager`** --> **`All Servers`**, 
