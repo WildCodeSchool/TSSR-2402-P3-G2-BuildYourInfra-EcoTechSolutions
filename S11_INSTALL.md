@@ -418,7 +418,7 @@ A l'étape suivante, nous devons renseigner les informations pour se connecter �
   
 Après avoir cliqué sur "Continuer", nous devons choisir la base de données "ecotechsolutions_glpi" créée précédemment.
   
-![]()
+![GLPI_conf](./ressource/S11/images/lucy/glpi_config5.jpg)
   
 Nous poursuivons.
   
