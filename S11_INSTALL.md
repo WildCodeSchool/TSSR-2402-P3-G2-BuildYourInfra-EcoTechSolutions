@@ -610,7 +610,7 @@ A présent il ne nous reste plus qu'à tester la GPO !
 
 ![test](./ressource/S11/images/lucy/agent_glpi_ok1.jpg)
 
-![test]()
+![test](./ressource/S11/images/lucy/agent_glpi_ok2.jpg)
 
 ![test]()
 
