@@ -1,6 +1,6 @@
 # **TSSR-2402-P3-G2-BuildYourInfra-EcoTechSolutions**
 
-## **Sommaire**
+# **Sommaire**
 
 1) Pré-requis techniques
 
@@ -8,7 +8,7 @@
 
 3) FAQ : Solutions aux problèmes connus et communs liés à l'installation et à la configuration
 
-## **1. Pré-requis techniques**
+# **1. Pré-requis techniques**
 
 * Serveur **_ECO-COOPER_**
     * Debian 12 en CLI
@@ -20,11 +20,11 @@
     * Service **_GLPI_**
     * IP fixe : 10.10.8.50/16
 
-## **2. Installation et Configuration des équipements et ressources**
+# **2. Installation et Configuration des équipements et ressources**
 
-### Installation et Configuration du Service SSH sur _ECO-Cooper_
+## Installation et Configuration du Service SSH sur _ECO-Cooper_
 
-#### Installation de SSH sur le Serveur
+### Installation de SSH sur le Serveur
 
 1) Assurez-vous que le système est à jour avec la commande `apt update && apt upgrade -y`.
 
@@ -46,7 +46,7 @@
 
 Les deux clés générées sont disponibles dans le `/root/.ssh/`.
 
-#### Configuration de SSH sur le Serveur
+### Configuration de SSH sur le Serveur
 
 Pour accéder au fichier de configuration SSH, vous devez modifier le fichier situé dans `/etc/ssh/sshd_config`.
 
@@ -65,7 +65,7 @@ Pour accéder au fichier de configuration SSH, vous devez modifier le fichier si
 
 2) Assurez-vous que le fichier de configuration ne comporte pas d'erreur et redémarrez le service avec la commande `systemctl restart sshd`.
 
-#### Ajout du serveur SSH sur le Domaine AD
+### Ajout du serveur SSH sur le Domaine AD
 
 Cette méthode est spécifique pour l'ajout des serveurs sous Linux du type Debian sur le Domaine Active Directory.
 
@@ -93,9 +93,9 @@ Votre Serveur SSH est désormais sur le Domaine, vous pouvez le vérifier avec l
 
 ![SSH](./ressource/S11/images/cooper/SSH_Install_10.PNG)
 
-### Installation et Configuration de Putty sur le Client _ECO-LP-01_
+## Installation et Configuration de Putty sur le Client _ECO-LP-01_
 
-#### Installation de Putty
+### Installation de Putty
 
 1) Commencez par installer [Putty](https://putty.org) sur votre Client.
 
@@ -121,7 +121,7 @@ Votre installation est terminé, cliquez sur `Finish`.
 
 ![Putty](./ressource/S11/images/client/Client_Putty_06.PNG)
 
-#### Configuration de Putty
+### Configuration de Putty
 
 1) Commencez par rechercher `PuTTYgen`, ce soft s'est installé en même temps que PuTTY.
 
@@ -171,9 +171,9 @@ Une fois saisi le mot de passe, vous êtes connecté en SSH avec le Serveur.
 
 ![Putty](./ressource/S11/images/client/Client_Putty_17.PNG)
 
-### Installation et Configuration du Service GLPI sur _ECO-Lucy_
+## Installation et Configuration du Service GLPI sur _ECO-Lucy_
 
-#### Préparation du serveur pour installation de GLPI
+### Préparation du serveur pour installation de GLPI
 
 *Dans cette partie, la plupart des commandes évoquées sont présentées sans la commande **sudo** les précédant. En effet nous partons du principe que nous sommes déjà en élévation de privilèges lors du début de ces manipulations. Le cas échéant, il suffira de placer ladite commande devant la commande souhaitée.*  
 
@@ -311,7 +311,7 @@ define('GLPI_LOG_DIR', '/var/log/glpi');
 
 Cette étape est terminée.
 
-#### Préparation de la configuration d'Apache2
+### Préparation de la configuration d'Apache2
 
 Passons à la configuration du serveur web Apache2. Nous allons créer un nouveau fichier de configuration qui va permettre de configurer le VirtualHost dédié à GLPI.
 Dans notre cas, le fichier s'appelle "ecotechsolutions.fr.conf" en référence au nom de domaine choisi pour accéder à GLPI : **ecotechsolutions.fr**.
@@ -338,7 +338,7 @@ Il ne reste plus qu'à redémarrer le service Apache2 :
 
 `sudo systemctl restart apache2`
 
-#### Gestion de PHP avec Apache2
+### Gestion de PHP avec Apache2
 
 Pour utiliser PHP en tant que moteur de scripts avec Apache2, il y a deux possibilités : utiliser le module PHP pour Apache2 (libapache2-mod-php8.2) ou utiliser PHP-FPM.
 Il est recommandé d'utiliser PHP-FPM car il est plus performant et se présente comme un service indépendant. Dans l'autre mode, chaque processus Apache2 exécute son propre moteur de scripts PHP.
@@ -438,9 +438,9 @@ Une dernière étape à ne pas omettre pour finaliser l'installation:
   
 
 
-### Configuration de GLPI
+## Configuration de GLPI
 
-#### Ajout d'un annuaire LDAP dans GLPI
+### Ajout d'un annuaire LDAP dans GLPI
 
 Désormais, nous allons ajouter notre annuaire Active Directory à GLPI. Connectez-vous à GLPI avec un compte administrateur, puis dans le menu "Configuration", cliquez sur "Authentification".
 Ensuite, cliquer sur "Annuaire LDAP" puis sur le symbole "+" en haut de l'écran pour 'Ajouter'.
@@ -494,7 +494,7 @@ Parmi les onglets présents dans la colonne de gauche, nous évoquons celui corr
 ![config_GLPI](./ressource/S11/images/lucy/config_glpi5.jpg)
 
 
-### Déploiement de l'agent inventaire GLPI 10 par GPO
+## Déploiement de l'agent inventaire GLPI 10 par GPO
 
 Dans le but de transmettre l'activité de notre parc informatique directement au sein de notre serveur GLPI (dans notre cas **Lucy**), nous allons mettre en place un agent GLPI d'inventaire. En, effet, ce dernier doit être présent sur chaque machine de notre parc pour pouvoir "communiquer" avec le serveur GLPI. 
 Voici les étapes de mise en place.
@@ -632,7 +632,7 @@ De la même façon, notre parc doit alors avoir une machine dans son inventaire:
 
 
 
-### Création GPO dans l'Active Directory
+## Création GPO dans l'Active Directory
 
 Pour créer un GPO, nous allons d'abord dans **`Server Manager`** --> **`All Servers`**, 
 sélectionner le serveur où l'Active Directory est installé et aller dans **`Tools`** --> **`Group Policy Management`** 
@@ -660,7 +660,7 @@ Une fois à ce niveau, selon nos besoins, nous recherchons les règles, les rest
 
 ![](https://github.com/WildCodeSchool/TSSR-2402-P3-G2-BuildYourInfra-EcoTechSolutions/blob/main/ressource/S11/images/GPO/Navig_Rule_for_GPO.png)
 
-#### Mise en place de GPO de Sécurité
+### Mise en place de GPO de Sécurité
 
 |Nom|Affectation|Description|
 |:-:|:-:|:-:|
@@ -676,7 +676,7 @@ Une fois à ce niveau, selon nos besoins, nous recherchons les règles, les rest
 |GPO_EcoT_Computer_Desactiv_Wifi_si_Ethernet|EcoT_Users|Désactiver le WiFi lorsque le câble Ethernet est connecté|
 |GPO_EcoT_Computer_Gestion_Alim_Haute_perfo|EcoT_Users(Developpement)|Maximisation de la puissance de traitement|
 
-#### Mise en place de GPO Standard
+### Mise en place de GPO Standard
 
 |Nom|Affectation|Description|
 |:-:|:-:|:-:|
