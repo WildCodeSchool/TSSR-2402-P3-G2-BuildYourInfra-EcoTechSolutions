@@ -479,10 +479,17 @@ Voici ce à quoi correspond chaque encadré:
   
 **Champ de synchronisation** : GLPI a besoin d'un champ sur lequel s'appuyer pour synchroniser les objets. Ici, nous allons utiliser l'objectGuid de façon à avoir une valeur unique pour chaque utilisateur. Ainsi, si un utilisateur est modifié dans l'Active Directory, GLPI pourra se repérer grâce à cet attribut qui lui n'évoluera pas (sauf si le compte est supprimé puis recréé dans l'AD).
 
+Dans notre cas, voici la configuration "cible" :
+
 
 ![config_GLPI](./ressource/S11/images/lucy/config_glpi3.jpg)
 
+Dans la foulée, GLPI va effectuer un test de connexion LDAP et vous indiquer s'il est parvenu, ou non, à se connecter à votre annuaire.
+  
 ![config_GLPI](./ressource/S11/images/lucy/config_glpi4.jpg)
+
+L'annuaire correspondant à notre domaine "ecotechsolutions.fr" est maintenant lié.
+Parmi les onglets présents dans la colonne de gauche, nous évoquons celui correpondant à "Réplicats". Nous soulignons sa présence, et son utilisation pour déclarer un ou plusieurs contrôleurs de domaine "de secours" à contacter si le serveur principal n'est plus joignable. Dans notre cas, il s'agit du serveur **Moldaver** en 10.10.8.120/16 qui communiquera via le port 389 (protocole LDAP).
 
 ![config_GLPI](./ressource/S11/images/lucy/config_glpi5.jpg)
 
