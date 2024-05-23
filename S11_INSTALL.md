@@ -547,6 +547,69 @@ Après l'avoir nommée "ATcp80", nous pouvons voir dans la fenêtre qui suit qu'
 ![modif_parefeu](./ressource/S11/images/lucy/modif_parefeu_glpi_agent6.jpg)
 
 
+Maintenant que notre agent est rendu accessible via le partage de dossier et que notre parefeu est correctement configuré, nous allons procéder à l'élaboration de la GPO permettant la mise a exécution de l'agent sur les PC du domaine !
+Nous allons vouloir que l'agent s'installe sur chaque PC via le package MSI que nous avons placé dans notre dossier partagé sur MAXIMUS.
+Voici les étapes de création de ladite GPO:
+
+Nous nous rendons dans Windows Server Manager > **Group Policy Management**. Ici nous voulons déployer l'agent GLPI uniquement sur les "Computers" du domaine, donc nous allons lier cette GPO à l'UO Computer d'EcotechSolutions soit "EcoT_Computers".
+Donc ici, clic droit sur l'OU ciblée > *Create a GPO in this domain, and link it here*. On lui donnera le nom "AgentGLPI" (attention à ne pas lier l'OU au domaine AD sinon il sera déployé sur l'ensemble des machines ! i.e. postes de travail et serveurs).
+
+![crea_GPO]()
+
+Une fois la GPO créée, on clic droit sur son nom qui s'affiche dans l'encadré de droite > **Edit**.
+Ici, nous reprenons l'arborescence comme indiquée dans la capture d'écran plus bas pour reprendre le chemin qui mène jusqu'à notre logiciel agent.
+On valide. A la question "Selectionner le type de déploiement", on choisit "Attribué" et on poursuit.
+
+![crea_GPO]()
+
+L'agent est maintenant prêt à être déployé.
+
+![crea_GPO]()
+
+    
+  
+Nous passons maintenant à la configuration de l'agent GLPI avec la base de registre de Windows. Pour répondre à cette problématique, nous allons configurer l'agent GLPI par GPO en jouant directement sur les valeurs situées dans la clé de Registre suivante : ``HKEY_LOCAL_MACHINE\SOFTWARE\GLPI-Agent``
+Effectivement, l'agent GLPI stocke sa configuration dans le Registre Windows, ce qui permet de la modifier facilement. 
+Ainsi, nous allons configurer deux valeurs :
+  
+ - server : pour indiquer l'URL du serveur GLPI (vers une page spécifique)
+ - tag : pour indiquer un tag spécifique à associer à ces machines (le tag est utile pour la classification, surtout si vous avez plusieurs clients sur le même GLPI)
+
+Pour définir des valeurs de Registre par GPO, procédez de cette façon (toujours dans la même GPO, même si ce n'est pas obligatoire) :
+Parcourez les paramètres de GPO de façon à atteindre cet emplacement : ``Configuration ordinateur > Préférences > Paramètres Windows > Registre``. Sur ce dernier, clic droit > **Nouveau** > **Elément registre**.
+
+![registre]()
+
+Commencez par configurer la valeur "server".
+
+ - Action : mettre à jour
+ - Ruche : HKEY_LOCAL_MACHINE
+ - Chemin d'accès de la clé : SOFTWARE\GLPI-Agent
+ - Nom de valeur : server
+ - Type de valeur : REG_SZ
+ - Données de valeur : https://ecotechsolutions.fr/front/inventory.php
+
+Ce qui donne :
+
+![registre]()
+
+Répétez l'opération pour la valeur "tag" en indiquant la valeur que vous voulez pour le tag :
+
+![registre]()
+
+Ce qui donne ce résultat :
+
+![registre]()
+
+Voilà, la GPO est entièrement prête : l'agent GLPI sera installé et configuré !
+
+Pour faire évoluer la configuration de vos agents GLPI par la suite, il vous suffira de modifier les valeurs de Registre ! Plutôt pratique. Sachez toutefois qu'il faut redémarrer l'agent GLPI (ou la machine, en fait) pour prendre en compte les modifications. Ici, il s'agit d'une fresh install de l'agent GLPI, donc ce sera pris en compte directement.
+
+A présent il ne nous reste plus qu'à tester la GPO !
+
+
+
+
 
 ### Création GPO dans l'Active Directory
 
