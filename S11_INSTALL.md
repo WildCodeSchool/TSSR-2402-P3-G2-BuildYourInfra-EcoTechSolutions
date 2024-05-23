@@ -496,10 +496,17 @@ Parmi les onglets présents dans la colonne de gauche, nous évoquons celui corr
 
 ### Déploiement de l'agent inventaire GLPI 10 par GPO
 
-Dans le but de transmettre l'activité de notre parc informatique directement au sein de notre serveur GLPI (dans notre cas **Lucy**), nous allons mettre en place un agent GLPI d'inventaire.  
+Dans le but de transmettre l'activité de notre parc informatique directement au sein de notre serveur GLPI (dans notre cas **Lucy**), nous allons mettre en place un agent GLPI d'inventaire. En, effet, ce dernier doit être présent sur chaque machine de notre parc pour pouvoir "communiquer" avec le serveur GLPI. 
 Voici les étapes de mise en place.
 
-![agent_GLPI]()
+Nous commençons par télécharger l'agent en question directement depuis le dépôt GitHub. Ici en 64bits, .msi.
+
+
+![agent_GLPI](./ressource/S11/images/lucy/agent_glpi1.jpg)
+
+Une fois l'agent téléchargé, nous allons créer dans C:\ sur notre serveur Maximus, un dossier "AgentGLPI" dans lequel nous plaçons l'agent lui-même.
+Nous allons partager ce dossier sur l'ensemble de notre réseau. Clic droit sur le dossier > **Propriétés** > **Partage avancé** > Nous cochons la case **Partager ce dossier** puis cliquons sur **Permissions**.
+Alors, il sera rendu "accessible" à toutes les machines de notre domaine.
 
 
 
