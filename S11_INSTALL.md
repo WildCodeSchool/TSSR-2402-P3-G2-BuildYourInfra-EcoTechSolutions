@@ -449,7 +449,7 @@ Une dernière étape à ne pas omettre pour finaliser l'installation:
 
 ![config_GLPI](./ressource/S11/images/lucy/config_glpi4.jpg)
 
-![config_GLPI]()
+![config_GLPI](./ressource/S11/images/lucy/config_glpi5.jpg)
 
 
 
