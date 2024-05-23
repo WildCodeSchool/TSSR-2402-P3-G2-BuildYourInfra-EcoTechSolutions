@@ -414,7 +414,7 @@ Etape importante : GLPI vérifie la configuration de notre serveur pour détermi
   
 A l'étape suivante, nous devons renseigner les informations pour se connecter à la base de données. Nous indiquons "localhost" en tant que serveur SQL puisque MariaDB est installé en local, sur le même serveur que GLPI. Puis, nous indiquons notre utilisateur "glpi_admin" et le mot de passe associé.
   
-![]()
+![GLPI_conf](./ressource/S11/images/lucy/glpi_config4.jpg)
   
 Après avoir cliqué sur "Continuer", nous devons choisir la base de données "ecotechsolutions_glpi" créée précédemment.
   
