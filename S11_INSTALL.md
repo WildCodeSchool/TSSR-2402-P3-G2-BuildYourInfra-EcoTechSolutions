@@ -608,6 +608,12 @@ Pour faire évoluer la configuration de vos agents GLPI par la suite, il vous su
 
 A présent il ne nous reste plus qu'à tester la GPO !
 
+![test]()
+
+![test]()
+
+![test]()
+
 
 
 
