@@ -410,7 +410,7 @@ Puisqu'il s'agit d'une nouvelle installation, nous cliquons sur "Installer".
 
 Etape importante : GLPI vérifie la configuration de notre serveur pour déterminer si tous les prérequis sont respectés. Tout est bon, donc nous pouvons continuer.
   
-![]()
+![GLPI_conf](./ressource/S11/images/lucy/glpi_config7.jpg)
   
 A l'étape suivante, nous devons renseigner les informations pour se connecter à la base de données. Nous indiquons "localhost" en tant que serveur SQL puisque MariaDB est installé en local, sur le même serveur que GLPI. Puis, nous indiquons notre utilisateur "glpi_admin" et le mot de passe associé.
   
