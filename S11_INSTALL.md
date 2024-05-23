@@ -579,7 +579,7 @@ Ainsi, nous allons configurer deux valeurs :
 Pour définir des valeurs de Registre par GPO, procédez de cette façon (toujours dans la même GPO, même si ce n'est pas obligatoire) :
 Parcourez les paramètres de GPO de façon à atteindre cet emplacement : ``Configuration ordinateur > Préférences > Paramètres Windows > Registre``. Sur ce dernier, clic droit > **Nouveau** > **Elément registre**.
 
-![registre]()
+![registre](./ressource/S11/images/lucy/registre1.jpg)
 
 Commencez par configurer la valeur "server".
 
