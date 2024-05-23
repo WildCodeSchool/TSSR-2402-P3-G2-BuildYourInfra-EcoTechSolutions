@@ -509,8 +509,7 @@ Nous allons partager ce dossier sur l'ensemble de notre réseau. Clic droit sur 
 Alors, il sera rendu "accessible" à toutes les machines de notre domaine.
 
 
-
-![agent_GLPI]()
+![agent_GLPI](./ressource/S11/images/lucy/agent_glpi2ok.jpg)
 
 ![agent_GLPI]()
 
