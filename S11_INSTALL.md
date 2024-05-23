@@ -404,7 +404,10 @@ On accepte la licence : **Continuer**.
 ![GLPI_conf](./ressource/S11/images/lucy/glpi_config2.jpg)
   
 Puisqu'il s'agit d'une nouvelle installation, nous cliquons sur "Installer".
-  
+
+![GLPI_conf](./ressource/S11/images/lucy/glpi_config3.jpg)
+
+
 Etape importante : GLPI vérifie la configuration de notre serveur pour déterminer si tous les prérequis sont respectés. Tout est bon, donc nous pouvons continuer.
   
 ![]()
