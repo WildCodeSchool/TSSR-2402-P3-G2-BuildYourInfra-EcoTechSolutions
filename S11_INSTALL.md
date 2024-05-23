@@ -558,22 +558,12 @@ Une fois à ce niveau, selon nos besoins, nous recherchons les règles, les rest
 
 #### Mise en place de GPO Standard
 
-1) Fond d'Écran  
-Tous les utilisateurs de l'OU spécifié verront le fond d'écran défini, renforcer la sécurité et assurer la conformité avec les politiques internes ou les exigences réglementaires.
-
-2) Mappage de Lecteurs Réseau  
-Les lecteurs réseau spécifiés seront automatiquement mappés pour tous les utilisateurs de l'OU ou du domaine, simplifiant ainsi l'accès aux ressources partagées et améliorant l'efficacité et la productivité.
-
-3) Gestion de l'Alimentation  
-Les ordinateurs de bureau dans l'OU spécifié appliqueront les paramètres de gestion de l'alimentation configurés, réduisant ainsi la consommation d'énergie en activant les modes veille, arrêt du disque dur après des périodes d'inactivité définies.
-
-4) Redirection de Dossiers  
-Les dossiers utilisateurs seront automatiquement redirigés vers l'emplacement réseau centralisé spécifié, facilitant ainsi la sauvegarde, la gestion et l'accès aux données des utilisateurs.
-
-5) Définir une Page d'Accueil dans Internet Explorer  
-Définir une page d'accueil par défaut pour tous les utilisateurs afin de garantir une expérience de navigation cohérente.
-
-6) Désactiver l'exécution automatique des périphériques amovibles  
-Empêche l'exécution automatique de programmes potentiellement malveillants lorsqu'un périphérique amovible est connecté, réduisant ainsi les risques de propagation de logiciels malveillants
+|Nom|Affectation|Description|
+|:-:|:-:|:-:|
+|GPO_EcoT_User_Set_Desktop_Wallpaper|EcoT_Users|fond d'écran défini pour tous les utilisateurs specifié
+|GPO_EcoT_Users_Map_Network_Drives|EcoT_Users| mappage automatique pour les lecteurs réseau specifié|
+|GPO_EcoT_Computer_Gestion_Alimentation_disk|EcoT_Computers|arrêt du disque dur après des périodes d'inactivité|
+|GPO_EcoT_Users_Redirection_Folder |EcoT_Users|redirection automatique de dossier Documents vers l'emplacement réseau centralisé|
+|GPO_EcoT_Computer_définir_page_Accueil_internet|EcoT_Computers|Définir www.google.com comme page d'accueil par defaut sur EDGE|
 
 ## **3. FAQ : Solutions aux problèmes connus et communs liés à l'installation et à la configuration**
