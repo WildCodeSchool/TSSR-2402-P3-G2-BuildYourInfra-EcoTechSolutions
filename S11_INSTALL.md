@@ -401,7 +401,7 @@ Si vous avez suivi toutes les étapes correctement, vous devriez arriver sur cet
   
 On accepte la licence : **Continuer**.
   
-![]()
+![GLPI_conf](./ressource/S11/images/lucy/glpi_config2.jpg)
   
 Puisqu'il s'agit d'une nouvelle installation, nous cliquons sur "Installer".
   
