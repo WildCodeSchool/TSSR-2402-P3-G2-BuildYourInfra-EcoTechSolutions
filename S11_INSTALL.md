@@ -397,7 +397,7 @@ Pour effectuer l'installation de GLPI, nous devons utiliser un navigateur Web af
   
 Si vous avez suivi toutes les étapes correctement, vous devriez arriver sur cette page. Nous allons commencer par choisir la langue.
   
-![]()
+![GLPI_conf](./ressource/S11/images/lucy/glpi_config1.jpg)
   
 On accepte la licence : **Continuer**.
   
