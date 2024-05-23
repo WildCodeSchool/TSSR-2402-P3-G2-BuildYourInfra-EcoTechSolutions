@@ -544,7 +544,7 @@ Comme le serveur à un profil privé, nous pouvons décocher les cases "Domain" 
 
 Après l'avoir nommée "ATcp80", nous pouvons voir dans la fenêtre qui suit qu'elle se trouve bien en haut de notre tableau des règles entrantes:
 
-![modif_parefeu]()
+![modif_parefeu](./ressource/S11/images/lucy/modif_parefeu_glpi_agent6.jpg)
 
 
 
