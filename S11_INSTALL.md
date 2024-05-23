@@ -528,7 +528,7 @@ Dans la barre de recherhe Windows en bas à gauche de notr eécran d'accueil, no
 
 Nous poursuivons en sélectionnant "Port" pour définir le type de règle que nous voulons appliquer ou plutôt ce sur quoi elle va intéragir.
 
-![modif_parefeu]()
+![modif_parefeu](./ressource/S11/images/lucy/modif_parefeu_glpi_agent2.jpg)
 
 Ici, nous laissons cocher la case correspondant au protocole "TCP" et nous précisons le port en question, ici le port "80".
 
