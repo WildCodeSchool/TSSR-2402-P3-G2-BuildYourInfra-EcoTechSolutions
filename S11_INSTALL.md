@@ -494,6 +494,23 @@ Parmi les onglets présents dans la colonne de gauche, nous évoquons celui corr
 ![config_GLPI](./ressource/S11/images/lucy/config_glpi5.jpg)
 
 
+### Déploiement de l'agent inventaire GLPI 10 par GPO
+
+Dans le but de transmettre l'activité de notre parc informatique directement au sein de notre serveur GLPI (dans notre cas **Lucy**), nous allons mettre en place un agent GLPI d'inventaire.  
+Voici les étapes de mise en place.
+
+![agent_GLPI]()
+
+
+
+![agent_GLPI]()
+
+![agent_GLPI]()
+
+![agent_GLPI]()
+
+![agent_GLPI]()
+
 
 ### Création GPO dans l'Active Directory
 
