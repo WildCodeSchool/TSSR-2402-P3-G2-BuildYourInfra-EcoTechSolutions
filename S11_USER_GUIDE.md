@@ -36,7 +36,7 @@ C’est le moment le plus important du processus de gestion des incidents, car i
   
 ![ticket](./ressource/S11/images/lucy/ticket1.jpg)
 
-![ticket]()
+![ticket](./ressource/S11/images/lucy/ticket2.jpg)
 
 ![ticket]()
 
