@@ -518,7 +518,7 @@ Dans le but d'affiner la sécurité concernant ce partage de dossier, nous allon
 Nous allons ensuite modifier pour ajouter le groupe "Everyone" soit *tout le monde*. Ainsi nous appliquons la sécurité à l'ensemble des machines.
 L'accès des PC client à l'agent d'inventaire est réalisé.
 
-![agent_GLPI]()
+![agent_GLPI](./ressource/S11/images/lucy/agent_glpi4.jpg)
 
 
 
