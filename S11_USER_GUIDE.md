@@ -33,6 +33,17 @@ C’est le moment le plus important du processus de gestion des incidents, car i
 
  - Catégorie : permet d’évaluer sur quel composant de l’infrastructure se situe l’incident. Si le technicien n’a pas la compétence ou la capacité à résoudre l’incident, cette catégorisation permet d’identifier le groupe de support vers lequel l’incident sera à diriger : Matériel.
 
+  
+![ticket]()
+
+![ticket]()
+
+![ticket]()
+
+![ticket]()
+
+ 
+
 ## **2. Utilisation avancée : Comment utilliser au mieux les options**
 
 ## **3. FAQ : Solutions aux problèmes connus et communs liés à l'utilisation**
