@@ -506,10 +506,12 @@ Nous commençons par télécharger l'agent en question directement depuis le dé
 
 Une fois l'agent téléchargé, nous allons créer dans C:\ sur notre serveur Maximus, un dossier "AgentGLPI" dans lequel nous plaçons l'agent lui-même.
 Nous allons partager ce dossier sur l'ensemble de notre réseau. Clic droit sur le dossier > **Propriétés** > **Partage avancé** > Nous cochons la case **Partager ce dossier** puis cliquons sur **Permissions**.
-Alors, il sera rendu "accessible" à toutes les machines de notre domaine.
+Alors, il sera rendu "accessible" à toutes les machines de notre domaine (ici, uniquement en "Lecture").
 
 
 ![agent_GLPI](./ressource/S11/images/lucy/agent_glpi2ok.jpg)
+
+
 
 ![agent_GLPI]()
 
