@@ -565,7 +565,7 @@ On valide. A la question "Selectionner le type de déploiement", on choisit "Att
 
 L'agent est maintenant prêt à être déployé.
 
-![crea_GPO]()
+![crea_GPO](./ressource/S11/images/lucy/creation_GPO_GLPI5.jpg)
 
     
   
