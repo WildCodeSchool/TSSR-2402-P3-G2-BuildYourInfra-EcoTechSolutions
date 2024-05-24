@@ -33,12 +33,43 @@ C’est le moment le plus important du processus de gestion des incidents, car i
 
  - Catégorie : permet d’évaluer sur quel composant de l’infrastructure se situe l’incident. Si le technicien n’a pas la compétence ou la capacité à résoudre l’incident, cette catégorisation permet d’identifier le groupe de support vers lequel l’incident sera à diriger : Matériel.
 
+
+Voici un exemple de formulation de ticket du point de vue d'un utilisateur utilisant une machine appartenant au domaine d'EcotechSolutions:
+
+Nous ouvrons un navigateur et entrons comme URL : ``http://10.10.8.50/front/helpdesk.public.php`` ou simplement ``http://10.10.8.50`` (cela fonctionne aussi avec le nom de domaine ``ecotechsolutions.fr``).
+Alors nous allons être (re)dirigés vers un page qui nous demande de nous identifier. Dans le cas présent, nous nous sommes servi des identifiants de l'utilisateur par défaut "glpi_admin" qui sont donc :
+  
+**Nom d'utilisateur** : glpi_admin@ecotechsolutions.fr  
+**Mot de passe** : Azerty1*  
+
+
+Nous arrivons alors sur la page suivante, considérée comme page d'accueil pour l'utilisateur du domaine (non admin):
+
   
 ![ticket](./ressource/S11/images/lucy/ticket1.jpg)
 
+Dans la colonne de gauche, nous cliquons sur "Create a ticket":
+Ici, nous avons plusieur srenseignements à fournir pour la bonne formulation de notre requête
+ - Type : "Incident" ou "Requête". Incident pour un événement qui entraîne une interruption ou une dégradation non planifiée d'un service informatique; Requête pour une demande de renseignements, de conseils ou de modifications d'un service informatique 
+ - Category : à définir. ITIL regroupe plusieurs catégories de services (stratégie, conception, transition, exploitation, amélioration continue) 
+ - Urgency : le degré d'urgence
+ - Associated elements : les éléments associés (service ou matériel considéré comme déféctueux)
+ - Watchers : individus référents (cela peut être un administrateur ou un manager)
+ - Title : titre attribué à la description de l'incident ou de la requête
+ - Description : coeur de la description de l'incident ou de la requête
+ - Add files : possibilité d'ajouter un ou des fichiers permettant d'éclairer l'individu qui ouvrira le ticket
+ - Submit message : pour valider et envoyer le ticket
+
+
 ![ticket](./ressource/S11/images/lucy/ticket2.jpg)
 
+Ici nous sommes face à l'interface "administrateur", devant lequel l'utilisateur lambda ne devrait se trouver à condition d'un usage correct et reglementé. Il est affiché à titre indicatif.
+Nous avons pris l'exemple d'un ticket émis par un utilisateur x avec un titre d'incident "y'a rien qui va" et une description "c'est la catastrophe".
+
+
 ![ticket](./ressource/S11/images/lucy/ticket3.jpg)
+
+De nouveau l'interface "administrateur" une fois le ticket ouvert.
 
 ![ticket](./ressource/S11/images/lucy/ticket4.jpg)
 
