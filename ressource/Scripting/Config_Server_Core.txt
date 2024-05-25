@@ -1,0 +1,2 @@
+Name,IP,Gateway,Domain,User,Password
+G2-ECO_Moldaver,10.10.8.120,10.10.255.254,ecosolutions.fr,Administrator,Azerty1*
