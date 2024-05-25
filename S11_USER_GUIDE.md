@@ -73,7 +73,9 @@ De nouveau l'interface "administrateur" une fois le ticket ouvert.
 
 ![ticket](./ressource/S11/images/lucy/ticket4.jpg)
 
- 
+### Gestion Des Scripts d'Automatisation :
+
+Nos scripts PowerShell sont dotés d'une variable qui enregistre le chemin depuis lequel on le lance. Le point le plus important est que le fichier CSV doit être situé dans le même dossier que le script PowerShell, et c'est la même chose pour le script Bash et son fichier texte. Sinon, l'ajout des données ne pourra pas se faire et créera des erreurs.
 
 ## **2. Utilisation avancée : Comment utilliser au mieux les options**
 
