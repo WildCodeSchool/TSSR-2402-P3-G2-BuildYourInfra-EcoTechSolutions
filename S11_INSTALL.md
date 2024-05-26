@@ -686,4 +686,26 @@ Une fois à ce niveau, selon nos besoins, nous recherchons les règles, les rest
 |GPO_EcoT_Users_Redirection_Folder |EcoT_Users|redirection automatique de dossier Documents vers l'emplacement réseau centralisé|
 |GPO_EcoT_Computer_définir_page_Accueil_internet|EcoT_Computers|Définir www.google.com comme page d'accueil par defaut sur EDGE|
 
+
+## Scripts d'Automatisation
+
+### Script d'Automatisation pour un Serveur Core
+
+Nous avons mis en place un script pour automatiser la configuration de notre serveur core à partir des renseignements donnés dans un fichier CSV, situé dans notre 
+
+dossier ressource S11.
+
+Pour ce faire, nous avons importé le fichier CSV dans le script et créé un système de récupération des erreurs dans un tableau pour les capturer et afficher 
+
+quelle erreur se produit. Des variables enregistrent les données nécessaires à la configuration du serveur. Un bloc try-catch est utilisé pour insérer les erreurs 
+
+dans notre tableau.
+
+
+
+
+
+
+
+
 ## **3. FAQ : Solutions aux problèmes connus et communs liés à l'installation et à la configuration**
