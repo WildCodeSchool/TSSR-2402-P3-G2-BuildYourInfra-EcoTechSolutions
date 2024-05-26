@@ -701,7 +701,27 @@ quelle erreur se produit. Des variables enregistrent les données nécessaires �
 
 dans notre tableau.
 
+#### Explication du lancement du Script : 
 
+Pour commencer, nous nous déplaçons à l'endroit où se trouve le script :
+
+![](https://github.com/WildCodeSchool/TSSR-2402-P3-G2-BuildYourInfra-EcoTechSolutions/blob/main/ressource/S11/images/Core/Core_Path_Script.png)
+
+Une fois dans le dossier où se trouvent nos deux fichiers :
+
+![](https://github.com/WildCodeSchool/TSSR-2402-P3-G2-BuildYourInfra-EcoTechSolutions/blob/main/ressource/S11/images/Core/Core_File.png)
+
+Puis lancement du Script : 
+
+![](https://github.com/WildCodeSchool/TSSR-2402-P3-G2-BuildYourInfra-EcoTechSolutions/blob/main/ressource/S11/images/Core/Core_Launch_Script.png)
+
+Nous pouvons maintenant constater que le serveur est bien dans le domaine et qu'il a récupéré les informations de notre fichier CSV.
+
+![](https://github.com/WildCodeSchool/TSSR-2402-P3-G2-BuildYourInfra-EcoTechSolutions/blob/main/ressource/S11/images/Core/Core_Domain.png)
+
+![](https://github.com/WildCodeSchool/TSSR-2402-P3-G2-BuildYourInfra-EcoTechSolutions/blob/main/ressource/S11/images/Core/Core_Apres_Script.png)
+
+![](https://github.com/WildCodeSchool/TSSR-2402-P3-G2-BuildYourInfra-EcoTechSolutions/blob/main/ressource/S11/images/Core/Core_Config.png)
 
 
 
