@@ -38,29 +38,29 @@ La mise en place d’une DMZ présente plusieurs avantages :
  -  Flexibilité
  -  Performances
 
-Pour ce faire, nous avons ajouté une carte réseau dans Proxmox, sur la VM de PfSense, pour la DMZ : 
+Pour ce faire, nous avons ajouté une carte réseau dans Proxmox, sur la VM de PfSense, pour la DMZ  
 
 ![](https://github.com/WildCodeSchool/TSSR-2402-P3-G2-BuildYourInfra-EcoTechSolutions/blob/main/ressource/s12/proxmoxpfsense1.jpg)
 
-Maintenant, nous pouvons voir qu'elle est bien visible dans la VM : 
+Maintenant, nous pouvons voir qu'elle est bien visible dans la VM  
 
 ![](https://github.com/WildCodeSchool/TSSR-2402-P3-G2-BuildYourInfra-EcoTechSolutions/blob/main/ressource/s12/pfsense2.jpg)
 
 Nous devons maintenant l'ajouter sur la page du serveur PfSense en entrant l'adresse **https://10.0.0.3** dans un navigateur web, 
-ce qui nous mènera à l'image suivante :
+ce qui nous mènera à l'image suivante 
 
-![]()
+![](https://github.com/WildCodeSchool/TSSR-2402-P3-G2-BuildYourInfra-EcoTechSolutions/blob/main/ressource/s12/pfsense8.png)
 
-Une fois à ce stade, nous saisissons les identifiants et accédons à la page de gestion du pare-feu PfSense :
+Une fois à ce stade, nous saisissons les identifiants et accédons à la page de gestion du pare-feu PfSense 
 
 ![](https://github.com/WildCodeSchool/TSSR-2402-P3-G2-BuildYourInfra-EcoTechSolutions/blob/main/ressource/s12/pfsenseconfig1.jpg)
 
-Arrivés ici, nous cliquons sur **Interfaces** puis sur **Assignments**. 
+Arrivés ici, nous cliquons sur **Interfaces** puis sur **Assignments**
 
 ![](https://github.com/WildCodeSchool/TSSR-2402-P3-G2-BuildYourInfra-EcoTechSolutions/blob/main/ressource/s12/pfsense3.jpg)
 
 Nous cliquons sur **OPT1** et nous allons pouvoir configurer cette interface.
-Dans un premier temps, nous cochons la case **Enable interface**, puis dans le champ **Description**, nous saisissons **DMZ**. Ensuite, dans le menu **IPv4 Configuration Type**, nous choisissons **Static IPv4**.
+Dans un premier temps, nous cochons la case **Enable interface**, puis dans le champ **Description**, nous saisissons **DMZ**. Ensuite, dans le menu **IPv4 Configuration Type**, nous choisissons **Static IPv4**
 
 ![](https://github.com/WildCodeSchool/TSSR-2402-P3-G2-BuildYourInfra-EcoTechSolutions/blob/main/ressource/s12/pfsense4.jpg)
 
