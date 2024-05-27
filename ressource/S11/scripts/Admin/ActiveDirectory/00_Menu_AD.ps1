@@ -4,9 +4,14 @@
 #                                                       #
 #########################################################
 
+### Initialisation des paramètres génériques
+
+$FilePath = [System.IO.Path]::GetDirectoryName($MyInvocation.MyCommand.Definition)
+
 # Fonction Logs
 function EventLogAD {
-    $LogFolder = "C:\AD-Admin\Logs"
+
+    $LogFolder = "$FilePath\Logs"
     $LogFile = "Log-AD.log"
     #Test du chemin pour le Dossier
     if (-not(Test-Path $LogFolder)) {
@@ -28,15 +33,11 @@ while ($true) {
     Write-Host "Menu des Options dans Active Directory"
     Write-Host ""
     Write-Host "1 - Ajout OU"
-    Write-Host "2 - Ajout Utilisateur"
+    Write-Host "2 - Ajout Groupe"
     Write-Host "3 - Ajout Computer"
-    Write-Host "4 - Ajout Groupe"
-    Write-Host ""
-    Write-Host "5 - Suppression Utilisateur"
-    Write-Host "6 - Suppression Computer"
-    Write-Host "7 - Suppression Groupe"
+    Write-Host "4 - Ajout Utilisateur"
     write-host ""
-    Write-Host "8 - Consultations des Logs"
+    Write-Host "L - Consultations des Logs"
     write-host ""
     Write-Host "x - Quitter l'Outil d'Administration AD"
     Write-Host ""
@@ -47,44 +48,29 @@ while ($true) {
 
     switch ($OptionMenuAD) {
         "1" {
-            $EventLogTask = "----- Redirect Add OU -----"
+            $EventLogTask = "--- Redirect Add OU ---"
             EventLogAD
-            ./AD-AddOU.ps1
+            C:\Admin\ActiveDirectory\01_Add_OU_AD.ps1
         }
         "2" {
-            $EventLogTask = "----- Redirect Add User -----"
+            $EventLogTask = "--- Redirect Add Group ---"
             EventLogAD
-            ./AD-AddUser.ps1
+            C:\Admin\ActiveDirectory\02_Add_Group_AD.ps1
         }
         "3" {
-            $EventLogTask = "----- Redirect Add Computer -----"
+            $EventLogTask = "--- Redirect Add Computer ---"
             EventLogAD
-            ./AD-AddComp.ps1
+            C:\Admin\ActiveDirectory\03_Add_Comp_AD.ps1
         }
         "4" {
-            $EventLogTask = "----- Redirect Add Group -----"
+            $EventLogTask = "--- Redirect Add User ---"
             EventLogAD
-            ./AD-AddGroup.ps1
+            C:\Admin\ActiveDirectory\04_Add_User_AD.ps1
         }
-        "5" {
-            $EventLogTask = "----- Redirect Del User -----"
+        "L" {
+            $EventLogTask = "--- Redirect Logs ---"
             EventLogAD
-            ./AD-DelUser.ps1
-        }
-        "6" {
-            $EventLogTask = "----- Redirect Del Computer -----"
-            EventLogAD
-            ./AD-DelComp.ps1
-        }
-        "7" {
-            $EventLogTask = "----- Redirect Del Group-----"
-            EventLogAD
-            ./AD-DelGroup.ps1
-        }
-        "8" {
-            $EventLogTask = "----- Redirect Logs -----"
-            EventLogAD
-            ./AD-Logs.ps1
+            C:\Admin\ActiveDirectory\00_Logs_AD.ps1
         }
         "x" {
             # Fin de Prise de Logs + Sortie du Script
