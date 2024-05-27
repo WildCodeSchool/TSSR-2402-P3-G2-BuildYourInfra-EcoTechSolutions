@@ -55,6 +55,16 @@ Une fois à ce stade, nous saisissons les identifiants et accédons à la page d
 
 ![](https://github.com/WildCodeSchool/TSSR-2402-P3-G2-BuildYourInfra-EcoTechSolutions/blob/main/ressource/s12/pfsenseconfig1.jpg)
 
+Pour des raisons de sécurité, dans un premier temps, nous allons changer le mot de passe du compte administrateur (Admin).
+Donc, nous appuyons sur "Change the password in the User Manager" encadré en rouge.
+Et nous arrivons sur la page pour modifier le mot de passe
+
+![](https://github.com/WildCodeSchool/TSSR-2402-P3-G2-BuildYourInfra-EcoTechSolutions/blob/main/ressource/s12/pfsenseconfig2.jpg)
+
+Changeons le mot de passe, puis validons et revenons à l'accueil
+
+![](https://github.com/WildCodeSchool/TSSR-2402-P3-G2-BuildYourInfra-EcoTechSolutions/blob/main/ressource/s12/pfsenseconfig3.jpg)
+
 Arrivés ici, nous cliquons sur **Interfaces** puis sur **Assignments**
 
 ![](https://github.com/WildCodeSchool/TSSR-2402-P3-G2-BuildYourInfra-EcoTechSolutions/blob/main/ressource/s12/pfsense3.jpg)
