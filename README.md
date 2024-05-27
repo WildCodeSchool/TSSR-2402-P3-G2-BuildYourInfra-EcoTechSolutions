@@ -136,26 +136,28 @@ Activités et répartitions des tâches
 
 |PO|SM|
 |:-:|:-:|
-|||
+| Nicolas Maggiori | Anthony Javault |
 
 Activités et répartitions des tâches
 
-|                Tâches                 | Ahmed Ben Rebai | Charles Caulier | Damien Legay | Anthony Javault | Nicolas Maggiori |
-| :-----------------------------------: | :-------------: | :-------------: | :----------: | :-------------: | :--------------: |
-|                                       |                 |                 |              |                 |                  |
-|                                       |                 |                 |              |                 |                  |
-|                                       |                 |                 |              |                 |                  |
-|                                       |                 |                 |              |                 |                  |
-|                                       |                 |                 |              |                 |                  |
-|                                       |                 |                 |              |                 |                  |
-|                                       |                 |                 |              |                 |                  |
-|                                       |                 |                 |              |                 |                  |
-|                                       |                 |                 |              |                 |                  |
-|                                       |                 |                 |              |                 |                  |
-|                                       |                 |                 |              |                 |                  |
-|             Documentation             |                 |                 |              |                 |                  |
-|    Préparation slides Présentation    |                 |                 |              |                 |                  |
-|             Présentation              |        x        |        x        |      x       |        x        |        x         |
+|                Tâches                 | Charles Caulier | Damien Legay | Anthony Javault | Nicolas Maggiori |
+| :-----------------------------------: | :-------------: | :----------: | :-------------: | :--------------: |
+| FIREWALL                              |                 |       x       |                 |         x         |
+| Gestion ID de VM                              |                 |       x       |                 |         x         |
+| Mise en place de règles de bonne pratique       |                 |       x       |                 |         x         |
+| Mise en place du "Deny All"                |                 |       x       |                 |         x         |
+|                                       |                 |              |                 |                  |
+| RESEAU                                   |         x        |              |         x        |                  |
+| Routeur Vyos                                      |         x        |              |        x         |                  |
+| Linker sur le schéma réseau initial           |         x        |              |        x        |                  |
+|                                       |                 |              |                 |                  |
+| SECURITE                                |                 |              |                 |                  |
+| Gestion de la télémétrie par script                            |                 |              |                 |                  |
+| Gestion de la télémétrie par GPO                                |                 |              |                 |                  |
+|                                      |                 |              |                 |                  |
+|             Documentation             |         x        |       x       |         x        |         x         |
+|    Préparation slides Présentation    |                 |              |                 |                  |
+|             Présentation              |        x        |      x       |        x        |        x         |
 
 ### **S13 - Semaine du 3 au 7 Juin 2024**
 
