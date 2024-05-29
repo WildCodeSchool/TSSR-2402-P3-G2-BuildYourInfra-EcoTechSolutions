@@ -148,7 +148,7 @@ Sous pfSense, la création d'Alias se fait depuis le menu **Firewall** > **Alias
 
 On peut alors en attribuer aux **IP**, **Ports**, **URL** où sur un ensemble:
 
-![alias2]()
+![alias2](./ressource/s12/alias3.jpg)
 
 Une fois celui-ci crée, n'oubliez pas de sauvegarder pour que pfSense le prenne en compte !
 Voici un exemple des alias que nous savons créer pour ce projet:
