@@ -666,7 +666,6 @@ Une fois à ce niveau, selon nos besoins, nous recherchons les règles, les rest
 |:-:|:-:|:-:|
 |GPO_EcoT_Client_Restriction_Periph_Usb|EcoT_Users(Sauf DSI)|Bloquer tous les périphériques de stockage USB|
 |GPO_EcoT_Users_Deco_RDP_Apres_Inactiv|EcoT_Computers|Déconnecte le bureau a distance apres 5min d'inactivité|
-|GPO_EcoT_Computer_Desactiver_Hachages_LM|EcoT_Computers|Methode de stockage de mot de passes des utilisateurs désactivée|
 |GPO_EcoT_Computer_Ecran_veille_par_MDP|EcoT_Computers|Après 5 min s'inactivité l'écran se vérouille|
 |GPO_EcoT_Computer_Firewall_autorisation_partage_fichiers_/16 |EcoT_Computers|autoriser l'exception de partage de fichiers entrants et d'imprimantes provenant des adresses IP du sous-réseau 10.10.0.0/16|
 |GPO_EcoT_Windows_Update_Planified|EcoT_Users|Lancement des mises à jour les samedi a 3:00 heures|
