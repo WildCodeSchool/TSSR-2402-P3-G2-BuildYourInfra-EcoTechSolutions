@@ -23,7 +23,7 @@ Voici la situation originelle de la société **_EcoTech Solutions_**
 
 Nous avons dans un premier temps réalisé un Organigramme, afin de mieux situer les besoins de **_EcoTech Solutions_**
 
-![Orga_EcoTech](./ressource/S09/images/Ecotech_Orga.JPG)
+![Orga_EcoTech](./ressource/S09/images/EcoTech_Organigramme.png)
 
 Cet organigramme est sujet à remaniement, étant donné qu'un partenariat est en cours et pourrait aboutir dans un avenir proche.
 
