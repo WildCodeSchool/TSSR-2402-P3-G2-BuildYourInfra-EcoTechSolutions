@@ -85,7 +85,81 @@ Et enfin, nous appliquons les changements
 Nous pouvons voir les changements appliqués
 
 ![](https://github.com/WildCodeSchool/TSSR-2402-P3-G2-BuildYourInfra-EcoTechSolutions/blob/main/ressource/s12/pfsense7.jpg)
+
+
+
+
+## Mise en place de règles de parefeu
+
+L’objectif de ce document est de fournir les éléments organisationnels permettant de structurer la base de règles constituant la politique de filtrage réseau appliquée sur un pare-feu d’interconnexion. 
+La politique de filtrage d’une passerelle peut être construite en suivant un modèle d’organisation de règles applicable dans la majorité des cas d’usage.
+L’organisation proposée a pour objectifs :
+• de renforcer la protection du pare-feu et des réseaux de confiance qu’il isole ;
+• de faciliter la lisibilité de la politique de filtrage ;
+• de minimiser les sources d’erreurs et les dérives.
+
+Nous pouvons d'or et déjà décomposer l'ensemble de ces règles en 6 sections, dont l'ordre suivant, ne tient pas rigueur quant à leur ordre d'application:
+
+ - Règles d'autorisation des flux à destination du pare-feu : cette première section contient un nombre minimal de règles car un pare-feu n’offre qu’un nombrerestreint de services, sa surface d’attaque doit être la plus réduite possible. Un pare-feu doit idéalement être administré et supervisé via une interface réseau physique dédiée connectée à un réseau d’administration (administration et supersivion de la passerelle)
+
+
+ - Règles d'autorisation des flux émis par le pare-feu : règles autorisant l'envoi de journaux, les services d'alerte ainsi que le maintient en conditions opérationnelles de la passerelle (flux de sauvegarde)
+
+
   
+ - Règles de protection du pare-feu : cette section ne comporte qu’une seule règle dite de protection de la passerelle. Il s'agit du principe de "Deny All" epliqué plus loin dans ce document.
+   L’action « Interdire » correspond à une suppression du trafic sans réponse du pare-feu (action drop en anglais), cela permet d’éviter un signalement trop explicite de la passerelle aux éventuels attaquants. La mise en place d’une règle de protection du pare-feu est impérative pour prévenir l’ou-
+verture de flux non légitimes à destination de la passerelle ; la journalisation de cette règle
+permet de conserver la trace de ces flux illégitimes.
+
+
+     
+ - Règles d'autorisation des flux métiers : les règles qui autorisent les flux métiers doivent être regroupées et organisées selon unelogique établie et adaptée au contexte. Ces règles constituent l’essentiel de la politique defiltrage, elles doivent être définies précisement au niveau de leurs adresses sources, de leurs
+adresses de destination et de leur services.
+
+  
+ - Règles "antiparasites" : les règles "antiparasites" peuvent être utilisées pour alléger les journaux de la passerelle,mais doivent être établies en accord avec la politique globale de journalisation de l’architecture.
+
+   
+ - Règles d'interdiction finale : l’ajout d’une règle explicite d’interdiction finale journalisée garantit l’application du mo-dèle de sécurité positif (tout ce qui n’a pas été autorisé précédemment est interdit) etpermet de conserver la trace des flux non légitimes.
+
+
+  
+### Principe du "Deny All"
+
+
+Les zones établissent les frontières de sécurité de votre réseau. Une zone définit une borne où le trafic est soumis aux restrictions politiques à mesure qu'elle se dirige vers une autre region de votre réseau. La stratégie par défaut recommandée entre les zones est deny all. Si aucune stratégie n'est explicitement configurée, tout le trafic qui se déplace entre les zones est bloqué. Il s'agit d'une différence significative par rapport au modèle d'inspection avec état où le trafic était implicitement autorisé jusqu'à ce qu'il soit explicitement bloqué avec une liste de contrôle d'accès (ACL).
+Nous retenons qu'il est courant de terminer la base de règles d'un pare‑feu par une règle « deny-all » (tout refuser), qui empêche le passage de tout trafic ne répondant pas à une autre règle. L'ajout de cette règle au début d'une base de règles bloquerait tout le trafic, attention !
+  
+
+### Règles de bonnes pratiques
+
+  Nous avons regroupé dans cette partie l'ensemble des "règles" de bonne pratique qui, selon nous, facilite la configuration, la lisibilité, l'exécution et la pratique du parefeu. Nous précisons qu'il reste néanmoins fortement conseillé de commenter à la fois vos actions sur une note (physique ou virtuelle) afin de pouvoir reprendre votre travail là où vous étiez arrêté précédemment, ainsi que dès que vous en avez l'occasion lors de l'utilisation du logiciel (commentaires permettant d'expliquer la raison de votre manoeuvre où dans quel contexte l'avez-vous appliquée, par exemple, un descriptif à l'origine d'une règle apposée, ou bien même l'auteur).
+
+    
+#### Utiliser des alias
+
+  
+L'utilisation d'alias permet un gain notable en lisibilité et permet de regrouper sur une seule règle de filtrage des adresses IP ou des ports associés.
+Il est à noter que certains firewall obligent à l'utilisation d'alias dans l'écriture de leurs règles : il n'est pas possible de saisir une règle de filtrage comportant des adresses IP ou des ports réseaux ; il faut forcément qu'ils aient été préalablement renseignés dans des alias. pfSense n'impose pas ce mode de fonctionnement.
+Sous pfSense, la création d'Alias se fait depuis le menu **Firewall** > **Aliases**
+
+![alias]()
+
+On peut alors en attribuer aux **IP**, **Ports**, **URL** où sur un ensemble:
+
+![alias2]()
+
+Une fois celui-ci crée, n'oubliez pas de sauvegarder pour que pfSense le prenne en compte !
+Voici un exemple des alias que nous savons créer pour ce projet:
+
+![alias3]()
+
+
+
+    
+
+
 2. Gestion des ID de VM de groupe
 
 3. Mise en place de règles de pare-feu (WAN & LAN)
