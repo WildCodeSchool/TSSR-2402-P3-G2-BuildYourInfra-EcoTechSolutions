@@ -144,7 +144,7 @@ L'utilisation d'alias permet un gain notable en lisibilité et permet de regroup
 Il est à noter que certains firewall obligent à l'utilisation d'alias dans l'écriture de leurs règles : il n'est pas possible de saisir une règle de filtrage comportant des adresses IP ou des ports réseaux ; il faut forcément qu'ils aient été préalablement renseignés dans des alias. pfSense n'impose pas ce mode de fonctionnement.
 Sous pfSense, la création d'Alias se fait depuis le menu **Firewall** > **Aliases**
 
-![alias]()
+![alias](./ressource/s12/alias1.jpg)
 
 On peut alors en attribuer aux **IP**, **Ports**, **URL** où sur un ensemble:
 
