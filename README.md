@@ -136,26 +136,24 @@ Activités et répartitions des tâches
 
 |PO|SM|
 |:-:|:-:|
-| Nicolas Maggiori | Anthony Javault |
+|Nicolas Maggiori|Anthony Javault|
 
 Activités et répartitions des tâches
 
 |                Tâches                 | Charles Caulier | Damien Legay | Anthony Javault | Nicolas Maggiori |
 | :-----------------------------------: | :-------------: | :----------: | :-------------: | :--------------: |
-| FIREWALL                              |                 |       x       |                 |         x         |
-| Gestion ID de VM                              |                 |       x       |                 |         x         |
-| Mise en place de règles de bonne pratique       |                 |       x       |                 |         x         |
-| Mise en place du "Deny All"                |                 |       x       |                 |         x         |
+|               FIREWALL                |                 |      x       |                 |       x          |
+|           Gestion ID de VM            |                 |              |                 |                  |
+|       Règles de bonnes pratiques      |                 |              |                 |                  |
+|       Mise en place du "Deny All"     |                 |              |                 |                  |
+|              Routeur Vyos             |        x        |              |       x         |                  |
+|   Gestion de la télémétrie par GPO    |                 |              |                 |                  |
+|          Automatisation GLPI          |        x        |              |                 |                  |
 |                                       |                 |              |                 |                  |
-| RESEAU                                   |         x        |              |         x        |                  |
-| Routeur Vyos                                      |         x        |              |        x         |                  |
-| Linker sur le schéma réseau initial           |         x        |              |        x        |                  |
 |                                       |                 |              |                 |                  |
-| SECURITE                                |                 |              |                 |                  |
-| Gestion de la télémétrie par script                            |                 |              |                 |                  |
-| Gestion de la télémétrie par GPO                                |                 |              |                 |                  |
-|                                      |                 |              |                 |                  |
-|             Documentation             |         x        |       x       |         x        |         x         |
+|                                       |                 |              |                 |                  |
+|                                       |                 |              |                 |                  |
+|             Documentation             |        x        |      x       |        x        |        x         |
 |    Préparation slides Présentation    |                 |              |                 |                  |
 |             Présentation              |        x        |      x       |        x        |        x         |
 
@@ -167,22 +165,22 @@ Activités et répartitions des tâches
 
 Activités et répartitions des tâches
 
-|                Tâches                 | Ahmed Ben Rebai | Charles Caulier | Damien Legay | Anthony Javault | Nicolas Maggiori |
-| :-----------------------------------: | :-------------: | :-------------: | :----------: | :-------------: | :--------------: |
-|                                       |                 |                 |              |                 |                  |
-|                                       |                 |                 |              |                 |                  |
-|                                       |                 |                 |              |                 |                  |
-|                                       |                 |                 |              |                 |                  |
-|                                       |                 |                 |              |                 |                  |
-|                                       |                 |                 |              |                 |                  |
-|                                       |                 |                 |              |                 |                  |
-|                                       |                 |                 |              |                 |                  |
-|                                       |                 |                 |              |                 |                  |
-|                                       |                 |                 |              |                 |                  |
-|                                       |                 |                 |              |                 |                  |
-|             Documentation             |                 |                 |              |                 |                  |
-|    Préparation slides Présentation    |                 |                 |              |                 |                  |
-|             Présentation              |        x        |        x        |      x       |        x        |        x         |
+|                Tâches                 | Charles Caulier | Damien Legay | Anthony Javault | Nicolas Maggiori |
+| :-----------------------------------: | :-------------: | :----------: | :-------------: | :--------------: |
+|                                       |                 |              |                 |                  |
+|                                       |                 |              |                 |                  |
+|                                       |                 |              |                 |                  |
+|                                       |                 |              |                 |                  |
+|                                       |                 |              |                 |                  |
+|                                       |                 |              |                 |                  |
+|                                       |                 |              |                 |                  |
+|                                       |                 |              |                 |                  |
+|                                       |                 |              |                 |                  |
+|                                       |                 |              |                 |                  |
+|                                       |                 |              |                 |                  |
+|             Documentation             |                 |              |                 |                  |
+|    Préparation slides Présentation    |                 |              |                 |                  |
+|             Présentation              |        x        |      x       |        x        |        x         |
 
 ### **S14 - Semaine du 10 au 14 Juin 2024**
 
@@ -192,22 +190,22 @@ Activités et répartitions des tâches
 
 Activités et répartitions des tâches
 
-|                Tâches                 | Ahmed Ben Rebai | Charles Caulier | Damien Legay | Anthony Javault | Nicolas Maggiori |
-| :-----------------------------------: | :-------------: | :-------------: | :----------: | :-------------: | :--------------: |
-|                                       |                 |                 |              |                 |                  |
-|                                       |                 |                 |              |                 |                  |
-|                                       |                 |                 |              |                 |                  |
-|                                       |                 |                 |              |                 |                  |
-|                                       |                 |                 |              |                 |                  |
-|                                       |                 |                 |              |                 |                  |
-|                                       |                 |                 |              |                 |                  |
-|                                       |                 |                 |              |                 |                  |
-|                                       |                 |                 |              |                 |                  |
-|                                       |                 |                 |              |                 |                  |
-|                                       |                 |                 |              |                 |                  |
-|             Documentation             |                 |                 |              |                 |                  |
-|    Préparation slides Présentation    |                 |                 |              |                 |                  |
-|             Présentation              |        x        |        x        |      x       |        x        |        x         |
+|                Tâches                 | Charles Caulier | Damien Legay | Anthony Javault | Nicolas Maggiori |
+| :-----------------------------------: | :-------------: | :----------: | :-------------: | :--------------: |
+|                                       |                 |              |                 |                  |
+|                                       |                 |              |                 |                  |
+|                                       |                 |              |                 |                  |
+|                                       |                 |              |                 |                  |
+|                                       |                 |              |                 |                  |
+|                                       |                 |              |                 |                  |
+|                                       |                 |              |                 |                  |
+|                                       |                 |              |                 |                  |
+|                                       |                 |              |                 |                  |
+|                                       |                 |              |                 |                  |
+|                                       |                 |              |                 |                  |
+|             Documentation             |                 |              |                 |                  |
+|    Préparation slides Présentation    |                 |              |                 |                  |
+|             Présentation              |        x        |      x       |        x        |        x         |
 
 ### **S15 - Semaine du 17 au 21 Juin 2024**
 
@@ -217,22 +215,22 @@ Activités et répartitions des tâches
 
 Activités et répartitions des tâches
 
-|                Tâches                 | Ahmed Ben Rebai | Charles Caulier | Damien Legay | Anthony Javault | Nicolas Maggiori |
-| :-----------------------------------: | :-------------: | :-------------: | :----------: | :-------------: | :--------------: |
-|                                       |                 |                 |              |                 |                  |
-|                                       |                 |                 |              |                 |                  |
-|                                       |                 |                 |              |                 |                  |
-|                                       |                 |                 |              |                 |                  |
-|                                       |                 |                 |              |                 |                  |
-|                                       |                 |                 |              |                 |                  |
-|                                       |                 |                 |              |                 |                  |
-|                                       |                 |                 |              |                 |                  |
-|                                       |                 |                 |              |                 |                  |
-|                                       |                 |                 |              |                 |                  |
-|                                       |                 |                 |              |                 |                  |
-|             Documentation             |                 |                 |              |                 |                  |
-|    Préparation slides Présentation    |                 |                 |              |                 |                  |
-|             Présentation              |        x        |        x        |      x       |        x        |        x         |
+|                Tâches                 | Charles Caulier | Damien Legay | Anthony Javault | Nicolas Maggiori |
+| :-----------------------------------: | :-------------: | :----------: | :-------------: | :--------------: |
+|                                       |                 |              |                 |                  |
+|                                       |                 |              |                 |                  |
+|                                       |                 |              |                 |                  |
+|                                       |                 |              |                 |                  |
+|                                       |                 |              |                 |                  |
+|                                       |                 |              |                 |                  |
+|                                       |                 |              |                 |                  |
+|                                       |                 |              |                 |                  |
+|                                       |                 |              |                 |                  |
+|                                       |                 |              |                 |                  |
+|                                       |                 |              |                 |                  |
+|             Documentation             |                 |              |                 |                  |
+|    Préparation slides Présentation    |                 |              |                 |                  |
+|             Présentation              |        x        |      x       |        x        |        x         |
 
 ### **S16 - Semaine du 24 au 28 Juin 2024**
 
@@ -242,22 +240,22 @@ Activités et répartitions des tâches
 
 Activités et répartitions des tâches
 
-|                Tâches                 | Ahmed Ben Rebai | Charles Caulier | Damien Legay | Anthony Javault | Nicolas Maggiori |
-| :-----------------------------------: | :-------------: | :-------------: | :----------: | :-------------: | :--------------: |
-|                                       |                 |                 |              |                 |                  |
-|                                       |                 |                 |              |                 |                  |
-|                                       |                 |                 |              |                 |                  |
-|                                       |                 |                 |              |                 |                  |
-|                                       |                 |                 |              |                 |                  |
-|                                       |                 |                 |              |                 |                  |
-|                                       |                 |                 |              |                 |                  |
-|                                       |                 |                 |              |                 |                  |
-|                                       |                 |                 |              |                 |                  |
-|                                       |                 |                 |              |                 |                  |
-|                                       |                 |                 |              |                 |                  |
-|             Documentation             |                 |                 |              |                 |                  |
-|    Préparation slides Présentation    |                 |                 |              |                 |                  |
-|             Présentation              |        x        |        x        |      x       |        x        |        x         |
+|                Tâches                 | Charles Caulier | Damien Legay | Anthony Javault | Nicolas Maggiori |
+| :-----------------------------------: | :-------------: | :----------: | :-------------: | :--------------: |
+|                                       |                 |              |                 |                  |
+|                                       |                 |              |                 |                  |
+|                                       |                 |              |                 |                  |
+|                                       |                 |              |                 |                  |
+|                                       |                 |              |                 |                  |
+|                                       |                 |              |                 |                  |
+|                                       |                 |              |                 |                  |
+|                                       |                 |              |                 |                  |
+|                                       |                 |              |                 |                  |
+|                                       |                 |              |                 |                  |
+|                                       |                 |              |                 |                  |
+|             Documentation             |                 |              |                 |                  |
+|    Préparation slides Présentation    |                 |              |                 |                  |
+|             Présentation              |        x        |      x       |        x        |        x         |
 
 ### **S17 - Semaine du 1 au 05 Juillet 2024**
 
@@ -267,22 +265,22 @@ Activités et répartitions des tâches
 
 Activités et répartitions des tâches
 
-|                Tâches                 | Ahmed Ben Rebai | Charles Caulier | Damien Legay | Anthony Javault | Nicolas Maggiori |
-| :-----------------------------------: | :-------------: | :-------------: | :----------: | :-------------: | :--------------: |
-|                                       |                 |                 |              |                 |                  |
-|                                       |                 |                 |              |                 |                  |
-|                                       |                 |                 |              |                 |                  |
-|                                       |                 |                 |              |                 |                  |
-|                                       |                 |                 |              |                 |                  |
-|                                       |                 |                 |              |                 |                  |
-|                                       |                 |                 |              |                 |                  |
-|                                       |                 |                 |              |                 |                  |
-|                                       |                 |                 |              |                 |                  |
-|                                       |                 |                 |              |                 |                  |
-|                                       |                 |                 |              |                 |                  |
-|             Documentation             |                 |                 |              |                 |                  |
-|    Préparation slides Présentation    |                 |                 |              |                 |                  |
-|             Présentation              |        x        |        x        |      x       |        x        |        x         |
+|                Tâches                 | Charles Caulier | Damien Legay | Anthony Javault | Nicolas Maggiori |
+| :-----------------------------------: | :-------------: | :----------: | :-------------: | :--------------: |
+|                                       |                 |              |                 |                  |
+|                                       |                 |              |                 |                  |
+|                                       |                 |              |                 |                  |
+|                                       |                 |              |                 |                  |
+|                                       |                 |              |                 |                  |
+|                                       |                 |              |                 |                  |
+|                                       |                 |              |                 |                  |
+|                                       |                 |              |                 |                  |
+|                                       |                 |              |                 |                  |
+|                                       |                 |              |                 |                  |
+|                                       |                 |              |                 |                  |
+|             Documentation             |                 |              |                 |                  |
+|    Préparation slides Présentation    |                 |              |                 |                  |
+|             Présentation              |        x        |      x       |        x        |        x         |
 
 ### **S18 - Semaine du 8 au 12 Juillet 2024**
 
@@ -292,22 +290,22 @@ Activités et répartitions des tâches
 
 Activités et répartitions des tâches
 
-|                Tâches                 | Ahmed Ben Rebai | Charles Caulier | Damien Legay | Anthony Javault | Nicolas Maggiori |
-| :-----------------------------------: | :-------------: | :-------------: | :----------: | :-------------: | :--------------: |
-|                                       |                 |                 |              |                 |                  |
-|                                       |                 |                 |              |                 |                  |
-|                                       |                 |                 |              |                 |                  |
-|                                       |                 |                 |              |                 |                  |
-|                                       |                 |                 |              |                 |                  |
-|                                       |                 |                 |              |                 |                  |
-|                                       |                 |                 |              |                 |                  |
-|                                       |                 |                 |              |                 |                  |
-|                                       |                 |                 |              |                 |                  |
-|                                       |                 |                 |              |                 |                  |
-|                                       |                 |                 |              |                 |                  |
-|             Documentation             |                 |                 |              |                 |                  |
-|    Préparation slides Présentation    |                 |                 |              |                 |                  |
-|             Présentation              |        x        |        x        |      x       |        x        |        x         |
+|                Tâches                 | Charles Caulier | Damien Legay | Anthony Javault | Nicolas Maggiori |
+| :-----------------------------------: | :-------------: | :----------: | :-------------: | :--------------: |
+|                                       |                 |              |                 |                  |
+|                                       |                 |              |                 |                  |
+|                                       |                 |              |                 |                  |
+|                                       |                 |              |                 |                  |
+|                                       |                 |              |                 |                  |
+|                                       |                 |              |                 |                  |
+|                                       |                 |              |                 |                  |
+|                                       |                 |              |                 |                  |
+|                                       |                 |              |                 |                  |
+|                                       |                 |              |                 |                  |
+|                                       |                 |              |                 |                  |
+|             Documentation             |                 |              |                 |                  |
+|    Préparation slides Présentation    |                 |              |                 |                  |
+|             Présentation              |        x        |      x       |        x        |        x         |
 
 ### **S19 - Semaine du 15 au 19 Juillet 2024**
 
@@ -317,22 +315,22 @@ Activités et répartitions des tâches
 
 Activités et répartitions des tâches
 
-|                Tâches                 | Ahmed Ben Rebai | Charles Caulier | Damien Legay | Anthony Javault | Nicolas Maggiori |
-| :-----------------------------------: | :-------------: | :-------------: | :----------: | :-------------: | :--------------: |
-|                                       |                 |                 |              |                 |                  |
-|                                       |                 |                 |              |                 |                  |
-|                                       |                 |                 |              |                 |                  |
-|                                       |                 |                 |              |                 |                  |
-|                                       |                 |                 |              |                 |                  |
-|                                       |                 |                 |              |                 |                  |
-|                                       |                 |                 |              |                 |                  |
-|                                       |                 |                 |              |                 |                  |
-|                                       |                 |                 |              |                 |                  |
-|                                       |                 |                 |              |                 |                  |
-|                                       |                 |                 |              |                 |                  |
-|             Documentation             |                 |                 |              |                 |                  |
-|    Préparation slides Présentation    |                 |                 |              |                 |                  |
-|             Présentation              |        x        |        x        |      x       |        x        |        x         |
+|                Tâches                 | Charles Caulier | Damien Legay | Anthony Javault | Nicolas Maggiori |
+| :-----------------------------------: | :-------------: | :----------: | :-------------: | :--------------: |
+|                                       |                 |              |                 |                  |
+|                                       |                 |              |                 |                  |
+|                                       |                 |              |                 |                  |
+|                                       |                 |              |                 |                  |
+|                                       |                 |              |                 |                  |
+|                                       |                 |              |                 |                  |
+|                                       |                 |              |                 |                  |
+|                                       |                 |              |                 |                  |
+|                                       |                 |              |                 |                  |
+|                                       |                 |              |                 |                  |
+|                                       |                 |              |                 |                  |
+|             Documentation             |                 |              |                 |                  |
+|    Préparation slides Présentation    |                 |              |                 |                  |
+|             Présentation              |        x        |      x       |        x        |        x         |
 
 ## **4. Choix techniques et contraintes**
 
