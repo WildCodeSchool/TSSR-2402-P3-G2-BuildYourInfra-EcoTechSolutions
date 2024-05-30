@@ -191,7 +191,7 @@ Pour l'accès à Internet :
  - Autoriser tout du sous-réseau LAN vers n'importe quelle destination sur Internet.
 
 
-![regleslan]()
+![regleslan](./ressource/s12/firewalllan1.jpg)
 
 
   
