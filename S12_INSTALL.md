@@ -224,7 +224,7 @@ Pour l'accès à Internet :
  - Autoriser tout du sous-réseau DMZ vers n'importe quelle destination sur Internet.
 
 
-![regledmz]()
+![regledmz](./ressource/s12/firewalldmz1.jpg)
 
 
 
