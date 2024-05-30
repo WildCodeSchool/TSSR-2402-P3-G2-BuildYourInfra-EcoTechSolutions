@@ -34,7 +34,7 @@ Do
 
     If ($Count -lt 10)
     {
-        $ComputerName = "ECO-LP-000$Count"
+        $ComputerName = "ECO-LP-00$Count"
     
         If (($ADComputers | Where {$_.Name -eq $ComputerName}) -eq $Null)
         {
@@ -47,7 +47,7 @@ Do
             }
             Catch
             {
-                Write-Host "L'ordinateur $ComputerName existe déjà" -ForegroundColor White
+                Write-Host "L'ordinateur $ComputerName existe déjà " -ForegroundColor White
             }  
         }
         Else
@@ -62,7 +62,7 @@ Do
 
     If (($Count -ge 10) -and ($count -lt 100))
     {
-        $ComputerName = "ECO-LP-00$Count"
+        $ComputerName = "ECO-LP-0$Count"
     
         If (($ADComputers | Where {$_.Name -eq $ComputerName}) -eq $Null)
         {
@@ -90,7 +90,7 @@ Do
 
     If (($Count -ge 100) -and ($count -lt 1000))
     {
-        $ComputerName = "ECO-LP-0$Count"
+        $ComputerName = "ECO-LP-$Count"
     
         If (($ADComputers | Where {$_.Name -eq $ComputerName}) -eq $Null)
         {
@@ -108,7 +108,7 @@ Do
         }
         Else
         {
-            Write-Host "L'ordinateur $ComputerName existe déjà" -ForegroundColor Yellow
+                    Write-Host "L'ordinateur $ComputerName existe déjà" -ForegroundColor Yellow
         }
 
         $Count = $Count + 1
