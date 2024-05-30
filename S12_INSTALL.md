@@ -23,9 +23,9 @@
 
 ## **2. Installation et Configuration des équipements et ressources**
 
-### Configuration du Firewall Pfsense
+# Configuration du Firewall Pfsense
 
-1. Ajout d'une interface DMZ
+## 1. Ajout d'une interface DMZ
 
 La DMZ (Zone DéMilitarisée) est une zone isolée et séparée du reste du réseau. Son principal objectif est de protéger les données
 et les systèmes internes d’une entreprise contre les attaques venant de l’extérieur.
@@ -89,7 +89,10 @@ Nous pouvons voir les changements appliqués
 
 
 
-## Mise en place de règles de pare-feu
+## 2. Gestion des ID de VM de groupe
+
+## 3. Mise en place de règles de pare-feu (WAN & LAN)
+  
 
 L’objectif de ce document est de fournir les éléments organisationnels permettant de structurer la base de règles constituant la politique de filtrage réseau appliquée sur un pare-feu d’interconnexion. 
 La politique de filtrage d’une passerelle peut être construite en suivant un modèle d’organisation de règles applicable dans la majorité des cas d’usage.  
@@ -155,6 +158,8 @@ Voici un exemple des alias que nous avons créer pour ce projet:
 ![alias3](./ressource/s12/alias4ok.jpg)  
 
 ![alias4](./ressource/s12/alias5.jpg)
+
+
 
 
 Au jour d'aujourd'hui nous n'avons pas encore besoin "d'appliquer" les règles du pare-feu étant donné que l'infrastructure derrière n'est pas encore opérante. Pour cette raison, les règles sont "désactivées", dans le but de ne pas compromettre la suite du projet.
@@ -236,10 +241,6 @@ Pour l'accès à Internet :
 
 
 
-
-2. Gestion des ID de VM de groupe
-
-3. Mise en place de règles de pare-feu (WAN & LAN)
 
 ### Mise en place et Configuration de Routeurs
 
