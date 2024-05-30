@@ -21,27 +21,30 @@ If (-not(Get-Module -Name ActiveDirectory))
 ### Parametres spécifiques
 
 $DataFile = "$FilePath\Sources\Data\Data_Group_Create.csv"
-$OuSecurity = "EcoT_Secure"
+$OUSecurity = "EcoT_Secure"
 $OUPathSecurity = "OU=EcoT_Secure,OU=EcoT_Bordeaux,OU=EcoT_France,$DomainDN"
 
 ### Main Program
 
-$DataGroup = Import-Csv -Path $DataFile -Header "Group"
+$DataGroup = Import-Csv -Path $DataFile -Delimiter ";" -Header "DataGroup"
 
 Write-Host ""
 
 Foreach ($Group in $DataGroup)
 {
+
+$GroupName = $Group.DataGroup
+
     Try
     {
-        New-ADGroup -Name $Group -Path "$OUPathSecurity" -GroupScope Global -GroupCategory Security
+        New-ADGroup -Name $GroupName -Path "$OUPathSecurity" -GroupScope Global -GroupCategory Security
         $EventLogTask = "Ajout du Groupe $Group dans AD"
         EventLogAD
-        Write-Host "Création du GROUPE $Group dans l'OU $OuSecurity" -ForegroundColor Green
+        Write-Host "Création du GROUPE $GroupName dans l'OU $OUSecurity" -ForegroundColor Green
     }
     Catch
     {
-        Write-Host "Le GROUPE $Group existe déjà" -ForegroundColor Yellow
+        Write-Host "Le GROUPE $GroupName existe déjà " -ForegroundColor Yellow
     }
 }
 
