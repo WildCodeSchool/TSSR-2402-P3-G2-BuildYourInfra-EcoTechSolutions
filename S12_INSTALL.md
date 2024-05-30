@@ -157,6 +157,82 @@ Voici un exemple des alias que nous avons créer pour ce projet:
 ![alias4](./ressource/s12/alias5.jpg)
 
 
+Au jour d'aujourd'hui nous n'avons pas encore besoin "d'appliquer" les règles du pare-feu étant donné que l'infrastructure derrière n'est pas encore opérante. Pour cette raison, les règles sont "désactivées", dans le but de ne pas compromettre la suite du projet.
+Nous vous proposons une méthode de gestion des règles dite raisonnable, ou plutôt "de bonnes pratiques", notamment tirées de la documentation **NetGate** :
+
+**Mise en place d'une isolation du LAN et de la DMZ, chacun avec un accès Internet non restreint:**
+
+La configuration suivante peut être utilisée à la place si l'accès sortant est plus souple, mais toujours contrôlé entre les interfaces locales. Cela suppose que tous les réseaux locaux sont numérotés de manière privée et que les interfaces ont déjà été configurées.
+
+#### Configuration LAN
+
+Pour les DNS depuis le pare-feu :
+
+ - Autoriser TCP/UDP du sous-réseau LAN vers l'adresse LAN sur le port 53.
+
+Pour accéder à l'interface graphique :
+
+ - Autoriser TCP du sous-réseau LAN vers l'adresse LAN sur le port 443.
+
+Pour effectuer un ping vers le pare-feu depuis le LAN :
+
+ - Autoriser ICMP du sous-réseau LAN vers l'adresse LAN.
+
+Si un trafic est nécessaire du LAN vers la DMZ :
+
+ - Autoriser tout trafic nécessaire du LAN vers la DMZ.
+
+Ne pas autoriser le LAN à atteindre la DMZ ou d'autres réseaux privés :
+
+ - Rejeter tout en provenance du sous-réseau LAN vers RFC1918.
+
+Pour l'accès à Internet :
+
+ - Autoriser tout du sous-réseau LAN vers n'importe quelle destination sur Internet.
+
+
+![regleslan]()
+
+
+  
+  
+#### Configuration DMZ
+
+
+Pour les DNS depuis le pare-feu :
+
+ - Autoriser TCP/UDP du sous-réseau DMZ vers l'adresse DMZ sur le port 53.
+
+Pour accéder à l'interface graphique (facultatif) :
+
+ - Autoriser TCP du sous-réseau DMZ vers l'adresse DMZ sur le port 443.
+
+Pour effectuer un ping vers le pare-feu depuis la DMZ :
+
+ - Autoriser ICMP du sous-réseau DMZ vers l'adresse DMZ.
+
+Si un trafic est nécessaire de la DMZ vers le LAN :
+
+ - Autoriser tout trafic nécessaire de la DMZ vers le LAN.
+
+Ne pas autoriser la DMZ à atteindre le LAN ou d'autres réseaux privés :
+
+ - Rejeter tout en provenance du sous-réseau DMZ vers RFC1918.
+
+Pour l'accès à Internet :
+
+ - Autoriser tout du sous-réseau DMZ vers n'importe quelle destination sur Internet.
+
+
+![regledmz]()
+
+
+
+
+
+
+
+
 
 
 
