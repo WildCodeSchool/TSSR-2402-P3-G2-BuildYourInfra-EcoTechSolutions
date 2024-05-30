@@ -204,7 +204,7 @@ Routeur ECO-ROOT-03
 #### Configuration du Routage
 
 1. De la même façon, une fois en mode Configuration, pour établir une règle de routage, utilisez la commande `set protocols static route <adresse de réseau à cibler> next-hop <adresse de la passerelle>` puis `commit` puis `save`.
-   Par exemple, pour un routage vers le réseau `10.0.0.0/24`, saisissez la commande `set protocols statiuc route 10.0.0.0/24 next-hop 10.10.255.254` puis `commit` puis `save`.
+   Par exemple, pour un routage vers le réseau `10.0.0.0/24`, saisissez la commande `set protocols static route 10.0.0.0/24 next-hop 10.10.255.254` puis `commit` puis `save`.
 
 Nous aurons donc nos Routeurs configurés de la façon suivante : 
 
@@ -223,3 +223,14 @@ Routeur ECO-ROOT-03
 Vos Routeurs sont configurés.
 
 ## **FAQ : Solutions aux problèmes connus et communs liés à l'installation et à la configuration**
+
+```
+Au démarrage du routeur, lorsque j'utilise la commande `show interfaces`, je ne vois pas toutes mes cartes réseaux.
+```
+1. Malheureusement, c'est un problème connu, un `reboot` du routeur sera nécessaire, réitérez l'opération si besoin. Il est possible que les cartes réseaux ne reviennent qu'une à la fois par `reboot`.
+
+
+```
+Lors de la configuration d'une interface de Routeur et/ou d'une Route, je me suis trompé d'adresse de réseau ou d'adresse IP. Puis-je la modifier ?
+```
+1. Il n'est malheureusement pas possible de modifier une interface ou une route directement, vous devez avant supprimer les paramètres érronés avec la commande `delete interfaces ethernet <nom de la carte>` dans le cas d'une erreur d'interface ou la commande `delete protocols static route <adresse de réseau à cibler>` dans le cas d'une erreur de route.
