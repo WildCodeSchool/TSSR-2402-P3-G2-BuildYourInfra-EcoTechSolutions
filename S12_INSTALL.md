@@ -168,27 +168,27 @@ La configuration suivante peut être utilisée à la place si l'accès sortant e
 
 Pour les DNS depuis le pare-feu :
 
- - Autoriser TCP/UDP du sous-réseau LAN vers l'adresse LAN sur le port 53.
+ - ``Autoriser TCP/UDP du sous-réseau LAN vers l'adresse LAN sur le port 53``
 
 Pour accéder à l'interface graphique :
 
- - Autoriser TCP du sous-réseau LAN vers l'adresse LAN sur le port 443.
+ - ``Autoriser TCP du sous-réseau LAN vers l'adresse LAN sur le port 443``
 
 Pour effectuer un ping vers le pare-feu depuis le LAN :
 
- - Autoriser ICMP du sous-réseau LAN vers l'adresse LAN.
+ - ``Autoriser ICMP du sous-réseau LAN vers l'adresse LAN``
 
 Si un trafic est nécessaire du LAN vers la DMZ :
 
- - Autoriser tout trafic nécessaire du LAN vers la DMZ.
+ - ``Autoriser tout trafic nécessaire du LAN vers la DMZ``
 
 Ne pas autoriser le LAN à atteindre la DMZ ou d'autres réseaux privés :
 
- - Rejeter tout en provenance du sous-réseau LAN vers RFC1918.
+ - ``Rejeter tout en provenance du sous-réseau LAN vers RFC1918``
 
 Pour l'accès à Internet :
 
- - Autoriser tout du sous-réseau LAN vers n'importe quelle destination sur Internet.
+ - ``Autoriser tout du sous-réseau LAN vers n'importe quelle destination sur Internet``
 
 
 ![regleslan](./ressource/s12/firewalllan1.jpg)
@@ -201,27 +201,27 @@ Pour l'accès à Internet :
 
 Pour les DNS depuis le pare-feu :
 
- - Autoriser TCP/UDP du sous-réseau DMZ vers l'adresse DMZ sur le port 53.
+ - ``Autoriser TCP/UDP du sous-réseau DMZ vers l'adresse DMZ sur le port 53``
 
 Pour accéder à l'interface graphique (facultatif) :
 
- - Autoriser TCP du sous-réseau DMZ vers l'adresse DMZ sur le port 443.
+ - ``Autoriser TCP du sous-réseau DMZ vers l'adresse DMZ sur le port 443``
 
 Pour effectuer un ping vers le pare-feu depuis la DMZ :
 
- - Autoriser ICMP du sous-réseau DMZ vers l'adresse DMZ.
+ - ``Autoriser ICMP du sous-réseau DMZ vers l'adresse DMZ``
 
 Si un trafic est nécessaire de la DMZ vers le LAN :
 
- - Autoriser tout trafic nécessaire de la DMZ vers le LAN.
+ - ``Autoriser tout trafic nécessaire de la DMZ vers le LAN``
 
 Ne pas autoriser la DMZ à atteindre le LAN ou d'autres réseaux privés :
 
- - Rejeter tout en provenance du sous-réseau DMZ vers RFC1918.
+ - ``Rejeter tout en provenance du sous-réseau DMZ vers RFC1918``
 
 Pour l'accès à Internet :
 
- - Autoriser tout du sous-réseau DMZ vers n'importe quelle destination sur Internet.
+ - ``Autoriser tout du sous-réseau DMZ vers n'importe quelle destination sur Internet``
 
 
 ![regledmz](./ressource/s12/firewalldmz1.jpg)
