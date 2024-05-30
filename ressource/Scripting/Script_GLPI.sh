@@ -60,10 +60,10 @@ define('GLPI_LOG_DIR', '/var/log/glpi');
 EOF
 
 # Config Apache2
-touch /etc/apache2/sites-available/support.ecosolutions.fr.conf
-cat > /etc/apache2/sites-available/support.ecosolutions.fr.conf <<EOF
+touch /etc/apache2/sites-available/support.ecotechsolutions.fr.conf
+cat > /etc/apache2/sites-available/support.ecotechsolutions.fr.conf <<EOF
 <VirtualHost *:80>
-    ServerName ecosolutions.fr
+    ServerName ecotechsolutions.fr
 
     DocumentRoot /var/www/glpi/public
 
