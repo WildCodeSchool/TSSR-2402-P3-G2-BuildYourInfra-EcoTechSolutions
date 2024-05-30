@@ -8,7 +8,7 @@
 
 3) FAQ : Solutions aux problèmes connus et communs liés à l'installation et à la configuration
 
-## **Pré-requis techniques**
+## **1. Pré-requis techniques**
 
 ### Pré-requis de base Du Firewall Pfsense
 
@@ -21,7 +21,7 @@
 
 ![](https://github.com/WildCodeSchool/TSSR-2402-P3-G2-BuildYourInfra-EcoTechSolutions/blob/main/ressource/s12/pfsense1.jpg)
 
-## **Installation et Configuration des équipements et ressources**
+## **2. Installation et Configuration des équipements et ressources**
 
 ### Configuration du Firewall Pfsense
 
@@ -159,11 +159,67 @@ Voici un exemple des alias que nous savons créer pour ce projet:
 
 
 
-    
+
 
 
 2. Gestion des ID de VM de groupe
 
 3. Mise en place de règles de pare-feu (WAN & LAN)
+
+### Mise en place et Configuration de Routeurs
+
+Suite à l'installation et la configuration du Parefeu, nous avons mis en place des Routeurs **Vyos**
+
+Nous avons par la même occasion revu notre plan schématique du réseau, pour que celui-ci corresponde à la réalité
+
+![Root](./ressource/S12/EcoTech_Schema.png)
+
+Une fois les routeurs installés, nous devons les paramètrer
+
+#### Configuration des cartes réseaux
+
+1. Au démarrage du Routeur, saisissez le Login `vyos` et le mot de passe `vyos`.
+
+2. Accédez au mode de configuration avec la comande `conf`.
+
+3. Vérifiez la présence des cartes réseaux avec la commande `run show interfaces`.
+
+4. Pour paramètrer l'IP d'une carte réseau, utilisez la commande `set interfaces ethernet <nom de la carte> address <IP de la carte>` puis `commit` puis `save`.
+   Par exemple, pour la carte `eth2` et l'`IP 10.10.8.10/29`, saisissez la commande `set interfaces ethernet eth2 address 10.10.8.10/29` puis `commit` puis `save`.
+
+Ce qui nous donne pour les différents Routeurs les interfaces suivantes :
+
+Routeur ECO-ROOT-01
+
+![Root](./ressource/S12/routeur/Root-01_Interfaces.PNG)
+
+Routeur ECO-ROOT-02
+
+![Root](./ressource/S12/routeur/Root-02_Interfaces.PNG)
+
+Routeur ECO-ROOT-03
+
+![Root](./ressource/S12/routeur/Root-03_Interfaces.PNG)
+
+#### Configuration du Routage
+
+1. De la même façon, une fois en mode Configuration, pour établir une règle de routage, utilisez la commande `set protocols static route <adresse de réseau à cibler> next-hop <adresse de la passerelle>` puis `commit` puis `save`.
+   Par exemple, pour un routage vers le réseau `10.0.0.0/24`, saisissez la commande `set protocols statiuc route 10.0.0.0/24 next-hop 10.10.255.254` puis `commit` puis `save`.
+
+Nous aurons donc nos Routeurs configurés de la façon suivante : 
+
+Routeur ECO-ROOT-01
+
+![Root](./ressource/S12/routeur/Root-01_Routes.PNG)
+
+Routeur ECO-ROOT-02
+
+![Root](./ressource/S12/routeur/Root-02_Routes.PNG)
+
+Routeur ECO-ROOT-03
+
+![Root](./ressource/S12/routeur/Root-03_Routes.PNG)
+
+Vos Routeurs sont configurés.
 
 ## **FAQ : Solutions aux problèmes connus et communs liés à l'installation et à la configuration**
