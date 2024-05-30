@@ -172,7 +172,7 @@ Suite à l'installation et la configuration du Parefeu, nous avons mis en place 
 
 Nous avons par la même occasion revu notre plan schématique du réseau, pour que celui-ci corresponde à la réalité
 
-![Root](./ressource/S12/EcoTech_Schema.png)
+![Root](./ressource/s12/EcoTech_Schema.png)
 
 Une fois les routeurs installés, nous devons les paramètrer
 
