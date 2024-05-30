@@ -685,6 +685,7 @@ Une fois à ce niveau, selon nos besoins, nous recherchons les règles, les rest
 |GPO_EcoT_Computer_Gestion_Alimentation_disk|EcoT_Computers|arrêt du disque dur après des périodes d'inactivité|
 |GPO_EcoT_Computer_définir_page_Accueil_internet|EcoT_Computers|Définir www.google.fr comme page d'accueil par defaut sur EDGE|
 |GPO_EcoT_Computer_Gestion_Alim_Haute_perfo|EcoT_Users(Developpement)|Maximisation de la puissance de traitement|
+|GPO_EcoT_Computer_Install_Firefox|EcoT_Computers|Installation de Firefox|
 
 
 ## Scripts d'Automatisation
