@@ -680,8 +680,8 @@ Une fois à ce niveau, selon nos besoins, nous recherchons les règles, les rest
 
 |Nom|Affectation|Description|
 |:-:|:-:|:-:|
-|GPO_EcoT_Computer_Mdif_Fond_ecran_bloquer|EcoT_Computers|empêcher la modification de l'arrière-plan du menu démarrer, ainsi que l'image de l'écran de verrouillage et d'ouverture de session|
-|GPO_EcoT_Computer_Message_Bienvenu|EcoT_Computers| Message de bienvenu pour les utilisateurs essayant de se connecter|
+|GPO_EcoT_Computer_Modif_Fond_ecran_bloquer|EcoT_Computers|empêcher la modification de l'arrière-plan du menu démarrer, ainsi que l'image de l'écran de verrouillage et d'ouverture de session|
+|GPO_EcoT_Computer_Message_Bienvenue|EcoT_Computers| Message de bienvenu pour les utilisateurs essayant de se connecter|
 |GPO_EcoT_Computer_Gestion_Alimentation_disk|EcoT_Computers|arrêt du disque dur après des périodes d'inactivité|
 |GPO_EcoT_Computer_définir_page_Accueil_internet|EcoT_Computers|Définir www.google.fr comme page d'accueil par defaut sur EDGE|
 |GPO_EcoT_Computer_Gestion_Alim_Haute_perfo|EcoT_Users(Developpement)|Maximisation de la puissance de traitement|
