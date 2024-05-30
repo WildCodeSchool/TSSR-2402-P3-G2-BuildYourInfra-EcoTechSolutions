@@ -12,12 +12,12 @@ $DomainDN = (Get-ADDomain).DistinguishedName
 
 # Pré-requis
 
-If (-not(Get-Module -Name ImportExcel))
+if (-not(Get-Module -Name ImportExcel))
 {
     Install-Module -Name ImportExcel
 }
 
-If (-not(Get-Module -Name ActiveDirectory))
+if (-not(Get-Module -Name ActiveDirectory))
 {
     Install-Module -Name ActiveDirectory   
 }
@@ -52,7 +52,7 @@ function RemoveStringSpecialCharacters
                     -replace '/', '' `
                     -replace '\*', '' `
                     -replace ' ', '' `
-                    -replace "'", "" `
+                    -replace "’", '' `
                     -replace 'ç', 'c'
 }
 
@@ -80,7 +80,7 @@ function ReplaceOUName
 
 ### Paramètres spécifiques
 
-$OUPathUsers = "OU=Ecot_Users,OU=EcoT_Bordeaux,OU=Ecot_France,$DomainDN"
+$OUPathUsers = "OU=EcoT_Users,OU=EcoT_Bordeaux,OU=EcoT_France,$DomainDN"
 
 
 ### Main Program
@@ -93,7 +93,9 @@ Write-Host "1 - Le fichier Excel existant : Ecotech-Listing.xlsx"
 Write-Host "2 - Le dernier fichier CSV de l'historique"
 Write-Host ""
 
-$OptionAddAD = Read-Host "Saisissez votre choix : "
+$OptionAddAD = Read-Host "Saisissez votre choix "
+
+
 
 switch ($OptionAddAD)
 {
@@ -129,15 +131,15 @@ switch ($OptionAddAD)
                 Foreach ($User in $UsersAD)
                 {
                     Write-Progress -Activity "Création des utilisateurs dans l'OU" -Status "%effectué" -PercentComplete ($Count/$UsersAD.Length*100)
-                    $Name              = "$($User.Nom) $($User.Prenom)"
-                    $DisplayName       = "$($User.Nom) $($User.Prenom)"
+                    $Name              = "$($User.Prenom) $($User.Nom)"
+                    $DisplayName       = "$($User.Prenom) $($User.Nom)"
                     $GivenName         = $User.Prenom
                     $LittleName        = RemoveStringSpecialCharacters $($User.Prenom)
                     $Surname           = $User.Nom
                     $LittleSurname     = RemoveStringSpecialCharacters $($User.Nom)
     
                     $SamAccountName    = $($LittleName.substring(0,1).ToLower()) + $($LittleSurname.ToLower())
-                    $UserPrincipalName = (($LittleName.substring(0,1).ToLower() + $LittleSurname.ToLower()) + "@" + (Get-ADDomain).Forest)
+                    $UserPrincipalName = $($LittleName.substring(0,1).ToLower()) + $($LittleSurname.ToLower()) + "@" + (Get-ADDomain).Forest
                     
                     $OfficePhone       = $User.TelFixe
                     $Mobile            = $User.TelMobile
@@ -146,7 +148,14 @@ switch ($OptionAddAD)
 
                     $ReplaceService    = ReplaceOUName $($User.Service)
                     $ReplaceDepartment = ReplaceOUName $($User.Departement)
-                    $Path              = "OU=$ReplaceService,OU=$ReplaceDepartment,$OUPathUsers"
+                    if ($ReplaceService -eq "-")
+                    {
+                        $Path              = "OU=$ReplaceDepartment,$OUPathUsers"
+                    }
+                    else
+                    {
+                        $Path              = "OU=$ReplaceService,OU=$ReplaceDepartment,$OUPathUsers"
+                    }
     
                     $Location          = $($User.Site)
                     $Title             = $($User.Fonction)
@@ -157,9 +166,9 @@ switch ($OptionAddAD)
                     if (($ADUsers | Where {$_.SamAccountName -eq $SamAccountName}) -eq $Null)
                     {
                         New-ADUser -Name $Name -DisplayName $DisplayName -SamAccountName $SamAccountName -UserPrincipalName $UserPrincipalName `
-                        -GivenName $GivenName -Surname $Surname -OfficePhone $OfficePhone -Mobile $Mobile -EmailAddress $EmailAddress `
+                        -GivenName $GivenName -Surname $Surname -OfficePhone $OfficePhone -MobilePhone $Mobile -EmailAddress $EmailAddress `
                         -Path $Path -AccountPassword (ConvertTo-SecureString -AsPlainText Azerty1* -Force) -Enabled $True `
-                        -PhysicalDeliveryOfficeName $Location -Title $Title -Company $Company -Department $Department `
+                        -Office $Location -Title $Title -Company $Company -Department $Department `
                         -ChangePasswordAtLogon $True #-Manager $Manager
             
                         Write-Host "Ajout de l'utilisateur $SamAccountName" -ForegroundColor Green
@@ -168,12 +177,19 @@ switch ($OptionAddAD)
                     }
                     else
                     {
-                        Write-Host "`nVous n'avez pas confirmé votre choix" -ForegroundColor Yellow
+                        Write-Host "Le USER $SamAccountName existe déjà" -ForegroundColor Red
                     }
+                    $Count++
+                    Start-Sleep -Milliseconds 100
                 }
+            }
+            else
+            {
+               Write-Host "`nVous n'avez pas confirmé votre choix" -ForegroundColor Yellow
             }
         }
     }
+    
     "2"
     {
         # Création de variable du chemin du fichier par défaut
@@ -198,15 +214,15 @@ switch ($OptionAddAD)
             Foreach ($User in $UsersAD)
             {
                 Write-Progress -Activity "Création des utilisateurs dans l'OU" -Status "%effectué" -PercentComplete ($Count/$UsersAD.Length*100)
-                $Name              = "$($User.Nom) $($User.Prenom)"
-                $DisplayName       = "$($User.Nom) $($User.Prenom)"
+                $Name              = "$($User.Prenom) $($User.Nom)"
+                $DisplayName       = "$($User.Prenom) $($User.Nom)"
                 $GivenName         = $User.Prenom
                 $LittleName        = RemoveStringSpecialCharacters $($User.Prenom)
                 $Surname           = $User.Nom
                 $LittleSurname     = RemoveStringSpecialCharacters $($User.Nom)
 
                 $SamAccountName    = $($LittleName.substring(0,1).ToLower()) + $($LittleSurname.ToLower())
-                $UserPrincipalName = (($LittleName.substring(0,1).ToLower() + $LittleSurname.ToLower()) + "@" + (Get-ADDomain).Forest)
+                $UserPrincipalName = $($LittleName.substring(0,1).ToLower()) + $($LittleSurname.ToLower()) + "@" + (Get-ADDomain).Forest
                 
                 $OfficePhone       = $User.TelFixe
                 $Mobile            = $User.TelMobile
@@ -215,8 +231,14 @@ switch ($OptionAddAD)
 
                 $ReplaceService    = ReplaceOUName $($User.Service)
                 $ReplaceDepartment = ReplaceOUName $($User.Departement)
-                $Path              = "OU=$ReplaceService,OU=$ReplaceDepartment,$OUPathUsers"
-
+                if ($ReplaceService -eq "-")
+                {
+                    $Path              = "OU=$ReplaceDepartment,$OUPathUsers"
+                }
+                else
+                {
+                    $Path              = "OU=$ReplaceService,OU=$ReplaceDepartment,$OUPathUsers"
+                }
                 $Location          = $($User.Site)
                 $Title             = $($User.Fonction)
                 $Department        = "$($User.Departement) -  $($User.Service)"
@@ -226,16 +248,16 @@ switch ($OptionAddAD)
                 if (($ADUsers | Where {$_.SamAccountName -eq $SamAccountName}) -eq $Null)
                 {
                     New-ADUser -Name $Name -DisplayName $DisplayName -SamAccountName $SamAccountName -UserPrincipalName $UserPrincipalName `
-                    -GivenName $GivenName -Surname $Surname -OfficePhone $OfficePhone -Mobile $Mobile -EmailAddress $EmailAddress `
+                    -GivenName $GivenName -Surname $Surname -OfficePhone $OfficePhone -MobilePhone $Mobile -EmailAddress $EmailAddress `
                     -Path $Path -AccountPassword (ConvertTo-SecureString -AsPlainText Azerty1* -Force) -Enabled $True `
-                    -PhysicalDeliveryOfficeName $Location -Title $Title -Company $Company -Department $Department `
+                    -Office $Location -Title $Title -Company $Company -Department $Department `
                     -ChangePasswordAtLogon $True #-Manager $Manager
         
                     Write-Host "Ajout de l'utilisateur $SamAccountName" -ForegroundColor Green
                     $EventLogTask = "Ajout de l'utilisateur $SamAccountName dans AD"
                     EventLogAD
                 }
-                Else
+                else
                 {
                     Write-Host "Le USER $SamAccountName existe déjà" -ForegroundColor Red
                 }
