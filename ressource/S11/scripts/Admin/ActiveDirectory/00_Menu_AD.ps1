@@ -16,7 +16,7 @@ function EventLogAD {
     #Test du chemin pour le Dossier
     if (-not(Test-Path $LogFolder)) {
         # Si il n'existe pas >> Continue
-        New-Item -ItemType Directory $LogFolder -OutBuffer # Création du Dossier en tâche de fond (mode silencieux)
+        New-Item -ItemType Directory $LogFolder # Création du Dossier en tâche de fond (mode silencieux)
     }
     Add-Content -Path $LogFolder\$LogFile -value "$(Get-Date -Format yyyyMMdd)-$(Get-Date -Format HHmmss)-$env:USERNAME-$EventLogTask"
 }
@@ -50,27 +50,27 @@ while ($true) {
         "1" {
             $EventLogTask = "--- Redirect Add OU ---"
             EventLogAD
-            C:\Admin\ActiveDirectory\01_Add_OU_AD.ps1
+            $FilePath\01_Add_OU_AD.ps1
         }
         "2" {
             $EventLogTask = "--- Redirect Add Group ---"
             EventLogAD
-            C:\Admin\ActiveDirectory\02_Add_Group_AD.ps1
+            $FilePath\02_Add_Group_AD.ps1
         }
         "3" {
             $EventLogTask = "--- Redirect Add Computer ---"
             EventLogAD
-            C:\Admin\ActiveDirectory\03_Add_Comp_AD.ps1
+            $FilePath\03_Add_Comp_AD.ps1
         }
         "4" {
             $EventLogTask = "--- Redirect Add User ---"
             EventLogAD
-            C:\Admin\ActiveDirectory\04_Add_User_AD.ps1
+            $FilePath\04_Add_User_AD.ps1
         }
         "L" {
             $EventLogTask = "--- Redirect Logs ---"
             EventLogAD
-            C:\Admin\ActiveDirectory\00_Logs_AD.ps1
+            $FilePath\00_Logs_AD.ps1
         }
         "x" {
             # Fin de Prise de Logs + Sortie du Script
