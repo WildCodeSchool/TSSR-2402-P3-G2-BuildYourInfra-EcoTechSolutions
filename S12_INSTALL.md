@@ -154,7 +154,7 @@ Voici un exemple des alias que nous avons créer pour ce projet:
 
 ![alias3](./ressource/s12/alias4ok.jpg)  
 
-![alias4](./ressource/s12/alias4ok.jpg)
+![alias4](./ressource/s12/alias5.jpg)
 
 
 
