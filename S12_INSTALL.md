@@ -191,15 +191,15 @@ Ce qui nous donne pour les différents Routeurs les interfaces suivantes :
 
 Routeur ECO-ROOT-01
 
-![Root](./ressource/S12/routeur/Root-01_Interfaces.PNG)
+![Root](./ressource/s12/routeur/Root-01_Interfaces.PNG)
 
 Routeur ECO-ROOT-02
 
-![Root](./ressource/S12/routeur/Root-02_Interfaces.PNG)
+![Root](./ressource/s12/routeur/Root-02_Interfaces.PNG)
 
 Routeur ECO-ROOT-03
 
-![Root](./ressource/S12/routeur/Root-03_Interfaces.PNG)
+![Root](./ressource/s12/routeur/Root-03_Interfaces.PNG)
 
 #### Configuration du Routage
 
@@ -210,15 +210,15 @@ Nous aurons donc nos Routeurs configurés de la façon suivante :
 
 Routeur ECO-ROOT-01
 
-![Root](./ressource/S12/routeur/Root-01_Routes.PNG)
+![Root](./ressource/s12/routeur/Root-01_Routes.PNG)
 
 Routeur ECO-ROOT-02
 
-![Root](./ressource/S12/routeur/Root-02_Routes.PNG)
+![Root](./ressource/s12/routeur/Root-02_Routes.PNG)
 
 Routeur ECO-ROOT-03
 
-![Root](./ressource/S12/routeur/Root-03_Routes.PNG)
+![Root](./ressource/s12/routeur/Root-03_Routes.PNG)
 
 Vos Routeurs sont configurés.
 
