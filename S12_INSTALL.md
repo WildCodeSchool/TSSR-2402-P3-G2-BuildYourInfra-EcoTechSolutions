@@ -152,7 +152,7 @@ On peut alors en attribuer aux **IP**, **Ports**, **URL** où sur un ensemble:
 Une fois celui-ci crée, n'oubliez pas de sauvegarder pour que PfSense le prenne en compte !
 Voici un exemple des alias que nous avons créer pour ce projet:
 
-![alias3](./ressource/s12/alias4.jpg)  
+![alias3](./ressource/s12/alias4ok.jpg)  
 
 ![alias4](./ressource/s12/alias4ok.jpg)
 
