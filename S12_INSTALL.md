@@ -136,7 +136,7 @@ Nous retenons qu'il est courant de terminer la base de règles d'un pare‑feu p
 
 ### Règles de bonnes pratiques
 
-  Nous avons regroupé dans cette partie l'ensemble des "règles" de bonne pratique qui, selon nous, facilite la configuration, la lisibilité, l'exécution et la pratique du parefeu. Nous précisons qu'il reste néanmoins fortement conseillé de commenter à la fois vos actions sur une note (physique ou virtuelle) afin de pouvoir reprendre votre travail là où vous étiez arrêté précédemment, ainsi que dès que vous en avez l'occasion lors de l'utilisation du logiciel (commentaires permettant d'expliquer la raison de votre manoeuvre où dans quel contexte vous l'avez appliquée, par exemple, un descriptif à l'origine d'une règle apposée, ou bien même l'auteur).
+  Nous avons regroupé dans cette partie l'ensemble des "règles" de bonne pratique qui, selon nous, facilite la configuration, la lisibilité, l'exécution et la pratique du parefeu. Nous précisons qu'il reste néanmoins fortement conseillé de commenter à la fois vos actions sur une note (physique ou virtuelle) afin de pouvoir reprendre votre travail là où vous étiez arrêté précédemment, ainsi que dès que vous en avez l'occasion lors de l'utilisation du logiciel (commentaires permettant d'expliquer la raison de votre manoeuvre ou dans quel contexte vous l'avez appliquée, par exemple, un descriptif à l'origine d'une règle apposée, ou bien même l'auteur).
 
     
 #### Utiliser des alias
