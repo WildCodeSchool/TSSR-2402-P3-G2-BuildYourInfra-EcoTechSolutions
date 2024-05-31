@@ -263,6 +263,10 @@ Une fois les routeurs installés, nous devons les parametrer
 4. Pour paramètrer l'IP d'une carte réseau, utilisez la commande `set interfaces ethernet <nom de la carte> address <IP de la carte>` puis `commit` puis `save`.
    Par exemple, pour la carte `eth2` et l'`IP 10.10.8.10/29`, saisissez la commande `set interfaces ethernet eth2 address 10.10.8.10/29` puis `commit` puis `save`.
 
+5. Sortez du Mode Configuration avec la commande `exit`.
+ 
+6. Vérifiez vos paramètres avec la commande `show interfaces`.
+ 
 Ce qui nous donne pour les différents Routeurs les interfaces suivantes :
 
 Routeur ECO-ROOT-01
@@ -281,6 +285,10 @@ Routeur ECO-ROOT-03
 
 1. De la même façon, une fois en mode Configuration, pour établir une règle de routage, utilisez la commande `set protocols static route <adresse de réseau à cibler> next-hop <adresse de la passerelle>` puis `commit` puis `save`.
    Par exemple, pour un routage vers le réseau `10.0.0.0/24`, saisissez la commande `set protocols static route 10.0.0.0/24 next-hop 10.10.255.254` puis `commit` puis `save`.
+
+2. Sortez du Mode Configuration avec la commande `exit`.
+ 
+3. Vérifiez vos paramètres avec la commande `show ip route`.
 
 Nous aurons donc nos Routeurs configurés de la façon suivante : 
 
