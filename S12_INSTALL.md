@@ -162,7 +162,7 @@ Voici un exemple des alias que nous avons créer pour ce projet:
 
 
 
-Au jour d'aujourd'hui nous n'avons pas encore besoin "d'appliquer" les règles du pare-feu étant donné que l'infrastructure derrière n'est pas encore opérante. Pour cette raison, les règles sont "désactivées", dans le but de ne pas compromettre la suite du projet.
+Jusqu'alors nous n'avons pas encore besoin "d'appliquer" les règles du pare-feu étant donné que l'infrastructure derrière n'est pas encore opérante. Pour cette raison, les règles sont "désactivées", dans le but de ne pas compromettre la suite du projet.
 Nous vous proposons une méthode de gestion des règles dite raisonnable, ou plutôt "de bonnes pratiques", notamment tirées de la documentation **NetGate** :
 
 **Mise en place d'une isolation du LAN et de la DMZ, chacun avec un accès Internet non restreint:**
