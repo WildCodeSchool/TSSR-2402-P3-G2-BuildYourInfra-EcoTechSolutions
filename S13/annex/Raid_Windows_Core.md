@@ -1,14 +1,16 @@
 # Stockage avancé
 
-# Mise en place du RAID 1 sur Windows Core
+## Mise en place du RAID 1 sur Windows Core
 
-## 1. Pré-requis techniques
+### 1. Pré-requis techniques
 
 **_ECO-Moldaver_**
+* Windows Server 2022 en Core
 * IP : `10.10.8.120/25`
+* Rôle : Réplication ADDS
 * IDE0 : 1 HDD de 100 Go
 
-## 2. Ajout d'un disque dur sur Proxmox
+### 2. Ajout d'un disque dur sur Proxmox
 
 1. Avant de commencer, rendez-vous dans l'onglet `Snapshots` de votre serveur sur Proxmox, puis `Take Snapshot`.
 
@@ -30,7 +32,7 @@
 
 ![Raid](/ressource/S13/raid/Proxmox_05.PNG)
 
-## 3. Configuration du Raid sous Powershell
+### 3. Configuration du Raid sous Powershell
 
 1. Démarrez votre serveur, puis saisissez `15` dans le menu `SConfig` pour accéder à `Powershell`.
 
@@ -52,7 +54,7 @@ list part
 
 4. Nous allons supprimer la partition `Reserved` du disque 1.  
 ```
-sel part 1
+select part 1
 delete partition override
 ```
 
@@ -93,7 +95,7 @@ list part
 select disk 0
 convert dynamic
 select disk 1
-con dyn
+convert dynamic
 ```
 
 ![Raid](/ressource/S13/raid/Core_Raid_07.PNG)
@@ -107,6 +109,7 @@ add disk=1
 ![Raid](/ressource/S13/raid/Core_Raid_08.PNG)
 
 9. Votre RAID 1 est à présent opérationnel. Sortez de `Diskpart` avec la commande `exit`, puis redémarrez votre serveur.  
-Au démarrage, vous aurez le choix entre `Windows Server` et `Windows Server - secondary plex`, sélectionnez `Windows Server` ou attendez 30 secondes et Windows va démarrer automatiquement.
+Au démarrage, vous aurez le choix entre `Windows Server` et `Windows Server - secondary plex`, sélectionnez `Windows Server` ou attendez 30 secondes et Windows va démarrer automatiquement.  
+Faites un snapshot sur **Proxmox**
 
 ![Raid](/ressource/S13/raid/Core_Raid_09.PNG)
