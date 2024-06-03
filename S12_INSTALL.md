@@ -392,7 +392,7 @@ Clic droit sur la GPO récemment créée > *Modifier* > ``Configuration utilisat
 Nous sélectionnons le paramètre suivant : *Empêcher la suppression d'éléments*. Nous l'**activons**.
 Ainsi, ici nous la configurons selon les bonnes pratiques conseillées, i.e. 1 GPO = 1 paramètre !
 
-![telemetrie2]()
+![telemetrie2](./S13/s13/tele2.jpg)
 
 
 
