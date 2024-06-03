@@ -40,4 +40,9 @@ Ensuite, nous commençons par partitionner le disque ajouter en vue de l'établi
 
 
   
+
+#### Serveur Windows **_Moldaver_**
+
+Rendez-vous sur l'annexe disponible : [Raid_Windows_Core](https://github.com/WildCodeSchool/TSSR-2402-P3-G2-BuildYourInfra-EcoTechSolutions/blob/main/S13/annex/Raid_Windows_Core.md)
+
 ## **FAQ : Solutions aux problèmes connus et communs liés à l'installation et à la configuration**
