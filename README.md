@@ -143,16 +143,12 @@ Activités et répartitions des tâches
 |                Tâches                 | Charles Caulier | Damien Legay | Anthony Javault | Nicolas Maggiori |
 | :-----------------------------------: | :-------------: | :----------: | :-------------: | :--------------: |
 |               FIREWALL                |                 |      x       |                 |       x          |
-|           Gestion ID de VM            |                 |              |                 |                  |
-|       Règles de bonnes pratiques      |                 |              |                 |                  |
-|       Mise en place du "Deny All"     |                 |              |                 |                  |
+|           Gestion ID de VM            |                 |      x       |                 |                  |
+|       Règles de bonnes pratiques      |                 |              |                 |       x          |
+|       Mise en place du "Deny All"     |                 |              |                 |       x          |
 |              Routeur Vyos             |        x        |              |       x         |                  |
 |   Gestion de la télémétrie par GPO    |                 |              |                 |                  |
 |          Automatisation GLPI          |        x        |              |                 |                  |
-|                                       |                 |              |                 |                  |
-|                                       |                 |              |                 |                  |
-|                                       |                 |              |                 |                  |
-|                                       |                 |              |                 |                  |
 |             Documentation             |        x        |      x       |        x        |        x         |
 |    Préparation slides Présentation    |                 |              |                 |                  |
 |             Présentation              |        x        |      x       |        x        |        x         |
@@ -161,7 +157,7 @@ Activités et répartitions des tâches
 
 |PO|SM|
 |:-:|:-:|
-|||
+|Damien Legay|Charles Caulier|
 
 Activités et répartitions des tâches
 
