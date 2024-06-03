@@ -377,7 +377,7 @@ En suivant, clic droit sur la GPO récemment créée et nommée > *Modifier* > d
 On *double-clic* sur chacun d'eux, puis **Désactivons** ou **activons** selon nos besoins.  
 Ce qui donne :
 
-![telemetrie]()
+![telemetrie](./S13/s13/tele1.jpg)
 
 
 Il est important de préciser ici qu'il est de bonne pratique lors de la configuration de GPO, de ne considérer qu'un seul paramètre par GPO active ! C'est-à-dire dans notre exemple, il faudrait créer une GPO pour la paramètre ``Autoriser Cortana``, puis une autre GPO pour la paramètre ``Autoriser Cortana au-dessus de l'écran de verrouillage`` et ainsi de suite...
