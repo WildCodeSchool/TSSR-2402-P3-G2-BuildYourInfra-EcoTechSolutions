@@ -92,6 +92,10 @@ Exécutez la commande suivante pour importer le module PowerShell de LAPS :
 Ensuite, exécuter la commande ci-dessous pour mettre à jour le schéma AD, la commande doit retourner trois lignes avec le statut "Success" à chaque fois.
 
 ![laps6](./s13/laps7.jpg)
+
+Si l'on ouvre la console "Utilisateurs et ordinateurs Active Directory" et que l'on regarde les propriétés d'un ordinateur membre du domaine, on peut voir la présence des deux nouveaux attributs. Voici un exemple :
+
+![laps8]()
   
 La première étape est faite, passons à la suite.
 
