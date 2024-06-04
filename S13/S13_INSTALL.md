@@ -48,21 +48,21 @@ Une fois en place, Microsoft LAPS s'assure que tous les appareils disposent de m
 
 Avant de commencer, téléchargez LAPS gratuitement sur le site de Microsoft. Vous devez télécharger à minima "LAPS.x64.msi" pour les machines 64 bits et "LAPS.x86.msi" pour les machines 32 bits, en fonction de vos besoins. Ici, nous optons pour une version 64 bits.
 
-![laps1](./s13/laps1.jpg)
+![laps0](./s13/laps.jpg)
 
 Sur le contrôleur de domaine, nous allons installer les outils de gestion LAPS. Cela pourrait être installé sur un autre serveur où vous avez les outils d'administration Active Directory déjà installés.
 
 Exécutez le package MSI correspondant à la version de Windows de votre serveur : 32 bits ou 64 bits. Vous allez voir, l'installation est simple et s'effectue en quelques clics... Cliquez sur "Next".
-
-![laps2](./s13/laps2.jpg)
+    
+![laps1](./s13/laps1.jpg)
 
 Cochez l'option "I accept the terms in the License Agreement" et cliquez sur "Next".
-
-![laps3](./s13/laps3.jpg)
+  
+![laps2](./s13/laps2.jpg)
 
 Ensuite, vous devez installer tous les outils d'administration (comme sur l'image ci-dessous) et vous pouvez désélectionner l'entrée "AdmPwd GPO Extension" car elle n'est pas utile sur le contrôle de domaine. En fait, le composant "AdmPwd GPO Extension" doit être déployé sur l'ensemble des machines à gérer via LAPS. Poursuivez.
-
-![laps4]()
+  
+![laps3](./s13/laps3.jpg)
 
 Voici l'utilité des différents outils de gestion :
 
@@ -71,6 +71,10 @@ Voici l'utilité des différents outils de gestion :
  - GPO Editor templates : modèle ADMX de LAPS
 
 Démarrez l'installation, quelques secondes seront suffisantes. Cliquez sur "Finish" une fois que c'est fait.
+
+  
+![laps4]()
+
 
 ![laps5]()
 
