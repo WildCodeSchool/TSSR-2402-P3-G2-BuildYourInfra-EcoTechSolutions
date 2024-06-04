@@ -58,7 +58,7 @@ Exécutez le package MSI correspondant à la version de Windows de votre serveur
 
 Cochez l'option "I accept the terms in the License Agreement" et cliquez sur "Next".
 
-![laps3]()
+![laps3](./s13/laps3.jpg)
 
 Ensuite, vous devez installer tous les outils d'administration (comme sur l'image ci-dessous) et vous pouvez désélectionner l'entrée "AdmPwd GPO Extension" car elle n'est pas utile sur le contrôle de domaine. En fait, le composant "AdmPwd GPO Extension" doit être déployé sur l'ensemble des machines à gérer via LAPS. Poursuivez.
 
