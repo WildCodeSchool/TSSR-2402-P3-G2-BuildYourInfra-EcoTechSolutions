@@ -91,7 +91,7 @@ Exécutez la commande suivante pour importer le module PowerShell de LAPS :
 
 Ensuite, exécuter la commande ci-dessous pour mettre à jour le schéma AD, la commande doit retourner trois lignes avec le statut "Success" à chaque fois.
 
-![laps6]()
+![laps6](./s13/laps7.jpg)
   
 La première étape est faite, passons à la suite.
 
