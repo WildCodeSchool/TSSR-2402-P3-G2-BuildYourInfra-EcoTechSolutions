@@ -38,6 +38,47 @@ Ensuite, nous commençons par partitionner le disque ajouter en vue de l'établi
 
 
 
+### Mise en place de LAPS - Mot de passe administrateur local.
+
+LAPS pour Local Administrator Password Solution est une solution gratuite proposée par Microsoft qui va permettre de gérer les mots de passe des comptes "Administrateur" locaux des postes de travail et des serveurs. Dès lors que le compte Administrateur local d'une machine est géré par Microsoft LAPS, le mot de passe de ce compte va être généré aléatoirement (selon certains critères) et stocké dans l'Active Directory au sein de l'objet "ordinateur" (computer) correspondant à la machine. De cette façon, l'administrateur système n'a pas à gérer ces mots de passe lui-même, ni à les stocker dans un gestionnaire de mots de passe un par un.
+
+Une fois en place, Microsoft LAPS s'assure que tous les appareils disposent de mots de passe uniques et robustes afin de lutter contre les connexions malveillantes ou non autorisées.
+  
+#### Console de gestion sur un AD en GUI
+
+Avant de commencer, téléchargez LAPS gratuitement sur le site de Microsoft. Vous devez télécharger à minima "LAPS.x64.msi" pour les machines 64 bits et "LAPS.x86.msi" pour les machines 32 bits, en fonction de vos besoins. Ici, nous optons pour une version 64 bits.
+
+![laps1]()
+
+Sur le contrôleur de domaine, nous allons installer les outils de gestion LAPS. Cela pourrait être installé sur un autre serveur où vous avez les outils d'administration Active Directory déjà installés.
+
+Exécutez le package MSI correspondant à la version de Windows de votre serveur : 32 bits ou 64 bits. Vous allez voir, l'installation est simple et s'effectue en quelques clics... Cliquez sur "Next".
+
+![laps2]()
+
+Cochez l'option "I accept the terms in the License Agreement" et cliquez sur "Next".
+
+![laps3]()
+
+Ensuite, vous devez installer tous les outils d'administration (comme sur l'image ci-dessous) et vous pouvez désélectionner l'entrée "AdmPwd GPO Extension" car elle n'est pas utile sur le contrôle de domaine. En fait, le composant "AdmPwd GPO Extension" doit être déployé sur l'ensemble des machines à gérer via LAPS. Poursuivez.
+
+![laps4]()
+
+Voici l'utilité des différents outils de gestion :
+
+ - Fat client UI : outil graphique pour la gestion de LAPS
+ - PowerShell module : commandes PowerShell pour LAPS
+ - GPO Editor templates : modèle ADMX de LAPS
+
+Démarrez l'installation, quelques secondes seront suffisantes. Cliquez sur "Finish" une fois que c'est fait.
+
+![laps5]()
+
+La première étape est faite, passons à la suite.
+
+
+
+
 
   
 #### Serveur Windows **_Maximus_**
