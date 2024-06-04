@@ -95,7 +95,7 @@ Ensuite, exécuter la commande ci-dessous pour mettre à jour le schéma AD, la 
 
 Si l'on ouvre la console "Utilisateurs et ordinateurs Active Directory" et que l'on regarde les propriétés d'un ordinateur membre du domaine, on peut voir la présence des deux nouveaux attributs. Voici un exemple :
 
-![laps8]()
+![laps8](./s13/laps8.jpg)
   
 La première étape est faite, passons à la suite.
 
