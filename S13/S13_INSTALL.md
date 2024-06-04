@@ -48,7 +48,7 @@ Une fois en place, Microsoft LAPS s'assure que tous les appareils disposent de m
 
 Avant de commencer, téléchargez LAPS gratuitement sur le site de Microsoft. Vous devez télécharger à minima "LAPS.x64.msi" pour les machines 64 bits et "LAPS.x86.msi" pour les machines 32 bits, en fonction de vos besoins. Ici, nous optons pour une version 64 bits.
 
-![laps1]()
+![laps1](./S13/s13/laps1.jpg)
 
 Sur le contrôleur de domaine, nous allons installer les outils de gestion LAPS. Cela pourrait être installé sur un autre serveur où vous avez les outils d'administration Active Directory déjà installés.
 
