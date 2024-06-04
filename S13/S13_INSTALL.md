@@ -73,7 +73,7 @@ Voici l'utilité des différents outils de gestion :
 Démarrez l'installation, quelques secondes seront suffisantes. Cliquez sur "Finish" une fois que c'est fait.
 
   
-![laps4]()
+![laps4](./s13/laps5.jpg)
 
 
 ![laps5]()
