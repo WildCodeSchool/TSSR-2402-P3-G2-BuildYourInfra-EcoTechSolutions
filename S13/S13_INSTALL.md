@@ -80,7 +80,13 @@ Si vous avez besoin de localiser le contrôleur de domaine qui dispose de ce rô
   
 ![laps4](./s13/laps5.jpg)
 
+Cette modification du schéma Active Directory va ajouter deux attributs au sein des objets de la class "computers" :
 
+- ms-MCS-AdmPwd : stocker le mot de passe en clair
+- ms-MCS-AdmPwdExpirationTime : stocker la date d’expiration du mot de passe
+
+Exécutez la commande suivante pour importer le module PowerShell de LAPS :
+  
 ![laps5]()
 
 La première étape est faite, passons à la suite.
