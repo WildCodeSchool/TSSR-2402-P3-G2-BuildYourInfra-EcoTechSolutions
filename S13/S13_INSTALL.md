@@ -87,7 +87,7 @@ Cette modification du schéma Active Directory va ajouter deux attributs au sein
 
 Exécutez la commande suivante pour importer le module PowerShell de LAPS :
   
-![laps5]()
+![laps5](./s13/laps6.jpg)
 
 La première étape est faite, passons à la suite.
 
