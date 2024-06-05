@@ -327,7 +327,7 @@ function Set-LogonHours {
 }
 
 # Exemple d'utilisation du script pour définir les heures de connexion des utilisateurs dans une OU spécifique
-Get-ADUser -SearchBase "OU=01Utilisateurs,DC=ekoloclast,DC=lan" -Filter * | Set-LogonHours `
+Get-ADUser -SearchBase "OU=EcoT_Users,OU=EcoT_Bordeaux,OU=EcoT_France,DC=ecotechsolutions,DC=fr" -Filter * | Set-LogonHours `
     -TimeIn24Format @(7,8,9,10,11,12,13,14,15,16,17,18,19) `
     -Monday -Tuesday -Wednesday -Thursday -Friday -Saturday -NonSelectedDaysAre NonWorkingDays
 
