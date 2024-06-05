@@ -406,7 +406,7 @@ Nous avons choisi de mettre en place une GPO de restriction horaire. Ci-dessous 
  - Puis nous configurons les paramètres de retriction en eux-mêmes : ``Configuration de l'ordinateur`` > ``Stratégies`` > ``Paramètres Windows`` > ``Paramètres de sécurité`` > ``Stratégies locales`` > ``Options de sécurité``.
    (Ici nous pouvons double-cliquer sur ``Connexion intéractive`` et ajuster le ``nombre maximal de connexions simultanées`` que nous définissons à **1**)
 
-![horaires4]()
+![horaires4](./s13/horaires4.jpg)
 
 
 
