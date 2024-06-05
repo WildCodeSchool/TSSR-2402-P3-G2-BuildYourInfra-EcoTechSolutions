@@ -401,7 +401,7 @@ Nous avons choisi de mettre en place une GPO de restriction horaire. Ci-dessous 
 
  - Nous commençons par éditer la GPO créée : clic droit sur la GPO créée et sélectionner "Modifier".
 
-![horaires3]()
+![horaires3](./s13/horaires3.jpg)
 
  - Puis nous configurons les paramètres de retriction en eux-mêmes : ``Configuration de l'ordinateur`` > ``Stratégies`` > ``Paramètres Windows`` > ``Paramètres de sécurité`` > ``Stratégies locales`` > ``Options de sécurité``.
    (Ici nous pouvons double-cliquer sur ``Connexion intéractive`` et ajuster le ``nombre maximal de connexions simultanées`` que nous définissons à **1**)
