@@ -234,8 +234,8 @@ function Set-LogonHours {
 
         # Paramètre optionnel pour spécifier les jours non sélectionnés (jours de travail ou non)
         [Parameter(Mandatory=$False)]
-        [ValidateSet("JoursOuvres", "JoursOff")]
-        [string]$NonSelectedDaysAre = "JoursOff",
+        [ValidateSet("WorkingDays", "NonWorkingDays")]
+        [string]$NonSelectedDaysAre = "NonWorkingDays",
 
         # Paramètres optionnels pour les jours de la semaine
         [Parameter(Mandatory=$False)]
@@ -270,10 +270,10 @@ function Set-LogonHours {
 
         # Initialiser les valeurs par défaut des jours de la semaine en fonction du paramètre NonSelectedDaysAre
         switch ($NonSelectedDaysAre) {
-            'JoursOff' {
+            'NonWorkingDays' {
                 $SundayValue = $MondayValue = $TuesdayValue = $WednesdayValue = $ThursdayValue = $FridayValue = $SaturdayValue = '0' * 24
             }
-            'JoursOuvres' {
+            'WorkingDays' {
                 $SundayValue = $MondayValue = $TuesdayValue = $WednesdayValue = $ThursdayValue = $FridayValue = $SaturdayValue = '1' * 24
             }
         }
@@ -322,14 +322,15 @@ function Set-LogonHours {
 
     End {
         # Message de confirmation
-        Write-Output "Ok."
+        Write-Output "All Done :)"
     }
 }
 
 # Exemple d'utilisation du script pour définir les heures de connexion des utilisateurs dans une OU spécifique
-Get-ADUser -SearchBase "OU=EcoT_Users,DC=ecotechsolutions,DC=fr" -Filter * | Set-LogonHours `
+Get-ADUser -SearchBase "OU=01Utilisateurs,DC=ekoloclast,DC=lan" -Filter * | Set-LogonHours `
     -TimeIn24Format @(7,8,9,10,11,12,13,14,15,16,17,18,19) `
     -Monday -Tuesday -Wednesday -Thursday -Friday -Saturday -NonSelectedDaysAre NonWorkingDays
+
 ```
 
 Déclaration de la fonction et des paramètres :
