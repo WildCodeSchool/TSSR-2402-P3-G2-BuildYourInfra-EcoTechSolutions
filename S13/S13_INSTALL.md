@@ -106,6 +106,39 @@ Pour ce faire nous éxecutons la ligne de commande suivante :
 
 ![laps9](./s13/laps9.jpg)
 
+### RESTRICTION D'UTILISATION DES MACHINES - Restriction horaire
+
+Nous avons décidé de mettre en place une restriction horaire au sein de notre domaine. Voici les mesures prises :
+ - 1. Bloquer la connexion pour les utilisateurs non-admin (domaine et local)
+ - 2. Connexion autorisée de 7h30 à 20h, du lundi au samedi
+Pour ce faire, nous avons choisi de mettre en place une GPO de restriction horaire. Ci-dessous les étapes de mise en place :
+
+#### Créer une nouvelle GPO pour la restriction horaire 
+
+  - Ouvrir la console de gestion des stratégies de groupe: on accède à "Outils" > "Gestion des stratégies de groupe".
+  
+![horaires1]()
+
+ - Création de la nouvelle GPO : clic droit sur l'UO interessée pour y lier la GPO (dans notre cas **EcoT_Users**) > "Créer un objet de stratégie de groupe dans ce domaine, et le lier ici"
+ - Nommer la nouvelle GPO de manière toujours explicite.
+
+![horaires2]()
+
+#### Configuration de la restriction horaire pour les utilisateurs
+
+ - Nous commençons par éditer la GPO créée : clic droit sur la GPO créée et sélectionner "Modifier".
+
+![horaires3]()
+
+ - Puis nous configurons les paramètres de retriction en eux-mêmes : ``Configuration de l'ordinateur`` > ``Stratégies`` > ``Paramètres Windows`` > ``Paramètres de sécurité`` > ``Stratégies locales`` > ``Options de sécurité``.
+   (Ici nous pouvons double-cliquer sur ``Connexion intéractive`` et ajuster le ``nombre maximal de connexions simultanées`` que nous définissons à **1**)
+
+![horaires4]()
+
+ - Nous utilisons les restrictions d'heure de connexion pour les utilisateurs du domaine : nous allons dans "Utilisateurs et ordinateurs de l'Active Directory", et pour notre groupe EcoT_Users, nous faisons un clic droit > "Propriétés" > "Compte" > "Heures d'ouverture de session", et ici nous sélectionnons les plages autorisées (7:30-20:00 de lundi au samedi), ainsi ce qui n'est pas sélectionné sera bloqué.
+
+![horaires5]()
+
 
 
 
