@@ -390,7 +390,7 @@ Nous avons choisi de mettre en place une GPO de restriction horaire. Ci-dessous 
 
   - Ouvrir la console de gestion des stratégies de groupe: on accède à "Outils" > "Gestion des stratégies de groupe".
   
-![horaires1]()
+![horaires1](./s13/horaires1.jpg)
 
  - Création de la nouvelle GPO : clic droit sur l'UO interessée pour y lier la GPO (dans notre cas **EcoT_Users**) > "Créer un objet de stratégie de groupe dans ce domaine, et le lier ici"
  - Nommer la nouvelle GPO de manière toujours explicite.
