@@ -213,7 +213,177 @@ Pour ce faire nous éxecutons la ligne de commande suivante :
 Nous avons décidé de mettre en place une restriction horaire au sein de notre domaine. Voici les mesures prises :
  - 1. Bloquer la connexion pour les utilisateurs non-admin (domaine et local)
  - 2. Connexion autorisée de 7h30 à 20h, du lundi au samedi
-Pour ce faire, nous avons choisi de mettre en place une GPO de restriction horaire. Ci-dessous les étapes de mise en place :
+
+
+  
+Pour ce faire, on peut procéder "à la main" pour chaque *user* en faisant clic droit sur *lui* > "Propriétés" > "Compte" > "Horaires d'accès". Il faudra alors l'appliquer pour chaque utilisateur.
+Nous proposons ce script pour la gestion détaillée des horaires de connexion pour les utilisateurs :
+
+```
+function Set-LogonHours {
+    [CmdletBinding()]
+    Param(
+        # Paramètre obligatoire pour les heures de connexion (format 24 heures)
+        [Parameter(Mandatory=$True)]
+        [ValidateRange(0,23)]
+        [int[]]$TimeIn24Format,
+
+        # Paramètre obligatoire pour identifier l'utilisateur (peut provenir du pipeline)
+        [Parameter(Mandatory=$True, ValueFromPipeline=$True, ValueFromPipelineByPropertyName=$True, Position=0)]
+        [string]$Identity,
+
+        # Paramètre optionnel pour spécifier les jours non sélectionnés (jours de travail ou non)
+        [Parameter(Mandatory=$False)]
+        [ValidateSet("JoursOuvres", "JoursOff")]
+        [string]$NonSelectedDaysAre = "JoursOff",
+
+        # Paramètres optionnels pour les jours de la semaine
+        [Parameter(Mandatory=$False)]
+        [switch]$Sunday,
+        [Parameter(Mandatory=$False)]
+        [switch]$Monday,
+        [Parameter(Mandatory=$False)]
+        [switch]$Tuesday,
+        [Parameter(Mandatory=$False)]
+        [switch]$Wednesday,
+        [Parameter(Mandatory=$False)]
+        [switch]$Thursday,
+        [Parameter(Mandatory=$False)]
+        [switch]$Friday,
+        [Parameter(Mandatory=$False)]
+        [switch]$Saturday
+    )
+
+    Process {
+        # Initialiser une journée complète (24 heures) avec des zéros
+        $FullDay = 0..23 | ForEach-Object { 0 }
+        
+        # Définir les heures autorisées de 7h30 à 20h00
+        $TimeIn24Format = 7..19
+        $TimeIn24Format += 7 # Ajout de l'heure 7:30 comme 7
+
+        # Mettre à jour les heures spécifiées à 1
+        $TimeIn24Format | ForEach-Object { $FullDay[$_] = 1 }
+        
+        # Créer une chaîne binaire représentant les heures de travail
+        $Working = -join $FullDay
+
+        # Initialiser les valeurs par défaut des jours de la semaine en fonction du paramètre NonSelectedDaysAre
+        switch ($NonSelectedDaysAre) {
+            'JoursOff' {
+                $SundayValue = $MondayValue = $TuesdayValue = $WednesdayValue = $ThursdayValue = $FridayValue = $SaturdayValue = '0' * 24
+            }
+            'JoursOuvres' {
+                $SundayValue = $MondayValue = $TuesdayValue = $WednesdayValue = $ThursdayValue = $FridayValue = $SaturdayValue = '1' * 24
+            }
+        }
+
+        # Mettre à jour les jours spécifiés avec les heures de travail
+        switch ($PSCmdlet.MyInvocation.BoundParameters.Keys) {
+            'Sunday' { $SundayValue = $Working }
+            'Monday' { $MondayValue = $Working }
+            'Tuesday' { $TuesdayValue = $Working }
+            'Wednesday' { $WednesdayValue = $Working }
+            'Thursday' { $ThursdayValue = $Working }
+            'Friday' { $FridayValue = $Working }
+            'Saturday' { $SaturdayValue = $Working }
+        }
+
+        # Combiner les valeurs binaires des jours de la semaine
+        $AllTheWeek = "$SundayValue$MondayValue$TuesdayValue$WednesdayValue$ThursdayValue$FridayValue$SaturdayValue"
+
+        # Ajuster les heures en fonction du fuseau horaire
+        $TimeZoneOffsetHours = (Get-TimeZone).BaseUtcOffset.Hours
+        if ($TimeZoneOffsetHours -ne 0) {
+            $FixedTimeZoneOffset = $AllTheWeek.Substring(-$TimeZoneOffsetHours) + $AllTheWeek.Substring(0, 168 - $TimeZoneOffsetHours)
+        } else {
+            $FixedTimeZoneOffset = $AllTheWeek
+        }
+
+        # Diviser la chaîne binaire en blocs de 8 bits (octets)
+        $BinaryResult = $FixedTimeZoneOffset -split '(\d{8})' | Where-Object { $_ -match '(\d{8})' }
+        
+        # Initialiser un tableau de bytes
+        $FullByte = 0..20 | ForEach-Object { 0 }
+        $i = 0
+        
+        # Convertir chaque bloc de 8 bits en byte et les stocker dans le tableau
+        foreach ($singleByte in $BinaryResult) {
+            $TempVar = $singleByte.ToCharArray()
+            [array]::Reverse($TempVar)
+            $Byte = [Convert]::ToByte((-join $TempVar), 2)
+            $FullByte[$i] = $Byte
+            $i++
+        }
+
+        # Appliquer les heures de connexion à l'utilisateur spécifié
+        Set-ADUser -Identity $Identity -Replace @{logonhours = $FullByte}
+    }
+
+    End {
+        # Message de confirmation
+        Write-Output "Ok."
+    }
+}
+
+# Exemple d'utilisation du script pour définir les heures de connexion des utilisateurs dans une OU spécifique
+Get-ADUser -SearchBase "OU=EcoT_Users,DC=ecotechsolutions,DC=fr" -Filter * | Set-LogonHours `
+    -TimeIn24Format @(7,8,9,10,11,12,13,14,15,16,17,18,19) `
+    -Monday -Tuesday -Wednesday -Thursday -Friday -Saturday -NonSelectedDaysAre NonWorkingDays
+```
+
+Déclaration de la fonction et des paramètres :
+
+ - La fonction Set-LogonHours accepte plusieurs paramètres pour définir les heures de connexion et les jours de la semaine.
+
+Initialisation des heures de connexion :
+
+ - Un tableau de 24 éléments est initialisé à zéro.
+
+Définition des heures autorisées :
+
+ - Les heures de 7h30 à 20h00 sont définies en incluant les heures de 7 à 19 et en ajoutant l'heure 7 (pour 7:30).
+
+Mise à jour des heures spécifiées :
+
+ - Les heures spécifiées sont mises à jour à 1 dans le tableau.
+
+Création d'une chaîne binaire :
+
+ - La chaîne binaire représentant les heures de travail est créée en combinant les valeurs du tableau.
+
+Configuration des jours de la semaine :
+
+ - Les valeurs par défaut pour chaque jour de la semaine sont définies en fonction du paramètre NonSelectedDaysAre.
+
+Mise à jour des jours spécifiés :
+
+ - Les jours spécifiés (par exemple, $Monday, $Tuesday, etc.) sont mis à jour avec les heures de travail.
+
+Combinaison des valeurs binaires pour tous les jours :
+
+ - Les valeurs binaires pour chaque jour sont combinées en une seule chaîne représentant toute la semaine.
+
+Ajustement pour le fuseau horaire :
+
+ - Les heures de connexion sont ajustées en fonction du décalage du fuseau horaire.
+
+Conversion des valeurs binaires en octets :
+
+ - La chaîne binaire est divisée en blocs de 8 bits et convertie en octets.
+
+Application des heures de connexion :
+
+ - Les heures de connexion sont appliquées à l'utilisateur spécifié via Set-ADUser.
+
+Exécution du script pour tous les utilisateurs dans une OU spécifique :
+
+ - Le script est appliqué à tous les utilisateurs d'une OU spécifique en utilisant Get-ADUser
+
+
+
+
+Nous avons choisi de mettre en place une GPO de restriction horaire. Ci-dessous les étapes de mise en place :
 
 #### Créer une nouvelle GPO pour la restriction horaire 
 
@@ -236,10 +406,6 @@ Pour ce faire, nous avons choisi de mettre en place une GPO de restriction horai
    (Ici nous pouvons double-cliquer sur ``Connexion intéractive`` et ajuster le ``nombre maximal de connexions simultanées`` que nous définissons à **1**)
 
 ![horaires4]()
-
- - Nous utilisons les restrictions d'heure de connexion pour les utilisateurs du domaine : nous allons dans "Utilisateurs et ordinateurs de l'Active Directory", et pour notre groupe EcoT_Users, nous faisons un clic droit > "Propriétés" > "Compte" > "Heures d'ouverture de session", et ici nous sélectionnons les plages autorisées (7:30-20:00 de lundi au samedi), ainsi ce qui n'est pas sélectionné sera bloqué.
-
-![horaires5]()
 
 
 
