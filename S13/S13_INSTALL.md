@@ -208,6 +208,34 @@ Pour ce faire nous éxecutons la ligne de commande suivante :
 
 ![laps9](./s13/laps9.jpg)
 
+
+Maintenant, l'installation sur les postes clients par GPO ou script:
+
+Nous commençons par créer un nouveau dossier partgagé dans lequel nous plaçons le fichier ``LAPS.x64.msi``, de telle sorte à ce qu'il soit rendu accessible sur chaque poste client de notre domaine.
+
+![laps10]()
+
+![laps11]()
+
+![laps12]()
+
+![laps13]()
+
+![laps14]()
+
+![laps15]()
+
+![laps16]()
+
+![laps17]()
+
+![laps18]()
+
+![laps19]()
+
+
+
+  
 ### RESTRICTION D'UTILISATION DES MACHINES - Restriction horaire
 
 Nous avons décidé de mettre en place une restriction horaire au sein de notre domaine. Voici les mesures prises :
