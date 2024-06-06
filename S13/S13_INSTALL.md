@@ -213,7 +213,7 @@ Maintenant, l'installation sur les postes clients par GPO ou script:
 
 Nous commençons par créer un nouveau dossier partgagé dans lequel nous plaçons le fichier ``LAPS.x64.msi``, de telle sorte à ce qu'il soit rendu accessible sur chaque poste client de notre domaine.
 
-![laps10]()
+![laps10](./s13/laps10.jpg)
 
 ![laps11]()
 
