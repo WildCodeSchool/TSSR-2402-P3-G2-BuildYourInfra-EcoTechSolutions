@@ -223,7 +223,7 @@ Nous commençons par créer un nouveau dossier partgagé dans lequel nous plaço
 
 ![laps14](./s13/laps14.jpg)
 
-![laps15]()
+![laps15](./s13/laps15.jpg)
 
 ![laps16]()
 
