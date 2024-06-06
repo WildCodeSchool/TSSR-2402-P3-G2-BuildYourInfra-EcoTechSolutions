@@ -10,7 +10,7 @@
 
 Notre société **_DANA-teC_** a été mandatée par l'entreprise **_EcoTech Solutions_** pour répondre à ses besoins en terme d'Infrastructure Réseau.
 
-Le Projet _BuildYourInfra_ arrive à grand pas, il va apporter plusieurs changements dans votre approche concernant votre environnement de travail.
+Le Projet **_BuildYourInfra_** arrive à grand pas, il va apporter plusieurs changements dans votre approche concernant votre environnement de travail.
 
 Cette transition s'étalera sur 11 semaines, soit jusqu'au 26 juillet 2024, elle pourra apporter par moment de nombreux changements.
 
@@ -34,7 +34,3 @@ Ceci permettra de sécuriser et protéger vos données professionnelles et indiv
 Une Charte de Vigilance et de Sécurité informatique et réseau vous sera remis en main propre par votre responsable direct, durant l'avancée du projet.
 
 Bien entendu, cette documentation s'étoffera chaque semaine pour vous informer de l'avancée du Projet, et ainsi vous préparer dans les meilleures conditions.
-
-
-
-

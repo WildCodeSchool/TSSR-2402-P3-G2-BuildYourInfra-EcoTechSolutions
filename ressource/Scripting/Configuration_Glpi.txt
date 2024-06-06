@@ -1,4 +1,0 @@
-Name="ecotechsolutions"
-User="wilder"
-Password="Azerty1*"
-Interface=ens18

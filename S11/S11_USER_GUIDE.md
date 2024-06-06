@@ -46,7 +46,7 @@ Alors nous allons être (re)dirigés vers un page qui nous demande de nous ident
 Nous arrivons alors sur la page suivante, considérée comme page d'accueil pour l'utilisateur du domaine (non admin):
 
   
-![ticket](./ressource/S11/images/lucy/ticket1.jpg)
+![ticket](./ressource/S11/lucy/ticket1.jpg)
 
 Dans la colonne de gauche, nous cliquons sur "Create a ticket":
 Ici, nous avons plusieur srenseignements à fournir pour la bonne formulation de notre requête
@@ -61,17 +61,17 @@ Ici, nous avons plusieur srenseignements à fournir pour la bonne formulation de
  - Submit message : pour valider et envoyer le ticket
 
 
-![ticket](./ressource/S11/images/lucy/ticket2.jpg)
+![ticket](./ressource/S11/lucy/ticket2.jpg)
 
 Ici nous sommes face à l'interface "administrateur", devant lequel l'utilisateur lambda ne devrait se trouver à condition d'un usage correct et reglementé. Il est affiché à titre indicatif.
 Nous avons pris l'exemple d'un ticket émis par un utilisateur x avec un titre d'incident "y'a rien qui va" et une description "c'est la catastrophe".
 
 
-![ticket](./ressource/S11/images/lucy/ticket3.jpg)
+![ticket](./ressource/S11/lucy/ticket3.jpg)
 
 De nouveau l'interface "administrateur" une fois le ticket ouvert.
 
-![ticket](./ressource/S11/images/lucy/ticket4.jpg)
+![ticket](./ressource/S11/lucy/ticket4.jpg)
 
 ## Gestion Des Scripts d'Automatisation :
 
@@ -81,8 +81,6 @@ De nouveau l'interface "administrateur" une fois le ticket ouvert.
 
 Nos scripts PowerShell sont dotés d'une variable qui enregistre le chemin depuis lequel on le lance. Le point le plus important est que le fichier CSV doit être situé dans le même dossier que le script PowerShell, et c'est la même chose pour le script Bash et son fichier texte. Sinon, l'ajout des données ne pourra pas se faire et créera des erreurs. 
 Comme l'exemple ci-dessous dans la configuration d'un Serveur Core avec un Script d'automatisation .
-
-
 
 ## **2. Utilisation avancée : Comment utilliser au mieux les options**
 

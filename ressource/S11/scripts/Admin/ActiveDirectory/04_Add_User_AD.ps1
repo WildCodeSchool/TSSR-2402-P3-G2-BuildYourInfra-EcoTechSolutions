@@ -14,7 +14,7 @@ $DomainDN = (Get-ADDomain).DistinguishedName
 
 if (-not(Get-Module -Name ImportExcel))
 {
-    Install-Module -Name ImportExcel -RequiredVersion 7.8.4
+    Install-Module -Name ImportExcel
 }
 
 if (-not(Get-Module -Name ActiveDirectory))
@@ -95,7 +95,7 @@ Write-Host ""
 
 $OptionAddAD = Read-Host "Saisissez votre choix "
 
-Write-Host ""
+
 
 switch ($OptionAddAD)
 {
@@ -120,7 +120,7 @@ switch ($OptionAddAD)
             EventLogAD
             # Ajout de Tracabilité des fichiers convertis dans le fichier Data_User_Create.csv
             Add-content -Path $FilePathToConvert\Data\Data_User_Create.csv -Value "$TimeStamp-Ecotech-Listing.csv"
-            Write-Host "Le fichier $TimeStamp-Ecotech-Listing.csv est disponible dans le $filePathToConvert" -ForegroundColor Cyan
+            Write-Host "`nLe fichier $TimeStamp-Ecotech-Listing.csv est disponible dans le $filePathToConvert" -ForegroundColor Cyan
             $OptionFileConvert = Read-Host "`nSouhaitez-vous continuer et utiliser ce fichier pour l'ajout utilisateur ? (O/n) "
             if ($OptionFileConvert = "O")
             {
@@ -148,7 +148,6 @@ switch ($OptionAddAD)
 
                     $ReplaceService    = ReplaceOUName $($User.Service)
                     $ReplaceDepartment = ReplaceOUName $($User.Departement)
-                    $ReplaceNameGroup  = "$ReplaceDepartment`_$ReplaceService"
                     if ($ReplaceService -eq "-")
                     {
                         $Path              = "OU=$ReplaceDepartment,$OUPathUsers"
@@ -171,18 +170,10 @@ switch ($OptionAddAD)
                         -Path $Path -AccountPassword (ConvertTo-SecureString -AsPlainText Azerty1* -Force) -Enabled $True `
                         -Office $Location -Title $Title -Company $Company -Department $Department `
                         -ChangePasswordAtLogon $True #-Manager $Manager
-
-                        # Ajout de l'utilisateur créé dans les groupes dédiés Users / Département / Service (si existant)
-                        Add-ADGroupMember -Identity GRP_EcoT_Users -Members $SamAccountName
-                        Add-ADGroupMember -Identity GRP_EcoT_Users_$ReplaceDepartment -Members $SamAccountName
-                        if ($ReplaceService -ne "-")
-                        {
-                            Add-ADGroupMember -Identity GRP_EcoT_Users_$ReplaceNameGroup -Members $SamAccountName
-                        }
             
                         Write-Host "Ajout de l'utilisateur $SamAccountName" -ForegroundColor Green
                         $EventLogTask = "Ajout de l'utilisateur $SamAccountName dans AD"
-                        EventLogAD
+                        EventLogAD  
                     }
                     else
                     {
@@ -194,7 +185,7 @@ switch ($OptionAddAD)
             }
             else
             {
-               Write-Host "`nVous n'avez pas confirmé votre choix" -ForegroundColor Yellow
+                Write-Host "`nVous n'avez pas confirmé votre choix" -ForegroundColor Yellow
             }
         }
     }
@@ -207,8 +198,6 @@ switch ($OptionAddAD)
         $FileToImport = (Get-Content -Path $FilePathToImport\$DataFileToImport -Tail 1)
 
         Write-Host "Le fichier le plus récent disponible est $FileToImport"
-
-        Write-Host ""
 
         # Vérification de l'existence du fichier
         if (-not(Test-Path -Path $FilePathToImport\$FileToImport))
@@ -242,7 +231,6 @@ switch ($OptionAddAD)
 
                 $ReplaceService    = ReplaceOUName $($User.Service)
                 $ReplaceDepartment = ReplaceOUName $($User.Departement)
-                $ReplaceNameGroup  = "$ReplaceDepartment`_$ReplaceService"
                 if ($ReplaceService -eq "-")
                 {
                     $Path              = "OU=$ReplaceDepartment,$OUPathUsers"
@@ -264,15 +252,6 @@ switch ($OptionAddAD)
                     -Path $Path -AccountPassword (ConvertTo-SecureString -AsPlainText Azerty1* -Force) -Enabled $True `
                     -Office $Location -Title $Title -Company $Company -Department $Department `
                     -ChangePasswordAtLogon $True #-Manager $Manager
-
-                    # Ajout de l'utilisateur créé dans les groupes dédiés Users / Département / Service (si existant)
-                    Add-ADGroupMember -Identity GRP_EcoT_Users -Members $SamAccountName
-                    Add-ADGroupMember -Identity GRP_EcoT_Users_$ReplaceDepartment -Members $SamAccountName
-                    if ($ReplaceService -ne "-")
-                    {
-                        Add-ADGroupMember -Identity GRP_EcoT_Users_$ReplaceNameGroup -Members $SamAccountName
-                    }
-
         
                     Write-Host "Ajout de l'utilisateur $SamAccountName" -ForegroundColor Green
                     $EventLogTask = "Ajout de l'utilisateur $SamAccountName dans AD"
@@ -292,5 +271,3 @@ switch ($OptionAddAD)
         Write-Host "Ce choix n'est pas disponible" -ForegroundColor Yellow
     }
 }
-
-Write-Host ""

@@ -1,7 +1,7 @@
 #!/bin/bash
 
 #Fichier de configuration
-Config="configuration_Glpi.txt"
+Config="Configuration_Glpi.txt"
 
 #Sourcer le fichier de configuration
 source "$Config"

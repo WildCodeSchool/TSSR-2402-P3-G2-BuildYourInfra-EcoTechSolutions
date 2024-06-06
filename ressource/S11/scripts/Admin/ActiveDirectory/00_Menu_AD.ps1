@@ -7,7 +7,7 @@
 # Fonction Logs
 function EventLogAD {
 
-    $LogFolder = "C:\Admin\ActiveDirectory\Logs"
+    $LogFolder = "$FilePath\Logs"
     $LogFile = "Log-AD.log"
     #Test du chemin pour le Dossier
     if (-not(Test-Path $LogFolder)) {
@@ -31,8 +31,7 @@ while ($true) {
     Write-Host "1 - Ajout OU"
     Write-Host "2 - Ajout Groupe"
     Write-Host "3 - Ajout Computer"
-    Write-Host "4 - Ajout Utilisateur + Ajout au Groupe"
-    Write-Host "5 - Rangement Computer + Ajout au Groupe"
+    Write-Host "4 - Ajout Utilisateur"
     write-host ""
     Write-Host "L - Consultations des Logs"
     write-host ""
@@ -63,11 +62,6 @@ while ($true) {
             $EventLogTask = "--- Redirect Add User ---"
             EventLogAD
             .\04_Add_User_AD.ps1
-        }
-        "5" {
-            $EventLogTask = "--- Redirect Store Computer---"
-            EventLogAD
-            .\05_Store_Comp_AD.ps1
         }
         "L" {
             $EventLogTask = "--- Redirect Logs ---"

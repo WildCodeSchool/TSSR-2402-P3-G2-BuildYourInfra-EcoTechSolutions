@@ -20,7 +20,7 @@ Vous allez donc arriver sur cette fenêtre pour vous connecter à votre session.
 
 Saisissez les informations `Nom d'utilisateur` (qui correspond à l'Identifiant reçu) et `Mot de passe`.
 
-![Client](./ressource/S10/images/client/Client_AD_Connect_01.PNG)
+![Client](/ressource/S10/client/Client_AD_Connect_01.PNG)
 
 Etant donné que c'est votre première connexion, il est exigé que vous changiez de mot de passe, le mot de passe qui vous a été transmis étant générique.
 
@@ -30,7 +30,7 @@ Remplissez les champs `Mot de passe actuel` avec les informations reçues, puis 
 
 Vous êtes désormais connecter avec votre Session.
 
-![Client](./ressource/S10/images/client/Client_AD_Connect_03.PNG)
+![Client](/ressource/S10/client/Client_AD_Connect_03.PNG)
 
 ## **2. FAQ : Solutions aux problèmes connus et communs liés à l'utilisation**
 
