@@ -148,25 +148,47 @@ Nous proposons de se servir directement du rôle Windows Server Backup présent 
 
 ![backup1](./s13/backup1.jpg)
 
+Nous procédons à l'installation du rôle:
+
 ![backup2](./s13/backup2.jpg)
+
+Une fois celle-ci terminée, nous allons dans l'onglet "Outils" en haut à droite > **Sauvegarde Windows Server**:
 
 ![backup3](./s13/backup3.jpg)
 
+Une nouvelle fenêtre s'ouvre. Une fois la reconnaissance de l'environnement terminée, clic droit sur "Sauvegarde locale" > **Planification de sauvegarde**:
+
 ![backup4](./s13/backup4.jpg)
+
+Poursuivons en compagnie de l'assistant:
 
 ![backup5](./s13/backup5.jpg)
 
+Ici, nous pouvons choisir entre "Serveur complet" pour tout comprendre dans la sauvegarde, ou "Personnalisé" pour ne sélectionner que certaines partie de notre système. Dans notre cas, nous avons laisser coché "Serveur complet"
+
 ![backup6](./s13/backup6.jpg)
+
+Ici, nous pouvons sélectionner nos paramètres de planification : "Tous les jours" à "21:00".
 
 ![backup7](./s13/backup7.jpg)
 
+Nous sélectionnons le volume de destination en cliuant sur "Afficher tous les disques disponibles":
+  
 ![backup8](./s13/backup8.jpg)
+
+Choisissons celui qui nous intéresse (ici nous avons ajouté un disque à notre machine serveur, je rappelle plus haut que nous pouvons aussi très bien choisir d'ajouter un disque dur externe pour que la sauvegarde soit faire "en dehors" de la machine, ce qui est par ailleurs recommandé):
 
 ![backup9](./s13/backup9.jpg)
 
+Comme nous avions sélectionné "Serveur complet", nous observons dans le cadre du bas la présence de tous les éléments du systèmes. **Terminer**.
+
 ![backup10](./s13/backup10.jpg)
 
+La planification est bien prise en compte !
+
 ![backup11](./s13/backup11.jpg)
+
+Nous retrouvons sur la fenêtre de départ la confirmation ainsi que les "statuts" du service.
 
 ![backup12](./s13/backup12.jpg)
 
