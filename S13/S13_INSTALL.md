@@ -383,54 +383,28 @@ Get-ADUser -SearchBase "OU=Utilisateurs,DC=ecotechsolutions,DC=fr" -Filter * | F
 
 ```
 
-Déclaration de la fonction et des paramètres :
+Définition de la fonction Set-LogonHours :
 
- - La fonction Set-LogonHours accepte plusieurs paramètres pour définir les heures de connexion et les jours de la semaine.
+ - La fonction prend deux paramètres :
+        $Hours : Un tableau d'octets représentant les heures de connexion autorisées.
+        $Day : Le jour de la semaine pour lequel nous définissons les heures de connexion.
 
-Initialisation des heures de connexion :
+Conversion du nom du jour en index :
 
- - Un tableau de 24 éléments est initialisé à zéro.
+ - Utilise une instruction switch pour convertir le nom du jour en index numérique (0 pour dimanche, 6 pour samedi).
 
-Définition des heures autorisées :
+Calcul des intervalles de 7h30 à 20h00 :
 
- - Les heures de 7h30 à 20h00 sont définies en incluant les heures de 7 à 19 et en ajoutant l'heure 7 (pour 7:30).
+ - Utilise une boucle for pour définir les bits correspondants aux demi-heures de 7h30 (15ème demi-heure) à 20h00 (40ème demi-heure) pour le jour spécifié.
+    Le calcul $dayIndex * 24 + $i positionne correctement chaque demi-heure dans le tableau de 168 éléments.
 
-Mise à jour des heures spécifiées :
+Initialisation du tableau logonHours :
 
- - Les heures spécifiées sont mises à jour à 1 dans le tableau.
+ - Un tableau de 168 éléments est créé, initialisé à zéro, représentant chaque demi-heure de la semaine comme non autorisée.
 
-Création d'une chaîne binaire :
+Mise à jour des heures de connexion pour chaque jour :
 
- - La chaîne binaire représentant les heures de travail est créée en combinant les valeurs du tableau.
-
-Configuration des jours de la semaine :
-
- - Les valeurs par défaut pour chaque jour de la semaine sont définies en fonction du paramètre NonSelectedDaysAre.
-
-Mise à jour des jours spécifiés :
-
- - Les jours spécifiés (par exemple, $Monday, $Tuesday, etc.) sont mis à jour avec les heures de travail.
-
-Combinaison des valeurs binaires pour tous les jours :
-
- - Les valeurs binaires pour chaque jour sont combinées en une seule chaîne représentant toute la semaine.
-
-Ajustement pour le fuseau horaire :
-
- - Les heures de connexion sont ajustées en fonction du décalage du fuseau horaire.
-
-Conversion des valeurs binaires en octets :
-
- - La chaîne binaire est divisée en blocs de 8 bits et convertie en octets.
-
-Application des heures de connexion :
-
- - Les heures de connexion sont appliquées à l'utilisateur spécifié via Set-ADUser.
-
-Exécution du script pour tous les utilisateurs dans une OU spécifique :
-
- - Le script est appliqué à tous les utilisateurs d'une OU spécifique en utilisant Get-ADUser
-
+ - Une boucle foreach itère sur les jours spécifiés (lundi à samedi) et met à jour les heures de connexion en appelant Set-LogonHours pour chaque jour.
 
 
 
