@@ -338,116 +338,48 @@ Pour ce faire, on peut procéder "à la main" pour chaque *user* en faisant clic
 Nous proposons ce script pour la gestion détaillée des horaires de connexion pour les utilisateurs :
 
 ```
+# Fonction pour définir les heures de connexion
 function Set-LogonHours {
-    [CmdletBinding()]
-    Param(
-        # Paramètre obligatoire pour les heures de connexion (format 24 heures)
-        [Parameter(Mandatory=$True)]
-        [ValidateRange(0,23)]
-        [int[]]$TimeIn24Format,
-
-        # Paramètre obligatoire pour identifier l'utilisateur (peut provenir du pipeline)
-        [Parameter(Mandatory=$True, ValueFromPipeline=$True, ValueFromPipelineByPropertyName=$True, Position=0)]
-        [string]$Identity,
-
-        # Paramètre optionnel pour spécifier les jours non sélectionnés (jours de travail ou non)
-        [Parameter(Mandatory=$False)]
-        [ValidateSet("WorkingDays", "NonWorkingDays")]
-        [string]$NonSelectedDaysAre = "NonWorkingDays",
-
-        # Paramètres optionnels pour les jours de la semaine
-        [Parameter(Mandatory=$False)]
-        [switch]$Sunday,
-        [Parameter(Mandatory=$False)]
-        [switch]$Monday,
-        [Parameter(Mandatory=$False)]
-        [switch]$Tuesday,
-        [Parameter(Mandatory=$False)]
-        [switch]$Wednesday,
-        [Parameter(Mandatory=$False)]
-        [switch]$Thursday,
-        [Parameter(Mandatory=$False)]
-        [switch]$Friday,
-        [Parameter(Mandatory=$False)]
-        [switch]$Saturday
+    param (
+        [Parameter(Mandatory=$true)]
+        [byte[]]$Hours,
+        [Parameter(Mandatory=$true)]
+        [string]$Day
     )
-
-    Process {
-        # Initialiser une journée complète (24 heures) avec des zéros
-        $FullDay = 0..23 | ForEach-Object { 0 }
-        
-        # Définir les heures autorisées de 7h30 à 20h00
-        $TimeIn24Format = 7..19
-        $TimeIn24Format += 7 # Ajout de l'heure 7:30 comme 7
-
-        # Mettre à jour les heures spécifiées à 1
-        $TimeIn24Format | ForEach-Object { $FullDay[$_] = 1 }
-        
-        # Créer une chaîne binaire représentant les heures de travail
-        $Working = -join $FullDay
-
-        # Initialiser les valeurs par défaut des jours de la semaine en fonction du paramètre NonSelectedDaysAre
-        switch ($NonSelectedDaysAre) {
-            'NonWorkingDays' {
-                $SundayValue = $MondayValue = $TuesdayValue = $WednesdayValue = $ThursdayValue = $FridayValue = $SaturdayValue = '0' * 24
-            }
-            'WorkingDays' {
-                $SundayValue = $MondayValue = $TuesdayValue = $WednesdayValue = $ThursdayValue = $FridayValue = $SaturdayValue = '1' * 24
-            }
-        }
-
-        # Mettre à jour les jours spécifiés avec les heures de travail
-        switch ($PSCmdlet.MyInvocation.BoundParameters.Keys) {
-            'Sunday' { $SundayValue = $Working }
-            'Monday' { $MondayValue = $Working }
-            'Tuesday' { $TuesdayValue = $Working }
-            'Wednesday' { $WednesdayValue = $Working }
-            'Thursday' { $ThursdayValue = $Working }
-            'Friday' { $FridayValue = $Working }
-            'Saturday' { $SaturdayValue = $Working }
-        }
-
-        # Combiner les valeurs binaires des jours de la semaine
-        $AllTheWeek = "$SundayValue$MondayValue$TuesdayValue$WednesdayValue$ThursdayValue$FridayValue$SaturdayValue"
-
-        # Ajuster les heures en fonction du fuseau horaire
-        $TimeZoneOffsetHours = (Get-TimeZone).BaseUtcOffset.Hours
-        if ($TimeZoneOffsetHours -ne 0) {
-            $FixedTimeZoneOffset = $AllTheWeek.Substring(-$TimeZoneOffsetHours) + $AllTheWeek.Substring(0, 168 - $TimeZoneOffsetHours)
-        } else {
-            $FixedTimeZoneOffset = $AllTheWeek
-        }
-
-        # Diviser la chaîne binaire en blocs de 8 bits (octets)
-        $BinaryResult = $FixedTimeZoneOffset -split '(\d{8})' | Where-Object { $_ -match '(\d{8})' }
-        
-        # Initialiser un tableau de bytes
-        $FullByte = 0..20 | ForEach-Object { 0 }
-        $i = 0
-        
-        # Convertir chaque bloc de 8 bits en byte et les stocker dans le tableau
-        foreach ($singleByte in $BinaryResult) {
-            $TempVar = $singleByte.ToCharArray()
-            [array]::Reverse($TempVar)
-            $Byte = [Convert]::ToByte((-join $TempVar), 2)
-            $FullByte[$i] = $Byte
-            $i++
-        }
-
-        # Appliquer les heures de connexion à l'utilisateur spécifié
-        Set-ADUser -Identity $Identity -Replace @{logonhours = $FullByte}
+    
+    # Conversion du nom du jour en index (0=Dimanche, 6=Samedi)
+    $dayIndex = switch ($Day.ToLower()) {
+        "dimanche"  { 0 }
+        "lundi"     { 1 }
+        "mardi"     { 2 }
+        "mercredi"  { 3 }
+        "jeudi"     { 4 }
+        "vendredi"  { 5 }
+        "samedi"    { 6 }
+        default { throw "Jour invalide spécifié: $Day" }
     }
-
-    End {
-        # Message de confirmation
-        Write-Output "All Done :)"
+    
+    # Calcul des intervalles de 7h30 (15ème demi-heure) à 20h00 (40ème demi-heure)
+    for ($i = 15; $i -le 40; $i++) {
+        $Hours[$dayIndex * 24 + $i] = 1
     }
+    
+    return $Hours
 }
 
-# Exemple d'utilisation du script pour définir les heures de connexion des utilisateurs dans une OU spécifique
-Get-ADUser -SearchBase "OU=EcoT_Users,OU=EcoT_Bordeaux,OU=EcoT_France,DC=ecotechsolutions,DC=fr" -Filter * | Set-LogonHours `
-    -TimeIn24Format @(7,8,9,10,11,12,13,14,15,16,17,18,19) `
-    -Monday -Tuesday -Wednesday -Thursday -Friday -Saturday -NonSelectedDaysAre NonWorkingDays
+# Tableau initialisé avec des zéros pour toute la semaine
+$logonHours = @(0) * 168
+
+# Mise à jour des heures de connexion pour chaque jour de la semaine souhaité
+$jours = @("lundi", "mardi", "mercredi", "jeudi", "vendredi", "samedi")
+foreach ($jour in $jours) {
+    $logonHours = Set-LogonHours -Hours $logonHours -Day $jour
+}
+
+# Application des heures de connexion aux utilisateurs
+Get-ADUser -SearchBase "OU=Utilisateurs,DC=ecotechsolutions,DC=fr" -Filter * | ForEach-Object {
+    $_ | Set-ADUser -LogonHours $logonHours
+}
 
 ```
 
