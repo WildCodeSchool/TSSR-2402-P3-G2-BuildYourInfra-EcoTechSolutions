@@ -163,19 +163,16 @@ Activités et répartitions des tâches
 
 |                Tâches                 | Charles Caulier | Damien Legay | Anthony Javault | Nicolas Maggiori |
 | :-----------------------------------: | :-------------: | :----------: | :-------------: | :--------------: |
-|                                       |                 |              |                 |                  |
-|                                       |                 |              |                 |                  |
-|                                       |                 |              |                 |                  |
-|                                       |                 |              |                 |                  |
-|                                       |                 |              |                 |                  |
-|                                       |                 |              |                 |                  |
-|                                       |                 |              |                 |                  |
-|                                       |                 |              |                 |                  |
-|                                       |                 |              |                 |                  |
-|                                       |                 |              |                 |                  |
-|                                       |                 |              |                 |                  |
-|             Documentation             |                 |              |                 |                  |
-|    Préparation slides Présentation    |                 |              |                 |                  |
+|      Gestion de la Télémétrie         |                 |              |                 |        x         |
+|          Dossiers Partagés            |        x        |      x       |                 |                  |
+|    Serveur GLPI (Synchro AD & Parc)   |                 |      x       |                 |                  |
+|           Stockage Avancé             |                 |      x       |        x        |        x         |
+|             Sauvegarde                |                 |              |                 |        x         |
+|                LAPS                   |                 |              |                 |        x         |
+|  Déplacement des machines dans l'AD   |                 |              |        x        |                  |
+| Restriction utilisation des machines  |                 |              |                 |        x         |
+|             Documentation             |        x        |      x       |        x        |        x         |
+|    Préparation slides Présentation    |        x        |      x       |        x        |        x         |
 |             Présentation              |        x        |      x       |        x        |        x         |
 
 ### **S14 - Semaine du 10 au 14 Juin 2024**
