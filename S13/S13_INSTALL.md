@@ -166,7 +166,7 @@ Nous proposons de se servir directement du rôle Windows Server Backup présent 
 
 ![backup10](./s13/backup10.jpg)
 
-![backup11]()
+![backup11](./s13/backup11.jpg)
 
 ![backup12]()
 
