@@ -213,25 +213,61 @@ Maintenant, l'installation sur les postes clients par GPO ou script:
 
 Nous commençons par créer un nouveau dossier partgagé dans lequel nous plaçons le fichier ``LAPS.x64.msi``, de telle sorte à ce qu'il soit rendu accessible sur chaque poste client de notre domaine.
 
+Ensuite, nous créeons une nouvelle GPO:
+
 ![laps10](./s13/laps10.jpg)
+
+Nous suivons le chemin indiqué ci-dessous jusqu'à "Package...": ici nous allons renseigner le chemin du dossier partagé où se trouve notre fichier ``.msi`` pour l'installation de LAPS sur les ostes clients.
 
 ![laps11](./s13/laps11.jpg)
 
+Puis nous finissons la configuration en laissant cocher "Attribué"
+
 ![laps12](./s13/laps12.jpg)
+
+Nous pouvons constater son ajout.
 
 ![laps13](./s13/laps13.jpg)
 
+Maintenant, nous suivons le chemin comme indiqué ci-dessous, pour s'attaquer à la configuration de notre logiciel unef ois installé sur le poste client: nous commençons par "Enable local admin password management"
+
 ![laps14](./s13/laps14.jpg)
+
+Que nous activons...
 
 ![laps15](./s13/laps15.jpg)
 
+Même chose pour "Password settings"...
+  
 ![laps16](./s13/laps16.jpg)
 
+Et pour "Name of administrator account to manage"...
+  
 ![laps17](./s13/laps17.jpg)
 
+Une fois cette GPO paramètrée, nous pouvons uassi opter pour le déploiement via un script PowerShell. Voici comment nous pouvons procéder: création d'une autre GPO, elle, dédiée à l'exécution du script.
+  
 ![laps18](./s13/laps18.jpg)
 
+Nous suivons le chemin indiqué ci-dessous, pour le lancement du script au démarrage:
+  
 ![laps19](./s13/laps19.jpg)
+
+Voici une proposition simplifié du script applicable :
+
+```
+#Script d'installation de LAPS sur les clients
+
+#Installation
+Start-Process -FilePath "\\Eco-Maximus\LAPS\laps.x64.msi" -ArgumentList "/quiet /norestart" -Wait
+
+#Importer le module LAPS PowerShell
+Import-Module AdmPwd.PS
+
+#Config paramètres LAPS
+Set-AdmPwdAuditing -AuditedPrincipals "Domain Admins"
+Set-AdmPwdPasswordPolicy -Complexity 3 -Length 14 -Age 30
+```
 
 
 
