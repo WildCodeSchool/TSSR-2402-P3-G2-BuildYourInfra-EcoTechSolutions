@@ -4,14 +4,10 @@
 #                                                       #
 #########################################################
 
-### Initialisation des paramètres génériques
-
-$FilePath = [System.IO.Path]::GetDirectoryName($MyInvocation.MyCommand.Definition)
-
 # Fonction Logs
 function EventLogAD {
 
-    $LogFolder = "$FilePath\Logs"
+    $LogFolder = "C:\Admin\ActiveDirectory\Logs"
     $LogFile = "Log-AD.log"
     #Test du chemin pour le Dossier
     if (-not(Test-Path $LogFolder)) {
@@ -35,7 +31,8 @@ while ($true) {
     Write-Host "1 - Ajout OU"
     Write-Host "2 - Ajout Groupe"
     Write-Host "3 - Ajout Computer"
-    Write-Host "4 - Ajout Utilisateur"
+    Write-Host "4 - Ajout Utilisateur + Ajout au Groupe"
+    Write-Host "5 - Rangement Computer + Ajout au Groupe"
     write-host ""
     Write-Host "L - Consultations des Logs"
     write-host ""
@@ -50,27 +47,32 @@ while ($true) {
         "1" {
             $EventLogTask = "--- Redirect Add OU ---"
             EventLogAD
-            $FilePath\01_Add_OU_AD.ps1
+            .\01_Add_OU_AD.ps1
         }
         "2" {
             $EventLogTask = "--- Redirect Add Group ---"
             EventLogAD
-            $FilePath\02_Add_Group_AD.ps1
+            .\02_Add_Group_AD.ps1
         }
         "3" {
             $EventLogTask = "--- Redirect Add Computer ---"
             EventLogAD
-            $FilePath\03_Add_Comp_AD.ps1
+            .\03_Add_Comp_AD.ps1
         }
         "4" {
             $EventLogTask = "--- Redirect Add User ---"
             EventLogAD
-            $FilePath\04_Add_User_AD.ps1
+            .\04_Add_User_AD.ps1
+        }
+        "5" {
+            $EventLogTask = "--- Redirect Store Computer---"
+            EventLogAD
+            .\05_Store_Comp_AD.ps1
         }
         "L" {
             $EventLogTask = "--- Redirect Logs ---"
             EventLogAD
-            $FilePath\00_Logs_AD.ps1
+            .\00_Logs_AD.ps1
         }
         "x" {
             # Fin de Prise de Logs + Sortie du Script
