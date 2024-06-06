@@ -495,27 +495,27 @@ Parmi les onglets présents dans la colonne de gauche, nous évoquons celui corr
 
 ### Synchronisation des utilisateurs
 
-Nous allons d'abord dans le menu de gauche, appuyons sur **Administration**, puis sur **Utilisateurs**.
+Nous allons d'abord dans le menu de gauche, appuyons sur "**Administration**", puis sur "**Utilisateurs**".
 
 ![](https://github.com/WildCodeSchool/TSSR-2402-P3-G2-BuildYourInfra-EcoTechSolutions/blob/main/ressource/S11/images/lucy/Glpi_Sync1.png)
 
-Maintenant, nous allons en haut de la page sur **Liaison annuaire LDAP**.
+Maintenant, nous allons en haut de la page sur "**Liaison annuaire LDAP**".
 
 ![](https://github.com/WildCodeSchool/TSSR-2402-P3-G2-BuildYourInfra-EcoTechSolutions/blob/main/ressource/S11/images/lucy/Glpi_sync2.png)
 
-Cliquons sur **Importation de nouveau utilisateurs**.
+Cliquons sur "**Importation de nouveau utilisateurs**".
 
 ![](https://github.com/WildCodeSchool/TSSR-2402-P3-G2-BuildYourInfra-EcoTechSolutions/blob/main/ressource/S11/images/lucy/Glpi_sync3.png)
 
-Ensuite, nous cliquons sur **Mode expert** pour accéder directement au chemin de notre Active Directory que nous avons enregistré plus haut.
+Ensuite, nous cliquons sur "**Mode expert**" pour accéder directement au chemin de notre Active Directory que nous avons enregistré plus haut.
 
 ![](https://github.com/WildCodeSchool/TSSR-2402-P3-G2-BuildYourInfra-EcoTechSolutions/blob/main/ressource/S11/images/lucy/Glpi_sync4.png)
 
-Et enfin **Recherche**.
+Et enfin "**Recherche**".
 
 ![](https://github.com/WildCodeSchool/TSSR-2402-P3-G2-BuildYourInfra-EcoTechSolutions/blob/main/ressource/S11/images/lucy/Glpi_sync5.png)
 
-Il devrait maintenant afficher les utilisateurs de l'Active Directory. Il suffit de les sélectionner, puis de cliquer sur Action, ensuite de choisir Importer et Envoyer. Voilà, nos utilisateurs sont synchronisés dans la base de données de GLPI.
+Il devrait maintenant afficher les utilisateurs de l'Active Directory. Il suffit de les sélectionner, puis de cliquer sur "**Action**", ensuite de choisir "**Importer**" et "**Envoyer**". Voilà, nos utilisateurs sont synchronisés dans la base de données de GLPI.
 
 Exemple sur le tableau de bord : 
 
