@@ -495,11 +495,11 @@ Parmi les onglets présents dans la colonne de gauche, nous évoquons celui corr
 
 ### Synchronisation des utilisateurs
 
-Nous allons d'abord dans le menu de gauche, appuyons sur "Administration", puis sur "Utilisateurs".
+Nous allons d'abord dans le menu de gauche, appuyons sur **Administration**, puis sur **Utilisateurs**.
 
 ![](https://github.com/WildCodeSchool/TSSR-2402-P3-G2-BuildYourInfra-EcoTechSolutions/blob/main/ressource/S11/images/lucy/Glpi_Sync1.png)
 
-Maintenant, nous allons en haut de la page sur "Liaison annuaire LDAP".
+Maintenant, nous allons en haut de la page sur **Liaison annuaire LDAP**.
 
 ![](https://github.com/WildCodeSchool/TSSR-2402-P3-G2-BuildYourInfra-EcoTechSolutions/blob/main/ressource/S11/images/lucy/Glpi_sync2.png)
 
@@ -519,7 +519,7 @@ Il devrait maintenant afficher les utilisateurs de l'Active Directory. Il suffit
 
 Exemple sur le tableau de bord : 
 
-![]()
+![](https://github.com/WildCodeSchool/TSSR-2402-P3-G2-BuildYourInfra-EcoTechSolutions/blob/main/ressource/S11/images/lucy/Glpi_sync6.png)
 
 
 ## Déploiement de l'agent inventaire GLPI 10 par GPO
