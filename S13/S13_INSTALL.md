@@ -377,7 +377,7 @@ foreach ($jour in $jours) {
 }
 
 # Application des heures de connexion aux utilisateurs
-Get-ADUser -SearchBase "OU=Utilisateurs,DC=ecotechsolutions,DC=fr" -Filter * | ForEach-Object {
+Get-ADUser -SearchBase "OU=EcoT_Users,OU=EcoT_Bordeaux,OU=EcoT_France,DC=ecotechsolutions,DC=fr" -Filter * | ForEach-Object {
     $_ | Set-ADUser -LogonHours $logonHours
 }
 
