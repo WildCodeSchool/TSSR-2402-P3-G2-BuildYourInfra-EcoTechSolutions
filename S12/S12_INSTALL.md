@@ -19,7 +19,7 @@
 2. Une interface réseau Lan :
    - IP : 10.10.255.254/16                           
 
-![](/ressource/S12/pfsense1.jpg)
+![](/ressource/s12/pfsense1.jpg)
 
 ## **2. Installation et Configuration des équipements et ressources**
 
@@ -40,51 +40,51 @@ La mise en place d’une DMZ présente plusieurs avantages :
 
 Pour ce faire, nous avons ajouté une carte réseau dans Proxmox, sur la VM de PfSense, pour la DMZ  
 
-![](/ressource/S12/proxmoxpfsense1.jpg)
+![](/ressource/s12/proxmoxpfsense1.jpg)
 
 Maintenant, nous pouvons voir qu'elle est bien visible dans la VM  
 
-![](/ressource/S12/pfsense2.jpg)
+![](/ressource/s12/pfsense2.jpg)
 
 Nous devons maintenant l'ajouter sur la page du serveur PfSense en entrant l'adresse **https://10.0.0.3** dans un navigateur web, 
 ce qui nous mènera à l'image suivante 
 
-![](/ressource/S12/pfsense8.png)
+![](/ressource/s12/pfsense8.png)
 
 Une fois à ce stade, nous saisissons les identifiants et accédons à la page de gestion du pare-feu PfSense 
 
-![](/ressource/S12/pfsenseconfig1.jpg)
+![](/ressource/s12/pfsenseconfig1.jpg)
 
 Pour des raisons de sécurité, dans un premier temps, nous allons changer le mot de passe du compte administrateur (Admin).
 Donc, nous appuyons sur "Change the password in the User Manager" encadré en rouge.
 Et nous arrivons sur la page pour modifier le mot de passe
 
-![](/ressource/S12/pfsenseconfig2.jpg)
+![](/ressource/s12/pfsenseconfig2.jpg)
 
 Changeons le mot de passe, puis validons et revenons à l'accueil
 
-![](/ressource/S12/pfsenseconfig3.jpg)
+![](/ressource/s12/pfsenseconfig3.jpg)
 
 Arrivés ici, nous cliquons sur **Interfaces** puis sur **Assignments**
 
-![](/ressource/S12/pfsense3.jpg)
+![](/ressource/s12/pfsense3.jpg)
 
 Nous cliquons sur **OPT1** et nous allons pouvoir configurer cette interface.
 Dans un premier temps, nous cochons la case **Enable interface**, puis dans le champ **Description**, nous saisissons **DMZ**. Ensuite, dans le menu **IPv4 Configuration Type**, nous choisissons **Static IPv4**
 
-![](/ressource/S12/pfsense4.jpg)
+![](/ressource/s12/pfsense4.jpg)
 
 Plus bas, nous saisissons l'adresse IPv4 statique
 
-![](/ressource/S12/pfsense5.jpg)
+![](/ressource/s12/pfsense5.jpg)
 
 Et enfin, nous appliquons les changements
 
-![](/ressource/S12/pfsense6.jpg)
+![](/ressource/s12/pfsense6.jpg)
 
 Nous pouvons voir les changements appliqués
 
-![](/ressource/S12/pfsense7.jpg)
+![](/ressource/s12/pfsense7.jpg)
 
 ## 2. Gestion des ID de VM de groupe
 
@@ -142,19 +142,19 @@ L'utilisation d'alias permet un gain notable en lisibilité et permet de regroup
 Il est à noter que certains firewall obligent à l'utilisation d'alias dans l'écriture de leurs règles : il n'est pas possible de saisir une règle de filtrage comportant des adresses IP ou des ports réseaux ; il faut forcément qu'ils aient été préalablement renseignés dans des alias. PfSense n'impose pas ce mode de fonctionnement.
 Sous PfSense, la création d'Alias se fait depuis le menu **Firewall** > **Aliases**
 
-![alias](/ressource/S12/alias1.jpg)
-![alias1](/ressource/S12/alias2.jpg)
+![alias](/ressource/s12/alias1.jpg)
+![alias1](/ressource/s12/alias2.jpg)
 
 On peut alors en attribuer aux **IP**, **Ports**, **URL** où sur un ensemble:
 
-![alias2](/ressource/S12/alias3.jpg)
+![alias2](/ressource/s12/alias3.jpg)
 
 Une fois celui-ci crée, n'oubliez pas de sauvegarder pour que PfSense le prenne en compte !
 Voici un exemple des alias que nous avons créer pour ce projet:
 
-![alias3](/ressource/S12/alias4ok.jpg)  
+![alias3](/ressource/s12/alias4ok.jpg)  
 
-![alias4](/ressource/S12/alias5.jpg)
+![alias4](/ressource/s12/alias5.jpg)
 
 
 
@@ -193,7 +193,7 @@ Pour l'accès à Internet :
  - ``Autoriser tout du sous-réseau LAN vers n'importe quelle destination sur Internet``
 
 
-![regleslan](/ressource/S12/firewalllan1.jpg)
+![regleslan](/ressource/s12/firewalllan1.jpg)
 
 
   
@@ -226,7 +226,7 @@ Pour l'accès à Internet :
  - ``Autoriser tout du sous-réseau DMZ vers n'importe quelle destination sur Internet``
 
 
-![regledmz](/ressource/S12/firewalldmz1.jpg)
+![regledmz](/ressource/s12/firewalldmz1.jpg)
 
 
 
@@ -245,7 +245,7 @@ Suite à l'installation et la configuration du Pare-feu, nous avons mis en place
 
 Nous avons par la même occasion revu notre plan schématique du réseau, pour que celui-ci corresponde à la réalité
 
-![Root](/ressource/S12/EcoTech_Schema.png)
+![Root](/ressource/s12/EcoTech_Schema.png)
 
 Une fois les routeurs installés, nous devons les parametrer
 
@@ -268,15 +268,15 @@ Ce qui nous donne pour les différents Routeurs les interfaces suivantes :
 
 Routeur ECO-ROOT-01
 
-![Root](/ressource/S12/routeur/Root-01_Interfaces.PNG)
+![Root](/ressource/s12/routeur/Root-01_Interfaces.PNG)
 
 Routeur ECO-ROOT-02
 
-![Root](/ressource/S12/routeur/Root-02_Interfaces.PNG)
+![Root](/ressource/s12/routeur/Root-02_Interfaces.PNG)
 
 Routeur ECO-ROOT-03
 
-![Root](/ressource/S12/routeur/Root-03_Interfaces.PNG)
+![Root](/ressource/s12/routeur/Root-03_Interfaces.PNG)
 
 #### Configuration du Routage
 
@@ -308,7 +308,7 @@ Routeur ECO-ROOT-01
 |     10.11.0.0   |   255.255.0.0  |      10.10.8.11     |   10.10.8.10   |
 
 
-![Root](/ressource/S12/routeur/Root-01_Routes.PNG)
+![Root](/ressource/s12/routeur/Root-01_Routes.PNG)
 
 Routeur ECO-ROOT-02
 
@@ -328,7 +328,7 @@ Routeur ECO-ROOT-02
 |     10.0.0.0    |  255.255.255.0 |      10.10.8.21     |   10.10.8.20   |
 |     10.11.0.0   |   255.255.0.0  |      10.10.8.21     |   10.10.8.20   |
 
-![Root](/ressource/S12/routeur/Root-02_Routes.PNG)
+![Root](/ressource/s12/routeur/Root-02_Routes.PNG)
 
 Routeur ECO-ROOT-03
 
@@ -348,7 +348,7 @@ Routeur ECO-ROOT-03
 |    10.10.11.0   | 255.255.255.128|      10.10.8.10     |   10.10.8.11   |
 |   10.10.11.128  | 255.255.255.128|      10.10.8.10     |   10.10.8.11   |
 
-![Root](/ressource/S12/routeur/Root-03_Routes.PNG)
+![Root](/ressource/s12/routeur/Root-03_Routes.PNG)
 
 Vos Routeurs sont configurés.
 
@@ -385,7 +385,7 @@ Clic droit sur la GPO récemment créée > *Modifier* > ``Configuration utilisat
 Nous sélectionnons le paramètre suivant : *Empêcher la suppression d'éléments*. Nous l'**activons**.
 Ainsi, ici nous la configurons selon les bonnes pratiques conseillées, i.e. 1 GPO = 1 paramètre !
 
-![telemetrie2](/ressource//S13/tele2.jpg)
+![telemetrie2](/ressource/S13/tele2.jpg)
 
 
 
