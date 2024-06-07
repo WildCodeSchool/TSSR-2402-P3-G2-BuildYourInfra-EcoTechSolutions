@@ -38,13 +38,13 @@ $GroupName = $Group.DataGroup
     Try
     {
         New-ADGroup -Name $GroupName -Path "$OUPathSecurity" -GroupScope Global -GroupCategory Security
-        $EventLogTask = "Ajout du Groupe $Group dans AD"
+        $EventLogTask = "Ajout du Groupe $GroupName dans AD"
         EventLogAD
         Write-Host "Création du GROUPE $GroupName dans l'OU $OUSecurity" -ForegroundColor Green
     }
     Catch
     {
-        Write-Host "Le GROUPE $GroupName existe déjà " -ForegroundColor Yellow
+        Write-Host "Le GROUPE $GroupName existe déjà" -ForegroundColor Yellow
     }
 }
 

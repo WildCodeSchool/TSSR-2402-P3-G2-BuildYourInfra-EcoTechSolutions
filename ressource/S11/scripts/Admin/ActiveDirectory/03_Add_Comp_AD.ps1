@@ -19,12 +19,14 @@ If (-not(Get-Module -Name ActiveDirectory))
 
 ### Parametres spécifiques
 
-$OuComputers = "EcoT_Computers"
+$OUComputers = "EcoT_Computers"
 $OUPathComputers = "OU=EcoT_Computers,OU=EcoT_Bordeaux,OU=EcoT_France,$DomainDN"
 
 ### Main program
 
 $ComputerCount = Read-Host "Combien souhaitez-vous créer d'ordinateurs dans Active Directory ? "
+
+Write-Host ""
 
 $ADComputers = Get-ADComputer -Filter * -Properties *
 $Count = 1
@@ -41,6 +43,7 @@ Do
             Try
             {
                 New-ADComputer -Name $ComputerName -Path $OUPathComputers -Enabled $True
+                Add-content -path C:\Admin\ActiveDirectory\Sources\Data\Data_Comp_Create.csv -value $ComputerName
                 $EventLogTask = "Ajout de l'ordinateur $ComputerName dans AD"
                 EventLogAD
                 Write-Host "Création du COMPUTER $ComputerName dans l'OU $OUComputers" -ForegroundColor Green
@@ -69,6 +72,7 @@ Do
             Try
             {
                 New-ADComputer -Name $ComputerName -Path $OUPathComputers -Enabled $True
+                Add-content -path C:\Admin\ActiveDirectory\Sources\Data\Data_Comp_Create.csv -value $ComputerName
                 $EventLogTask = "Ajout de l'ordinateur $ComputerName dans AD"
                 EventLogAD
                 Write-Host "Création du COMPUTER $ComputerName dans l'OU $OUComputers" -ForegroundColor Green
@@ -97,6 +101,7 @@ Do
             Try
             {
                 New-ADComputer -Name $ComputerName -Path $OUPathComputers -Enabled $True
+                Add-content -path C:\Admin\ActiveDirectory\Sources\Data\Data_Comp_Create.csv -value $ComputerName
                 $EventLogTask = "Ajout de l'ordinateur $ComputerName dans AD"
                 EventLogAD
                 Write-Host "Création du COMPUTER $ComputerName dans l'OU $OUComputers" -ForegroundColor Green
