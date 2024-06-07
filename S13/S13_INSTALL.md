@@ -346,48 +346,41 @@ Pour ce faire, on peut procéder "à la main" pour chaque *user* en faisant clic
 Nous proposons ce script pour la gestion détaillée des horaires de connexion pour les utilisateurs :
 
 ```
-# Fonction pour définir les heures de connexion
-function Set-LogonHours {
-    param (
-        [Parameter(Mandatory=$true)]
-        [byte[]]$Hours,
-        [Parameter(Mandatory=$true)]
-        [string]$Day
-    )
-    
-    # Conversion du nom du jour en index (0=Dimanche, 6=Samedi)
-    $dayIndex = switch ($Day.ToLower()) {
-        "dimanche"  { 0 }
-        "lundi"     { 1 }
-        "mardi"     { 2 }
-        "mercredi"  { 3 }
-        "jeudi"     { 4 }
-        "vendredi"  { 5 }
-        "samedi"    { 6 }
-        default { throw "Jour invalide spécifié: $Day" }
-    }
-    
-    # Calcul des intervalles de 7h30 (15ème demi-heure) à 20h00 (40ème demi-heure)
-    for ($i = 15; $i -le 40; $i++) {
-        $Hours[$dayIndex * 24 + $i] = 1
-    }
-    
-    return $Hours
+# Script PowerShell pour vérifier les heures de connexion et déconnecter l'utilisateur
+
+# Obtenir le jour actuel et l'heure actuelle
+$currentDay = (Get-Date).DayOfWeek
+$currentHour = (Get-Date).Hour
+$currentMinute = (Get-Date).Minute
+
+# Définir les heures autorisées
+$startTime = [datetime]::ParseExact("07:30", "HH:mm", $null)
+$endTime = [datetime]::ParseExact("20:00", "HH:mm", $null)
+
+# Conversion du jour actuel en index (0=Dimanche, 6=Samedi)
+$dayIndex = switch ($currentDay) {
+    "Sunday"    { 0 }
+    "Monday"    { 1 }
+    "Tuesday"   { 2 }
+    "Wednesday" { 3 }
+    "Thursday"  { 4 }
+    "Friday"    { 5 }
+    "Saturday"  { 6 }
 }
 
-# Tableau initialisé avec des zéros pour toute la semaine
-$logonHours = @(0) * 168
+# Vérifier si l'heure actuelle est en dehors des heures autorisées du lundi au samedi
+$currentTime = Get-Date
+$startTimeToday = $startTime.AddDays($dayIndex)
+$endTimeToday = $endTime.AddDays($dayIndex)
 
-# Mise à jour des heures de connexion pour chaque jour de la semaine souhaité
-$jours = @("lundi", "mardi", "mercredi", "jeudi", "vendredi", "samedi")
-foreach ($jour in $jours) {
-    $logonHours = Set-LogonHours -Hours $logonHours -Day $jour
+# Vérifier si le jour est entre lundi et samedi (1 à 6) et si l'heure est dans les limites
+if (($dayIndex -ge 1 -and $dayIndex -le 6) -and ($currentTime -ge $startTimeToday -and $currentTime -le $endTimeToday)) {
+    Write-Output "L'utilisateur est connecté pendant les heures autorisées."
+} else {
+    # Si non, déconnecter l'utilisateur
+    shutdown.exe /l /f
 }
 
-# Application des heures de connexion aux utilisateurs
-Get-ADUser -SearchBase "OU=EcoT_Users,OU=EcoT_Bordeaux,OU=EcoT_France,DC=ecotechsolutions,DC=fr" -Filter * | ForEach-Object {
-    $_ | Set-ADUser -LogonHours $logonHours
-}
 
 ```
 
