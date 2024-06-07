@@ -19,7 +19,7 @@
 2. Une interface réseau Lan :
    - IP : 10.10.255.254/16                           
 
-![](https:///ressource/S12/pfsense1.jpg)
+![](/ressource/S12/pfsense1.jpg)
 
 ## **2. Installation et Configuration des équipements et ressources**
 
