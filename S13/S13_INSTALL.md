@@ -442,6 +442,6 @@ Nous avons choisi de mettre en place une GPO de restriction horaire. Ci-dessous 
 
 ### DÉPLACEMENT DES MACHINES DANS L'AD
 
-Rendez-vous dans l'annexe disponible [Rangement des Computers via Script + Planification dans Task Scheduler](S13/annex/Rangement_Computer_Scheduler.md)
+Rendez-vous dans l'annexe disponible [Rangement des Computers via Script + Planification dans Task Scheduler]([S13/annex/Rangement_Computer_Scheduler.md](https://github.com/WildCodeSchool/TSSR-2402-P3-G2-BuildYourInfra-EcoTechSolutions/blob/main/S13/annex/Rangement_Computer_Scheduler.md))
 
 ## **FAQ : Solutions aux problèmes connus et communs liés à l'installation et à la configuration**
