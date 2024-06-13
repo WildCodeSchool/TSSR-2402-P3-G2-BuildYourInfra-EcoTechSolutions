@@ -116,10 +116,10 @@ On tape la commande suivante pour lancer la sauvegarde :
 
 Explication de cette commande :
 
-   *`-backupTarget:F:`* spécifie la destination de la sauvegarde (disque 2 avec la lettre F).
-   *`-include:C:`* spécifie le volume à sauvegarder (C: est ton disque 0).
-   *`-allCritical`* inclut tous les volumes nécessaires pour restaurer le système.
-   *`-quiet`* supprime les invites de confirmation.
+   - *`-backupTarget:F:`* spécifie la destination de la sauvegarde (disque 2 avec la lettre F).
+   - *`-include:C:`* spécifie le volume à sauvegarder (C: est ton disque 0).
+   - *`-allCritical`* inclut tous les volumes nécessaires pour restaurer le système.
+   - *`-quiet`* supprime les invites de confirmation.
 
 3. Automatiser la sauvegarde
 
@@ -129,10 +129,10 @@ On crée une tâche planifiée
 
 Explication de cette commande :
 
-   *`/tn "SauvegardeDiskC"`* donne un nom à la tâche.
-   *`/tr "wbadmin start backup -backupTarget:F: -include:C: -allCritical -quiet"`* spécifie la commande à exécuter.
-   *`/sc daily /mo 3`* planifie l'exécution tous les 3 jours.
-   *`/st 02:00`* fixe l'heure d'exécution à 02:00 du matin.
+   - *`/tn "SauvegardeDiskC"`* donne un nom à la tâche.
+   - *`/tr "wbadmin start backup -backupTarget:F: -include:C: -allCritical -quiet"`* spécifie la commande à exécuter.
+   - *`/sc daily /mo 3`* planifie l'exécution tous les 3 jours.
+   - *`/st 02:00`* fixe l'heure d'exécution à 02:00 du matin.
 
 On vérifie si la tâche est bien enregistré avec la commande *`schtasks /query`*
 
