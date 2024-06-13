@@ -78,10 +78,10 @@ Choix "1" et on ajoute une ligne pour que tout les trois jours la sauvegarde se 
 
 Explication de la syntaxe
 
-  - 0 2 : La tâche doit s'exécuter à 2h00.
-  - */3 : La tâche doit s'exécuter tous les trois jours.
-  - * : Correspond à chaque mois.
-  - * : Correspond à chaque jour de la semaine.
+  - *`0 2`* : La tâche doit s'exécuter à 2h00.
+  - *`*/3`* : La tâche doit s'exécuter tous les trois jours.
+  - *`*`* : Correspond à chaque mois.
+  - *`*`* : Correspond à chaque jour de la semaine.
 
 On peut vérifier que la crontab a été correctement mise à jour en utilisant la commande suivante *`crontab -l`*
 
