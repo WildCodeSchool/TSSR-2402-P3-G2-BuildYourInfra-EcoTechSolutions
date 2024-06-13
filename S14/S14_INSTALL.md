@@ -137,6 +137,22 @@ Explication de cette commande :
 On vérifie si la tâche est bien enregistré avec la commande *`schtasks /query`*
 
 ![](https://github.com/WildCodeSchool/TSSR-2402-P3-G2-BuildYourInfra-EcoTechSolutions/blob/main/S14/annex/SauvegardeLucy/SauveMoldaver/SauveMoldaver7.png)
+  
+
+## Supervision de l'infrastructure
+  
+D'un point de vue général, la supervision est la surveillance du bon fonctionnement d'un système ou d'une activité. Dans une entité, il peut y avoir plusieurs systèmes de supervision, qui peuvent se compléter et communiquer entre eux. Ils collectent les informations, donnent des indications sur le fonctionnement général (ou spécifique) des machines. Dans notre cas, nous avons opté pour les solutions logiciels suivantes : Prométhéus, Grafana, Docker.
+
+### Installation sur conteneur (via Docker)
+  
+
+  
+
+
+### Supervision des éléments dans l'infra
+  
+### Mise en place de tableau de bord
+  
 
 3) FAQ : Solutions aux problèmes connus et communs liés à l'installation et à la configuration
 
