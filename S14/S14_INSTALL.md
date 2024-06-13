@@ -145,9 +145,22 @@ D'un point de vue général, la supervision est la surveillance du bon fonctionn
 
 ### Installation sur conteneur (via Docker)
   
-
+En, effet, nous avons décidé de mettre en place la solution logiciel Docker depuis laquelle nous déployons deux conteneurs qui acueillent respectivement Grafana (essentiellement pour la lisibilité de l'interface graphique) et Prométhéus.
   
+Pour ce faire, nous avons monté un conteneur sous Linux Debian dans lequel nous avons procéder à l'installation de Docker :
+  
+``sudo apt-get update && sudo apt-get upgrade -y``
+``sudo apt-get install docker.io``
+``docker pull grafana/grafana``
+  
+Ici, nous associons au conteneur le couple de port qui permettra le transfert de communications : 3000:3000
 
+``docker run -d --name=grafana -p 3000:3000 grafana/grafana``
+  
+Ici, on peut vérifier si notre conteneur est "en route":
+  
+``docker ps``
+  
 
 ### Supervision des éléments dans l'infra
   
