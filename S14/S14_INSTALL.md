@@ -161,6 +161,78 @@ Ici, on peut vérifier si notre conteneur est "en route":
   
 ``docker ps``
   
+Une fois docker en place, nous créeons un conteneur déployer Grafana:
+  
+``
+  
+  
+  
+### Installation de l'agent sur Windows Server
+  
+  #### Installer le WMI Exporter
+  
+**Télécharger le WMI Exporter** :
+
+Accédez à la page de releases du WMI Exporter sur GitHub.
+Téléchargez le fichier MSI correspondant à la version souhaitée.
+
+**Installer le WMI Exporter** :
+
+Exécutez le fichier MSI téléchargé et suivez les instructions pour installer le WMI Exporter.
+Le WMI Exporter sera installé en tant que service Windows et commencera à s'exécuter automatiquement.
+  
+  #### Vérifier que le WMI Exporter fonctionne
+  
+**Vérifier le service** :
+
+Ouvrez le Gestionnaire des services (services.msc) et assurez-vous que le service wmi_exporter est en cours d'exécution.
+
+**Vérifier l'endpoint de métriques** :
+
+Ouvrez un navigateur web et accédez à http://localhost:9182/metrics.
+Vous devriez voir une page de texte avec des métriques exposées par le WMI Exporter.
+  
+  #### Configurer Prometheus pour scraper les métriques du WMI Exporter
+  
+**Modifier le fichier de configuration de Prometheus** :
+
+Ouvrez le fichier de configuration de Prometheus (généralement nommé prometheus.yml).
+
+**Ajouter un job pour le WMI Exporter** :
+
+Ajoutez la configuration suivante au fichier prometheus.yml :
+
+    scrape_configs:
+      - job_name: 'wmi_exporter'
+        scrape_interval: 15s
+        static_configs:
+          - targets: ['<IP_de_la_machine_Windows>:9182']
+
+Remplacez <IP_de_la_machine_Windows> par l'adresse IP de votre machine Windows où le WMI Exporter est installé. Si Prometheus et le WMI Exporter sont sur la même machine, utilisez localhost.
+
+**Redémarrer Prometheus** :
+
+Redémarrez le service Prometheus pour appliquer les modifications :
+
+``sudo systemctl restart prometheus``
+  
+  #### Vérifier que Prometheus scrape les métriques
+  
+**Accéder à l'interface web de Prometheus** :
+
+Ouvrez un navigateur web et accédez à l'interface web de Prometheus, généralement disponible à http://localhost:9090.
+
+**Vérifier les targets** :
+
+Allez dans le menu "Status" > "Targets".
+Vous devriez voir wmi_exporter dans la liste des targets. Son statut doit être "UP".
+
+**Explorer les métriques** :
+
+Allez dans le menu "Graph" et tapez le nom d'une métrique exposée par le WMI Exporter, par exemple wmi_cpu_time_total.
+Cliquez sur "Execute" pour voir les données de la métrique.
+
+
 
 ### Supervision des éléments dans l'infra
   
