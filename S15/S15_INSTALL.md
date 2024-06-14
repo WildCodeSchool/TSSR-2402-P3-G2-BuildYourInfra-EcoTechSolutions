@@ -106,7 +106,21 @@ Une fois redémarré, nous entrons les identifiants.
 
 #### Configuration de Kali linux
 
+Dans un premier temps, nous avons configuré l'adresse IP, la passerelle et le DNS de la machine virtuelle.
 
+![](https://github.com/WildCodeSchool/TSSR-2402-P3-G2-BuildYourInfra-EcoTechSolutions/blob/main/S15/annexe/kali_inst/kali16.png)
+
+Puis, nous avons défini un mot de passe pour le compte root.
+
+![](https://github.com/WildCodeSchool/TSSR-2402-P3-G2-BuildYourInfra-EcoTechSolutions/blob/main/S15/annexe/kali_inst/kali15.png)
+
+Ensuite, nous avons lancé la mise à jour du système et des applications.
+
+![](https://github.com/WildCodeSchool/TSSR-2402-P3-G2-BuildYourInfra-EcoTechSolutions/blob/main/S15/annexe/kali_inst/kali17.png)
+
+Nous lançons la commande suivante qui va nous permettre d'installer tous les paquets nécessaires pour effectuer des tests de pénétration et d'évaluer la sécurité des systèmes d'information et des réseaux.
+
+![](https://github.com/WildCodeSchool/TSSR-2402-P3-G2-BuildYourInfra-EcoTechSolutions/blob/main/S15/annexe/kali_inst/kali18.png)
 
 3) FAQ : Solutions aux problèmes connus et communs liés à l'installation et à la configuration
 
