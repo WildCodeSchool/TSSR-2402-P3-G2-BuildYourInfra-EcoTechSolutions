@@ -710,6 +710,7 @@ Une fois à ce niveau, selon nos besoins, nous recherchons les règles, les rest
 |GPO_EcoT_Computer_Desactiv_Wifi_si_Ethernet|EcoT_Users|Désactiver le WiFi lorsque le câble Ethernet est connecté|
 |GPO_EcoT_Computer_Compte_invite_desact|EcoT_Computers|Désactivation du compte invité|
 |GPO_EcoT_Computer_Verrouillage_apres_5_tentatives|EcoT_Computers|Verrouillage du comptes pendant 10 minutes après 5 tentatives de connexions ratées|
+|GPO_EcoT_CompteDown|EcoT_Users|Désactiver les comptes qui sont dans l'OU CompteDown |
 
 
 ### Mise en place de GPO Standard
