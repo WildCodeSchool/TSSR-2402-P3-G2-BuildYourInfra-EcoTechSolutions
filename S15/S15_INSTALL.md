@@ -102,7 +102,13 @@ Une fois redémarré, nous entrons les identifiants.
 
 ![](https://github.com/WildCodeSchool/TSSR-2402-P3-G2-BuildYourInfra-EcoTechSolutions/blob/main/S15/annexe/kali_inst/kali13.png)
 
-![](https://github.com/WildCodeSchool/TSSR-2402-P3-G2-BuildYourInfra-EcoTechSolutions/blob/main/S15/annexe/kali_inst/kali14.png)
+![](https://github.com/WildCodeSchool/TSSR-2402-P3-G2-BuildYourInfra-EcoTechSolutions/blob/main/S15/annexe/kali_inst/kali14.png) 
+
+Nous pouvons constater l'écran d'accueil et, en haut à gauche, la barre de recherche où se trouvent les outils nécessaires pour l'utilisation que nous avons choisie. Ensuite, nous pouvons passer à la configuration.
+
+![](https://github.com/WildCodeSchool/TSSR-2402-P3-G2-BuildYourInfra-EcoTechSolutions/blob/main/S15/annexe/kali_inst/kali19.png)
+
+![](https://github.com/WildCodeSchool/TSSR-2402-P3-G2-BuildYourInfra-EcoTechSolutions/blob/main/S15/annexe/kali_inst/kali20.png)
 
 #### Configuration de Kali linux
 
