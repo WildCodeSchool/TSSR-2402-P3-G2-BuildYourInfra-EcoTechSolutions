@@ -104,6 +104,10 @@ Une fois redémarré, nous entrons les identifiants.
 
 ![](https://github.com/WildCodeSchool/TSSR-2402-P3-G2-BuildYourInfra-EcoTechSolutions/blob/main/S15/annexe/kali_inst/kali14.png)
 
+#### Configuration de Kali linux
+
+
+
 3) FAQ : Solutions aux problèmes connus et communs liés à l'installation et à la configuration
 
 ## **Pré-requis techniques**
