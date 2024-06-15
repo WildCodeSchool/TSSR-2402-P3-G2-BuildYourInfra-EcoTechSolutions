@@ -128,6 +128,82 @@ Nous lançons la commande suivante qui va nous permettre d'installer tous les pa
 
 ![](https://github.com/WildCodeSchool/TSSR-2402-P3-G2-BuildYourInfra-EcoTechSolutions/blob/main/S15/annexe/kali_inst/kali18.png)
 
+#### Outils Kali Linux
+
+##### Nmap
+
+1. Introduction :
+
+Nmap est un scanner de ports libre créé par Fyodor et distribué par Insecure.org. Il est conçu pour détecter les ports ouverts, identifier les services hébergés et obtenir des informations sur le système d'exploitation d'un ordinateur distant.
+
+2. Utilisation :
+
+Dans un premier temps, on retrouve l'outil dans la barre de recherche à gauche de l'écran.
+
+![](https://github.com/WildCodeSchool/TSSR-2402-P3-G2-BuildYourInfra-EcoTechSolutions/blob/main/S15/annexe/kali_inst/Kali_nmap/kali_nmap0.png)
+
+Une fois la console ouverte, nous pouvons effectuer une recherche dans le réseau choisi ou une plage de réseau. Bien sûr, il existe plusieurs moyens d'établir des scans.
+
+![](https://github.com/WildCodeSchool/TSSR-2402-P3-G2-BuildYourInfra-EcoTechSolutions/blob/main/S15/annexe/kali_inst/Kali_nmap/kali_nmap1.png)
+
+ou
+
+![](https://github.com/WildCodeSchool/TSSR-2402-P3-G2-BuildYourInfra-EcoTechSolutions/blob/main/S15/annexe/kali_inst/Kali_nmap/kali_nmap2.png)
+
+Nous pouvons voir plusieurs adresses IP s'afficher, appartenant au réseau ciblé 10.10.8.0/24, ainsi que les ports ouverts de chaque machine.
+
+![](https://github.com/WildCodeSchool/TSSR-2402-P3-G2-BuildYourInfra-EcoTechSolutions/blob/main/S15/annexe/kali_inst/Kali_nmap/kali_nmap3.png)
+
+Il existe un script prédéfini dans Nmap, accessible via une commande, qui permet aux utilisateurs d'exécuter un scan de vulnérabilités. Cela est donc très pratique pour s'assurer que notre système est à jour et non vulnérable.
+
+Voici une commande pour lancer un script prédéfini :
+
+![](https://github.com/WildCodeSchool/TSSR-2402-P3-G2-BuildYourInfra-EcoTechSolutions/blob/main/S15/annexe/kali_inst/Kali_nmap/kali_nmap4.png)
+
+Nous pouvons remarquer que nous avons obtenu davantage d'informations sur l'adresse IP ciblée et les vulnérabilités :
+
+![](https://github.com/WildCodeSchool/TSSR-2402-P3-G2-BuildYourInfra-EcoTechSolutions/blob/main/S15/annexe/kali_inst/Kali_nmap/kali_nmap5.png)
+
+Nous pouvons lancer un script par défaut pour obtenir le nom, l'adresse MAC et le domaine de la machine.
+
+![](https://github.com/WildCodeSchool/TSSR-2402-P3-G2-BuildYourInfra-EcoTechSolutions/blob/main/S15/annexe/kali_inst/Kali_nmap/kali_nmap6.png)
+
+![](https://github.com/WildCodeSchool/TSSR-2402-P3-G2-BuildYourInfra-EcoTechSolutions/blob/main/S15/annexe/kali_inst/Kali_nmap/kali_nmap7.png)
+
+Cette sortie de nmap montre que l'hôte 10.10.8.100 a les ports 3389 (RDP) et 5357 ouverts, avec des certificats SSL associés au service RDP et des informations détaillées sur l'intégration Active Directory de l'hôte. Les informations sur l'adresse MAC et la résolution DNS de l'hôte sont également fournies. Ces données peuvent être utiles pour comprendre la configuration réseau de l'hôte, vérifier les certificats SSL, et diagnostiquer les services exposés et leur sécurité.
+
+**Voici une liste des options Nmap**
+
+| Options         | Commandes                                                                                  |
+|:---------------:|:------------------------------------------------------------------------------------------:|
+| --exclude       | Exclure des hôtes du scan                                                                  |
+| -n              | Désactiver la résolution DNS                                                               |
+| --open          | Afficher que les ports ouverts                                                             |
+| -oN             | Enregistrer le résultat du scan dans un fichier au format texte                            |
+| -oX             | Enregistrer le résultat du scan dans un fichier au format XML                              |
+| -p              | Spécifier les ports réseaux à scanner                                                      |
+| -Pn             | Désactiver la découverte d’hôte                                                            |
+| -r              | Analyser les ports consécutivement                                                         |
+| -sT             | Faire un scan de port TCP                                                                  |
+| -sU             | Faire un scan de port UDP                                                                  |
+| -sV             | Trouver les versions du service                                                            |
+| --script        | Utilise un script interne à nmap pour scan de vulnérabilité, bruteforce, etc                |
+| -v              | Mode bavard                                                                                |
+| -vv             | Mode très bavard                                                                           |
+| -A              | Activer la détection du système d'exploitation, le scan de version et les scripts par défaut|
+| -O              | Détecter le système d'exploitation                                                         |
+| -sC             | Exécuter les scripts par défaut                                                            |
+| -sP             | Faire un ping scan                                                                         |
+| -F              | Faire un scan rapide (seulement les ports les plus courants)                               |
+| -T<0-5>         | Définir le niveau d'agressivité du scan (par exemple, -T4 pour un scan plus rapide)         |
+| -iL             | Lire les hôtes à scanner à partir d'un fichier                                             |
+| --reason        | Afficher la raison pour laquelle un port est dans un état particulier                      |
+| --version-intensity <niveau> | Régler l'intensité de la détection de version (de 0 à 9)                         |
+| -oG             | Enregistrer le résultat du scan dans un fichier au format Grepable                         |
+| -oA             | Enregistrer le résultat du scan dans tous les formats principaux (N, X, G)                 |
+| -6              | Activer le scan IPv6                                                                       |
+
+
 3) FAQ : Solutions aux problèmes connus et communs liés à l'installation et à la configuration
 
 ## **Pré-requis techniques**
