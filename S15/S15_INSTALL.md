@@ -164,6 +164,8 @@ Nous pouvons remarquer que nous avons obtenu davantage d'informations sur l'adre
 
 ![](https://github.com/WildCodeSchool/TSSR-2402-P3-G2-BuildYourInfra-EcoTechSolutions/blob/main/S15/annexe/kali_inst/Kali_nmap/kali_nmap5.png)
 
+Ces résultats montrent que l'hôte 10.10.8.100 a plusieurs services critiques ouverts, mais les vulnérabilités majeures testées (XSS, CSRF, SMB) n'ont pas été confirmées ou n'ont pas pu être vérifiées en raison d'erreurs de connexion. Il peut être nécessaire d'examiner plus en détail ces services pour identifier d'autres éventuelles vulnérabilités ou sécurités.
+
 Nous pouvons lancer un script par défaut pour obtenir le nom, l'adresse MAC et le domaine de la machine.
 
 ![](https://github.com/WildCodeSchool/TSSR-2402-P3-G2-BuildYourInfra-EcoTechSolutions/blob/main/S15/annexe/kali_inst/Kali_nmap/kali_nmap6.png)
