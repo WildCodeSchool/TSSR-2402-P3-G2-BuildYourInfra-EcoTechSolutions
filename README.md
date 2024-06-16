@@ -179,25 +179,17 @@ Activités et répartitions des tâches
 
 |PO|SM|
 |:-:|:-:|
-|||
+|Damien Legay|Nicolas Maggiori|
 
 Activités et répartitions des tâches
 
 |                Tâches                 | Charles Caulier | Damien Legay | Anthony Javault | Nicolas Maggiori |
 | :-----------------------------------: | :-------------: | :----------: | :-------------: | :--------------: |
-|                                       |                 |              |                 |                  |
-|                                       |                 |              |                 |                  |
-|                                       |                 |              |                 |                  |
-|                                       |                 |              |                 |                  |
-|                                       |                 |              |                 |                  |
-|                                       |                 |              |                 |                  |
-|                                       |                 |              |                 |                  |
-|                                       |                 |              |                 |                  |
-|                                       |                 |              |                 |                  |
-|                                       |                 |              |                 |                  |
-|                                       |                 |              |                 |                  |
-|             Documentation             |                 |              |                 |                  |
-|    Préparation slides Présentation    |                 |              |                 |                  |
+|     Supervision Prometeus Grafana     |                 |              |                 |        x         |
+|        Journalisation CMTrace         |        x        |              |        x        |                  |
+|   AD : Intégration des utilisateurs   |                 |      x       |        x        |                  |
+|             Documentation             |        x        |      x       |        x        |        x         |
+|    Préparation slides Présentation    |        x        |      x       |        x        |        x         |
 |             Présentation              |        x        |      x       |        x        |        x         |
 
 ### **S15 - Semaine du 17 au 21 Juin 2024**
@@ -301,6 +293,31 @@ Activités et répartitions des tâches
 |             Présentation              |        x        |      x       |        x        |        x         |
 
 ### **S19 - Semaine du 15 au 19 Juillet 2024**
+
+|PO|SM|
+|:-:|:-:|
+|||
+
+Activités et répartitions des tâches
+
+|                Tâches                 | Charles Caulier | Damien Legay | Anthony Javault | Nicolas Maggiori |
+| :-----------------------------------: | :-------------: | :----------: | :-------------: | :--------------: |
+|                                       |                 |              |                 |                  |
+|                                       |                 |              |                 |                  |
+|                                       |                 |              |                 |                  |
+|                                       |                 |              |                 |                  |
+|                                       |                 |              |                 |                  |
+|                                       |                 |              |                 |                  |
+|                                       |                 |              |                 |                  |
+|                                       |                 |              |                 |                  |
+|                                       |                 |              |                 |                  |
+|                                       |                 |              |                 |                  |
+|                                       |                 |              |                 |                  |
+|             Documentation             |                 |              |                 |                  |
+|    Préparation slides Présentation    |                 |              |                 |                  |
+|             Présentation              |        x        |      x       |        x        |        x         |
+
+### **S20 - Semaine du 22 au 26 Juilet 2024**
 
 |PO|SM|
 |:-:|:-:|
