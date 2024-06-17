@@ -12,6 +12,7 @@
 
 
 ![](https://github.com/WildCodeSchool/TSSR-2402-P3-G2-BuildYourInfra-EcoTechSolutions/blob/main/S15/s15/installmail5.jpg)
+![installmais1](./s15/installmail5.jpg)
 
 
 
