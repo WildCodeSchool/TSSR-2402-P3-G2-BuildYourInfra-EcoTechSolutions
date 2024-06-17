@@ -38,7 +38,7 @@ OU Computer (ordinateurs)
 Rôles: Administrateurs de domaine et administrateurs locaux privilégiés
 
 
-Tier 2 : Unités d'organisation métier
+Tier 2 : 
 
 Sous-OUs de l'OU Bordeaux : EcoT_Tier2
 Département
