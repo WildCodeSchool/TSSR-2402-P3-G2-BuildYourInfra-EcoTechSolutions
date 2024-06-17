@@ -8,7 +8,38 @@
 
 
 
-### Serveur mail "IRedMail"
+### Serveur mail "iRedMail"
+  
+#### Pré-requis à considérer :
+  
+Nous avons choisi de déployer un conteneur sous Debian 12 pour pouvoir monter le serveur mail **IRedMail**
+Voici son paramètrage :
+  
+ - Mémoire : 20Go
+ - 1 coeur de processeur
+ - Mémoire RAM : **2Go** (attention ici par défaut il est proposé 512Mo, il est recommandé de mettre un minimum de 1Go pur que l'installation des fonctionnalités du serveur se déroule bien)
+ - SWAP : 512Mo
+ - Réseau : configuration sur le LAN correspondant à notre réseau, on enlève le Firewall par défaut, on attribue l'adresse fixe 10.10.8.116/16 avec la passerelle correspondant à notre pare-feu (10.10.255.254)
+ - DNS : nous renseignons ici notre domaine : ecotechsolutions.fr
+  
+Avant de démarrer notr econteneur fraichement crée, nous allons sur le DNS manager de notre serveur DNS (ici *Maximus*), *Forward Lookup Zones*, *ecotechsolutions.fr* pour :
+ - Créer un **Host name A** mail : 10.10.8.116
+ - Créer un **MX** : 10.10.8.116
+  
+Nous démarrons alors le conteneur puis :
+ - ``apt-get update && apt-get upgrade -y``
+ - Dans le fichier ``/etc/hosts`` nous modifions pour écrire ``127.0.0.1 mail.ecotechsolutions.fr``
+ - Dans le fichier ``/etc/hostname`` nous plaçons le nom en FQDN (Full Qualified Domain Name) : ``mail.ecotechsolutions.fr``
+  
+Nous pouvons alors procéder à l'installation de iRedMail. Voici les premiers pas :
+  
+ - Nous tapons la ligne de commande suivante : ``wget https://github.com/iredmail/iRedMail/archive/refs/tags/*.tar.gz`` où * correspond à la dernière version stable de **iRedMail**.
+ - Nous extrayons avec la commande suivante : ``tar -xzf *.tar.gz``
+ - On peut alors supprimer le fichier archive avec : ``rm *.tar.gz`` puis se rendre dans le dossier iRedMail-* : ``cd iRedMail-*``
+ - Un fois placé dans ce dossier, nous exécutons le script : ``bash iRedMail.sh``
+  
+Nous voici alors en présence de l'assistant d'installation, aussi appelé *Wizard*. 
+
 
 
 ![](./s15/installmail5.jpg)
@@ -296,34 +327,34 @@ Cette sortie de nmap montre que l'hôte 10.10.8.100 a les ports 3389 (RDP) et 53
 
 **Voici une liste des options Nmap**
 
-| Options         | Commandes                                                                                  |
-|:---------------:|:------------------------------------------------------------------------------------------:|
-| --exclude       | Exclure des hôtes du scan                                                                  |
-| -n              | Désactiver la résolution DNS                                                               |
-| --open          | Afficher que les ports ouverts                                                             |
-| -oN             | Enregistrer le résultat du scan dans un fichier au format texte                            |
-| -oX             | Enregistrer le résultat du scan dans un fichier au format XML                              |
-| -p              | Spécifier les ports réseaux à scanner                                                      |
-| -Pn             | Désactiver la découverte d’hôte                                                            |
-| -r              | Analyser les ports consécutivement                                                         |
-| -sT             | Faire un scan de port TCP                                                                  |
-| -sU             | Faire un scan de port UDP                                                                  |
-| -sV             | Trouver les versions du service                                                            |
-| --script        | Utilise un script interne à nmap pour scan de vulnérabilité, bruteforce, etc                |
-| -v              | Mode bavard                                                                                |
-| -vv             | Mode très bavard                                                                           |
-| -A              | Activer la détection du système d'exploitation, le scan de version et les scripts par défaut|
-| -O              | Détecter le système d'exploitation                                                         |
-| -sC             | Exécuter les scripts par défaut                                                            |
-| -sP             | Faire un ping scan                                                                         |
-| -F              | Faire un scan rapide (seulement les ports les plus courants)                               |
-| -T<0-5>         | Définir le niveau d'agressivité du scan (par exemple, -T4 pour un scan plus rapide)         |
-| -iL             | Lire les hôtes à scanner à partir d'un fichier                                             |
-| --reason        | Afficher la raison pour laquelle un port est dans un état particulier                      |
-| --version-intensity <niveau> | Régler l'intensité de la détection de version (de 0 à 9)                         |
-| -oG             | Enregistrer le résultat du scan dans un fichier au format Grepable                         |
-| -oA             | Enregistrer le résultat du scan dans tous les formats principaux (N, X, G)                 |
-| -6              | Activer le scan IPv6                                                                       |
+|           Options            |                                          Commandes                                           |
+| :--------------------------: | :------------------------------------------------------------------------------------------: |
+|          --exclude           |                                  Exclure des hôtes du scan                                   |
+|              -n              |                                 Désactiver la résolution DNS                                 |
+|            --open            |                                Afficher que les ports ouverts                                |
+|             -oN              |               Enregistrer le résultat du scan dans un fichier au format texte                |
+|             -oX              |                Enregistrer le résultat du scan dans un fichier au format XML                 |
+|              -p              |                            Spécifier les ports réseaux à scanner                             |
+|             -Pn              |                               Désactiver la découverte d’hôte                                |
+|              -r              |                              Analyser les ports consécutivement                              |
+|             -sT              |                                  Faire un scan de port TCP                                   |
+|             -sU              |                                  Faire un scan de port UDP                                   |
+|             -sV              |                               Trouver les versions du service                                |
+|           --script           |         Utilise un script interne à nmap pour scan de vulnérabilité, bruteforce, etc         |
+|              -v              |                                         Mode bavard                                          |
+|             -vv              |                                       Mode très bavard                                       |
+|              -A              | Activer la détection du système d'exploitation, le scan de version et les scripts par défaut |
+|              -O              |                              Détecter le système d'exploitation                              |
+|             -sC              |                               Exécuter les scripts par défaut                                |
+|             -sP              |                                      Faire un ping scan                                      |
+|              -F              |                 Faire un scan rapide (seulement les ports les plus courants)                 |
+|           -T<0-5>            |     Définir le niveau d'agressivité du scan (par exemple, -T4 pour un scan plus rapide)      |
+|             -iL              |                        Lire les hôtes à scanner à partir d'un fichier                        |
+|           --reason           |            Afficher la raison pour laquelle un port est dans un état particulier             |
+| --version-intensity <niveau> |                   Régler l'intensité de la détection de version (de 0 à 9)                   |
+|             -oG              |              Enregistrer le résultat du scan dans un fichier au format Grepable              |
+|             -oA              |          Enregistrer le résultat du scan dans tous les formats principaux (N, X, G)          |
+|              -6              |                                     Activer le scan IPv6                                     |
 
 
 3) FAQ : Solutions aux problèmes connus et communs liés à l'installation et à la configuration
