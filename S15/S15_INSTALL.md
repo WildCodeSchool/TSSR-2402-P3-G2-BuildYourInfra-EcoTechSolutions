@@ -11,87 +11,87 @@
 ### Serveur mail "IRedMail"
 
 
-![](/main/S15/s15/installmail5.jpg)
+![](https://github.com/WildCodeSchool/TSSR-2402-P3-G2-BuildYourInfra-EcoTechSolutions/blob/main/S15/s15/installmail5.jpg)
 
 
 
-![](/main/S15/s15/installmail6.jpg)
+![](https://github.com/WildCodeSchool/TSSR-2402-P3-G2-BuildYourInfra-EcoTechSolutions/blob/main/S15/s15/installmail6.jpg)
 
 
 
-![](/main/S15/s15/installmail7.jpg)
+![](https://github.com/WildCodeSchool/TSSR-2402-P3-G2-BuildYourInfra-EcoTechSolutions/blob/main/S15/s15/installmail7.jpg)
 
 
 
-![](/main/S15/s15/installmail8.jpg)
+![](https://github.com/WildCodeSchool/TSSR-2402-P3-G2-BuildYourInfra-EcoTechSolutions/blob/main/S15/s15/installmail8.jpg)
 
 
 
-![](/main/S15/s15/installmail1.jpg)
+![](https://github.com/WildCodeSchool/TSSR-2402-P3-G2-BuildYourInfra-EcoTechSolutions/blob/main/S15/s15/installmail1.jpg)
 
 
 
-![](/main/S15/s15/installmail9.jpg)
+![](https://github.com/WildCodeSchool/TSSR-2402-P3-G2-BuildYourInfra-EcoTechSolutions/blob/main/S15/s15/installmail9.jpg)
 
 
 
-![](/main/S15/s15/installmail2.jpg)
+![](https://github.com/WildCodeSchool/TSSR-2402-P3-G2-BuildYourInfra-EcoTechSolutions/blob/main/S15/s15/installmail2.jpg)
 
 
 
-![](/main/S15/s15/installmail3.jpg)
+![](https://github.com/WildCodeSchool/TSSR-2402-P3-G2-BuildYourInfra-EcoTechSolutions/blob/main/S15/s15/installmail3.jpg)
 
 
 
-![](/main/S15/s15/installmail10.jpg)
+![](https://github.com/WildCodeSchool/TSSR-2402-P3-G2-BuildYourInfra-EcoTechSolutions/blob/main/S15/s15/installmail10.jpg)
 
 
 
-![](/main/S15/s15/installmail11.jpg)
+![](https://github.com/WildCodeSchool/TSSR-2402-P3-G2-BuildYourInfra-EcoTechSolutions/blob/main/S15/s15/installmail11.jpg)
 
 
 
-![](/main/S15/s15/installmail12.jpg)
+![](https://github.com/WildCodeSchool/TSSR-2402-P3-G2-BuildYourInfra-EcoTechSolutions/blob/main/S15/s15/installmail12.jpg)
 
 
 
-![](/main/S15/s15/installmail13.jpg)
+![](https://github.com/WildCodeSchool/TSSR-2402-P3-G2-BuildYourInfra-EcoTechSolutions/blob/main/S15/s15/installmail13.jpg)
 
 
 
-![](/main/S15/s15/installmail14.jpg)
+![](https://github.com/WildCodeSchool/TSSR-2402-P3-G2-BuildYourInfra-EcoTechSolutions/blob/main/S15/s15/installmail14.jpg)
 
 
 
-![](/main/S15/s15/installmail15.jpg)
+![](https://github.com/WildCodeSchool/TSSR-2402-P3-G2-BuildYourInfra-EcoTechSolutions/blob/main/S15/s15/installmail15.jpg)
 
 
 
-![](/main/S15/s15/installmail16.jpg)
+![](https://github.com/WildCodeSchool/TSSR-2402-P3-G2-BuildYourInfra-EcoTechSolutions/blob/main/S15/s15/installmail16.jpg)
 
 
 
-![](/main/S15/s15/installmail17.jpg)
+![](https://github.com/WildCodeSchool/TSSR-2402-P3-G2-BuildYourInfra-EcoTechSolutions/blob/main/S15/s15/installmail17.jpg)
 
 
 
-![](/main/S15/s15/installmail18.jpg)
+![](https://github.com/WildCodeSchool/TSSR-2402-P3-G2-BuildYourInfra-EcoTechSolutions/blob/main/S15/s15/installmail18.jpg)
 
 
 
-![](/main/S15/s15/installmail19.jpg)
+![](https://github.com/WildCodeSchool/TSSR-2402-P3-G2-BuildYourInfra-EcoTechSolutions/blob/main/S15/s15/installmail19.jpg)
 
 
 
-![](/main/S15/s15/installmail20.jpg)
+![](https://github.com/WildCodeSchool/TSSR-2402-P3-G2-BuildYourInfra-EcoTechSolutions/blob/main/S15/s15/installmail20.jpg)
 
 
 
-![](/main/S15/s15/installmail21.jpg)
+![](https://github.com/WildCodeSchool/TSSR-2402-P3-G2-BuildYourInfra-EcoTechSolutions/blob/main/S15/s15/installmail21.jpg)
 
 
 
-![](/main/S15/s15/installmail22.jpg)
+![](https://github.com/WildCodeSchool/TSSR-2402-P3-G2-BuildYourInfra-EcoTechSolutions/blob/main/S15/s15/installmail22.jpg)
 
 
 
