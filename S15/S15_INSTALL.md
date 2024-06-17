@@ -12,6 +12,40 @@
 
 ### Objectifs Personnalisés
 1. Tiering Model
+
+La mise en place d'un modèle de hiérarchisation (tiering) dans Active Directory est une approche recommandée par Microsoft et l'ANSSI pour renforcer la sécurité de notre environnement. Ce modèle consiste à segmenter notre forêt AD en plusieurs niveaux (tiers) en fonction de leur criticité et de leur fonction. Cela permet de limiter l'accès aux ressources sensibles et de réduire l'impact d'une compromission.
+
+Dans notre cas, avec une seule forêt et une OU France contenant l'ensemble de notre société, voici la structure de hiérarchisation :
+
+Tier 0 : Forêt et Domaine
+
+OU = EcoT_Tier0
+Placé au même niveau que la le contrôleur de domaine
+Contient:
+Contrôleurs de domaine
+Serveurs de gestion privilégiés (bastions)
+Rôles: Administrateurs de forêt et de domaine
+
+
+Tier 1 : Unités d'organisation critiques
+
+OU: EcoT_Tier1
+Contient:
+OU Admin (comptes administrateurs locaux)
+OU Secure (comptes à privilèges élevés)
+OU User (comptes utilisateurs standard)
+OU Computer (ordinateurs)
+Rôles: Administrateurs de domaine et administrateurs locaux privilégiés
+
+
+Tier 2 : 
+
+Sous-OUs de l'OU Bordeaux : EcoT_Tier2
+Département
+Contient:
+Comptes utilisateurs et ordinateurs spécifiques à chaque métier
+Rôles: Administrateurs de domaine et administrateurs locaux avec des privilèges limités aux ressources de leur métier
+
 2. VM Pentest
 
 Nous allons mettre en place un serveur de test d'intrusion avec Kali Linux dans l'infrastructure de ecotechsolutions, car cela présente plusieurs avantages et utilités, principalement axés sur l'amélioration de la sécurité et la préparation face aux cybermenaces. Voici quelques-unes des principales utilités :
