@@ -170,7 +170,61 @@ Puis, nous cliquons sur "Nouveau mode d'authentification"
 
 ![](https://github.com/WildCodeSchool/TSSR-2402-P3-G2-BuildYourInfra-EcoTechSolutions/blob/main/S15/redmine/redmine10.png)
 
+Nous remplissons les champs avec les informations appropriées, comme indiqué ci-dessous, puis nous cliquons sur le bouton "Sauvegarder" pour enregistrer les modifications.
 
+![](https://github.com/WildCodeSchool/TSSR-2402-P3-G2-BuildYourInfra-EcoTechSolutions/blob/main/S15/redmine/redmine7.png)
+
+À présent, nous pouvons effectuer un test pour vérifier si tout fonctionne correctement.
+
+![](https://github.com/WildCodeSchool/TSSR-2402-P3-G2-BuildYourInfra-EcoTechSolutions/blob/main/S15/redmine/redmine8.png)
+
+Maintenant, nous allons ajouter de nouveaux utilisateurs.
+
+Pour ce faire, nous nous rendons dans la section "Utilisateurs" du menu d'administration, puis nous cliquons sur le bouton "Nouvel utilisateur".
+
+![](https://github.com/WildCodeSchool/TSSR-2402-P3-G2-BuildYourInfra-EcoTechSolutions/blob/main/S15/redmine/redmine11.png)
+
+En saisissant les identifiants enregistrés dans l'annuaire Active Directory, nous pouvons retrouver l'utilisateur ciblé.
+
+![](https://github.com/WildCodeSchool/TSSR-2402-P3-G2-BuildYourInfra-EcoTechSolutions/blob/main/S15/redmine/redmine12.png)
+
+![](https://github.com/WildCodeSchool/TSSR-2402-P3-G2-BuildYourInfra-EcoTechSolutions/blob/main/S15/redmine/redmine14.png)
+
+Maintenant nous allons voir comment créer un projet
+
+![](https://github.com/WildCodeSchool/TSSR-2402-P3-G2-BuildYourInfra-EcoTechSolutions/blob/main/S15/redmine/redmine15.png)
+
+cliquons "nouveau projet"
+
+![](https://github.com/WildCodeSchool/TSSR-2402-P3-G2-BuildYourInfra-EcoTechSolutions/blob/main/S15/redmine/redmine16.png)
+
+Remplisson le projet
+
+![](https://github.com/WildCodeSchool/TSSR-2402-P3-G2-BuildYourInfra-EcoTechSolutions/blob/main/S15/redmine/redmine17.png)
+
+Ajoutons des membres 
+
+![](https://github.com/WildCodeSchool/TSSR-2402-P3-G2-BuildYourInfra-EcoTechSolutions/blob/main/S15/redmine/redmine18.png)
+
+"nouveau membre"
+
+![](https://github.com/WildCodeSchool/TSSR-2402-P3-G2-BuildYourInfra-EcoTechSolutions/blob/main/S15/redmine/redmine19.png)
+
+Sélectionnons les utilisateurs concernés en cochant les cases correspondantes.
+
+![](https://github.com/WildCodeSchool/TSSR-2402-P3-G2-BuildYourInfra-EcoTechSolutions/blob/main/S15/redmine/redmine20.png)
+
+![](https://github.com/WildCodeSchool/TSSR-2402-P3-G2-BuildYourInfra-EcoTechSolutions/blob/main/S15/redmine/redmine21.png)
+
+Maintenant, nous allons voir comment créer un forum.
+
+Pour ce faire, nous nous rendons dans la section "Configuration" du menu d'administration, puis nous cliquons sur le bouton "Nouveau forum". Nous entrons ensuite les informations requises dans les champs appropriés, puis nous cliquons sur le bouton "Créer" pour créer le forum.
+
+![](https://github.com/WildCodeSchool/TSSR-2402-P3-G2-BuildYourInfra-EcoTechSolutions/blob/main/S15/redmine/redmine22.png)
+
+![](https://github.com/WildCodeSchool/TSSR-2402-P3-G2-BuildYourInfra-EcoTechSolutions/blob/main/S15/redmine/redmine23.png)
+
+![](https://github.com/WildCodeSchool/TSSR-2402-P3-G2-BuildYourInfra-EcoTechSolutions/blob/main/S15/redmine/redmine24.png)
 
 ### Objectifs Personnalisés
 1. Tiering Model
