@@ -494,20 +494,33 @@ Configurer l'authentification Guacamole : générez le hash MD5 du mot de passe 
 Créez le fichier user-mapping.xml :
 ```
     <user-mapping>
+
       <authorize username="guacadmin" password="5f4dcc3b5aa765d61d8327deb882cf99" encoding="md5">
-        <connection name="Ubuntu 22">
+
+        <connection name="Kali">
           <protocol>ssh</protocol>
-          <param name="hostname">192.168.58.37</param>
-          <param name="port">22</param>
+          <param name="hostname">10.10.200.50</param>
+          <param name="port">2222</param>
         </connection>
-        <connection name="Windows 10">
+
+        <connection name="Maximus">
           <protocol>rdp</protocol>
-          <param name="hostname">192.168.56.121</param>
+          <param name="hostname">10.10.8.100</param>
           <param name="port">3389</param>
-          <param name="username">kifarunix</param>
+          <param name="username">Administrator</param>
           <param name="ignore-cert">true</param>
         </connection>
+
+        <connection name="Moldaver">
+          <protocol>rdp</protocol>
+          <param name="hostname">10.10.8.120</param>
+          <param name="port">3389</param>
+          <param name="username">Administrator</param>
+          <param name="ignore-cert">true</param>
+        </connection>
+
       </authorize>
+      
     </user-mapping>
 ```
 Redémarrer Tomcat et guacd
@@ -518,7 +531,12 @@ Accès à Apache Guacamole depuis le navigateur
 
 => Utilisez l'adresse http://IP-du-serveur:8080/guacamole pour accéder à l'interface web de Guacamole.
 Connectez-vous avec les informations d'identification configurées.
-
+  
+![installApacheGuaca1](./s15/installApacheGuac2.jpg)
+  
+login indiqué plus haut : *guacadmin* // mdp : **Azerty1\***
+  
+![installApacheGuaca3](./s15/installApacheGuac3.jpg)
 1) FAQ : Solutions aux problèmes connus et communs liés à l'installation et à la configuration
 
 ## **Pré-requis techniques**
