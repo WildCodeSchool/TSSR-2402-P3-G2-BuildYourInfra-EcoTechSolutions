@@ -40,90 +40,92 @@ Nous pouvons alors procéder à l'installation de iRedMail. Voici les premiers p
   
 Nous voici alors en présence de l'assistant d'installation, aussi appelé *Wizard*. 
 
-
+Pour commencer l'installation, validez avec **< YES >**.
 
 ![](./s15/installmail5.jpg)
 
-
+Pour le chemin par défaut, nous le laissons par défaut, continuez avec **< NEXT >**.
 
 ![](./s15/installmail6.jpg)
 
-
+Pour le serveur web, sélectionnez **Nginx** et continuez avec **< NEXT >**.
 
 ![](./s15/installmail7.jpg)
 
-
+Pour la base de donnée des mails, sélectionnez **OpenLDAP** et  continuez avec **< NEXT >**.
 
 ![](./s15/installmail8.jpg)
 
-
+Pour le suffixe LDAP, entrez le domaine comme suit, continuez avec **< NEXT >**.
 
 ![](./s15/installmail1.jpg)
 
-
+Saisissez le mot de passe Administrateur mail "_Azerty1*_" , continuez avec **< NEXT >**.
 
 ![](./s15/installmail9.jpg)
 
-
+Saisissez le nom domaine comme suit, continuez avec **< NEXT >**.
 
 ![](./s15/installmail2.jpg)
 
-
+Saisissez le mot de passe Administrateur "_Azerty1*_" , continuez avec **< NEXT >**.
 
 ![](./s15/installmail3.jpg)
 
-
+Pour les options, sélectionnez: **_Roundcubemail_**, **_netdata_**, **_iRedAdmin_** et **_Fail2ban_**. Continuez avec **< NEXT >**.
 
 ![](./s15/installmail10.jpg)
 
-
+L'installation et la configuration sont terminées. 
+Aux questions _File: /etc/nftables.conf, with SSHD ports: 22_ et _Restart firewall now (with ssh port: 22)?_ , validez les deux questions avec **y**.
 
 ![](./s15/installmail11.jpg)
 
-
+Connectons-nous à la page de connexion de _Roundcube Webmail_ avec l'adresse IP **10.10.8.116/mail/**. Saisissez le nom d'utilisateur "_postmaster@ecotechsolutions.fr_" et le mot de passe "_Azerty1*_" et cliquez sur **CONNEXION**.
 
 ![](./s15/installmail12.jpg)
 
-
+Voici la page d'accueuil de _Roundcube Webmail_.
 
 ![](./s15/installmail13.jpg)
 
-
+Pour créer un nouveau contact, allez à gauche sur l'encart _Contacts_ et ensuite cliquez sur l'encart _Créer_ en haut au milieu.
 
 ![](./s15/installmail14.jpg)
 
-
+Connectons-nous à la page de connexion de _iRedAdmin_ avec l'adresse IP **10.10.8.116/iredadmin/**. Saisissez le nom d'utilisateur _postmaster@ecotechsolutions.fr_ et le mot de passe _Azerty1*_ et cliquez sur **CONNEXION**.
 
 ![](./s15/installmail15.jpg)
 
-
+Pour Créer un utilisateur, allez sur l'onglet **+Add**.
 
 ![](./s15/installmail16.jpg)
 
-
+Pour créer l'utilisateur, remplir tout les champs contenant une étoile rouge et cliquez sur **Add** en bas de page.
 
 ![](./s15/installmail17.jpg)
 
-
+Une fois créee, vérifions en allant sur l'onglet **Domains and Accounts**
 
 ![](./s15/installmail18.jpg)
 
-
+Retournons sur la page d'accueuil de _Roundcube Webmail_ pour verifier que l'utilisateur crée apparait bien dans les contacts.
 
 ![](./s15/installmail19.jpg)
 
-
+Connectons-nous sur un compte crée précédemment.
 
 ![](./s15/installmail20.jpg)
 
-
+Créeons un mail test vers un autre contact et cliquez sur **Envoyer**.
 
 ![](./s15/installmail21.jpg)
 
-
+Notre contact a bien reçu le mail test que nous avons envoyé.
 
 ![](./s15/installmail22.jpg)
 
+La création et la configuration de l'adresse mail est operationelle.
 
 
 
