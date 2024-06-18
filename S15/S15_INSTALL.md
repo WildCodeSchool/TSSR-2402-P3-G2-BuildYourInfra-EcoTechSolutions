@@ -127,6 +127,8 @@ Notre contact a bien reçu le mail test que nous avons envoyé.
 
 La création et la configuration de l'adresse mail est operationelle.
 
+### Gestion de projet / suivi de tâches avec **Redmine**
+
 
 
 ### Objectifs Personnalisés
