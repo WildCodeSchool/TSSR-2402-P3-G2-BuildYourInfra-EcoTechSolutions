@@ -356,8 +356,24 @@ Cette sortie de nmap montre que l'hôte 10.10.8.100 a les ports 3389 (RDP) et 53
 |             -oA              |          Enregistrer le résultat du scan dans tous les formats principaux (N, X, G)          |
 |              -6              |                                     Activer le scan IPv6                                     |
 
+  
+### Installation d'un bastion d'administration Apache-Guacamole
+  
+**Pré-requis** 
+  
+Au niveau de notre parefeu, quelques ajustements étaient nécessaires :
+  
+ - Configuration du NAT *Outbound* pour autoriser la DMZ à utiliser la WAN : 
+  Pour cela, sur l'interface web de notre parefeu Pfsense, nous allons dans **Firewall** > **NAT** > **Outbound** et on clique sur **Add**. Nous configurons comme suit :
 
-3) FAQ : Solutions aux problèmes connus et communs liés à l'installation et à la configuration
+  ![installApacheGuac1](./s15/installApacheGuac1.jpg)
+
+Nous cliquons sur **Save** et **Apply changes** pour valider la règle.
+  
+
+
+
+1) FAQ : Solutions aux problèmes connus et communs liés à l'installation et à la configuration
 
 ## **Pré-requis techniques**
 
