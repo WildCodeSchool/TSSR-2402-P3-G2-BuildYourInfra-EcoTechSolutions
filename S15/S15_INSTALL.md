@@ -129,6 +129,32 @@ La création et la configuration de l'adresse mail est operationelle.
 
 ### Gestion de projet / suivi de tâches avec **Redmine**
 
+#### Installation
+
+Nous avons déployé un template Turnkey sur Proxmox afin de disposer des outils nécessaires à l'installation de Redmine. Premièrement, nous devons définir les mots de passe pour la base de données et pour l'administrateur.
+
+![](https://github.com/WildCodeSchool/TSSR-2402-P3-G2-BuildYourInfra-EcoTechSolutions/blob/main/S15/redmine/redmine1.png)
+
+Ensuite nous rentrons l'adresse mail de l'admin
+
+![](https://github.com/WildCodeSchool/TSSR-2402-P3-G2-BuildYourInfra-EcoTechSolutions/blob/main/S15/redmine/redmine2.png)
+
+Puis nous allons "skip" les deux prochains encadrés
+
+![](https://github.com/WildCodeSchool/TSSR-2402-P3-G2-BuildYourInfra-EcoTechSolutions/blob/main/S15/redmine/redmine3.png)
+
+![](https://github.com/WildCodeSchool/TSSR-2402-P3-G2-BuildYourInfra-EcoTechSolutions/blob/main/S15/redmine/redmine4.png)
+
+Puis nous lançons l'installation
+
+![](https://github.com/WildCodeSchool/TSSR-2402-P3-G2-BuildYourInfra-EcoTechSolutions/blob/main/S15/redmine/redmine5.png)
+
+Normalement nous tombons sur cette encadrée
+
+![](https://github.com/WildCodeSchool/TSSR-2402-P3-G2-BuildYourInfra-EcoTechSolutions/blob/main/S15/redmine/redmine6.png)
+
+
+
 
 
 ### Objectifs Personnalisés
