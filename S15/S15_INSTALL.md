@@ -363,7 +363,7 @@ Cette sortie de nmap montre que l'hôte 10.10.8.100 a les ports 3389 (RDP) et 53
   
 Au niveau de notre parefeu, quelques ajustements étaient nécessaires :
   
- - Configuration du NAT *Outbound* pour autoriser la DMZ à utiliser la WAN : 
+ - Configuration du NAT *Outbound* pour autoriser la DMZ à utiliser la WAN donc pour sortir du réseau local privé vers l'extérieur: 
   Pour cela, sur l'interface web de notre parefeu Pfsense, nous allons dans **Firewall** > **NAT** > **Outbound** et on clique sur **Add**. Nous configurons comme suit :
 
   ![installApacheGuac1](./s15/installApacheGuac1.jpg)
