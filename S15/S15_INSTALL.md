@@ -145,15 +145,30 @@ Puis nous allons "skip" les deux prochains encadrés
 
 ![](https://github.com/WildCodeSchool/TSSR-2402-P3-G2-BuildYourInfra-EcoTechSolutions/blob/main/S15/redmine/redmine4.png)
 
-Puis nous lançons l'installation
+Ensuite, nous lançons l'installation.
 
 ![](https://github.com/WildCodeSchool/TSSR-2402-P3-G2-BuildYourInfra-EcoTechSolutions/blob/main/S15/redmine/redmine5.png)
 
-Normalement nous tombons sur cette encadrée
+Normalement, nous devrions obtenir l'interface suivante
 
 ![](https://github.com/WildCodeSchool/TSSR-2402-P3-G2-BuildYourInfra-EcoTechSolutions/blob/main/S15/redmine/redmine6.png)
 
+#### Configuration
 
+Nous allons maintenant nous connecter à l'interface web de Redmine à l'aide du compte administrateur.
+
+- identifiant : admin
+- mot de passe : Azerty1*
+
+Une fois sur la page d'administration de Redmine, nous cliquons sur le menu "Administration" situé en haut à gauche de l'écran.
+
+Maintenant, nous allons pouvoir synchroniser notre annuaire Active Directory dans la section "Authentification LDAP".
+
+![](https://github.com/WildCodeSchool/TSSR-2402-P3-G2-BuildYourInfra-EcoTechSolutions/blob/main/S15/redmine/redmine9.png)
+
+Puis, nous cliquons sur "Nouveau mode d'authentification"
+
+![](https://github.com/WildCodeSchool/TSSR-2402-P3-G2-BuildYourInfra-EcoTechSolutions/blob/main/S15/redmine/redmine10.png)
 
 
 
