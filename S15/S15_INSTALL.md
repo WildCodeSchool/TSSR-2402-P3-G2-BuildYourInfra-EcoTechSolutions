@@ -129,10 +129,16 @@ La création et la configuration de l'adresse mail est operationelle.
 
 A présent, nous nous rendons sur un poste client de notre domaine, nous connectons au compte d'un utilisateur (dans notre exemple, nous nous servons du compte de Noémie Leloir). Juste avant, nous avons procédé à l'installation de **Thunderbird** via une GPO depuis notre AD-DS avec l'utilitaire GPO.
 Une fois Thunderbird installé, nous procédons aux réglages suivants (de telle sorte à "lier" le serveur mail à notre client mail installé sur le poste; cela permet d'éviter à l'utilisateur de se rendre directement sur le serveur pour consulter ses emails) :
+  
+On se rend dans **Paramètres** > **Paramètres des comptes** > **Paramètres serveur** : ici nous spécifions le nom DNS de notre serveur mail (conteneur IanMail), i.e. *ianmail.ecotechsolutions.fr* qui écoute sur le port 143 (IMAP non sécurisé). Nous pouvons aussi donner le prot 993 (over TLS), plus uen sécurisation accrue. Nous validons :
 
-![installmail23](./s15/)
+![installmail23](./s15/installmail24.jpg)
+  
+Ce qui génère un redémarrage de l'application pour tenir compte des modifications. Nous entrons le mot de passe de l'utilisateur en question :
 
-![installamil24]()
+![installamil24](./s15/installmail23.jpg)
+  
+Nous avons connecté le client au serveur mail !
 
 
 
