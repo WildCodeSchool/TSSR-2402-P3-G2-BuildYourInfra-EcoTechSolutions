@@ -127,6 +127,15 @@ Notre contact a bien reçu le mail test que nous avons envoyé.
 
 La création et la configuration de l'adresse mail est operationelle.
 
+A présent, nous nous rendons sur un poste client de notre domaine, nous connectons au compte d'un utilisateur (dans notre exemple, nous nous servons du compte de Noémie Leloir). Juste avant, nous avons procédé à l'installation de **Thunderbird** via une GPO depuis notre AD-DS avec l'utilitaire GPO.
+Une fois Thunderbird installé, nous procédons aux réglages suivants (de telle sorte à "lier" le serveur mail à notre client mail installé sur le poste; cela permet d'éviter à l'utilisateur de se rendre directement sur le serveur pour consulter ses emails) :
+
+![installmail23](./s15/)
+
+![installamil24]()
+
+
+
 ### Gestion de projet / suivi de tâches avec **Redmine**
 
 #### Installation
