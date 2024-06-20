@@ -196,26 +196,21 @@ Activités et répartitions des tâches
 
 |PO|SM|
 |:-:|:-:|
-|||
+|Charles Caulier|Damien Legay|
 
 Activités et répartitions des tâches
 
 |                Tâches                 | Charles Caulier | Damien Legay | Anthony Javault | Nicolas Maggiori |
 | :-----------------------------------: | :-------------: | :----------: | :-------------: | :--------------: |
-|                                       |                 |              |                 |                  |
-|                                       |                 |              |                 |                  |
-|                                       |                 |              |                 |                  |
-|                                       |                 |              |                 |                  |
-|                                       |                 |              |                 |                  |
-|                                       |                 |              |                 |                  |
-|                                       |                 |              |                 |                  |
-|                                       |                 |              |                 |                  |
-|                                       |                 |              |                 |                  |
-|                                       |                 |              |                 |                  |
-|                                       |                 |              |                 |                  |
-|             Documentation             |                 |              |                 |                  |
+|            Messagerie                 |        x        |              |                 |        x         |
+|        Sécurité : Bitwarden           |                 |              |        x        |                  |
+|             Redmine                   |                 |      x       |                 |                  |
+|          Tiering model                |                 |      x       |                 |                  |
+|         Test vulnérabilité            |                 |      x       |                 |                  |
+|            Guacamole                  |                 |              |                 |        x         |
+|            Documentation              |        x        |      x       |        x        |        x         |
 |    Préparation slides Présentation    |                 |              |                 |                  |
-|             Présentation              |        x        |      x       |        x        |        x         |
+|            Présentation               |        x        |      x       |        x        |        x         |
 
 ### **S16 - Semaine du 24 au 28 Juin 2024**
 
