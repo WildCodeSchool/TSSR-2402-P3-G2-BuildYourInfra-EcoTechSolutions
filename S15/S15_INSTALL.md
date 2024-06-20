@@ -6,7 +6,11 @@
 
 2) Installation et Configuration des équipements et ressources
 
+1) FAQ : Solutions aux problèmes connus et communs liés à l'installation et à la configuration
 
+## **Pré-requis techniques**
+
+## **Installation et Configuration des équipements et ressources**
 
 ### Serveur mail "iRedMail"
   
@@ -777,10 +781,9 @@ Connectez-vous avec les informations d'identification configurées.
 login indiqué plus haut : *guacadmin* // mdp : **Azerty1\***
   
 ![installApacheGuaca3](./s15/installApacheGuac3.jpg)
-1) FAQ : Solutions aux problèmes connus et communs liés à l'installation et à la configuration
 
-## **Pré-requis techniques**
+### Serveur **Bitwarden**
 
-## **Installation et Configuration des équipements et ressources**
+Retrouvez toute la Documentation de **Bitwarden** dans l'annexe [Bitwarden](S15/annex/Bitwarden.md).
 
 ## **FAQ : Solutions aux problèmes connus et communs liés à l'installation et à la configuration**
