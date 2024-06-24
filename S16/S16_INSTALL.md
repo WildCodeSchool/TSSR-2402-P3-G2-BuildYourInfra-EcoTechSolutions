@@ -80,7 +80,7 @@ Pour la première étape,  nous cliquons sur "Next"
 
 ![](https://github.com/WildCodeSchool/TSSR-2402-P3-G2-BuildYourInfra-EcoTechSolutions/blob/main/S16/WSUS/WSUS-Config/WSUS-Config-2.png)
 
-Nous décochons le faite de joindre le programme de Microsoft Update puis "Next"
+Nous décochons l'option "Joindre le programme Microsoft Update", puis nous cliquons sur "Next".
 
 ![](https://github.com/WildCodeSchool/TSSR-2402-P3-G2-BuildYourInfra-EcoTechSolutions/blob/main/S16/WSUS/WSUS-Config/WSUS-Config-3.png)
 
@@ -88,7 +88,7 @@ Nous laissons sur "Synchronize from Microsoft Update" puis "Next"
 
 ![](https://github.com/WildCodeSchool/TSSR-2402-P3-G2-BuildYourInfra-EcoTechSolutions/blob/main/S16/WSUS/WSUS-Config/WSUS-Config-4.png)
 
-Nous n'avons pas de serveur proxy a entrer. Nous cliquons sur "Next"
+Nous n'avons pas de serveur proxy à entrer. Nous cliquons sur "Next"
 
 ![](https://github.com/WildCodeSchool/TSSR-2402-P3-G2-BuildYourInfra-EcoTechSolutions/blob/main/S16/WSUS/WSUS-Config/WSUS-Config-5.png)
 
@@ -98,7 +98,7 @@ Maintenant nous lançons "Start Connecting", une fois terminé nous cliquons sur
 
 ![](https://github.com/WildCodeSchool/TSSR-2402-P3-G2-BuildYourInfra-EcoTechSolutions/blob/main/S16/WSUS/WSUS-Config/WSUS-Config-7.png)
 
-Comme nous avons des ordinateurs en francais et en anglais nous selectionnons "French" et "English" pour le choix de langues des mises a jour
+Comme nous avons des ordinateurs en francais et en anglais pour le choix de langues des mises a jour nous selectionnons "French" et "English" 
 
 ![](https://github.com/WildCodeSchool/TSSR-2402-P3-G2-BuildYourInfra-EcoTechSolutions/blob/main/S16/WSUS/WSUS-Config/WSUS-Config-8.png)
 
