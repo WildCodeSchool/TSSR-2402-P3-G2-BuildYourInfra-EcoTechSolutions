@@ -70,5 +70,59 @@ Enfin, nous cliquons sur le petit drapeau jaune situé en haut à droite de la f
 
 ![](https://github.com/WildCodeSchool/TSSR-2402-P3-G2-BuildYourInfra-EcoTechSolutions/blob/main/S16/WSUS/WSUS-Install/WSUS-Install-15.png)
 
+### Configuration de base de WSUS
+
+WSUS est installé sur notre serveur et la base de données est créée. Désormais, nous pouvons lancer la console « Services WSUS » afin d’effectuer la configuration de base. Pour ce faire nous allons dans manage server et en haut a droite "Tools".
+
+![](https://github.com/WildCodeSchool/TSSR-2402-P3-G2-BuildYourInfra-EcoTechSolutions/blob/main/S16/WSUS/WSUS-Config/WSUS-Config-1.png)
+
+Pour la première étape,  nous cliquons sur "Next"
+
+![](https://github.com/WildCodeSchool/TSSR-2402-P3-G2-BuildYourInfra-EcoTechSolutions/blob/main/S16/WSUS/WSUS-Config/WSUS-Config-2.png)
+
+Nous décochons le faite de joindre le programme de Microsoft Update puis "Next"
+
+![](https://github.com/WildCodeSchool/TSSR-2402-P3-G2-BuildYourInfra-EcoTechSolutions/blob/main/S16/WSUS/WSUS-Config/WSUS-Config-3.png)
+
+Nous laissons sur "Synchronize from Microsoft Update" puis "Next"
+
+![](https://github.com/WildCodeSchool/TSSR-2402-P3-G2-BuildYourInfra-EcoTechSolutions/blob/main/S16/WSUS/WSUS-Config/WSUS-Config-4.png)
+
+Nous n'avons pas de serveur proxy a entrer. Nous cliquons sur "Next"
+
+![](https://github.com/WildCodeSchool/TSSR-2402-P3-G2-BuildYourInfra-EcoTechSolutions/blob/main/S16/WSUS/WSUS-Config/WSUS-Config-5.png)
+
+Maintenant nous lançons "Start Connecting", une fois terminé nous cliquons sur "Next"
+
+![](https://github.com/WildCodeSchool/TSSR-2402-P3-G2-BuildYourInfra-EcoTechSolutions/blob/main/S16/WSUS/WSUS-Config/WSUS-Config-6.png)
+
+![](https://github.com/WildCodeSchool/TSSR-2402-P3-G2-BuildYourInfra-EcoTechSolutions/blob/main/S16/WSUS/WSUS-Config/WSUS-Config-7.png)
+
+Comme nous avons des ordinateurs en francais et en anglais nous selectionnons "French" et "English" pour le choix de langues des mises a jour
+
+![](https://github.com/WildCodeSchool/TSSR-2402-P3-G2-BuildYourInfra-EcoTechSolutions/blob/main/S16/WSUS/WSUS-Config/WSUS-Config-8.png)
+
+Dans l'images suivante j'ai laissé par défaut, mais nous devons sélectionner les produits pour lesquels nous souhaitons synchroniser les mises à jour. La liste est très longue et très complète, nous devons cocher les produits correspondants à ceux que nous utilisons !
+
+![](https://github.com/WildCodeSchool/TSSR-2402-P3-G2-BuildYourInfra-EcoTechSolutions/blob/main/S16/WSUS/WSUS-Config/WSUS-Config-9.png)
+
+L’étape suivante concerne la classification des mises à jour, c’est-à-dire les types de mises à jour qu’il faut synchroniser sur le serveur WSUS
+
+![](https://github.com/WildCodeSchool/TSSR-2402-P3-G2-BuildYourInfra-EcoTechSolutions/blob/main/S16/WSUS/WSUS-Config/WSUS-Config-10.png)
+
+La synchronisation des mises à jour avec les serveurs Microsoft Update doit être planifiée afin d’être sûr de recevoir les dernières mises à jour. De préférence, cette synchronisation sera planifiée la nuit afin de ne pas perturber la production
+
+![](https://github.com/WildCodeSchool/TSSR-2402-P3-G2-BuildYourInfra-EcoTechSolutions/blob/main/S16/WSUS/WSUS-Config/WSUS-Config-11.png)
+
+Cochez l’option « Begin initial synchronization » si vous souhaitez réaliser une première synchronisation dès maintenant.
+
+![](https://github.com/WildCodeSchool/TSSR-2402-P3-G2-BuildYourInfra-EcoTechSolutions/blob/main/S16/WSUS/WSUS-Config/WSUS-Config-12.png)
+
+Nous cliquons sur "Finish"
+
+![](https://github.com/WildCodeSchool/TSSR-2402-P3-G2-BuildYourInfra-EcoTechSolutions/blob/main/S16/WSUS/WSUS-Config/WSUS-Config-13.png)
+
+
+
 
 ## **FAQ : Solutions aux problèmes connus et communs liés à l'installation et à la configuration**
