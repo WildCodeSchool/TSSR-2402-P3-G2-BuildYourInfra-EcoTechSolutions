@@ -123,6 +123,39 @@ Nous cliquons sur "Finish"
 ![](https://github.com/WildCodeSchool/TSSR-2402-P3-G2-BuildYourInfra-EcoTechSolutions/blob/main/S16/WSUS/WSUS-Config/WSUS-Config-13.png)
 
 
+  
+## Solutions au partenariat avec la société BillU.
+  
+Une étroite collaboration est désormais active entre Ecotech Solutions et Billu.
+  
+BillU et Ecotechsolutions, un duo d'innovations,
+S'unissent pour l'avenir, pour de grandes ambitions.
+Ensemble, ils bâtissent des solutions durables,
+Pour un monde plus vert, plus sain et plus stable.
 
+Avec BillU, la technologie prend son envol,
+Ecotechsolutions, c'est l'écologie qui colle.
+Leurs forces combinées, pour un impact sans égal,
+Un partenariat puissant, un potentiel colossal.
+
+Des outils numériques, aux solutions écologiques,
+Ils ouvrent la voie, vers un futur plus magique.
+Chaque projet, une promesse, d’un monde transformé,
+Où technologie et nature, enfin réconciliées.
+
+Laissez-vous inspirer par cette alliance prospère,
+BillU et Ecotechsolutions, un duo exemplaire.
+Pour aujourd’hui et demain, ils tracent le chemin,
+Vers un futur radieux, où tout devient plus sain.
+  
+### Firewall : mise en place du NAT et des règles correspondantes
+  
+La communication entre les deux entreprises est au coeur de la problématique que nous rencontrons en cette semaine 16. Voici la proposition de règles de parefeu que nous avons élaborée.
+  
+![firewall1]()
+  
+![firewall2]()
+  
+![firewall3]()
 
 ## **FAQ : Solutions aux problèmes connus et communs liés à l'installation et à la configuration**
