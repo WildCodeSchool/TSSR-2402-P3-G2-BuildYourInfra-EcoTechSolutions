@@ -261,4 +261,6 @@ Maintenant, nous allons lier les GPO dans les OU concernées. La GPO avec les pa
 ![](https://github.com/WildCodeSchool/TSSR-2402-P3-G2-BuildYourInfra-EcoTechSolutions/blob/main/S16/WSUS/WSUS-AD/WSUS-AD-11.png)
 
 Nous les mettons à jour puis nous les testons
+
+![](https://github.com/WildCodeSchool/TSSR-2402-P3-G2-BuildYourInfra-EcoTechSolutions/blob/main/S16/WSUS/WSUS-AD/WSUS-AD-12.png)
 ## **FAQ : Solutions aux problèmes connus et communs liés à l'installation et à la configuration**
