@@ -196,6 +196,69 @@ Voici ce qui nous affiche pfSense, une fois la règle créée:
   
 Nous pouvons à présent administrer les différentes machines configurés dans notre fichier ``.xml`` d'Apache Guacamole directement depuis un poste autorisé chez BillU. La confiance règne.
   
+### Lier les PC et les serveurs à WSUS par GPO
 
+Dans un premier temps, nous allons dans la console WSUS service, puis dans "Computers" 
 
+![](https://github.com/WildCodeSchool/TSSR-2402-P3-G2-BuildYourInfra-EcoTechSolutions/blob/main/S16/WSUS/WSUS-AD/WSUS-AD-1.png)
+
+Maintenant, nous allons créé des groupes dans "Comptuers" pour partager les machines clients et les serveurs. On clique droit sur "All Computers" et "Add Computer Group"
+
+![](https://github.com/WildCodeSchool/TSSR-2402-P3-G2-BuildYourInfra-EcoTechSolutions/blob/main/S16/WSUS/WSUS-AD/WSUS-AD-2.png)
+
+Nous avons créé 3 GPO : 
+
+  - GPO_WSUS_Parametres-communs
+  - GPO_WSUS_Clients
+  - GPO_WSUS_Servers
+
+![](https://github.com/WildCodeSchool/TSSR-2402-P3-G2-BuildYourInfra-EcoTechSolutions/blob/main/S16/WSUS/WSUS-AD/WSUS-AD-3.png)
+
+1. GPO WSUS pour les paramètres communs
+
+ **Policies --> Administrative Templates --> Windows Components --> Windows Update**
+   
+Le premier paramètre à configurer se nomme "Configure Automatic Updates". Il sert à agir sur le comportement des machines notamment pour télécharger et installer les mises à jour.
+
+![](https://github.com/WildCodeSchool/TSSR-2402-P3-G2-BuildYourInfra-EcoTechSolutions/blob/main/S16/WSUS/WSUS-AD/WSUS-AD-4.png)
+
+Nous allons devoir définir l’adresse de notre serveur WSUS, à savoir « http://ECO-Thaddeus.ecotechsolutions.fr:8530 » (8530 étant le port par défaut lorsque le WSUS est accessible en http), dans le paramètre "Specify intranet Microsoft update service location" 
+
+![](https://github.com/WildCodeSchool/TSSR-2402-P3-G2-BuildYourInfra-EcoTechSolutions/blob/main/S16/WSUS/WSUS-AD/WSUS-AD-5.png)
+
+Un troisième paramètre est à configurer afin d’empêcher les machines de se connecter sur les serveurs Microsoft Update pour appliquer des mises à jour.
+
+Il s’agit du paramètre "Do not connect to any Windows Update Internet locations"
+
+![](https://github.com/WildCodeSchool/TSSR-2402-P3-G2-BuildYourInfra-EcoTechSolutions/blob/main/S16/WSUS/WSUS-AD/WSUS-AD-6.png)
+
+2. GPO WSUS spécifique aux machines clients
+
+ **Policies --> Administrative Templates --> Windows Components --> Windows Update**
+
+ Commençons par configurer le paramètre "Enable client-side targeting". Pour cela, activons le paramètre et pour l’option "Target group name for this computer", indiquons "EcoT_Computers", car nous vous rappellons que c’est le nom du groupe créé sur le serveur WSUS.
+
+![](https://github.com/WildCodeSchool/TSSR-2402-P3-G2-BuildYourInfra-EcoTechSolutions/blob/main/S16/WSUS/WSUS-AD/WSUS-AD-7.png)
+
+nous allons configurer un deuxième paramètre nommé "Turn off auto-restart for updates during active hours" dans le but d’éviter les redémarrages intempestifs en pleine production !
+
+![](https://github.com/WildCodeSchool/TSSR-2402-P3-G2-BuildYourInfra-EcoTechSolutions/blob/main/S16/WSUS/WSUS-AD/WSUS-AD-8.png)
+
+3. GPO WSUS spécifique aux serveurs
+
+ **Policies --> Administrative Templates --> Windows Components --> Windows Update**
+
+nous allons configurer un deuxième paramètre nommé "Turn off auto-restart for updates during active hours" dans le but d’éviter les redémarrages intempestifs en pleine production !
+
+![](https://github.com/WildCodeSchool/TSSR-2402-P3-G2-BuildYourInfra-EcoTechSolutions/blob/main/S16/WSUS/WSUS-AD/WSUS-AD-9.png)
+
+ Configurons le paramètre "Enable client-side targeting". Pour cela, activons le paramètre et pour l’option "Target group name for this computer", indiquons "EcoT_Servers", car nous vous rappellons que c’est le nom du groupe créé sur le serveur WSUS.
+
+![](https://github.com/WildCodeSchool/TSSR-2402-P3-G2-BuildYourInfra-EcoTechSolutions/blob/main/S16/WSUS/WSUS-AD/WSUS-AD-10.png)
+
+Maintenant, nous allons lier les GPO dans les OU concernées. La GPO avec les paramètres communs sera lié dans les deux OU "EcoT_Computers" et "EcoT_Servers"
+
+![](https://github.com/WildCodeSchool/TSSR-2402-P3-G2-BuildYourInfra-EcoTechSolutions/blob/main/S16/WSUS/WSUS-AD/WSUS-AD-11.png)
+
+Nous les mettons à jour puis nous les testons
 ## **FAQ : Solutions aux problèmes connus et communs liés à l'installation et à la configuration**
