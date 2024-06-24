@@ -187,7 +187,7 @@ Voici un exemple de règle de NAT:
  - Redirect target port : 8080
  - Description : Accès bastion d'administration Guacamole
   
-A partir de là, il suffit de rentrer l'URL : "http(s)://<ip_firewall_ecotechsolutions>:8080/guacamole" pour accèder à l'interface d'administration.
+A partir de là, il suffit de rentrer l'URL : "http://<ip_firewall_ecotechsolutions>:8080/guacamole" pour accèder à l'interface d'administration.
 Évidemment, du côté de BillU, il est nécessaire de laisser passer les paquets à destination de leur interface WAN, puis de l'interface WAN de notre parefeu.
   
 Voici ce qui nous affiche pfSense, une fois la règle créée:
