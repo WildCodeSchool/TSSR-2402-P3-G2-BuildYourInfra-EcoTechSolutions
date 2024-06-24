@@ -663,7 +663,7 @@ apt install -y build-essential libcairo2-dev libjpeg62-turbo-dev libpng-dev libt
 
 Télécharger le code source de Guacamole
 ```
-VER=1.5.4
+VER=1.5.5
 wget https://downloads.apache.org/guacamole/$VER/source/guacamole-server-$VER.tar.gz
 tar xzf guacamole-server-$VER.tar.gz
 cd guacamole-server-$VER
@@ -706,7 +706,18 @@ Créer le répertoire de configuration Guacamole
 
 Télécharger et installer le client Guacamole
 ```
-wget https://downloads.apache.org/guacamole/$VER/binary/guacamole-$VER.war -O /etc/guacamole/guacamole.war
+cd /tmp
+wget https://downloads.apache.org/guacamole/1.5.5/binary/guacamole-1.5.5.war
+
+sudo mv guacamole-1.5.2.war /var/lib/tomcat9/webapps/guacamole.war
+
+sudo systemctl restart tomcat9 guacd
+```
+
+**OU**
+
+```
+wget https://downloads.apache.org/guacamole/1.5.5/binary/guacamole-1.5.5.war -O /etc/guacamole/guacamole.war
 ln -s /etc/guacamole/guacamole.war /var/lib/tomcat9/webapps/
 systemctl restart tomcat9 guacd
 ```
