@@ -671,7 +671,7 @@ cd guacamole-server-$VER
 
 Configurer le serveur Guacamole
 
-``./configure --with-systemd-dir=/etc/systemd/system/``
+``./configure --with-init-dir=/etc/init.d``
 
 Compiler et installer Guacamole Server
 ```
