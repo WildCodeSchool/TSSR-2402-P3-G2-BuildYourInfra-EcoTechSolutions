@@ -12,6 +12,8 @@
     b. Installation de **Docker** et **Bitwarden**
     c. Création d'un compte utilisateur **Bitwarden**, Connexion et Utilisation
 
+3. FAQ : Solutions aux problèmes connus et communs liés à l'utilisation
+
 ### 1. Pré-requis techniques
 
 **_Bitwarden_** est un outil OpenSource de Gestion des mots de passes
