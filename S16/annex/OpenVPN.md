@@ -57,37 +57,73 @@ Votre Serveur SSH est désormais sur le Domaine, vous pouvez le vérifier avec l
 
 2. Installez le paquet curl avec `apt install curl`.
 
-3.2. Afin de faciliter l'installation, nous allons procéder via le [script](https://github.com/angristan/openvpn-install/blob/master/openvpn-install.sh) disponible sur le repo GitHub [OpenVPN](https://github.com/angristan/openvpn-install/tree/master). Commencez par télécharger le script d'installation avec la commande `curl -O https://raw.githubusercontent.com/angristan/openvpn-install/master/openvpn-install.sh` et rendez-le exécutable avec `chmod +x openvpn-install.sh`.
+3. Afin de faciliter l'installation, nous allons procéder via le [script](https://github.com/angristan/openvpn-install/blob/master/openvpn-install.sh) disponible sur le repo GitHub [OpenVPN](https://github.com/angristan/openvpn-install/tree/master). Commencez par télécharger le script d'installation avec la commande `curl -O https://raw.githubusercontent.com/angristan/openvpn-install/master/openvpn-install.sh` et rendez-le exécutable avec `chmod +x openvpn-install.sh`.
 
 4. Démarrez le script avec `./openvpn-install.sh`.
 
 5. Durant l'installation, plusieurs questions vous seront posés afin de configurer le serveur :
-    * a. IP du serveur : `10.11.0.3` (normalement il s'agit de votre IP publique, dans notre cas, nous sommes derrière le Firewall, donc nous renseignons l'IP réèlle).  
-    * b. IP publique ou Hostname : `10.0.0.3` (Etant donné que nous sommes en NAT, nous renseignons l'IP de l'interface WAN du Firewall).  
-    * c. Activation IPv6 : `n`.  
-    * d. Port utilisé pour la connexion : `1` (nous utiliseraons dans notre cas le port par défaut de OpenVPN).  
-    * e. Protocole utilisé : `1` (nous utiliserons UDP qui rend OpenVPN plus rapide).  
-    * f. DNS resolvers : `1` (nous utiliserons ici les paramètres renseignés dans le fichier `/etc/resolv.conf`).
-    * g. Utilisattion de la compression : `n`.
-    * h. Chiffrement customisé : `n`.
-    * i. Une fois la configuration terminé, un message vous demande d'appuyer sur une touche pour continuer.
+    * IP du serveur : `10.11.0.3` (normalement il s'agit de votre IP publique, dans notre cas, nous sommes derrière le Firewall, donc nous renseignons l'IP réèlle).  
+    * IP publique ou Hostname : `10.0.0.3` (Etant donné que nous sommes en NAT, nous renseignons l'IP de l'interface WAN du Firewall).  
+    * Activation IPv6 : `n`.  
+    * Port utilisé pour la connexion : `1` (nous utiliserons dans notre cas le port par défaut de OpenVPN).  
+    * Protocole utilisé : `1` (nous utiliserons UDP qui rend OpenVPN plus rapide).  
+    * DNS resolvers : `1` (nous utiliserons ici les paramètres renseignés dans le fichier `/etc/resolv.conf`).
+    * Utilisattion de la compression : `n`.
+    * Chiffrement customisé : `n`.
+    * Une fois la configuration terminé, un message vous demande d'appuyer sur une touche pour continuer.
 
 ![OpenVPN](/ressource/S16/cooper/OpenVPN_01.PNG)
 
 ![OpenVPN](/ressource/S16/cooper/OpenVPN_02.PNG)
 
 6. Suite à la configuration, le script va vous assister afin de créer un premier client :
-    * a. Nom du Client : `BillU_VPN`.
-    * b. Utilisation de mot de passe pour le Client : `2` (la définition du mot de passe est nécessaire pour établir la connexion VPN).
-    * c. Deux fichiers spécifiques au Client sont ainsi générés sur votre serveur dans le `/etc/openvpn/easy-rsa/pki` et un fichier à la racine de l'utilisateur ayant lancé le script d'installation.
+    * Nom du Client : `BillU_VPN`.
+    * Utilisation de mot de passe pour le Client : `2` (la définition du mot de passe est nécessaire pour établir la connexion VPN).
+    * Deux fichiers spécifiques au Client sont ainsi générés sur votre serveur dans le `/etc/openvpn/easy-rsa/pki` et un fichier à la racine de l'utilisateur ayant lancé le script d'installation.
 
 ![OpenVPN](/ressource/S16/cooper/OpenVPN_03.PNG)
 
-7. Le serveur étant derrière le Firwall, vous devrez appliquer une règle afin que lorsqu'une connexion depuis l'extérieure sur le port `1194` est demandé sur l'interface WAN, elle soit redirigée vers votre serveur VPN.
+7. Ajoutez le nombre d'utilisateur nécessaire au bon fonctionnement en répétant l'opération, sachant qu'il ne sera pas possible d'utiliser la même clé pour 2 connexions simultanées.
+
+8. Le serveur étant derrière le Firwall, vous devrez appliquer une règle afin que lorsqu'une connexion depuis l'extérieure sur le port `1194` est demandé sur l'interface WAN, elle soit redirigée vers votre serveur VPN.
 
 ![OpenVPN](/ressource/S16/cooper/OpenVPN_FW.PNG)
 
-#### 2. c. Installation et configuration sur les Clients
+#### 2. c. Extraction de la clé pour envoi à l'autre entité
+
+1. Installez les paquets nécessaires avec `apt install openssh-server xorg gedit libcanberra-gtk-module libcanberra-gtk3-module`.
+
+2. Modifiez les autorisations dans le fichier `/etc/ssh/sshd_config`. La ligne `X11Forwarding yes` est indispensable pour la suite.
+
+![OpenVPN](/ressource/S16/cooper/OpenVPN_04.PNG)
+
+3. Redémarrez le service SSH avec `systemctl restart sshd`.
+
+4. Faites un copie du ou des fichiers de configuration .ovpn dans le `/home/wilder`.
+
+![OpenVPN](/ressource/S16/cooper/OpenVPN_05.PNG)
+
+5. Pour la suite, il est nécessaire d'avoir un Client Linux (Ubuntu par exemple). Installez SSH si ce n'est pas déjà fait. Puis connectez vous en SSH sur le Serveur ECO-Cooper avec la commande `ssh -X wilder@10.11.0.3`. Le `-X` correspond à une connexion X11.
+
+6. Une fois la connexion SSH établie, saisissez la commande `gedit <nom-du-fichier>`, patientez un peu le temps que le fichier s'ouvre sous gedit.
+
+![OpenVPN](/ressource/S16/cooper/OpenVPN_CLI_01.PNG)
+
+7. Le contenu s'ouvre sous gedit en lecture seule, faites clic-droit sur la fenêtre puis `Tout sélectionner` puis `Copier`.
+
+![OpenVPN](/ressource/S16/cooper/OpenVPN_CLI_02.PNG)
+
+8. Ouvrez une nouvelle fenêtre gedit puis faites `Coller` puis `Enregistrer sous`, nommez le fichier en conservant l'extension `.ovpn` puis `Enregistrer`.
+
+![OpenVPN](/ressource/S16/cooper/OpenVPN_CLI_03.PNG)
+
+9. Répétez l'opération en fonction du nombre de fichier à récupérer.
+
+![OpenVPN](/ressource/S16/cooper/OpenVPN_CLI_04.PNG)
+
+10. Vous pouvez désormais faire parvenir ces fichiers de configuration à l'autre entité via la méthode qu'il vous convient (mail, drive, serveur de fichiers...).
+
+#### 2. d. Installation et configuration sur les Clients
 
 1. Depuis notre Serveur principal ECO-Maximus IP `10.10.8.100`,rendez-vous sur le site communautaire de OpenVPN afin de télécharger la version cliente [OpenVPN GUI Download](https://openvpn.net/community-downloads/), sélectionnez la version la plus récente disponible et téléchargez le package `Windows 64-bit MSI installer`
 
