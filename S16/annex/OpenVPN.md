@@ -123,6 +123,10 @@ Votre Serveur SSH est désormais sur le Domaine, vous pouvez le vérifier avec l
 
 10. Vous pouvez désormais faire parvenir ces fichiers de configuration à l'autre entité via la méthode qu'il vous convient (mail, drive, serveur de fichiers...).
 
+11. Dès lors que vous aurez récupéré les fichiers .ovpn de l'autre entité, placez les sur votre serveur principal dans un dosier partagé afin qu'ils soient accessibles par vos collaborateurs sur les Clients.
+
+![OpenVPN](/ressource/S16/cooper/OpenVPN_Share.PNG)
+
 #### 2. d. Installation et configuration sur les Clients
 
 1. Depuis notre Serveur principal ECO-Maximus IP `10.10.8.100`,rendez-vous sur le site communautaire de OpenVPN afin de télécharger la version cliente [OpenVPN GUI Download](https://openvpn.net/community-downloads/), sélectionnez la version la plus récente disponible et téléchargez le package `Windows 64-bit MSI installer`

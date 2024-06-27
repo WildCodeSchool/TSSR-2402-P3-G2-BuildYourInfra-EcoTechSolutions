@@ -4,6 +4,12 @@
 
 1) Utilisation de base : Comment utiliser les fonctionnalités clés
 
+2) Utilisation avancée : Comment utilliser au mieux les options
+
+3) FAQ : Solutions aux problèmes connus et communs liés à l'utilisation
+
+## **Utilisation de base : Comment utiliser les fonctionnalités clés**
+
 ### Prise en main de la console WSUS
 
 Tout d’abord, lorsque l’on se positionne sur le nom du serveur, en haut à gauche, cela permet d’afficher un tableau de bord qui offre une vue d’ensemble.
@@ -136,12 +142,6 @@ Vous pouvez créer vos propres règles pour approuver les mises à jour correspo
 C’est une fonctionnalité très intéressante, car elle facilite le processus d’approbation des mises à jour grâce à l’approbation automatique selon certains critères.
 
 ![](https://github.com/WildCodeSchool/TSSR-2402-P3-G2-BuildYourInfra-EcoTechSolutions/blob/main/S16/WSUS/WSUS-User/WSUS-User-17.png)
-
-2) Utilisation avancée : Comment utilliser au mieux les options
-
-3) FAQ : Solutions aux problèmes connus et communs liés à l'utilisation
-
-## **Utilisation de base : Comment utiliser les fonctionnalités clés**
 
 ## **Utilisation avancée : Comment utilliser au mieux les options**
 
