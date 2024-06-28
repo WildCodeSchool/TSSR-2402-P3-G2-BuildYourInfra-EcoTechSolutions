@@ -143,6 +143,12 @@ C’est une fonctionnalité très intéressante, car elle facilite le processus 
 
 ![](https://github.com/WildCodeSchool/TSSR-2402-P3-G2-BuildYourInfra-EcoTechSolutions/blob/main/S16/WSUS/WSUS-User/WSUS-User-17.png)
 
+### Partenariat d'entreprise : VPN site-à-site
+
+Dans le cadre du partenarait entre les sociétés **_BillU_** **_EcotechSolutions_**, nous avons installé et configuré un serveur VPN avec l'équipe de **Skylan**.
+
+Vous pourrez trouver la documenation complète : [OpenVPN site-à-site](/S16/annex/OpenVPN_User.md).
+
 ## **Utilisation avancée : Comment utilliser au mieux les options**
 
 ## **FAQ : Solutions aux problèmes connus et communs liés à l'utilisation**
