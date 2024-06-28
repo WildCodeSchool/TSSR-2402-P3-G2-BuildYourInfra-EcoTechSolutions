@@ -303,6 +303,10 @@ Voici ce qui nous affiche pfSense, une fois la règle créée:
   
 Nous pouvons à présent administrer les différentes machines configurés dans notre fichier ``.xml`` d'Apache Guacamole directement depuis un poste autorisé chez BillU. La confiance règne.
   
+### Partenariat d'entreprise : VPN site-à-site
 
+Dans le cadre du partenarait entre les sociétés **_BillU_** **_EcotechSolutions_**, nous avons installé et configuré un serveur VPN avec l'équipe de **Skylan**.
+
+Vous pourrez trouver la documenation complète : [OpenVPN site-à-site](/annex/OpenVPN.md).
 
 ## **FAQ : Solutions aux problèmes connus et communs liés à l'installation et à la configuration**
