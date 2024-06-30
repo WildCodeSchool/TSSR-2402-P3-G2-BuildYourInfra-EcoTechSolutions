@@ -89,4 +89,21 @@ Pour lancer les tâches sur les cibles, voici la commande que nous avons utilis�
 
 On peut voir que tout a été envoyé avec succès, sauf pour l'IP 10.10.8.50, qui était déjà configurée car c'était la première machine test à avoir reçu la configuration en amont. Si nous allons sur chaque machine avec la commande **`crontab -l`**, nous voyons que tout est planifié correctement.
 
+ECO-Lucy 10.10.8.50
+
+![](https://github.com/WildCodeSchool/TSSR-2402-P3-G2-BuildYourInfra-EcoTechSolutions/blob/main/S17/Ansible_img/Ansible_lucy.png)
+
+ECO-ChefGoule 10.11.0.2
+
+![](https://github.com/WildCodeSchool/TSSR-2402-P3-G2-BuildYourInfra-EcoTechSolutions/blob/main/S17/Ansible_img/Ansible_ChefGoule.png)
+
+ECO-KaliTest 10.10.200.50
+
+![](https://github.com/WildCodeSchool/TSSR-2402-P3-G2-BuildYourInfra-EcoTechSolutions/blob/main/S17/Ansible_img/Ansible_KaliTest.png)
+
+ECO-Cooper 10.11.0.3
+
+![](https://github.com/WildCodeSchool/TSSR-2402-P3-G2-BuildYourInfra-EcoTechSolutions/blob/main/S17/Ansible_img/Ansible_Cooper.png)
+
+
 ## **FAQ : Solutions aux problèmes connus et communs liés à l'installation et à la configuration**
