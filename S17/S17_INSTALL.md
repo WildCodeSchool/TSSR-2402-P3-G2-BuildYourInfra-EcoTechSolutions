@@ -11,6 +11,19 @@
 ## **Pré-requis techniques**
 
 ## **Installation et Configuration des équipements et ressources**
+  
+### Mise en place d'un serveur web : Caddy
+  
+Caddy est un serveur web open source écrit en Go, créé par ZeroSSL. Il est réputé pour sa simplicité et son efficacité, offrant une alternative moderne à des serveurs web plus connus comme Apache et Nginx. Voici quelques caractéristiques clés de Caddy :
+
+ - HTTPS Automatique : Caddy obtient et renouvelle automatiquement des certificats TLS pour vos sites web via Let's Encrypt. Il peut aussi fournir du HTTPS pour localhost.
+ - Configuration Flexible : La configuration se fait via un fichier Caddyfile en mode déclaratif ou au format JSON. Des "Config Adapters" permettent de convertir des configurations d'autres serveurs comme Nginx.
+ - API Native : Pour la gestion de la configuration du serveur web.
+ - Installation et Configuration Rapides : Caddy est facile à installer et à configurer pour publier un simple site web.
+ - Gestion Multi-sites : Il peut gérer plusieurs sites web avec des "virtual hosts".
+ - Reverse Proxy : Caddy peut aussi agir en tant que reverse proxy.
+  
+
 
 ### Objectifs Personnalisés
 
