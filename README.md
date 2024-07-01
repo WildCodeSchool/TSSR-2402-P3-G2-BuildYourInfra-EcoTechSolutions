@@ -216,49 +216,37 @@ Activités et répartitions des tâches
 
 |PO|SM|
 |:-:|:-:|
-|||
+|Nicolas Maggiori|Anthony Javault|
 
 Activités et répartitions des tâches
 
 |                Tâches                 | Charles Caulier | Damien Legay | Anthony Javault | Nicolas Maggiori |
 | :-----------------------------------: | :-------------: | :----------: | :-------------: | :--------------: |
-|                                       |                 |              |                 |                  |
-|                                       |                 |              |                 |                  |
-|                                       |                 |              |                 |                  |
-|                                       |                 |              |                 |                  |
-|                                       |                 |              |                 |                  |
-|                                       |                 |              |                 |                  |
-|                                       |                 |              |                 |                  |
-|                                       |                 |              |                 |                  |
-|                                       |                 |              |                 |                  |
-|                                       |                 |              |                 |                  |
-|                                       |                 |              |                 |                  |
-|             Documentation             |                 |              |                 |                  |
-|    Préparation slides Présentation    |                 |              |                 |                  |
+|           Sécurité : WSUS             |                 |      x       |                 |                  |
+|           AD - Rôles FSMO             |        x        |              |                 |                  |
+|       Partenariat BILLU - VPN         |                 |              |        x        |                  |
+|     Partenariat BILLU - Firewall      |                 |              |                 |        x         |
+|             Documentation             |        x        |      x       |        x        |        x         |
+|    Préparation slides Présentation    |                 |              |        x        |                  |
 |             Présentation              |        x        |      x       |        x        |        x         |
 
 ### **S17 - Semaine du 1 au 05 Juillet 2024**
 
 |PO|SM|
 |:-:|:-:|
-|||
+|Damien Legay|Charles Caulier|
 
 Activités et répartitions des tâches
 
 |                Tâches                 | Charles Caulier | Damien Legay | Anthony Javault | Nicolas Maggiori |
 | :-----------------------------------: | :-------------: | :----------: | :-------------: | :--------------: |
-|                                       |                 |              |                 |                  |
-|                                       |                 |              |                 |                  |
-|                                       |                 |              |                 |                  |
-|                                       |                 |              |                 |                  |
-|                                       |                 |              |                 |                  |
-|                                       |                 |              |                 |                  |
-|                                       |                 |              |                 |                  |
-|                                       |                 |              |                 |                  |
-|                                       |                 |              |                 |                  |
-|                                       |                 |              |                 |                  |
-|                                       |                 |              |                 |                  |
-|             Documentation             |                 |              |                 |                  |
+|               VoIP                    |                 |              |        x        |                  |
+|            Serveur Web                |                 |              |                 |        x         |
+|       Partenariat BILLU - AD          |                 |      x       |                 |                  |
+|   Partenariat BILLU - Supervision     |                 |              |                 |        x         |
+|     Partenariat BILLU - Stockage      |        x        |              |                 |                  |
+|               Ansible                 |                 |      x       |                 |                  |
+|             Documentation             |        x        |      x       |        x        |        x         |
 |    Préparation slides Présentation    |                 |              |                 |                  |
 |             Présentation              |        x        |      x       |        x        |        x         |
 
