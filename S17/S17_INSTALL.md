@@ -69,7 +69,9 @@ Valider la configuration : ``caddy validate --adapter caddyfile --config /etc/ca
   
 A présent, nous pouvons directement accèder à notre site web en tapant l'adresse suivante : ``http://caddyweb.ecotechsolutions.fr``
   
+### Mise en place du serveur FreePBX pour la VoIP
 
+Rendez-vous dans l'annexe [FreePBX](/S17/annex/FreePBX.md).
   
 ### Objectifs Personnalisés
 
