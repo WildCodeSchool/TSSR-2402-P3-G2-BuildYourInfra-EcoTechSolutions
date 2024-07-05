@@ -68,12 +68,12 @@ On redémarre Caddy : ``systemctl restart caddy``
 Valider la configuration : ``caddy validate --adapter caddyfile --config /etc/caddy/Caddyfile``
   
 A présent, nous pouvons directement accèder à notre site web en tapant l'adresse suivante : ``http://caddyweb.ecotechsolutions.fr``
-  
+
+**Pour des raisons inconnus, nous avons du changer de serveur http car la page web de Caddy ne fonctionnait plus**
+
 ### Mise en place du serveur FreePBX pour la VoIP
 
 Rendez-vous dans l'annexe [FreePBX](/S17/annex/FreePBX.md).
-
-**Pour des raisons inconnus, nous avons du changer de serveur http car la page web de cady ne fonctionnait plus**
 
 ### Installation d'un serveur HTTP avec Apache dans un conteneur Debian 12
 
