@@ -73,6 +73,72 @@ A présent, nous pouvons directement accèder à notre site web en tapant l'adre
 
 Rendez-vous dans l'annexe [FreePBX](/S17/annex/FreePBX.md).
 
+**Pour des raisons inconnus, nous avons du changer de serveur http car la page web de cady ne fonctionnait plus**
+
+### Installation d'un serveur HTTP avec Apache dans un conteneur Debian 12
+
+#### Préparation de l'environnement
+
+Pour pouvoir monter notre serveur HTTP avec Apache, nous sommes passés par l'installation d'un conteneur Debian 12. Une fois installé et configuré pour être dans notre réseau du côté DMZ avec l'IP : 10.11.0.8/16, nous avons choisi d'installer Docker à partir du dépôt officiel.
+
+#### Mise à jour et installation de Docker
+
+Tout d’abord, mettons à jour apt en ajoutant le dépôt Docker dans nos sources :
+
+```bash
+# Mise à jour et ajout de la clé GPG officielle :
+apt update
+apt install ca-certificates curl gnupg
+install -m 0755 -d /etc/apt/keyrings
+curl -fsSL https://download.docker.com/linux/debian/gpg | gpg --dearmor -o /etc/apt/keyrings/docker.gpg
+chmod a+r /etc/apt/keyrings/docker.gpg
+
+# Ajout du dépôt à la liste (dans /etc/apt/sources.list.d)
+echo "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/debian $(. /etc/os-release && echo "$VERSION_CODENAME") stable" | tee /etc/apt/sources.list.d/docker.list > /dev/null
+apt update
+```
+
+Bien sûr, l'installation a été faite en mode "root", sinon il aurait fallu ajouter les droits avec "sudo".
+
+#### Installation de Docker avec apt :
+
+```bash
+apt install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
+```
+
+#### Visualisation des conteneurs en cours d'exécution
+
+```bash
+docker ps
+```
+
+#### Exécution du conteneur en mode interactif
+
+Ensuite, exécutons en mode interactif le conteneur "webserver" avec :
+
+```bash
+docker exec -it webserver bash
+```
+
+#### Personnalisation du fichier index.html
+
+Maintenant, nous allons personnaliser notre fichier index.html avec :
+
+```bash
+nano /var/www/html/index.html
+```
+
+Puis, nous créons deux fichiers supplémentaires :
+
+```bash
+touch /var/www/html/styles.css
+touch /var/www/html/script.js
+```
+
+Nous remplissons les deux fichiers. "styles.css" avec du code CSS pour donner de la mise en forme à notre fichier HTML, et "script.js" pour ajouter de l'interactivité à la page. Une page dynamique est une page web qui peut changer et réagir aux actions de l'utilisateur sans avoir besoin de recharger la page entière.
+
+Ces fichiers seront liés à notre fichier index.html pour donner de la forme et un côté dynamique à notre page web.
+
 ### Relation d'approbation Active Directory et Stockage
 
 Cette semaine, nous avons la charge, en partenariat avec l'entreprise Billu, de mettre en place une relation d'approbation entre nos deux forêts Active Directory. Malheureusement, nos deux réseaux ne communiquent pas. Pour résoudre ce problème, nous avons essayé de modifier les règles du pare-feu sur pfSense, mais cela n'a rien donné. Ensuite, nous avons tenté d'établir une connexion en installant OpenVPN sur le pare-feu pfSense avec un système de clé partagée, en suivant la documentation de Netgate. Malheureusement, cela n'a pas fonctionné non plus.
