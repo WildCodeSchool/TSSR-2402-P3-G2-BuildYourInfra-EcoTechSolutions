@@ -317,7 +317,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Mise à jour de l'heure et de la date toutes les secondes
   setInterval(updateTimeAndDate, 1000);
-  updateTimeAndDate(); // Initial call to display time and date immediately
+  updateTimeAndDate(); // Appel initial pour afficher immédiatement l'heure et la date
 });
 ```
 
