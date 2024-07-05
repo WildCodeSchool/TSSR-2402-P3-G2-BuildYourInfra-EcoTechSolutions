@@ -69,17 +69,17 @@ Valider la configuration : ``caddy validate --adapter caddyfile --config /etc/ca
   
 A présent, nous pouvons directement accèder à notre site web en tapant l'adresse suivante : ``http://caddyweb.ecotechsolutions.fr``
 
-**Pour des raisons inconnus, nous avons du changer de serveur http car la page web de Caddy ne fonctionnait plus**
+**Pour des raisons inconnus, nous avons du changer de serveur web car la page web de Caddy ne fonctionnait plus**
 
 ### Mise en place du serveur FreePBX pour la VoIP
 
 Rendez-vous dans l'annexe [FreePBX](/S17/annex/FreePBX.md).
 
-### Installation d'un serveur HTTP avec Apache dans un conteneur Debian 12
+### Installation d'un serveur web avec Apache dans un conteneur Debian 12
 
 #### Préparation de l'environnement
 
-Pour pouvoir monter notre serveur HTTP avec Apache, nous sommes passés par l'installation d'un conteneur Debian 12. Une fois installé et configuré pour être dans notre réseau du côté DMZ avec l'IP : 10.11.0.8/16, nous avons choisi d'installer Docker à partir du dépôt officiel.
+Pour pouvoir monter notre serveur web avec Apache, nous sommes passés par l'installation d'un conteneur Debian 12. Une fois installé et configuré pour être dans notre réseau du côté DMZ avec l'IP : 10.11.0.8/16, nous avons choisi d'installer Docker à partir du dépôt officiel.
 
 #### Mise à jour et installation de Docker
 
@@ -332,11 +332,11 @@ Voici les commandes dans le fichier index.html qui les deux autres fichier :
 
 ### Relation d'approbation Active Directory et Stockage
 
-Cette semaine, nous avons la charge, en partenariat avec l'entreprise Billu, de mettre en place une relation d'approbation entre nos deux forêts Active Directory. Malheureusement, nos deux réseaux ne communiquent pas. Pour résoudre ce problème, nous avons essayé de modifier les règles du pare-feu sur pfSense, mais cela n'a rien donné. Ensuite, nous avons tenté d'établir une connexion en installant OpenVPN sur le pare-feu pfSense avec un système de clé partagée, en suivant la documentation de Netgate. Malheureusement, cela n'a pas fonctionné non plus.
+Cette semaine, nous avons la charge, en partenariat avec l'entreprise BillU, de mettre en place une relation d'approbation entre nos deux forêts Active Directory. Malheureusement, nos deux réseaux ne communiquent pas. Pour résoudre ce problème, nous avons essayé de modifier les règles du pare-feu sur pfSense, mais cela n'a rien donné. Ensuite, nous avons tenté d'établir une connexion en installant OpenVPN sur le pare-feu pfSense avec un système de clé partagée, en suivant la documentation de Netgate. Malheureusement, cela n'a pas fonctionné non plus.
 
 En dernière solution, nous avons voulu mettre en place un tunnel IPsec, qui est un protocole permettant de sécuriser les échanges de données entre deux réseaux via un tunnel crypté. Cependant, cela n'a pas fonctionné.
 
-Nous n'avons pas pu identifier la source du problème malgré toutes nos tentatives. Ce n'est que partie remise ; nous allons nous pencher dessus dès ce week-end.
+Nous n'avons pas pu identifier la source du problème malgré toutes nos tentatives. Ce n'est que partie remise ; nous allons nous pencher dessus au plus rapide.
  
 ### Objectifs Personnalisés
 
