@@ -72,7 +72,15 @@ A présent, nous pouvons directement accèder à notre site web en tapant l'adre
 ### Mise en place du serveur FreePBX pour la VoIP
 
 Rendez-vous dans l'annexe [FreePBX](/S17/annex/FreePBX.md).
-  
+
+### Relation d'approbation Active Directory et Stockage
+
+Cette semaine, nous avons la charge, en partenariat avec l'entreprise Billu, de mettre en place une relation d'approbation entre nos deux forêts Active Directory. Malheureusement, nos deux réseaux ne communiquent pas. Pour résoudre ce problème, nous avons essayé de modifier les règles du pare-feu sur pfSense, mais cela n'a rien donné. Ensuite, nous avons tenté d'établir une connexion en installant OpenVPN sur le pare-feu pfSense avec un système de clé partagée, en suivant la documentation de Netgate. Malheureusement, cela n'a pas fonctionné non plus.
+
+En dernière solution, nous avons voulu mettre en place un tunnel IPsec, qui est un protocole permettant de sécuriser les échanges de données entre deux réseaux via un tunnel crypté. Cependant, cela n'a pas fonctionné.
+
+Nous n'avons pas pu identifier la source du problème malgré toutes nos tentatives. Ce n'est que partie remise ; nous allons nous pencher dessus dès ce week-end.
+ 
 ### Objectifs Personnalisés
 
 #### Automatisation des tâches avec Ansible.
