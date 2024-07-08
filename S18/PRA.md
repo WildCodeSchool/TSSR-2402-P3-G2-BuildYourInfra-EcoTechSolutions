@@ -2,7 +2,14 @@
 
 1. Évaluation :
 	1. Identification des élément critiques HS
-	2. Documentation des dommages subies
+
+| Machines/matériel | Adresse IP | Rôle/fonction | État | Priorité |
+|:|:|:|:|:|
+| ECO-Moldaver | 10.10.8.120 | Serveur Win Core - Réplication AD | H.S. | 3 |
+| ECO-LP-001 | DHCP | Client Win 10 Pro | H.S. | 3 |
+| ECO-LP-002 | DHCP | Client Win 10 | H.S. | 3 |
+
+	3. Documentation des dommages subies
 
 2. Identification :
 	1. Priorisation des services à rétablir en priorité
