@@ -5,7 +5,7 @@
 
 | Machines/matériel | Adresse IP | Rôle/fonction | État | Priorité |  
 |:-:|:-:|:-:|:-:|:-:|  
-| ECO-Moldaver | 10.10.8.120 | Serveur Win Core - Réplication AD | H.S. | 3 |  
+| ECO-Moldaver | 10.10.8.120 | Serveur Win Core - Réplication AD + DC | H.S. | 3 |  
 | ECO-LP-001 | DHCP | Client Win 10 Pro | H.S. | 3 |  
 | ECO-LP-002 | DHCP | Client Win 10 | H.S. | 3 |  
 
