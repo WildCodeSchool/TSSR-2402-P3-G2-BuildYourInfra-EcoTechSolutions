@@ -16,8 +16,12 @@
 	2. Listing des tâches pour chaque priorisation
 
 3. Réparation :
-	1. Réparation des éléments
-	2. Vérification que le statut de chaque élément est opérationnel
+
+| Machines/matériel | Adresse IP | Rôle/fonction | État | Priorité |  
+|:-:|:-:|:-:|:-:|:-:|  
+| ECO-Moldaver | 10.10.8.120 | Serveur Win Core - Réplication AD + DC | OK | 3 |  
+| ECO-LP-001 | DHCP | Client Win 10 Pro | OK | 3 |  
+| ECO-LP-002 | DHCP | Client Win 10 | OK | 3 |
     
 4. Documentation :
 	1. Création de document si non-existant
