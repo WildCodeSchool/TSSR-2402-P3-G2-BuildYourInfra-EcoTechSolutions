@@ -7,11 +7,11 @@
 |:-:|:-:|:-:|:-:|:-:|  
 | ECO-Moldaver | 10.10.8.120 | Serveur Win Core - Réplication AD + DC | H.S. | 3 |  
 | ECO-LP-001 | DHCP | Client Win 10 Pro | H.S. | 3 |  
-| ECO-LP-002 | DHCP | Client Win 10 | H.S. | 3 |  
+| ECO-LP-002 | DHCP | Client Win 10 Pro | H.S. | 3 |  
 
 	3. Documentation des dommages subies
 
-2. Identification :
+2. Identification : 
 	1. Priorisation des services à rétablir en priorité
 	2. Listing des tâches pour chaque priorisation
 
@@ -23,6 +23,6 @@
 | ECO-LP-001 | DHCP | Client Win 10 Pro | OK | 3 |  
 | ECO-LP-002 | DHCP | Client Win 10 Pro | OK | 3 |
     
-4. Documentation :
+4. Documentation : 
 	1. Création de document si non-existant
 	2. Mise à jour des documents si ce n'était pas le cas
