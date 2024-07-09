@@ -89,7 +89,7 @@ Priorité **Medium** :
 
 La réactivité de notre équipe et la documentation mise en place depuis le début du projet ont participé au retour rapide à la normale.
 
-L'infrastructure est de nouveau opérationnelle, mais une surveillance est nécessaire, afin de déterminer si un poijnt a été omis ou non.
+L'infrastructure est de nouveau opérationnelle, mais une surveillance est nécessaire, afin de déterminer si un point a été omis ou non.
 
 ## 4. Documentation :
 
