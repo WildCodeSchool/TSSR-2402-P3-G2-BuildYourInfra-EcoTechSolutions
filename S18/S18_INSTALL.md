@@ -32,6 +32,14 @@ Ainsi, nous pouvons accèder directement à l'interface de l'application BloodHo
   
 ![blood3](./ressources/blood4.jpg)
   
+Alors, il a fallu installer la fameuse "sonde" permettant d'exporter les données vers notre application BloodHound.
+Pour ce faire, depuis le lien ci-dessus pour télécharger **SharpHound**, nous l'installons sur notre serveur principal : ECO-Maximus. Nous décompressons l'archive et depuis le terminal PowerShell, nous exécutons le fichier exécutable de SharpHound : nous obtenons alors un nouveau dossier dans lequel nous retrouvons plusieurs fichiers *.json qui constituent les différentes données que nous allons alors exportées dans BloodHound sur la machine Kali Linux de notre domaine.
+Nous avons choisi de passer par le logiciel WinSCP pour transférer ce dossier du serveur vers la machine Kali Linux.
+Ne reste plus qu'à glisser/déposer chaque fichier dans la fenêtre *Import Graph* de l'interface de BloodHound pour récupérer les informations.
+Nous avons alors cet écran devant nous :
+  
+![blood5](./ressources/blood5.jpg)
+  
 
 
 1) FAQ : Solutions aux problèmes connus et communs liés à l'installation et à la configuration
