@@ -10,8 +10,67 @@
 
 ## **Pré-requis techniques**
 
+### 1. Objectifs
+
+1. SERVEUR RADIUS - Utilisation de **Free Radius**
+	1. Gérer les accès des utilisateurs :
+		1. Accès administratif pour l'administration des serveurs (glpi, pfsense, etc.)
+		2. Authentification pour les applications, comme glpi par exemple, pour les utilisateurs
+	2. ET/OU -> Gestion centralisée du VPN
+2. AUDIT DE CONFIGURATION - Utilisation du logiciel **PurpleKnight** (https://www.purple-knight.com/fr/) sur l'AD
+	1. Scan de configuration à effectuer
+	2. Analyse des résultats et des actions correctives proposées
+	3. Tendre vers 100%
+3. AUDIT DE CONFIGURATION - Utilisation du logiciel  **PingCastle** (https://www.pingcastle.com/) sur l'AD
+	1. Scan de configuration à effectuer
+	2. Analyse des résultats et des actions correctives proposées
+	3. Tendre vers 0%
+4. DÉTECTION DES VULNÉRABILITÉS - Utilisation du logiciel **BloodHound** (https://github.com/BloodHoundAD/BloodHound) sur l'AD
+	1. Mappage des "chemins d'attaque"
+	2. analyser les relations et les chemins possibles
+	3. Corriger les failles
+5. ÉVALUATION DE LA CONFORMITÉ - Utilisation du logiciel **OpenSCAP** (https://github.com/OpenSCAP)
+	1. Scan de conformité à effectuer
+	2. Analyse des résultats et des écarts par rapport aux normes
+	3. Mise en œuvre des recommandations pour atteindre la conformité
+
+INFRASTRUCTURE RÉSEAU HS !
+Suite à un problème électrique certains éléments de l'infrastructure ne fonctionnent plus.
+Le MCO (*Maintient en Condition Opérationnelle*) n'est plus valide.
+En conséquence, l'objectif **obligatoire** ci-dessous s'ajoute aux autres.
+
+6. PRA (Plan de Reprise d'Activité)
+	1. Évaluation :
+		1. Identification des élément critiques HS
+		2. Documentation des dommages subies
+	2. Identification :
+		1. Priorisation des services à rétablir en priorité
+		2. Listing des tâches pour chaque priorisation
+	3. Réparation :
+		1. Réparation des éléments
+		2. Vérification que le statut de chaque élément est opérationnel
+	4. Documentation :
+		1. Création de document si non-existant
+		2. Mise à jour des documents si ce n'était pas le cas
+
+### 2. Contexte
+
+Sur l'infrastructure HS :
+- Certains éléments visibles sont en réalité dysfonctionnels, donc à étudier et à analyser
+- Les éléments non-visible sont considéré comme complètement HS et non-récupérable
+Pour les éléments à installer "from scratch" :
+- Le plus possible, utiliser les templates fourni
+- Ne pas mettre les disques en RAID 1 et/ou ne pas utiliser LVM
+
 ## **Installation et Configuration des équipements et ressources**
-  
+
+### Plan de Reprise d'activité (PRA)
+
+Suite à un problème électrique certains éléments de l'infrastructure ne fonctionnent plus.
+Le MCO (*Maintient en Condition Opérationnelle*) n'est plus valide.
+
+Retrouvez le détail du PRA dans la documentation prévue à cet effet : [PRA](/S18/annex/PRA.md).
+
 ### Utilisation du logiciel *BloodHound* : détection des vulnérabilités
   
 L'installation de BloodHound nécessite plusieurs pré-requis :
