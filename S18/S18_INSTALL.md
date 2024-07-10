@@ -5,6 +5,12 @@
 1) Pré-requis techniques
 
 2) Installation et Configuration des équipements et ressources
+
+3) FAQ : Solutions aux problèmes connus et communs liés à l'installation et à la configuration
+
+## **Pré-requis techniques**
+
+## **Installation et Configuration des équipements et ressources**
   
 ### Utilisation du logiciel *BloodHound* : détection des vulnérabilités
   
@@ -40,17 +46,17 @@ Nous avons alors cet écran devant nous :
   
 ![blood5](./ressources/blood5.jpg)
   
-# PingCastle
+### PingCastle
 
 PingCastle est un logiciel français bien connu par les entreprises du secteur de la cybersécurité. La bonne nouvelle, c'est que vous pouvez l'utiliser gratuitement pour auditer votre propre annuaire Active Directory. Par contre, si vous utilisez PingCastle pour auditer l'annuaire d'un client dans le cadre d'une prestation, vous devez acquérir une licence. Le site de PingCastle est très clair à ce sujet : "Avec la licence par défaut, le programme peut être exécuté gratuitement, tant que vous n'en tirez aucun revenu. Par exemple, toute organisation à but lucratif peut l'utiliser pour auditer ses propres systèmes. Pour inclure PingCastle dans un package ou un service commercial, il faut acheter une licence spécifique."
 
-## Télécharger et installer PingCastle
+##### Télécharger et installer PingCastle
 
 Pour télécharger PingCastle, accédez au [site officiel](https://www.pingcastle.com) et cliquez sur "Télécharger" dans la barre de menu en haut de la page. Dans la page qui s'ouvre, cliquez sur le bouton "Télécharger" afin d'obtenir l'archive ZIP qui contient les sources. Il suffit d'extraire le contenu du ZIP dans un dossier.
 
 ![alt text](./ressources/PingCastle-1.png)
 
-## Audit avec PingCastle
+##### Audit avec PingCastle
 
 Une fois le ZIP téléchargé et extrait, se placer dans le dossier et lancez **PingCastle** de type `Application`.
 
@@ -68,7 +74,7 @@ Une fois l'audit terminé, apppuyez sur Entrée pour quitter l'outil.
 
 ![alt text](./ressources/PingCastle-5.png)
 
-## Lecture du rapport d'audit de PingCastle
+##### Lecture du rapport d'audit de PingCastle
 
 Une fois l'audit terminé, l'outil créer deux rapport. Un premier au format `HTML` et un second au format `XML`. Celui qui va nous interesser est celui au format `HTML`.
 
@@ -92,11 +98,5 @@ Le tableau "Modèle de risque" qui vient juste après permet d'en savoir un peu 
 ![alt text](./ressources/PingCastle-8.png)
 
 À partir du moment où on a passé la partie synthèse du rapport, on peut obtenir la liste des points de sécurité à améliorer. Pour chaque règle, il y a un nom, le nombre de points, ainsi qu'une description, une explication technique, des conseils détaillés pour solutionner ce problème et des liens vers des documentations pour vous aider.
-
-1) FAQ : Solutions aux problèmes connus et communs liés à l'installation et à la configuration
-
-## **Pré-requis techniques**
-
-## **Installation et Configuration des équipements et ressources**
 
 ## **FAQ : Solutions aux problèmes connus et communs liés à l'installation et à la configuration**
