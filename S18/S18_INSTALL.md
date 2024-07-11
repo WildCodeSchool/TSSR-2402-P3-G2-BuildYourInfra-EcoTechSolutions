@@ -71,6 +71,12 @@ Le MCO (*Maintient en Condition Opérationnelle*) n'est plus valide.
 
 Retrouvez le détail du PRA dans la documentation prévue à cet effet : [PRA](/S18/annex/PRA.md).
 
+### OpenVPN via PFSense
+
+Nous avons revu la solution VPN de la S16 qui n'était pas totalement fonctionnel et sommes passés diretetement via PFSense.
+
+Vous trouverez toute la documentation en annexe : [OpenVPN Via PFSense](/S18/annex/OpenVPN.md).
+
 ### Utilisation du logiciel *BloodHound* : détection des vulnérabilités
   
 L'installation de BloodHound nécessite plusieurs pré-requis :
