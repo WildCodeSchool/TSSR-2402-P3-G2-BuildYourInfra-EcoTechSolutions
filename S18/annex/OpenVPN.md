@@ -207,6 +207,14 @@ Plusieurs étapes de configurations sont nécessaires au bon déroulement :
 
 ![FW](/ressource/S18/openvpn/FW_31.PNG)
 
-En toute logique, le VPN est fonctionnel, vous pouvez avec un `ping` sur un matériel du réseau distant, testez également en allant consulter une interface web d'un des serveurs distants.
+Il est impératif de transmettre les 4 fichiers à l'autre entité, choisissez la méthode la plus sécurisée pour les envoyer.
+* TLS_Key_OpenVPN.txt
+* OpenVPN_BillU_Auth.crt
+* OpenVPN_BillU_Certificat_CLI.crt
+* OpenVPN_BillU_Certificat_CLI.key
+
+L'autre entité doit paramétré son VPN en configuration Client : [OpenVPN Confi Client BillU](https://github.com/WildCodeSchool/TSSR-2402-P3-G1-BuildYourInfra-BillU/blob/main/S18/INSTALL.md#3---serveur-openvpn--openvpn-sur-pfsense)
+
+Une fois toutes ces étapes achévées, le VPN est fonctionnel, vous pouvez avec un `ping` sur un matériel du réseau distant, testez également en allant consulter une interface web d'un des serveurs distants.
 
 ### **3. FAQ : Solutions aux problèmes connus et communs liés à l'utilisation**
