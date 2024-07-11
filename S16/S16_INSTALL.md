@@ -309,4 +309,6 @@ Dans le cadre du partenarait entre les sociétés **_BillU_** **_EcotechSolution
 
 Vous pourrez trouver la documenation complète : [OpenVPN site-à-site](/S16/annex/OpenVPN.md).
 
+Edit : La solution du serveur **OpenVPN** n'étant pas totalement fonctionnelle, nous avons revu cela en S18, et sommes passés directement via PFSense.
+
 ## **FAQ : Solutions aux problèmes connus et communs liés à l'installation et à la configuration**

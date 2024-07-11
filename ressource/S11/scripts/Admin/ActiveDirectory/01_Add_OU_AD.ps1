@@ -1,14 +1,27 @@
-#########################################################
-#                                                       #
-#             AJOUT OU DANS ACTIVE DIRECTORY            #
-#                                                       #
-#########################################################
+################################################################
+#                                                              #
+#               GESTION OU DANS ACTIVE DIRECTORY               #
+#                                                              #
+################################################################
 
 Clear-Host
 
+# Fonction Logs
+function EventLogAD {
+
+    # Chemin du dossier de Logs
+    $LogFolder = "C:\Admin\Logs"
+
+    #Test du chemin pour le Dossier
+    if (-not(Test-Path $LogFolder)) {
+        # Si il n'existe pas >> Continue
+        New-Item -ItemType Directory $LogFolder | Out-Null # Création du dossier sans affichage du résultat
+    }
+    Add-Content -Path $LogFolder\$LogFile -value "$(Get-Date -Format yyyyMMdd)-$(Get-Date -Format HHmmss) - $env:USERNAME - $TypeLogTask - $EventLogTask"
+}
+
 ### Initialisation des paramètres génériques
 
-$FilePath = [System.IO.Path]::GetDirectoryName($MyInvocation.MyCommand.Definition)
 $DomainDN = (Get-ADDomain).DistinguishedName
 
 ### Pré-requis
@@ -18,88 +31,303 @@ If (-not(Get-Module -Name ActiveDirectory))
     Install-Module -Name ActiveDirectory   
 }
 
+# Chemin du fichier de Logs
+$LogFile = "Logs_AD_OU.log"
+
 ### Parametres spécifiques
 
-$DataFile = "$FilePath\Sources\Data\Data_OU_Create.csv"
-$OUMain = "EcoT_France"
+$DataMainOU = "C:\Admin\Sources\00_Main_OU.csv"
+$DataDepartOU = "C:\Admin\Sources\00_Department_OU.csv"
+$DataServOU = "C:\Admin\Sources\00_Service_OU.csv"
 
-### Main Program
-
-$DataOU = Import-Csv -Path $DataFile -Delimiter ";" -Header "Service","Departement","Utility","Location","Main" | Select-Object -Skip 1
-
-# Fonction de création OU
-function OUCreate
+# Boucle pour le choix du Menu
+while ($true)
 {
-    param (
-        [Parameter(Mandatory = $true)][string]$OUName,
-        [Parameter(Mandatory = $true)][string]$DNPath
-    )
+    Write-Host "Gestion des OU dans Active Directory" -ForegroundColor Cyan
+    Write-Host ""
+    Write-Host "1 - Création OU"
+    Write-Host "2 - Modification OU"
+    Write-Host "3 - Suppression OU"
+    Write-Host ""
+    Write-Host "B - Retour au Menu AD"
+    Write-Host ""
 
-    # Vérifier si l'OU existe déjà
-    if ((Get-ADOrganizationalUnit -Filter {Name -like $OUName} -SearchBase $DNPath) -eq $Null)
+    # Prompt de la Boucle
+    $OptionMenuOU = Read-Host "Veuillez saisir votre choix dans le Menu"
+    Write-Host ""
+
+    switch ($OptionMenuOU)
     {
-        New-ADOrganizationalUnit -Name $OUName -Path $DNPath
-        $EventLogTask = "Ajout de l'OU $OUName"
-        EventLogAD
-        Write-Host "Création de l'OU $OUName dans AD" -ForegroundColor Green
-        Set-ADOrganizationalUnit -Identity $DNPath -ProtectedFromAccidentalDeletion:$true
-    }
-    else {
-        Write-Host "L'OU $OUName existe déjà" -ForegroundColor Yellow
-    }
-}
+        "1"
+        {
+            $TypeLogTask = "INFO"
+            $EventLogTask = "--- Option Add OU ---"
+            EventLogAD
 
-# Création de l'OU principale dans le Domaine
+            ### Création des OU principales
 
-if ((Get-ADOrganizationalUnit -Filter {Name -like $OUMain} -SearchBase $DNDomain) -eq $Null)
-{
-    # Si elle n'existe pas
-    New-ADOrganizationalUnit -Name $OUMain -Path $DomainDN
-    $EventLogTask = "Ajout de l'OU $OUMain dans le Domaine"
-    EventLogAD
-    Write-Host "Création de l'OU $OUMain dans AD"
-}
-else
-{
-    Write-Host "L'OU $OUMain existe déjà"
-}
+            ## Création de l'OU "Country"
 
+            $FirstOU = "ECO_France"
 
-# Boucle pour parcourir le fichier csv
+            # Vérification de l'existence de l'OU
+            If((Get-ADOrganizationalUnit -Filter {Name -like $FirstOU} -SearchBase $DomainDN) -eq $Null)
+            {
+                New-ADOrganizationalUnit -Name $FirstOU -Path $DomainDN
+                $OUObj = Get-ADOrganizationalUnit "OU=$FirstOU,$DomainDN"
+                $OUObj | Set-ADOrganizationalUnit -Description "Last Modified on $(Get-Date -UFormat %Y%m%d-%Hh%M)"
 
-foreach ($Data in $DataOU)
-{
-    $Service = $Data.Service
-    $Departement = $Data.Departement
-    $Utility = $Data.Utility
-    $Location = $Data.Location
-    $Main = $Data.Main
+                $TypeLogTask = "ACTION"
+                $EventLogTask = "OU $FirstOU added to AD"
+                EventLogAD
+        
+                Write-Host "Création de l'OU `"OU=$FirstOU,$DomainDN`"" -ForegroundColor Green
+                Write-Host ""
+            }
+            Else
+            {
+                $TypeLogTask = "WARNING"
+                $EventLogTask = "OU $FirstOU already exists in AD"
+                EventLogAD
 
-    # Création de l'OU Location
-    if ($Location -ne "")
-    {
-        $OUPath = "OU=$Main,$DNDomain"
-        OUCreate -OUName $Location -DNPath $OUPath
-    }
+                Write-Warning "L'OU `"OU=$FirstOU,$DomainDN`" existe déjà"
+                Write-Host ""
+            }
 
-    # Création de l'OU Utility
-    if ($Utility -ne "")
-    {
-        $OUPath = "OU=$Location,OU=$Main,$DNDomain"
-        OUCreate -OUName $Utility -DNPath $OUPath
-    }
+            ## Création de l'OU "City"
 
-    # Création de l'OU Département
-    if ($Departement -ne "")
-    {
-        $OUPath = "OU=$Utility,OU=$Location,OU=$Main,$DNDomain"
-        OUCreate -OUName $Departement -DNPath $OUPath
-    }
+            $SecondOU = "ECO_Bordeaux"
+            $SecondPathOU = "OU=$FirstOU,$DomainDN"
 
-    # Création de l'OU Service
-    if ($Service -ne "")
-    {
-        $OUPath = "OU=$Departement,OU=$Utility,OU=$Location,OU=$Main,$DNDomain"
-        OUCreate -OUName $Service -DNPath $OUPath
+            # Vérification de l'existence de l'OU
+            If((Get-ADOrganizationalUnit -Filter {Name -like $SecondOU} -SearchBase $SecondPathOU) -eq $Null)
+            {
+                New-ADOrganizationalUnit -Name $SecondOU -Path $SecondPathOU
+                $OUObj = Get-ADOrganizationalUnit "OU=$SecondOU,$SecondPathOU"
+                $OUObj | Set-ADOrganizationalUnit -Description "Last Modified on $(Get-Date -UFormat %Y%m%d-%Hh%M)"
+
+                $TypeLogTask = "ACTION"
+                $EventLogTask = "OU $SecondOU added to AD"
+                EventLogAD
+        
+                Write-Host "Création de l'OU `"OU=$SecondOU,$SecondPathOU`"" -ForegroundColor Green
+                Write-Host ""
+            }
+            Else
+            {
+                $TypeLogTask = "WARNING"
+                $EventLogTask = "OU $SecondOU already exists in AD"
+                EventLogAD
+
+                Write-Warning "L'OU `"OU=$SecondOU,$SecondPathOU`" existe déjà"
+                Write-Host ""
+            }
+
+            ## Création des OU "Utility"
+
+            # Import des données du fichier .csv
+            $DataMainOU = "C:\Admin\Sources\00_Main_OU.csv"
+
+            $MainOUs = Import-Csv -Path $DataMainOU -Delimiter ";" -Header "Name"
+
+            Foreach ($MainOU in $MainOUs)
+            {
+                # Nom des OUs
+                $Utility = $MainOU.Name
+
+                # Chemin des OU "Utility"
+                $MainPathOU = "OU=$SecondOU,OU=$FirstOU,$DomainDN"
+
+                # Vérification de l'existence de l'OU
+                If((Get-ADOrganizationalUnit -Filter {Name -like $Utility} -SearchBase $MainPathOU) -eq $Null)
+                {
+                    New-ADOrganizationalUnit -Name $Utility -Path $MainPathOU
+                    $OUObj = Get-ADOrganizationalUnit "OU=$Utility,$MainPathOU"
+                    $OUObj | Set-ADOrganizationalUnit -Description "Last Modified on $(Get-Date -UFormat %Y%m%d-%Hh%M)"
+
+                    $TypeLogTask = "ACTION"
+                    $EventLogTask = "OU $Utility added to AD"
+                    EventLogAD
+        
+                    Write-Host "Création de l'OU `"OU=$Utility,$MainPathOU`"" -ForegroundColor Green
+                    Write-Host ""
+                }
+                Else
+                {
+                    $TypeLogTask = "WARNING"
+                    $EventLogTask = "OU $Utility already exists in AD"
+                    EventLogAD
+
+                    Write-Warning "L'OU `"OU=$Utility,$MainPathOU`" existe déjà"
+                    Write-Host ""
+                }
+            }
+
+            ## Création des OU "Departement"
+
+            # Import des données du fichier .csv
+
+            $DepartmentOUs = Import-Csv -Path $DataDepartOU -Delimiter ";" -Header "Departement"
+
+            Foreach ($DepartmentOU in $DepartmentOUs)
+            {
+                # Nom des OUs
+                $Department = $DepartmentOU.Departement
+
+                # Chemin des OU "Department"
+                $ComputersOU = "ECO_Computers"
+                $UsersOU = "ECO_Users"
+
+                $DepartmentPathOU = "OU=$SecondOU,OU=$FirstOU,$DomainDN"
+
+                # Vérification de l'existence de l'OU dans "ECO_Computers"
+                If((Get-ADOrganizationalUnit -Filter {Name -like $Department} -SearchBase "OU=$ComputersOU,$DepartmentPathOU") -eq $Null)
+                {
+                    New-ADOrganizationalUnit -Name $Department -Path "OU=$ComputersOU,$DepartmentPathOU"
+                    $OUObj = Get-ADOrganizationalUnit "OU=$Department,OU=$ComputersOU,$DepartmentPathOU"
+                    $OUObj | Set-ADOrganizationalUnit -Description "Last Modified on $(Get-Date -UFormat %Y%m%d-%Hh%M)"
+
+                    $TypeLogTask = "ACTION"
+                    $EventLogTask = "OU $Department added to AD"
+                    EventLogAD
+        
+                    Write-Host "Création de l'OU `"OU=$Department,OU=$ComputersOU,$DepartmentPathOU`"" -ForegroundColor Green
+                    Write-Host ""
+                }
+                Else
+                {
+                    $TypeLogTask = "WARNING"
+                    $EventLogTask = "OU $Department already exists in AD"
+                    EventLogAD
+
+                    Write-Warning "L'OU `"OU=$Department,OU=$ComputersOU,$DepartmentPathOU`" existe déjà"
+                    Write-Host ""
+                }
+
+                    # Vérification de l'existence de l'OU dans "ECO_Users"
+                    If((Get-ADOrganizationalUnit -Filter {Name -like $Department} -SearchBase "OU=$UsersOU,$DepartmentPathOU") -eq $Null)
+                {
+                    New-ADOrganizationalUnit -Name $Department -Path "OU=$UsersOU,$DepartmentPathOU"
+                    $OUObj = Get-ADOrganizationalUnit "OU=$Department,OU=$UsersOU,$DepartmentPathOU"
+                    $OUObj | Set-ADOrganizationalUnit -Description "Last Modified on $(Get-Date -UFormat %Y%m%d-%Hh%M)"
+
+                    $TypeLogTask = "ACTION"
+                    $EventLogTask = "OU $Department added to AD"
+                    EventLogAD
+        
+                    Write-Host "Création de l'OU `"OU=$Department,OU=$UsersOU,$DepartmentPathOU`"" -ForegroundColor Green
+                    Write-Host ""
+                }
+                Else
+                {
+                    $TypeLogTask = "WARNING"
+                    $EventLogTask = "OU $Department already exists in AD"
+                    EventLogAD
+
+                    Write-Warning "L'OU `"OU=$Department,OU=$UsersOU,$DepartmentPathOU`" existe déjà"
+                    Write-Host ""
+                }
+            }
+
+            ## Création des OU "Service"
+
+            # Import des données du fichier .csv
+
+            $ServiceOUs = Import-Csv -Path $DataServOU -Delimiter ";" -Header "Departement","Service"
+
+            Foreach ($ServiceOU in $ServiceOUs)
+            {
+                # Nom des OUs
+                $Departement = $ServiceOU.Departement
+                $Service = $ServiceOU.Service
+
+                # Chemin des OU "Department"
+                $ComputersOU = "ECO_Computers"
+                $UsersOU = "ECO_Users"
+
+                $ServicePathOU = "OU=$SecondOU,OU=$FirstOU,$DomainDN"
+
+                # Vérification de l'existence de l'OU dans "ECO_Computers"
+                If((Get-ADOrganizationalUnit -Filter {Name -like $Service} -SearchBase "OU=$Departement,OU=$ComputersOU,$ServicePathOU") -eq $Null)
+                {
+                    New-ADOrganizationalUnit -Name $Service -Path "OU=$Departement,OU=$ComputersOU,$ServicePathOU"
+                    $OUObj = Get-ADOrganizationalUnit "OU=$Service,OU=$Departement,OU=$ComputersOU,$ServicePathOU"
+                    $OUObj | Set-ADOrganizationalUnit -Description "Last Modified on $(Get-Date -UFormat %Y%m%d-%Hh%M)"
+
+                    $TypeLogTask = "ACTION"
+                    $EventLogTask = "OU $Service added to AD"
+                    EventLogAD
+        
+                    Write-Host "Création de l'OU `"OU=$Service,OU=$Departement,OU=$ComputersOU,$ServicePathOU`"" -ForegroundColor Green
+                    Write-Host ""
+                }
+                Else
+                {
+                    $TypeLogTask = "WARNING"
+                    $EventLogTask = "OU $Service already exists in AD"
+                    EventLogAD
+
+                    Write-Warning "L'OU `"OU=$Service,OU=$Departement,OU=$ComputersOU,$ServicePathOU`" existe déjà"
+                    Write-Host ""
+                }
+
+                    # Vérification de l'existence de l'OU dans "ECO_Users"
+                    If((Get-ADOrganizationalUnit -Filter {Name -like $Service} -SearchBase "OU=$Departement,OU=$UsersOU,$ServicePathOU") -eq $Null)
+                {
+                    New-ADOrganizationalUnit -Name $Service -Path "OU=$Departement,OU=$UsersOU,$ServicePathOU"
+                    $OUObj = Get-ADOrganizationalUnit "OU=$Service,OU=$Departement,OU=$UsersOU,$ServicePathOU"
+                    $OUObj | Set-ADOrganizationalUnit -Description "Last Modified on $(Get-Date -UFormat %Y%m%d-%Hh%M)"
+
+                    $TypeLogTask = "ACTION"
+                    $EventLogTask = "OU $Service added to AD"
+                    EventLogAD
+        
+                    Write-Host "Création de l'OU `"OU=$Service,OU=$Departement,OU=$UsersOU,$ServicePathOU`"" -ForegroundColor Green
+                    Write-Host ""
+                }
+                Else
+                {
+                    $TypeLogTask = "WARNING"
+                    $EventLogTask = "OU $Service already exists in AD"
+                    EventLogAD
+
+                    Write-Warning "L'OU `"OU=$Service,OU=$Departement,OU=$UsersOU,$ServicePathOU`" existe déjà"
+                    Write-Host ""
+                }
+            }
+        }
+        "2"
+        {
+            $TypeLogTask = "INFO"
+            $EventLogTask = "--- Option Modify OU ---"
+            EventLogAD
+
+            Write-Host "Work in Progress"
+            Write-Host ""
+        }
+        "3"
+        {
+            $TypeLogTask = "INFO"
+            $EventLogTask = "--- Option Delete OU ---"
+            EventLogAD
+
+            Write-Host "Work in Progress"
+            Write-Host ""
+
+        }
+        "B"
+        {
+            # Chemin du fichier de Log
+            $LogFile = "Logs_AD_Navigate.log"
+
+            $TypeLogTask = "INFO"
+            $EventLogTask = "--- Redirect to AD Menu ---"
+            EventLogAD
+            C:\Admin\00_AD_Menu.ps1
+        }
+        Default
+        {
+            Write-Host "Ce choix n'est pas disponible - Retour au Menu" -ForegroundColor Yellow
+        }
     }
 }

@@ -97,5 +97,5 @@ L'infrastructure est de nouveau opérationnelle, mais une surveillance est néce
 
 ### b. Mise à jour des documents si ce n'était pas le cas
 
-La documenation disponible sur le dépôt GitHub est dans l'ensemble complète, il est toutefois difficile de retrouver un point en particulier, il sera probablement nécessaire de procéder à un référencement (type index).
+La documenation disponible sur le dépôt GitHub est dans l'ensemble complète, il est toutefois difficile de retrouver un point en particulier, il sera probablement nécessaire de procéder à un référencement (type index) pour faciliter une éventuelle recherche.
 

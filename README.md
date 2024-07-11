@@ -254,16 +254,16 @@ Activités et répartitions des tâches
 
 |PO|SM|
 |:-:|:-:|
-|||
+|Charles Caulier|Nicolas Maggiori|
 
 Activités et répartitions des tâches
 
 |                Tâches                 | Charles Caulier | Damien Legay | Anthony Javault | Nicolas Maggiori |
 | :-----------------------------------: | :-------------: | :----------: | :-------------: | :--------------: |
-|                                       |                 |              |                 |                  |
-|                                       |                 |              |                 |                  |
-|                                       |                 |              |                 |                  |
-|                                       |                 |              |                 |                  |
+|      Plan de Reprise d'Activité       |        x        |              |        x        |        x         |
+|              BloodHound               |                 |              |                 |        x         |
+|              PingCastle               |        x        |              |                 |                  |
+|         Partenariat - OpenVPN         |                 |              |        x        |                  |
 |                                       |                 |              |                 |                  |
 |                                       |                 |              |                 |                  |
 |                                       |                 |              |                 |                  |
@@ -273,7 +273,7 @@ Activités et répartitions des tâches
 |                                       |                 |              |                 |                  |
 |             Documentation             |                 |              |                 |                  |
 |    Préparation slides Présentation    |                 |              |                 |                  |
-|             Présentation              |        x        |      x       |        x        |        x         |
+|             Présentation              |        x        |              |        x        |        x         |
 
 ### **S19 - Semaine du 15 au 19 Juillet 2024**
 

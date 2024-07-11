@@ -48,7 +48,13 @@ A - B - C - D - E - F - G - H - I - J - K - L - M - N - O - P - R - S - T - U - 
 
 ## O
 
+* OpenVPN
+    a. OpenVPN via PFSense
+    b. Serveur OpenVPN
+
 ## P
+
+* PRA : Plan de Reprise d'Activité
 
 ## Q
 
