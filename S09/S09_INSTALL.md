@@ -249,7 +249,7 @@ Nous aurons ainsi un serveur commun aux rôles DHCP, DNS et AD-DS, celui-ci se n
 * RAM : `8Go`.
 * Fonction : `DHCP` / `DNS` / `ADDS`.
 
-![Maximus](/ressource/S09/maximus/Maximus_DHCP_01.PNG)
+![Maximus](S09//ressource/maximus/Maximus_DHCP_01.PNG)
 
 ### Installation et Configuration du rôle DHCP sur Windows Server 2022 en GUI
 
