@@ -5,7 +5,7 @@ A - B - C - D - E - F - G - H - I - J - K - L - M - N - O - P - R - S - T - U - 
 ## A
 
 * ADDS : Active Directory Domain Service  
-    a. Installation et Configuration  
+    a. [Installation sur Windows Server 2022 en GUI](/S09/annex/ADDS_WinServGUI.md) 
     b. Nomenclature et Arborescence  
     c. GPO : Group Policy Object  
     d. Automatisation de l'AD via des scripts  
@@ -16,9 +16,11 @@ A - B - C - D - E - F - G - H - I - J - K - L - M - N - O - P - R - S - T - U - 
 
 ## D
 
-* DHCP : Dynamic Host Configuration Protocol
+* DHCP : Dynamic Host Configuration Protocol  
+    a. [Installation et Configuration sur Windows Server 2022 en GUI](/S09/annex/DHCP_WinServGUI.md)
 
-* DNS : Dynamic Name Service
+* DNS : Dynamic Name Service  
+    a. [Installation et Configuration sur Windows Server 2022 en GUI](/S09/annex/DNS_WinServGUI.md)
 
 * Dossiers partagés
 

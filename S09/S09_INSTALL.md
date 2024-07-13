@@ -2,13 +2,152 @@
 
 ## **Sommaire**
 
-1) Pré-requis techniques
+1) Contexte
 
-2) Installation et Configuration des équipements et des ressources
+2) Pré-requis techniques
 
-## **1. Pré-requis techniques**
+3) Installation et Configuration des équipements et des ressources
 
-![](/ressource/Ecotech_Logo.png)
+## Contexte
+
+```
+# 1. Contexte
+
+**EcoTech Solutions**, basée à Bordeaux, est spécialisée dans le développement de solutions IoT (Internet des objets) pour la gestion intelligente de l'énergie et des ressources. En partenariat avec le gouvernement et les entreprises du secteur de l'énergie, elle déploie des systèmes de surveillance et de contrôle avancés pour optimiser l'utilisation des ressources naturelles, réduire les émissions de carbone et promouvoir la durabilité environnementale. Son expertise technologique et son engagement envers l'innovation en font un acteur clé dans la transition vers une économie verte.
+Vous faite partie d'une société prestataire de services appelé en renfort par cette société pour mettre en place une infrastructure réseau.
+Dans le contexte du projet, le formateur sera le DSI de la société EcoTech Solutions.
+
+# 2. La société
+
+## a. Utilisateurs
+
+La société comprend actuellement 54 personnes réparties dans 7 départements.
+Des personnels extérieurs sont inclus.
+
+## b. Départements
+
+- Communication
+- Développement
+- Direction
+- Direction des Ressources Humaines
+- DSI
+- Finance et Comptabilité
+- Service Commercial
+
+## c. Nomadisme
+
+Pas de nomadisme, pas de télétravail possible.
+
+## d. Matériel client
+
+100 % de PC portables de marques très hétérogènes.
+
+## e. Matériel d'administration
+
+Aucun serveur ni matériel réseau.
+
+## f. Evolution de la société
+
+Un partenariat est en cours et pourrait aboutir dans les prochains mois.
+
+## g. Réseau
+
+Pour les utilisateurs interne, réseau en wifi fourni par une box FAI et des répéteurs wifi.
+Le réseau est en 10.10.8.0/24 .
+
+## h. Messagerie
+
+La messagerie est hébergée en cloud sur le web.
+Le format est `prenom.nom@ecotechsolutions.fr`.
+
+## i. Sécurité
+
+Pas de matériel spécifique.
+Pas de sécurité d'identité.
+Tous les PC sont en workgroups avec une connexion sans mot de passe.
+
+## j. Stockage de données
+
+Un NAS indépendant grand public stock des données.
+Pas de retentions et pas de redondance.
+
+## k. Téléphonie
+
+Téléphonie fixe et mobile aléatoire suivant les utilisateurs.
+
+
+# 3. Objectifs
+
+A partir des différents éléments à disposition (détail de la société, fichier annexe, contenu des projets 1 et 2), faire une analyse de l'état actuel de la société et estimer les besoins.
+A partir de cela, faire des propositions d'objectifs, les classer, et estimer sur quel sprint ils devront être mis en place.
+
+Exemples d'objectifs possibles (liste non-exhaustive) :
+
+- Fournir un plan d'adressage réseau complet cohérent :
+	- Configuration IP de LAN/VLAN
+	- Configuration IP des matériels réseaux
+- Fournir un plan schématique du futur réseau :
+	- Nom des matériels
+	- Configuration IP
+- Faire la liste des serveurs/matériels nécessaires à l'élaboration de la future infrastructure réseau
+- Mettre en place une nomenclature de nom :
+	- Serveurs
+	- Ordinateurs clients
+	- Utilisateurs
+	- Groupes
+	- ...
+- Création de VM serveur / client
+	- Configuration ?
+	- OS ?
+	- Fonction / rôle ?
+- Création d'un domaine
+	- Nom du domaine AD
+	- Configuration
+- Création des OU correspondant aux différents service de la société
+	- OU de départements
+	- OU de services
+- Création des groupes correspondant aux différents groupes d'utilisateurs de la société
+	- Groupes de départements
+	- Groupes de services
+	- Groupes fonctionnels
+	- Groupes de sécurité
+- Intégration des données dans l'AD :
+	- Utilisateurs
+	- Ordinateurs
+
+
+# 4. Mise en place du suivi des objectifs du projet
+
+Fichier disponible sur le drive dans le dossier du projet 3 : **Suivi des objectifs de projet - ...**
+## a. Début de sprint
+MAJ d'un tableau dans lequel on trouve les objectifs de la semaine :
+- Par catégorie
+- 1 objectif par ligne
+
+## b. Fin de sprint
+Présentation pendant le bilan du projet des objectifs de la semaine réalisés.
+
+## c. Le tableau
+On y trouve :
+- Les objectifs principaux, secondaires, et optionnels
+- Les numéros de semaine de formation associés aux objectifs
+- Le statut de chaque objectif :
+	- `Non-Fait` : Aucun travail n'a été fait sur l'objectif
+	- `En cours - 25 %` : 1/4 de l'objectif réalisé
+	- `En cours - 50 %` : moitié de l'objectif réalisé
+	- `En cours - 75 %` : 3/4 de l'objectif réalisé
+	- `Terminé` : L'objectif est complètement fonctionnel avec documentation, etc.
+- La date de réalisation à 100 %
+- Les raisons pour lesquelles l'objectif n'a pas été terminé (si c'est le cas)
+
+# 5. Annexes
+
+Fourniture d'un fichier Excel contenant la liste des utilisateurs de la société.
+```
+
+## **Pré-requis techniques**
+
+![Ecotech](/S09/ressource/Ecotech_Logo.png)
 
 Voici la situation originelle de la société **_EcoTech Solutions_**
 * Nombre d'employés : 54 répartis dans 7 départements distincts, incluant 6 personnes extérieures
@@ -23,7 +162,7 @@ Voici la situation originelle de la société **_EcoTech Solutions_**
 
 Nous avons dans un premier temps réalisé un Organigramme, afin de mieux situer les besoins de **_EcoTech Solutions_**
 
-![Orga_EcoTech](/ressource/S09/EcoTech_Organigramme.png)
+![EcoTech](/S09/ressource/EcoTech_Organigramme.png)
 
 Cet organigramme est sujet à remaniement, étant donné qu'un partenariat est en cours et pourrait aboutir dans un avenir proche.
 
@@ -41,7 +180,7 @@ Afin de préparer au mieux la transition, nous avons réalisé une étude afin d
 
 Cette liste est un premier jet qui servira de base à la construction de l'infrastructure réseau nécessaire pour un bon fonctionnement spécifique à l'entité, elle pourra bien évidemment évoluer dans le temps en fonction des besoins de **_EcoTech Solutions_**.
 
-![Materiel_EcoTech](/ressource/S09/Listing_Materiel.JPG)
+![EcoTech](/S09/ressource/Listing_Materiel.JPG)
 
 #### La nomenclature de nom
 
@@ -49,8 +188,8 @@ Cette nomenclature a été établie afin de standardiser l'infrastructure et les
 
 Elle correspond à la mise en place à venir de **_Active Directory_** qui permet de fournir des services centralisés d'identification, d'authentification et de gestions de politiques dans un réseau d'ordinateurs.
 
-![AD_Nomenclature](/ressource/S09/AD_Nomenclature_01.JPG)
-![AD_Nomenclature](/ressource/S09/AD_Nomenclature_02.JPG)
+![Ecotech](/s09/ressource/AD_Nomenclature_01.JPG)
+![Ecotech](/S09//ressource/AD_Nomenclature_02.JPG)
 
 En ce qui concerne la standardisation Matériel :
 * Les PC Portables actuellement disponibles vont être renommés sous la forme `ECO-LP-xx` (où `xx` sera un numéro).
@@ -71,7 +210,7 @@ En ce qui concerne la standardisation du domaine _Active Directory_ :
 
 #### Le plan schématique du réseau
 
-![Schéma_Réseau](/ressource/S09/Plan_Schema_Reseau.png)
+![Ecotech](/S09/ressource/Plan_Schema_Reseau.png)
 
 Nous avons découpé l'entreprise en deux parties : 
 * D'une part, la Direction, comprenant également la Direction des Ressources Humaines (DRH) et la Direction des Systèmes d'Information (DSI)
@@ -94,354 +233,32 @@ Au vu du potentiel partenariat à venir, il sera ainsi aisé d'intégrer une nou
 
 #### Le plan d'adressage du réseau
 
-![Plan_Adressage](/ressource/S09/Plan_Adressage.JPG)
+![Ecotech](/S09/ressource/Plan_Adressage.JPG)
 
-![Table_Routage](/ressource/S09/Table_Routage.JPG)
+![Ecotech](/S09/ressource/Table_Routage.JPG)
 
-## **2. Installation et Configuration des équipements et des ressources**
+## **Installation et Configuration des équipements et des ressources**
 
 Nous aurons ainsi un serveur commun aux rôles DHCP, DNS et AD-DS, celui-ci se nomme `ECO-Maximus` avec l'IP `10.10.8.100/16`
 
-![DHCP](/ressource/S09/maximus/Maximus_DHCP_01.PNG)
+**ECO-Maximus**
+* Template : `Windows Server 2022` / Type : `VM`.
+* Configuration IP : `10.10.8.100/16` / Passerelle : `10.10.255.254` / Carte réseau : `vmbr6`.
+* Hard Disk : `1 HDD 100GO` (Système + Dossiers Partagés) / `1 HDD 100GO` (RAID1) / `1 HDD 100Go` (Backup).
+* Processeur : `2`.
+* RAM : `8Go`.
+* Fonction : `DHCP` / `DNS` / `ADDS`.
 
-### a. Installation et configuration du rôle DHCP
+![Maximus](/ressource/S09/maximus/Maximus_DHCP_01.PNG)
 
-#### Installation du rôle DHCP sur Windows Server en GUI
+### Installation et Configuration du rôle DHCP sur Windows Server 2022 en GUI
 
-1. Dans le *Server Manager*, cliquez sur *Manage* > *Add Roles and Features*.
+Rendez-vous à l'annexe [DHCP_WinServGUI](/S09/annex/DHCP_WinServGUI.md).
 
-![DHCP](/ressource/S09/maximus/Maximus_DHCP_02.PNG)
+### Installation et configuration du rôle DNS sur Windows Server 2022 en GUI
 
-2. Dans l'onglet *Before you begin* > *Next*.
+Rendez-vous à l'annexe [DNS_WinServGUI](/S09/annex/DNS_WinServGUI.md).
 
-![DHCP](/ressource/S09/maximus/Maximus_DHCP_03.PNG)
+### Installation du rôle AD-DS sur Windows Server en GUI
 
-3. Dans l'onglet *Installation type* > *Role-based of feature-based installation* > *Next*.
-
-![DHCP](/ressource/S09/maximus/Maximus_DHCP_04.PNG)
-
-4. Dans l'onglet *Server Selection* > *Next*.
-
-![DHCP](/ressource/S09/maximus/Maximus_DHCP_05.PNG)
-
-5. Dans l'onglet *Server Roles*, cochez *DHCP Server* puis *Next*.
-
-![DHCP](/ressource/S09/maximus/Maximus_DHCP_06.PNG)
-
-6. Cliquez sur *Add Features*.
-
-![DHCP](/ressource/S09/maximus/Maximus_DHCP_07.PNG)
-
-7. Puis *Next*.
-
-![DHCP](/ressource/S09/maximus/Maximus_DHCP_08.PNG)
-
-8. Dans l'onglet *Features* > *Next*.
-
-![DHCP](/ressource/S09/maximus/Maximus_DHCP_09.PNG)
-
-9. Dans l'onglet *DHCP Server* > *Next*.
-
-![DHCP](/ressource/S09/maximus/Maximus_DHCP_10.PNG)
-
-10. Enfin, dans l'onglet *Confirmation* > **_Install_**.
-
-![DHCP](/ressource/S09/maximus/Maximus_DHCP_11.PNG)
-
-11. A la fin de l'installation > *Close*.
-
-![DHCP](/ressource/S09/maximus/Maximus_DHCP_12.PNG)
-
-12. De retour sur le *Server Manager*, cliquez sur le triangle jaune, puis *Complete DHCP Configuration*.
-
-![DHCP](/ressource/S09/maximus/Maximus_DHCP_13.PNG)
-
-13. Cliquez sur *Next*.
-
-![DHCP](/ressource/S09/maximus/Maximus_DHCP_14.PNG)
-
-14. Cliquez sur *Close*.
-
-![DHCP](/ressource/S09/maximus/Maximus_DHCP_15.PNG)
-
-Votre Rôle *_DHCP_* est désormais fonctionnel.
-
-#### Configuration du rôle DHCP sur Windows Server en GUI
-
-1. Dans le *Server Manager*, cliquez sur *Tools* puis **_DHCP_**.
-
-![DHCP](/ressource/S09/maximus/Maximus_DHCP_16.PNG)
-
-2. Déroulez le menu du serveur jusqu'à voir _IPv4_.
-
-![DHCP](/ressource/S09/maximus/Maximus_DHCP_17.PNG)
-
-3. Faites *Clic-droit* sur _IPv4_ > *New Scope*.
-
-![DHCP](/ressource/S09/maximus/Maximus_DHCP_18.PNG)
-
-4. Cliquez sur *Next*.
-
-![DHCP](/ressource/S09/maximus/Maximus_DHCP_19.PNG)
-
-4. Donnez un *Nom* à l’étendue **_DHCP_**, la *Description* est optionnelle. Dans notre cas, nous créons notre première étendue qui correspond au Service _Communication_. Cliquez sur *Next*.
-
-![DHCP](/ressource/S09/maximus/Maximus_DHCP_20.PNG)
-
-5. Saisissez les champs tous les champs, en lien avec le plan d'adressage réseau, fourni ci-dessus. Dans notre cas, le Service _Communication_ est sur le réseau 10.10.8.128/25. Cliquez sur *Next*.
-
-![DHCP](/ressource/S09/maximus/Maximus_DHCP_21.PNG)
-
-6. S’il y a des adresses IP à **_exclure_** de la plage sélectionnée, indiquez-les sur la fenêtre *Add Exclusions and Delay*. Cliquez sur *Next*.
-
-![DHCP](/ressource/S09/maximus/Maximus_DHCP_22.PNG)
-
-7. Par défaut, la **_Durée du bail_** est de 8 jours. Modifiez cette durée si nécessaire. La durée du bail est la durée pendant laquelle une adresse IP sera réservée à un appareil. Cliquez sur *Next*.
-
-![DHCP](/ressource/S09/maximus/Maximus_DHCP_23.PNG)
-
-8. Sélectionnez *Yes, I want ton configure these options now*, puis cliquez sur *Next*.
-
-![DHCP](/ressource/S09/maximus/Maximus_DHCP_24.PNG)
-
-9. Votre réseau informatique est certainement équipé d’un routeur ou d’une box pour l’accès à internet. A la fenêtre **_Router_**, indiquez l’**_adresse IP_** de ce boitier qui deviendra la passerelle par défaut des postes en [DHCP](https://www.windows8facile.fr/tag/dhcp/). Ainsi, pas besoin de configurer chaque PC pour qu’il puisse aller sur internet.
-
-![DHCP](/ressource/S09/maximus/Maximus_DHCP_25.PNG)
-
-10. Dans la fenêtre *Domain Name et DNS Servers*, cliquez sur *Next*. Le rôle DNS sera attribué plus tard dans la procédure.
-
-![DHCP](/ressource/S09/maximus/Maximus_DHCP_26.PNG)
-
-11. Sur la fenêtre *WINS Servers*, cliquez sur *Next*.
-
-![DHCP](/ressource/S09/maximus/Maximus_DHCP_27.PNG)
-
-12. Séelctionnez *Yes, I want ton activate this scope now* puis cliquez sur *Next*.
-
-![DHCP](/ressource/S09/maximus/Maximus_DHCP_28.PNG)
-
-13. Cliquez sur *Finish*.
-
-![DHCP](/ressource/S09/maximus/Maximus_DHCP_29.PNG)
-
-14. Reproduisez la même procédure pour configurer toutes les étendues nécessaires à votre Infrastructure Réseau.
-
-![DHCP](/ressource/S09/maximus/Maximus_DHCP_30.PNG)
-
-### b. Installation et configuration du rôle DNS
-
-#### Installation du rôle DNS sur Windows Server en GUI
-
-1. Dans le *Server Manager*, cliquez sur *Manage* > *Add Roles and Features*.
-
-![DNS](/ressource/S09/maximus/Maximus_DNS_01.PNG)
-
-2. Dans l'onglet *Before you begin* > *Next*.
-
-![DNS](/ressource/S09/maximus/Maximus_DNS_02.PNG)
-
-3. Dans l'onglet *Installation type* > *Role-based of feature-based installation* > *Next*.
-
-![DNS](/ressource/S09/maximus/Maximus_DNS_03.PNG)
-
-4. Dans l'onglet *Server Selection* > *Next*.
-
-![DNS](/ressource/S09/maximus/Maximus_DNS_04.PNG)
-
-5. Dans l'onglet *Server Roles*, cochez *DNS Server* puis *Next*.
-
-![DNS](/ressource/S09/maximus/Maximus_DNS_05.PNG)
-
-6. Cliquez sur *Add Features*.
-
-![DNS](/ressource/S09/maximus/Maximus_DNS_06.PNG)
-
-7. Puis *Next*.
-
-![DNS](/ressource/S09/maximus/Maximus_DNS_07.PNG)
-
-8. Dans l'onglet *Features* > *Next*.
-
-![DNS](/ressource/S09/maximus/Maximus_DNS_08.PNG)
-
-9. Dans l'onglet *DNS Server* > *Next*.
-
-![DNS](/ressource/S09/maximus/Maximus_DNS_09.PNG)
-
-10. Enfin, dans l'onglet *Confirmation* > **_Install_**.
-
-![DNS](/ressource/S09/maximus/Maximus_DNS_10.PNG)
-
-11. A la fin de l'installation > *Close*.
-
-![DNS](/ressource/S09/maximus/Maximus_DNS_11.PNG)
-
-Votre Rôle *_DNS_* est désormais fonctionnel.
-
-#### Configuration du rôle DNS sur Windows Server en GUI
-
-1. Dans le *Server Manager*, cliquez sur *Tools* puis **_DNS_**.
-
-![DNS](/ressource/S09/maximus/Maximus_DNS_12.PNG)
-
-2. Déroulez le menu du serveur jusqu'à voir _Forward Lookup Zones_.
-
-![DNS](/ressource/S09/maximus/Maximus_DNS_13.PNG)
-
-3. Faites *Clic-droit* sur _Forward Lookup Zones_ > *New Zone*.
-
-![DNS](/ressource/S09/maximus/Maximus_DNS_14.PNG)
-
-4. Cliquez sur *Next*.
-
-![DNS](/ressource/S09/maximus/Maximus_DNS_15.PNG)
-
-5. Sélectionnez *Primary Zone*, puis *Next*.
-
-![DNS](/ressource/S09/maximus/Maximus_DNS_16.PNG)
-
-6. Remplissez le champ *Zone Name*, dans notre cas ce sera **_ecotechsolutions.fr_**, puis *Next*.
-
-![DNS](/ressource/S09/maximus/Maximus_DNS_17.PNG)
-
-7. Sélectionnez *Create a new file with this file name*, le champ est automatiquement rempli grâce à ce que vous avez saisi précédemment, puis *Next*.
-
-![DNS](/ressource/S09/maximus/Maximus_DNS_18.PNG)
-
-8. Sélectionnez *Do not allow dynamic updates*, puis *Next*.
-
-![DNS](/ressource/S09/maximus/Maximus_DNS_19.PNG)
-
-9. Cliquez sur *Finish*.
-
-![DNS](/ressource/S09/maximus/Maximus_DNS_20.PNG)
-
-10. Ouvrez l’arborescence du serveur jusqu'à voir "**_ecotechsolutions.fr_**". Faites *clic-droit* et sélectionnez *New Host (A or AAAA)*.
-
-![DNS](/ressource/S09/maximus/Maximus_DNS_21.PNG)
-
-11. Remplissez le champ *IP adress* avec l'adresse IP du serveur (dans notre cas : 10.10.8.100), cochez *Create associated pointer (PTR) record*, puis *Add Host*.
-
-![DNS](/ressource/S09/maximus/Maximus_DNS_22.PNG)
-
-![DNS](/ressource/S09/maximus/Maximus_DNS_23.PNG)
-
-12. Ouvrez l’arborescence du serveur jusqu'à voir "*Reverse Lookup Zones*. Faites *clic-droit* et sélectionnez *New Zone*.
-
-![DNS](/ressource/S09/maximus/Maximus_DNS_24.PNG)
-
-13. Cliquez sur *Next*.
-
-![DNS](/ressource/S09/maximus/Maximus_DNS_25.PNG)
-
-14. Sélectionnez *Primary Zone* puis *Next*.
-
-![DNS](/ressource/S09/maximus/Maximus_DNS_26.PNG)
-
-15. Sélectionnez *IPv4 Reverse Lookup Zone* > *Next*.
-
-![DNS](/ressource/S09/maximus/Maximus_DNS_27.PNG)
-
-16. Remplissez le champ *Network ID*, saisissez les 3 premiers octets de l'adresse IP en inversé (Dans notre cas : 8.10.10), puis *Next*.
-
-![DNS](/ressource/S09/maximus/Maximus_DNS_28.PNG)
-
-17. Sélectionnez *Create a new file with this file name*, le champ est automatiquement remplli avec ce que vous avez saisi précédemment, puis *Next*.
-
-![DNS](/ressource/S09/maximus/Maximus_DNS_29.PNG)
-
-18. Sélectionnez *Do not allow dynamic updates* puis *Next*.
-
-![DNS](/ressource/S09/maximus/Maximus_DNS_30.PNG)
-
-19. Cliquez sur *Finish*.
-
-![DNS](/ressource/S09/maximus/Maximus_DNS_31.PNG)
-
-Votre rôle _DNS_ est désormais configuré.
-
-![DNS](/ressource/S09/maximus/Maximus_DNS_32.PNG)
-
-### c. Installation du rôle AD-DS sur Windows Server en GUI
-
-1. Dans le *Server Manager*, cliquez sur *Manage* > *Add Roles and Features*.
-
-![AD](/ressource/S09/maximus/Maximus_AD_01.PNG)
-
-2. Dans l'onglet *Before you begin* > *Next*.
-
-![AD](/ressource/S09/maximus/Maximus_AD_02.PNG)
-
-3. Dans l'onglet *Installation type* > *Role-based of feature-based installation* > *Next*.
-
-![AD](/ressource/S09/maximus/Maximus_AD_03.PNG)
-
-4. Dans l'onglet *Server Selection* > *Next*.
-
-![AD](/ressource/S09/maximus/Maximus_AD_04.PNG)
-
-5. Dans l'onglet *Server Roles*, cochez *Active Directory Domain Services*, puis *Next*.
-
-![AD](/ressource/S09/maximus/Maximus_AD_05.PNG)
-
-6. Cliquez sur *Add Features*.
-
-![AD](/ressource/S09/maximus/Maximus_AD_06.PNG)
-
-7. Cliquez sur *Next*.
-
-![AD](/ressource/S09/maximus/Maximus_AD_07.PNG)
-
-8. Dans l'onglet *Feature* > *Next*.
-
-![AD](/ressource/S09/maximus/Maximus_AD_08.PNG)
- 
-9. Dans l'onglet *AD DS* > *Next*.
-
-![AD](/ressource/S09/maximus/Maximus_AD_09.PNG)
-
-10. Dans l'onglet *Confirmation* > **_Install_**.
-
-![AD](/ressource/S09/maximus/Maximus_AD_10.PNG)
-
-11. A la fin de l'installation, cliquez sur *Close*.
-
-![AD](/ressource/S09/maximus/Maximus_AD_11.PNG)
-
-12. De retour sur le *Server Manager*, cliquez sur le triangle jaune, puis *Promote this server to a domain controller*.
-
-![AD](/ressource/S09/maximus/Maximus_AD_12.PNG)
-
-13. Sélectionnez * Add a new forest*. Remplissez le champ *Root domain name* (Dans notre cas, ce sera **_ecotechsoltutions.fr_**), puis *Next*.
-
-![AD](/ressource/S09/maximus/Maximus_AD_13.PNG)
-
-14. Remplissez les champs *Password* et *Confirm password* puis *Next*.
-
-![AD](/ressource/S09/maximus/Maximus_AD_14.PNG)
-
-15. Cliquez sur *Next*.
-
-![AD](/ressource/S09/maximus/Maximus_AD_15.PNG)
-
-16. Dans l'onglet *Additional Options*, le champ *The NetBIOS doamin name* est rempli automatiquement, cliquez sur *Next*.
-
-![AD](/ressource/S09/maximus/Maximus_AD_16.PNG)
-
-17. Cliquez sur *Next*.
-
-![AD](/ressource/S09/maximus/Maximus_AD_17.PNG)
-
-18. Cliquez sur *Next*.
-
-![AD](/ressource/S09/maximus/Maximus_AD_18.PNG)
-
-19. Dans l'onglet *Prerequisites Check*, cliquez sur **_Install_**.
-
-![AD](/ressource/S09/maximus/Maximus_AD_19.PNG)
-
-20. A la fin de l'installation, le serveur demandera à redémarrer pour prendre en compte les modifications. Cliquez sur *Close*.
-
-![AD](/ressource/S09/maximus/Maximus_AD_20.PNG)
-
-Votre Rôle _AD-DS_ est désormais fonctionnel.
+Rendez-vous à l'annexe [ADDS_WinServGUI](/S09/annex/ADDS_WinServGUI.md).
