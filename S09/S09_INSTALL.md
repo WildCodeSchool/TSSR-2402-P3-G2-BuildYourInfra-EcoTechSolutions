@@ -188,7 +188,7 @@ Cette nomenclature a été établie afin de standardiser l'infrastructure et les
 
 Elle correspond à la mise en place à venir de **_Active Directory_** qui permet de fournir des services centralisés d'identification, d'authentification et de gestions de politiques dans un réseau d'ordinateurs.
 
-![Ecotech](/s09/ressource/AD_Nomenclature_01.JPG)
+![Ecotech](/S09/ressource/AD_Nomenclature_01.JPG)
 ![Ecotech](/S09//ressource/AD_Nomenclature_02.JPG)
 
 En ce qui concerne la standardisation Matériel :
