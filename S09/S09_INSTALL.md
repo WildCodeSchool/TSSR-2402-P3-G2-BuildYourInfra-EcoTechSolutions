@@ -145,7 +145,7 @@ On y trouve :
 Fourniture d'un fichier Excel contenant la liste des utilisateurs de la société.
 ```
 
-## **Pré-requis techniques**
+## Pré-requis techniques
 
 ![Ecotech](/S09/ressource/Ecotech_Logo.png)
 
@@ -237,7 +237,7 @@ Au vu du potentiel partenariat à venir, il sera ainsi aisé d'intégrer une nou
 
 ![Ecotech](/S09/ressource/Table_Routage.JPG)
 
-## **Installation et Configuration des équipements et des ressources**
+## Installation et Configuration des équipements et des ressources
 
 Nous aurons ainsi un serveur commun aux rôles DHCP, DNS et AD-DS, celui-ci se nomme `ECO-Maximus` avec l'IP `10.10.8.100/16`
 

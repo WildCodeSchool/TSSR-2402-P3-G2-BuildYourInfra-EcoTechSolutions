@@ -5,7 +5,9 @@ A - B - C - D - E - F - G - H - I - J - K - L - M - N - O - P - R - S - T - U - 
 ## A
 
 * ADDS : Active Directory Domain Service  
-    a. [Installation sur Windows Server 2022 en GUI](/S09/annex/ADDS_WinServGUI.md) 
+    a. [Installation sur Windows Server 2022 en GUI](/S09/annex/ADDS_WinServGUI.md)
+    b. [Configuration du rôle ADDS sur Windows Server 2022 en GUI](/S10/annex/ADDS_Conf_WinServGUI.md)
+    c. [Installation et Configuration sur Windows Server 2022 en Core](/S10/annex/ADDS_WinServCore.md)
     b. Nomenclature et Arborescence  
     c. GPO : Group Policy Object  
     d. Automatisation de l'AD via des scripts  
