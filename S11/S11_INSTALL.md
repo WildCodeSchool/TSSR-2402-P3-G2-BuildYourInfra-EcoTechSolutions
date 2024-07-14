@@ -89,7 +89,7 @@ Rendez-vous à l'annexe [GLPI](/S11/annex/GLPI.md).
 
 Rendez-vous à l'annexe [ADDS_GPO](/S11/annex/ADDS_GPO.md).
 
-### Déploiement rapide de serveur des Scripts d'Automatisation
+### Déploiement rapide de serveur via des Scripts d'Automatisation
 
 Notre équipe à élaborer 2 Scripts de déploiement rapide de serveur :
 * Un Script pour le déploiement de ADDS sur serveur Windows Core.
