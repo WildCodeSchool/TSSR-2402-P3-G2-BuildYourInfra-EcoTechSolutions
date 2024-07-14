@@ -11,6 +11,7 @@ A - B - C - D - E - F - G - H - I - J - K - L - M - N - O - P - R - S - T - U - 
     b. Nomenclature et Arborescence  
     c. [GPO : Group Policy Object](/S11/annex/ADDS_GPO.md)  
     d. Automatisation de l'AD via des scripts  
+    e. [Gestion de la Télémétrie par GPO](/S12/annex/Telemetry.md)  
 
 ## B
 
@@ -53,11 +54,14 @@ A - B - C - D - E - F - G - H - I - J - K - L - M - N - O - P - R - S - T - U - 
 
 ## O
 
-* OpenVPN
+* OpenVPN  
     a. OpenVPN via PFSense  
     b. Serveur OpenVPN  
 
 ## P
+
+* PFSense  
+    a. [Configuration du Firewall PFSense](/S12/annex/PFSense.md)  
 
 * Putty  
     a. [Installation et Configuration de Putty sur les Clients Windows](/S11/annex/SSH.md)
@@ -75,7 +79,7 @@ A - B - C - D - E - F - G - H - I - J - K - L - M - N - O - P - R - S - T - U - 
 
 * Routage IP  
     a. Plan d'adressage  
-    b. Routeurs VyOS  
+    b. [Installation et Configuration des routeurs VyOS](/S12/annex/Vyos.md)    
     c. Schéma Routage  
 
 ## S
