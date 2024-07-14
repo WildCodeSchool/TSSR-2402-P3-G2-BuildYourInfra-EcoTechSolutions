@@ -5,10 +5,10 @@ A - B - C - D - E - F - G - H - I - J - K - L - M - N - O - P - R - S - T - U - 
 ## A
 
 * ADDS : Active Directory Domain Service  
-    a. [Installation sur Windows Server 2022 en GUI](/S09/annex/ADDS_WinServGUI.md)  
+    a. [Installation du rôle ADDS sur Windows Server 2022 en GUI](/S09/annex/ADDS_WinServGUI.md)  
     b. [Configuration du rôle ADDS sur Windows Server 2022 en GUI](/S10/annex/ADDS_Conf_WinServGUI.md)  
     c. [Installation et Configuration sur Windows Server 2022 en Core](/S10/annex/ADDS_WinServCore.md)  
-    b. Nomenclature et Arborescence  
+    b. [Nomenclature et Arborescence](/S09/S09_INSTALL.md)  
     c. [GPO : Group Policy Object](/S11/annex/ADDS_GPO.md)  
     d. Automatisation de l'AD via des scripts  
     e. [Gestion de la Télémétrie par GPO](/S12/annex/Telemetry.md)  
@@ -18,6 +18,11 @@ A - B - C - D - E - F - G - H - I - J - K - L - M - N - O - P - R - S - T - U - 
 ## B
 
 * Backup (voir Section Sauvegarde)  
+
+* Bastion (voir Section Guacamole)  
+
+* Bitwarden  
+    a. [Installation et Configuration d'un Gestionaire de Mot de passe](/S15/annex/Bitwarden.md)  
 
 ## C
 
@@ -41,13 +46,21 @@ A - B - C - D - E - F - G - H - I - J - K - L - M - N - O - P - R - S - T - U - 
 * GLPI  
     a. [Installation et Configuration du service GLPI sur Debian 12](/S11/annex/GLPI.md)  
 
+* Guacamole  
+    a. [Mise en place d'un serveur Bastion Apache Guacamole](/S15/annex/Guacamole.md)  
+
 ## H
 
 ## I
 
+* IRedMail  
+    a. [Mise en place d'un serveur de messagerie IRedMail](/S15/annex/IRedMail.md)  
+
 ## J
 
 ## K
+
+* KaliLinux (voir Section Pentest)  
 
 ## L
 
@@ -55,6 +68,8 @@ A - B - C - D - E - F - G - H - I - J - K - L - M - N - O - P - R - S - T - U - 
     a. [Installation et Configuration de LAPS](/S13/annex/LAPS.md)  
 
 ## M
+
+* Mail (voir Section IRedMail)  
 
 ## N
 
@@ -70,9 +85,13 @@ A - B - C - D - E - F - G - H - I - J - K - L - M - N - O - P - R - S - T - U - 
     a. [Configuration du Firewall PFSense](/S12/annex/PFSense.md)  
 
 * Putty  
-    a. [Installation et Configuration de Putty sur les Clients Windows](/S11/annex/SSH.md)
+    a. [Installation et Configuration de Putty sur les Clients Windows](/S11/annex/SSH.md)  
 
-* PRA : Plan de Reprise d'Activité
+* Pentest  
+    a. [Mise en place d'une VM de Pentest](/S15/annex/KaliLinux.md)  
+
+* PRA : Plan de Reprise d'Activité  
+    a. [Plan de Reprise d'Activité](/S18/annex/PRA.md)  
 
 ## Q
 

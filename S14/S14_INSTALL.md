@@ -93,6 +93,8 @@ Rendez-vous à l'annexe [Supervision](/S14/annex/Supervision.md).
 
 ### Objectif personnalisé : Mise en place du Tiering Model
 
+La mise en place d'un modèle de hiérarchisation (tiering) dans Active Directory est une approche recommandée par Microsoft et l'ANSSI pour renforcer la sécurité de notre environnement. Ce modèle consiste à segmenter notre forêt AD en plusieurs niveaux (tiers) en fonction de leur criticité et de leur fonction. Cela permet de limiter l'accès aux ressources sensibles et de réduire l'impact d'une compromission.
+
 **ECO-Maximus**
 * Template : `Windows Server 2022` / Type : `VM`.
 * Configuration IP : `10.10.8.100/25` / Passerelle : `10.10.255.254` / Carte réseau : `vmbr6`.

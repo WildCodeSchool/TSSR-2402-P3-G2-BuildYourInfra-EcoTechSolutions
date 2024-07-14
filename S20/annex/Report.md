@@ -1,10 +1,10 @@
 # Compte-rendu de fin de projet
 
-## Schéma d'infrastructure (mis à jour le 13/07/2024)
+## Schéma d'infrastructure (mis à jour le 14/07/2024)
 
 ![Ecotech](/S20/ressource/Schema_Infra.PNG)
 
-## Synthèse des matériels (mis à jour le 13/07/2024)
+## Synthèse des matériels (mis à jour le 14/07/2024)
 
 | Nom du Matériel | Type | OS | Fonction | Configuration IP | Hard Disk | RAM |
 | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
@@ -16,10 +16,15 @@
 | ECO-ROOT-02 | VM | VyOS | VyOS | 4 cartes réseaux | HDD 1 (4Go/0G/0%) | 1Go/73% |
 | ECO-ROOT-03 | VM | VyOS | VyOS | 4 cartes réseaux | HDD 1 (4Go/0G/0%) | 1Go/73% |
 | ECO-FW-01 | VM | Debian 12 | PFSense | 4 cartes réseaux | HDD 1 (6Go/0Go/0%) | 2Go/65% |
-| CanigouGrafana | CT | Debian 12 | Grafana | 10.10.8.113/25 | HDD 1 (25Go/0Go/0%) | 512Mo/15% |
-| TychoProm | CT | Debian 12 | Prometheus | 10.10.8.114/25 | HDD 1 (20Go/0Go/0%) | 512Mo/15% |
+| CanigouGrafana | CT | Debian 12 | Grafana | 10.10.8.113/25 | HDD 1 (25Go/23Go/93%) | 512Mo/15% |
+| TychoProm | CT | Debian 12 | Prometheus | 10.10.8.114/25 | HDD 1 (20Go/17Go/87%) | 512Mo/15% |
+| IanMail | CT | Debian 12 | IRedMail | 10.10.8.116/25 | HDD 1 (20Go/1Go/5%) | 2Go/28% |
+| Tandy | CT | Debian 12 | Redmine | 10.10.8.118/25 | HDD 1 (30Go/27Go/91%) | 3Go/12% |
+| ECO-KaliTest | VM | Kali Linux | Pentest | 10.10.200.50/16 | HDD 1 (100Go/0Go/0%) | 4Go/ 90% |
+| ECO-ChefGoule | VM | Debian 12 | Apache Guacamole | 10.11.0.2/16 | HDD 1 (16Go/0Go/0%) | 4Go/30% |
+| KatjaBit | CT | Debian 12 | Bitwarden | 10.10.8.117/25 | HDD 1 (25Go/2Go/5%) | 4Go/42% |
 
-## Synthèse de la documentation (mis à jour le 13/07/2024)
+## Synthèse de la documentation (mis à jour le 14/07/2024)
 
 | Nom du Matériel | Appliance | Installation | Configuration | Utilisation |
 | :-: | :-: | :-: | :-: | :-: |
@@ -41,3 +46,8 @@
 | CanigouGrafana | Supervision | [Doc à peaufiner](/S14/annex/Supervision.md) | [Doc à peaufiner](/S14/annex/Supervision.md) | Inexistante () |
 | TychoProm | Supervision | [Doc à peaufiner](/S14/annex/Supervision.md) | [Doc à peaufiner](/S14/annex/Supervision.md) | Inexistante () |
 | ECO-Maximus | Tiering Model | Inexistante () | [Doc à peaufiner](/S14/annex/Tiering_Model.md) | Inexistante () |
+| IanMail | IRedMail | [Doc à jour](/S15/annex/IRedMail.md) | [Doc à jour](/S15/annex/IRedMail.md) | Inexistante () |
+| Tandy | Redmine | [Doc à jour](/S15/annex/Redmine.md) | [Doc à jour](/S15/annex/Redmine.md) | [Doc à jour](/S15/S15_USER_GUIDE.md) |
+| ECO-KaliTest | Pentest | [Doc à jour](/S15/annex/KaliLinux.md) | [Doc à jour](/S15/annex/KaliLinux.md) | Inexistante() |
+| ECO-ChefGoule| Apache Guacamole | [Doc à jour](/S15/annex/Guacamole.md) | [Doc à jour](/S15/annex/Guacamole.md) | Inexistante () |
+| KatjaBit | Bitwarden | [Doc à jour](/S15/annex/Bitwarden.md) | [Doc à jour](/S15/annex/Bitwarden.md) | Inexistante () |
