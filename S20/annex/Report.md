@@ -23,6 +23,7 @@
 | ECO-KaliTest | VM | Kali Linux | Pentest | 10.10.200.50/16 | HDD 1 (100Go/0Go/0%) | 4Go/ 90% |
 | ECO-ChefGoule | VM | Debian 12 | Apache Guacamole | 10.11.0.2/16 | HDD 1 (16Go/0Go/0%) | 4Go/30% |
 | KatjaBit | CT | Debian 12 | Bitwarden | 10.10.8.117/25 | HDD 1 (25Go/2Go/5%) | 4Go/42% |
+| ECO-Thaddeus | VM | Windows Server 2022 | WSUS | 10.10.8.109/25 | HDD 1 (32Go/9Go/31%) - HDD 2 (32Go/0Go/0%) - HDD 3 (32Go/32Go/100%) | 4Go/55% |
 
 ## Synthèse de la documentation (mis à jour le 14/07/2024)
 
@@ -51,3 +52,4 @@
 | ECO-KaliTest | Pentest | [Doc à jour](/S15/annex/KaliLinux.md) | [Doc à jour](/S15/annex/KaliLinux.md) | Inexistante() |
 | ECO-ChefGoule| Apache Guacamole | [Doc à jour](/S15/annex/Guacamole.md) | [Doc à jour](/S15/annex/Guacamole.md) | Inexistante () |
 | KatjaBit | Bitwarden | [Doc à jour](/S15/annex/Bitwarden.md) | [Doc à jour](/S15/annex/Bitwarden.md) | Inexistante () |
+| ECO-Thaddeus | WSUS | [Doc à jour](/S16/annex/WSUS.md) | [Doc à jour](/S16/annex/WSUS.md) | Inexistante () |

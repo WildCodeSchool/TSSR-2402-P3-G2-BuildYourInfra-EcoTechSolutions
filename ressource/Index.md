@@ -41,6 +41,9 @@ A - B - C - D - E - F - G - H - I - J - K - L - M - N - O - P - R - S - T - U - 
 
 ## F
 
+* FSMO  
+    a. [Répartition des rôles FSMO](/S16/annex/FSMO.md)  
+
 ## G
 
 * GLPI  
@@ -71,13 +74,15 @@ A - B - C - D - E - F - G - H - I - J - K - L - M - N - O - P - R - S - T - U - 
 
 * Mail (voir Section IRedMail)  
 
+* Mise-à-Jour (voir Section WSUS)  
+
 ## N
 
 ## O
 
 * OpenVPN  
     a. OpenVPN via PFSense  
-    b. Serveur OpenVPN  
+    b. [Serveur OpenVPN](/S16/annex/OpenVPN.md)  
 
 ## P
 
@@ -131,6 +136,9 @@ A - B - C - D - E - F - G - H - I - J - K - L - M - N - O - P - R - S - T - U - 
 ## V
 
 ## W
+
+* WSUS  
+    a. [Mise en place d'un serveur de Gestion des Mises-à-Jour](/S16/annex/WSUS.md) 
 
 ## X
 

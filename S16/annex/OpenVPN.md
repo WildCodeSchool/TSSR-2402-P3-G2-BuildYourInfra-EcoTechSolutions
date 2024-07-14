@@ -29,15 +29,15 @@ Nom de la VM : **ECO-Cooper**
 
 1. Modifiez le fichier `/etc/resolv.conf` en spécifiant la recherche du domaine et l'IP du Domain Controller (contrôleur de domaine).
 
-![Cooper](/ressource/S16/cooper/Cooper_01.PNG)
+![Cooper](/S16/ressource/cooper/Cooper_01.PNG)
 
 2. Editez le fichier `/etc/hostname` en incluant le nom du Domaine.
 
-![Cooper](/ressource/S16/cooper/Cooper_02.PNG)
+![Cooper](/S16/ressource/cooper/Cooper_02.PNG)
 
 3. Testez la résolutions DNS avec une ping du Domaine `ping ecotechsolutions.fr`.
 
-![Cooper](/ressource/S16/cooper/Cooper_03.PNG)
+![Cooper](/S16/ressource/cooper/Cooper_03.PNG)
 
 4. Installez les paquets nécessaires à l'ajout au Domaine avec la commande `apt-get install realmd sssd-tools sssd libnss-sss libpam-sss adcli samba-common`.
 
@@ -49,7 +49,7 @@ Nom de la VM : **ECO-Cooper**
 
 Votre Serveur SSH est désormais sur le Domaine, vous pouvez le vérifier avec la commande `realm list`.
 
-![Cooper](/ressource/S16/cooper/Cooper_04.PNG)
+![Cooper](/S16/ressource/cooper/Cooper_04.PNG)
 
 #### 2. b. Installation et Configuration de OpenVPN sur le Serveur
 
@@ -72,22 +72,22 @@ Votre Serveur SSH est désormais sur le Domaine, vous pouvez le vérifier avec l
     * Chiffrement customisé : `n`.
     * Une fois la configuration terminé, un message vous demande d'appuyer sur une touche pour continuer.
 
-![OpenVPN](/ressource/S16/cooper/OpenVPN_01.PNG)
+![OpenVPN](/S16/ressource/cooper/OpenVPN_01.PNG)
 
-![OpenVPN](/ressource/S16/cooper/OpenVPN_02.PNG)
+![OpenVPN](/S16/ressource/cooper/OpenVPN_02.PNG)
 
 6. Suite à la configuration, le script va vous assister afin de créer un premier client :
     * Nom du Client : `BillU_VPN`.
     * Utilisation de mot de passe pour le Client : `2` (la définition du mot de passe est nécessaire pour établir la connexion VPN).
     * Deux fichiers spécifiques au Client sont ainsi générés sur votre serveur dans le `/etc/openvpn/easy-rsa/pki` et un fichier à la racine de l'utilisateur ayant lancé le script d'installation.
 
-![OpenVPN](/ressource/S16/cooper/OpenVPN_03.PNG)
+![OpenVPN](/S16/ressource/cooper/OpenVPN_03.PNG)
 
 7. Ajoutez le nombre d'utilisateur nécessaire au bon fonctionnement en répétant l'opération, sachant qu'il ne sera pas possible d'utiliser la même clé pour 2 connexions simultanées.
 
 8. Le serveur étant derrière le Firwall, vous devrez appliquer une règle afin que lorsqu'une connexion depuis l'extérieure sur le port `1194` est demandé sur l'interface WAN, elle soit redirigée vers votre serveur VPN.
 
-![OpenVPN](/ressource/S16/cooper/OpenVPN_FW.PNG)
+![OpenVPN](/S16/ressource/cooper/OpenVPN_FW.PNG)
 
 #### 2. c. Extraction de la clé pour envoi à l'autre entité
 
@@ -95,55 +95,55 @@ Votre Serveur SSH est désormais sur le Domaine, vous pouvez le vérifier avec l
 
 2. Modifiez les autorisations dans le fichier `/etc/ssh/sshd_config`. La ligne `X11Forwarding yes` est indispensable pour la suite.
 
-![OpenVPN](/ressource/S16/cooper/OpenVPN_04.PNG)
+![OpenVPN](/S16/ressource/cooper/OpenVPN_04.PNG)
 
 3. Redémarrez le service SSH avec `systemctl restart sshd`.
 
 4. Faites un copie du ou des fichiers de configuration .ovpn dans le `/home/wilder`.
 
-![OpenVPN](/ressource/S16/cooper/OpenVPN_05.PNG)
+![OpenVPN](/S16/ressource/cooper/OpenVPN_05.PNG)
 
 5. Pour la suite, il est nécessaire d'avoir un Client Linux (Ubuntu par exemple). Installez SSH si ce n'est pas déjà fait. Puis connectez vous en SSH sur le Serveur ECO-Cooper avec la commande `ssh -X wilder@10.11.0.3`. Le `-X` correspond à une connexion X11.
 
 6. Une fois la connexion SSH établie, saisissez la commande `gedit <nom-du-fichier>`, patientez un peu le temps que le fichier s'ouvre sous gedit.
 
-![OpenVPN](/ressource/S16/cooper/OpenVPN_CLI_01.PNG)
+![OpenVPN](/S16/ressource/cooper/OpenVPN_CLI_01.PNG)
 
 7. Le contenu s'ouvre sous gedit en lecture seule, faites clic-droit sur la fenêtre puis `Tout sélectionner` puis `Copier`.
 
-![OpenVPN](/ressource/S16/cooper/OpenVPN_CLI_02.PNG)
+![OpenVPN](/S16/ressource/cooper/OpenVPN_CLI_02.PNG)
 
 8. Ouvrez une nouvelle fenêtre gedit puis faites `Coller` puis `Enregistrer sous`, nommez le fichier en conservant l'extension `.ovpn` puis `Enregistrer`.
 
-![OpenVPN](/ressource/S16/cooper/OpenVPN_CLI_03.PNG)
+![OpenVPN](/S16/ressource/cooper/OpenVPN_CLI_03.PNG)
 
 9. Répétez l'opération en fonction du nombre de fichier à récupérer.
 
-![OpenVPN](/ressource/S16/cooper/OpenVPN_CLI_04.PNG)
+![OpenVPN](/S16/ressource/cooper/OpenVPN_CLI_04.PNG)
 
 10. Vous pouvez désormais faire parvenir ces fichiers de configuration à l'autre entité via la méthode qu'il vous convient (mail, drive, serveur de fichiers...).
 
 11. Dès lors que vous aurez récupéré les fichiers .ovpn de l'autre entité, placez les sur votre serveur principal dans un dosier partagé afin qu'ils soient accessibles par vos collaborateurs sur les Clients.
 
-![OpenVPN](/ressource/S16/cooper/OpenVPN_Share.PNG)
+![OpenVPN](/S16/ressource/cooper/OpenVPN_Share.PNG)
 
 #### 2. d. Installation et configuration sur les Clients
 
 1. Depuis notre Serveur principal ECO-Maximus IP `10.10.8.100`,rendez-vous sur le site communautaire de OpenVPN afin de télécharger la version cliente [OpenVPN GUI Download](https://openvpn.net/community-downloads/), sélectionnez la version la plus récente disponible et téléchargez le package `Windows 64-bit MSI installer`
 
-![OpenVPN](/ressource/S16/cooper/OpenVPN_DLL.PNG)
+![OpenVPN](/S16/ressource/cooper/OpenVPN_DLL.PNG)
 
 2. Placez le fichier dans le dossier partagé préalablement conçu pour le déploiement de logiciel via GPO. Vous pouvez par la même occasion installer le package sur ECO-Maximus.
 
 3. Appliquez la GPO pour le déploiement  
 `Group Policy Managment` > `Create a GPO in this domain and Link it here...` (OU Ecot_Computers) > `Edit` > `Computer Configuration` > `Policies` > `Software Settings` > `Software Installation` > `New` > `Package`
 
-![OpenVPN](/ressource/S16/cooper/OpenVPN_GPO_01.PNG)
+![OpenVPN](/S16/ressource/cooper/OpenVPN_GPO_01.PNG)
 
 4. Désactivez sur la GPO la Configuration Utilisateur  
 `Edit` > `Properties` > `Disable User Configuration settings` > `Yes` > `Apply` > `OK`
 
-![OpenVPN](/ressource/S16/cooper/OpenVPN_GPO_02.PNG)
+![OpenVPN](/S16/ressource/cooper/OpenVPN_GPO_02.PNG)
 
 5. La GPO est fonctionnelle, il vous faudra redémarrer les Clients pour que l'installation s'effectue.
 
