@@ -209,7 +209,7 @@ Activités et répartitions des tâches
 |         Test vulnérabilité            |                 |      x       |                 |                  |
 |            Guacamole                  |                 |              |                 |        x         |
 |            Documentation              |        x        |      x       |        x        |        x         |
-|    Préparation slides Présentation    |                 |              |                 |                  |
+|    Préparation slides Présentation    |        x        |      x       |        x        |        x         |
 |            Présentation               |        x        |      x       |        x        |        x         |
 
 ### **S16 - Semaine du 24 au 28 Juin 2024**
@@ -227,7 +227,7 @@ Activités et répartitions des tâches
 |       Partenariat BILLU - VPN         |                 |              |        x        |                  |
 |     Partenariat BILLU - Firewall      |                 |              |                 |        x         |
 |             Documentation             |        x        |      x       |        x        |        x         |
-|    Préparation slides Présentation    |                 |              |        x        |                  |
+|    Préparation slides Présentation    |        x        |      x       |        x        |        x         |
 |             Présentation              |        x        |      x       |        x        |        x         |
 
 ### **S17 - Semaine du 1 au 05 Juillet 2024**
@@ -240,14 +240,14 @@ Activités et répartitions des tâches
 
 |                Tâches                 | Charles Caulier | Damien Legay | Anthony Javault | Nicolas Maggiori |
 | :-----------------------------------: | :-------------: | :----------: | :-------------: | :--------------: |
-|               VoIP                    |                 |              |        x        |                  |
-|            Serveur Web                |                 |              |                 |        x         |
+|                VoIP                   |                 |              |        x        |                  |
+|             Serveur Web               |                 |              |                 |        x         |
 |       Partenariat BILLU - AD          |                 |      x       |                 |                  |
 |   Partenariat BILLU - Supervision     |                 |              |                 |        x         |
 |     Partenariat BILLU - Stockage      |        x        |              |                 |                  |
 |               Ansible                 |                 |      x       |                 |                  |
 |             Documentation             |        x        |      x       |        x        |        x         |
-|    Préparation slides Présentation    |                 |              |                 |                  |
+|    Préparation slides Présentation    |        x        |      x       |        x        |        x         |
 |             Présentation              |        x        |      x       |        x        |        x         |
 
 ### **S18 - Semaine du 8 au 12 Juillet 2024**
@@ -264,15 +264,8 @@ Activités et répartitions des tâches
 |              BloodHound               |                 |              |                 |        x         |
 |              PingCastle               |        x        |              |                 |                  |
 |         Partenariat - OpenVPN         |                 |              |        x        |                  |
-|                                       |                 |              |                 |                  |
-|                                       |                 |              |                 |                  |
-|                                       |                 |              |                 |                  |
-|                                       |                 |              |                 |                  |
-|                                       |                 |              |                 |                  |
-|                                       |                 |              |                 |                  |
-|                                       |                 |              |                 |                  |
-|             Documentation             |                 |              |                 |                  |
-|    Préparation slides Présentation    |                 |              |                 |                  |
+|             Documentation             |        x        |              |        x        |        x         |
+|    Préparation slides Présentation    |        x        |              |        x        |        x         |
 |             Présentation              |        x        |              |        x        |        x         |
 
 ### **S19 - Semaine du 15 au 19 Juillet 2024**
@@ -296,8 +289,8 @@ Activités et répartitions des tâches
 |                                       |                 |              |                 |                  |
 |                                       |                 |              |                 |                  |
 |                                       |                 |              |                 |                  |
-|             Documentation             |                 |              |                 |                  |
-|    Préparation slides Présentation    |                 |              |                 |                  |
+|             Documentation             |        x        |      x       |        x        |        x         |
+|    Préparation slides Présentation    |        x        |      x       |        x        |        x         |
 |             Présentation              |        x        |      x       |        x        |        x         |
 
 ### **S20 - Semaine du 22 au 26 Juilet 2024**
@@ -321,8 +314,8 @@ Activités et répartitions des tâches
 |                                       |                 |              |                 |                  |
 |                                       |                 |              |                 |                  |
 |                                       |                 |              |                 |                  |
-|             Documentation             |                 |              |                 |                  |
-|    Préparation slides Présentation    |                 |              |                 |                  |
+|             Documentation             |        x        |      x       |        x        |        x         |
+|    Préparation slides Présentation    |        x        |      x       |        x        |        x         |
 |             Présentation              |        x        |      x       |        x        |        x         |
 
 ## **4. Choix techniques et contraintes**

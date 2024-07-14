@@ -18,7 +18,7 @@
 
 | Nom du Matériel | Type | OS | Fonction | Configuration IP | Hard Disk | RAM |
 | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
-| ECO-Maximus | VM | Windows Server 2022 | DHCP / DNS / ADDS | 10.10.8.100/25 | HDD 1 (100Go/0Go/0%) - HDD2 (100Go/0Go/0%) - HDD3 (100Go/0Go/0%) | 8Go/67% |
+| ECO-Maximus | VM | Windows Server 2022 | DHCP / DNS / ADDS / PingCastle | 10.10.8.100/25 | HDD 1 (100Go/0Go/0%) - HDD2 (100Go/0Go/0%) - HDD3 (100Go/0Go/0%) | 8Go/67% |
 | ECO-Moldaver | VM | Windows Server 2022 Core | DNS / ADDS | 10.10.8.120/25 | HDD 1 (32Go/0Go/0%) - HDD 2 (32Go/0Go/0%) | 2Go/44% |
 | ECO-Lucy | VM | Debian 12 | SSH / GLPI | 10.10.8.50/25 | HDD 1 (32Go/0Go/0%) - HDD 2 (32Go/0Go/0%) - HDD3 (32Go/0Go/0%) | 8Go/15% |
 | ECO-LP-001 | VM | Windows 10 Pro | Putty / Firefox / Thunderbird | 10.10.8.2/25 | HDD1 (50Go/0Go/0%) | 4Go/78% |
@@ -30,7 +30,7 @@
 | TychoProm | CT | Debian 12 | Prometheus | 10.10.8.114/25 | HDD 1 (20Go/17Go/87%) | 512Mo/15% |
 | IanMail | CT | Debian 12 | IRedMail | 10.10.8.116/25 | HDD 1 (20Go/1Go/5%) | 2Go/28% |
 | Tandy | CT | Debian 12 | Redmine | 10.10.8.118/25 | HDD 1 (30Go/27Go/91%) | 3Go/12% |
-| ECO-KaliTest | VM | Kali Linux | Pentest | 10.10.200.50/16 | HDD 1 (100Go/0Go/0%) | 4Go/ 90% |
+| ECO-KaliTest | VM | Kali Linux | Pentest / BloodHound | 10.10.200.50/16 | HDD 1 (100Go/0Go/0%) | 4Go/ 90% |
 | ECO-ChefGoule | VM | Debian 12 | Apache Guacamole | 10.11.0.2/16 | HDD 1 (16Go/0Go/0%) | 4Go/30% |
 | KatjaBit | CT | Debian 12 | Bitwarden | 10.10.8.117/25 | HDD 1 (25Go/2Go/5%) | 4Go/42% |
 | ECO-Thaddeus | VM | Windows Server 2022 | WSUS | 10.10.8.109/25 | HDD 1 (32Go/9Go/31%) - HDD 2 (32Go/0Go/0%) - HDD 3 (32Go/32Go/100%) | 4Go/55% |
@@ -69,7 +69,9 @@
 | ECO-Dane | FreePBX | [Doc à jour](/S17/annex/FreePBX.md) | [Doc à jour](/S17/annex/FreePBX.md) | Inexistante () |
 | MacLeanAnsi | Ansible | [Doc à jour](/S17/annex/Ansible.md) | [Doc à jour](/S17/annex/Ansible.md) | Inexistante () |
 | PorcaMiseria | Apache | [Doc à jour](/S17/annex/Web_Apache.md) | [Doc à jour](/S17/annex/Web_Apache.md) | Inexistante () |
+| ECO-KaliTest | BloodHound | [Doc à jour](/S18/annex/BloodHound.md) | [Doc à peaufiner](/S18/annex/BloodHound.md) | Inexistante () |
+| ECO-Maximus | PingCastle | [Doc à jour](/S18/annex/PingCastle.md) | [Doc à jour](/S18/annex/PingCastle.md) | Inexistante () |
 
 ## Index de la documentation (mis à jour le 14/07/2024)
 
-Vous trouverez un Index complet de la documentation répertoriant par ordre alphabétique : [Index](/ressource/Index.md).
+Vous trouverez un Index complet de la documentation répertoriant par ordre alphabétique : [Index](/S20/annex/Index.md).

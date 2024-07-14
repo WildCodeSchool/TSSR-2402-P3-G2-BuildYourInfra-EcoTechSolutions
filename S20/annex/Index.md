@@ -14,6 +14,8 @@ A - B - C - D - E - F - G - H - I - J - K - L - M - N - O - P - R - S - T - U - 
     e. [Gestion de la Télémétrie par GPO](/S12/annex/Telemetry.md)  
     f. [Restriction Horaire des Utilisateurs](/S13/annex/LogonHours.md)  
     g. [Mise en place du Tiering Model](/S14/annex/Tiering_Model.md)  
+    h. Audit de Configuration AD (voir Section PingCastle)  
+    i. Détection des vulnérabilités AD (voir Section BloodHound)  
 
 * Ansible  
     a. [Automatisation de tâches via Ansible](/S17/annex/Ansible.md)  
@@ -26,6 +28,9 @@ A - B - C - D - E - F - G - H - I - J - K - L - M - N - O - P - R - S - T - U - 
 
 * Bitwarden  
     a. [Installation et Configuration d'un Gestionaire de Mot de passe](/S15/annex/Bitwarden.md)  
+
+* BloodHound  
+    a. [Détection des vulnérabilités AD](/S18/annex/BloodHound.md)  
 
 ## C
 
@@ -100,6 +105,9 @@ A - B - C - D - E - F - G - H - I - J - K - L - M - N - O - P - R - S - T - U - 
 
 * PRA : Plan de Reprise d'Activité  
     a. [Plan de Reprise d'Activité](/S18/annex/PRA.md)  
+
+* PingCastle  
+    a. [Audit de Configuration AD](/S18/annex/PingCastle.md)  
 
 ## Q
 
