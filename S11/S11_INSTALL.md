@@ -57,7 +57,7 @@ La mise en place des GPO doit être clairement expliquée pour chacune d'entre-e
 
 **ECO-Lucy**
 * Template : `Debian 12` / Type : `VM`.
-* Configuration IP : `10.10.8.50/16` / Passerelle : `10.10.8.100` / Carte réseau : `vmbr6`.
+* Configuration IP : `10.10.8.50/25` / Passerelle : `10.10.8.100` / Carte réseau : `vmbr6`.
 * Hard Disk : `1 HDD 32GO` (Système) / `1 HDD 32GO` (RAID1) / `1 HDD 32Go` (Backup).
 * Processeur : `2`.
 * RAM : `8Go`.
@@ -69,7 +69,7 @@ Rendez-vous à l'annexe [SSH](/S11/annex/SSH.md).
 
 **ECO-Lucy**
 * Template : `Debian 12` / Type : `VM`.
-* Configuration IP : `10.10.8.50/16` / Passerelle : `10.10.8.100` / Carte réseau : `vmbr6`.
+* Configuration IP : `10.10.8.50/25` / Passerelle : `10.10.8.100` / Carte réseau : `vmbr6`.
 * Hard Disk : `1 HDD 32GO` (Système) / `1 HDD 32GO` (RAID1) / `1 HDD 32Go` (Backup).
 * Processeur : `2`.
 * RAM : `8Go`.
@@ -81,7 +81,7 @@ Rendez-vous à l'annexe [GLPI](/S11/annex/GLPI.md).
 
 **ECO-Maximus**
 * Template : `Windows Server 2022` / Type : `VM`.
-* Configuration IP : `10.10.8.100/16` / Passerelle : `10.10.255.254` / Carte réseau : `vmbr6`.
+* Configuration IP : `10.10.8.100/25` / Passerelle : `10.10.255.254` / Carte réseau : `vmbr6`.
 * Hard Disk : `1 HDD 100GO` (Système + Dossiers Partagés) / `1 HDD 100GO` (RAID1) / `1 HDD 100Go` (Backup).
 * Processeur : `2`.
 * RAM : `8Go`.

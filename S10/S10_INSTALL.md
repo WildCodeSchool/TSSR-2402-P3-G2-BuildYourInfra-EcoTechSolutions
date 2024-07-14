@@ -46,7 +46,7 @@ Pour rappel notre serveur `ECO-Maximus` avec l'IP `10.10.8.100/16`. Ce serveur p
 
 **ECO-Maximus**
 * Template : `Windows Server 2022` / Type : `VM`.
-* Configuration IP : `10.10.8.100/16` / Passerelle : `10.10.255.254` / Carte réseau : `vmbr6`.
+* Configuration IP : `10.10.8.100/25` / Passerelle : `10.10.255.254` / Carte réseau : `vmbr6`.
 * Hard Disk : `1 HDD 100GO` (Système + Dossiers Partagés) / `1 HDD 100GO` (RAID1) / `1 HDD 100Go` (Backup).
 * Processeur : `2`.
 * RAM : `8Go`.
@@ -60,7 +60,7 @@ Pour rappel notre serveur `ECO-Moldaver` avec l'IP `10.10.8.120/16` sera en vers
 
 **ECO-Moldaver**
 * Template : `Windows Server 2022 Core` / Type : `VM`.
-* Configuration IP : `10.10.8.120/16` / Passerelle : `10.10.255.254` / Carte réseau : `vmbr6`.
+* Configuration IP : `10.10.8.120/25` / Passerelle : `10.10.255.254` / Carte réseau : `vmbr6`.
 * Hard Disk : `1 HDD 32Go` (Système) / `1 HDD 32GO` (RAID1).
 * Processeur : `2`.
 * RAM : `2Go`.

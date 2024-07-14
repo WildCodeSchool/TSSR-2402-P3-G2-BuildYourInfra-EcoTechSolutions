@@ -12,6 +12,7 @@ A - B - C - D - E - F - G - H - I - J - K - L - M - N - O - P - R - S - T - U - 
     c. [GPO : Group Policy Object](/S11/annex/ADDS_GPO.md)  
     d. Automatisation de l'AD via des scripts  
     e. [Gestion de la Télémétrie par GPO](/S12/annex/Telemetry.md)  
+    f. [Restriction Horaire des Utilisateurs](/S13/annex/LogonHours.md)  
 
 ## B
 
@@ -46,7 +47,8 @@ A - B - C - D - E - F - G - H - I - J - K - L - M - N - O - P - R - S - T - U - 
 
 ## L
 
-* LAPS
+* LAPS  
+    a. [Installation et Configuration de LAPS](/S13/annex/LAPS.md)  
 
 ## M
 
@@ -73,9 +75,9 @@ A - B - C - D - E - F - G - H - I - J - K - L - M - N - O - P - R - S - T - U - 
 ## R
 
 * RAID 1 : Stockage avancé  
-    a. RAID 1 sur Debian  
-    b. RAID 1 sur Windows Server en Core  
-    c. RAID 1 sur Windows Server en GUI  
+    a. [RAID 1 sur Debian](/S13/annex/Raid_Debian.md)    
+    b. [RAID 1 sur Windows Server en Core](/S13/annex/Raid_Windows_Core.md)    
+    c. [RAID 1 sur Windows Server en GUI](/S13/annex/Raid_Windows_GUI.md)    
 
 * Routage IP  
     a. Plan d'adressage  
@@ -91,7 +93,7 @@ A - B - C - D - E - F - G - H - I - J - K - L - M - N - O - P - R - S - T - U - 
 
 ## T
 
-* Télémétrie
+* Télémétrie (voir Section ADDS)
 
 ## U
 
