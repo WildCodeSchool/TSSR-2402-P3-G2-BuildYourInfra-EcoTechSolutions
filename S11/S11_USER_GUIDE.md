@@ -1,6 +1,6 @@
 # **TSSR-2402-P3-G2-BuildYourInfra-EcoTechSolutions**
 
-## **Sommaire**
+## Sommaire
 
 1) Utilisation de base : Comment utiliser les fonctionnalités clés
 
@@ -8,7 +8,7 @@
 
 3) FAQ : Solutions aux problèmes connus et communs liés à l'utilisation
 
-## **1. Utilisation de base : Comment utiliser les fonctionnalités clés**
+## Utilisation de base : Comment utiliser les fonctionnalités clés
 
 ### Gestion des incidents : ticketing
 
@@ -38,15 +38,13 @@ Voici un exemple de formulation de ticket du point de vue d'un utilisateur utili
 
 Nous ouvrons un navigateur et entrons comme URL : ``http://10.10.8.50/front/helpdesk.public.php`` ou simplement ``http://10.10.8.50`` (cela fonctionne aussi avec le nom de domaine ``ecotechsolutions.fr``).
 Alors nous allons être (re)dirigés vers un page qui nous demande de nous identifier. Dans le cas présent, nous nous sommes servi des identifiants de l'utilisateur par défaut "glpi_admin" qui sont donc :
-  
+
 **Nom d'utilisateur** : glpi_admin@ecotechsolutions.fr  
 **Mot de passe** : Azerty1*  
 
-
 Nous arrivons alors sur la page suivante, considérée comme page d'accueil pour l'utilisateur du domaine (non admin):
 
-  
-![ticket](./ressource/S11/lucy/ticket1.jpg)
+![ticket](/S11/ressource/lucy/ticket1.jpg)
 
 Dans la colonne de gauche, nous cliquons sur "Create a ticket":
 Ici, nous avons plusieur srenseignements à fournir pour la bonne formulation de notre requête
@@ -60,18 +58,16 @@ Ici, nous avons plusieur srenseignements à fournir pour la bonne formulation de
  - Add files : possibilité d'ajouter un ou des fichiers permettant d'éclairer l'individu qui ouvrira le ticket
  - Submit message : pour valider et envoyer le ticket
 
-
-![ticket](./ressource/S11/lucy/ticket2.jpg)
+![ticket](/S11/ressource/lucy/ticket2.jpg)
 
 Ici nous sommes face à l'interface "administrateur", devant lequel l'utilisateur lambda ne devrait se trouver à condition d'un usage correct et reglementé. Il est affiché à titre indicatif.
 Nous avons pris l'exemple d'un ticket émis par un utilisateur x avec un titre d'incident "y'a rien qui va" et une description "c'est la catastrophe".
 
-
-![ticket](./ressource/S11/lucy/ticket3.jpg)
+![ticket](/S11/ressource/lucy/ticket3.jpg)
 
 De nouveau l'interface "administrateur" une fois le ticket ouvert.
 
-![ticket](./ressource/S11/lucy/ticket4.jpg)
+![ticket](/S11/ressource/lucy/ticket4.jpg)
 
 ## Gestion Des Scripts d'Automatisation :
 
@@ -82,6 +78,6 @@ De nouveau l'interface "administrateur" une fois le ticket ouvert.
 Nos scripts PowerShell sont dotés d'une variable qui enregistre le chemin depuis lequel on le lance. Le point le plus important est que le fichier CSV doit être situé dans le même dossier que le script PowerShell, et c'est la même chose pour le script Bash et son fichier texte. Sinon, l'ajout des données ne pourra pas se faire et créera des erreurs. 
 Comme l'exemple ci-dessous dans la configuration d'un Serveur Core avec un Script d'automatisation .
 
-## **2. Utilisation avancée : Comment utilliser au mieux les options**
+## Utilisation avancée : Comment utilliser au mieux les options
 
-## **3. FAQ : Solutions aux problèmes connus et communs liés à l'utilisation**
+## FAQ : Solutions aux problèmes connus et communs liés à l'utilisation

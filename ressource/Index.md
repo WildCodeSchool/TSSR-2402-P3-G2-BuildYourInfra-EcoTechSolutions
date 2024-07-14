@@ -5,11 +5,11 @@ A - B - C - D - E - F - G - H - I - J - K - L - M - N - O - P - R - S - T - U - 
 ## A
 
 * ADDS : Active Directory Domain Service  
-    a. [Installation sur Windows Server 2022 en GUI](/S09/annex/ADDS_WinServGUI.md)
-    b. [Configuration du rôle ADDS sur Windows Server 2022 en GUI](/S10/annex/ADDS_Conf_WinServGUI.md)
-    c. [Installation et Configuration sur Windows Server 2022 en Core](/S10/annex/ADDS_WinServCore.md)
+    a. [Installation sur Windows Server 2022 en GUI](/S09/annex/ADDS_WinServGUI.md)  
+    b. [Configuration du rôle ADDS sur Windows Server 2022 en GUI](/S10/annex/ADDS_Conf_WinServGUI.md)  
+    c. [Installation et Configuration sur Windows Server 2022 en Core](/S10/annex/ADDS_WinServCore.md)  
     b. Nomenclature et Arborescence  
-    c. GPO : Group Policy Object  
+    c. [GPO : Group Policy Object](/S11/annex/ADDS_GPO.md)  
     d. Automatisation de l'AD via des scripts  
 
 ## B
@@ -19,10 +19,10 @@ A - B - C - D - E - F - G - H - I - J - K - L - M - N - O - P - R - S - T - U - 
 ## D
 
 * DHCP : Dynamic Host Configuration Protocol  
-    a. [Installation et Configuration sur Windows Server 2022 en GUI](/S09/annex/DHCP_WinServGUI.md)
+    a. [Installation et Configuration sur Windows Server 2022 en GUI](/S09/annex/DHCP_WinServGUI.md)  
 
 * DNS : Dynamic Name Service  
-    a. [Installation et Configuration sur Windows Server 2022 en GUI](/S09/annex/DNS_WinServGUI.md)
+    a. [Installation et Configuration sur Windows Server 2022 en GUI](/S09/annex/DNS_WinServGUI.md)  
 
 * Dossiers partagés
 
@@ -32,7 +32,8 @@ A - B - C - D - E - F - G - H - I - J - K - L - M - N - O - P - R - S - T - U - 
 
 ## G
 
-* GLPI
+* GLPI  
+    a. [Installation et Configuration du service GLPI sur Debian 12](/S11/annex/GLPI.md)  
 
 ## H
 
@@ -53,10 +54,13 @@ A - B - C - D - E - F - G - H - I - J - K - L - M - N - O - P - R - S - T - U - 
 ## O
 
 * OpenVPN
-    a. OpenVPN via PFSense
-    b. Serveur OpenVPN
+    a. OpenVPN via PFSense  
+    b. Serveur OpenVPN  
 
 ## P
+
+* Putty  
+    a. [Installation et Configuration de Putty sur les Clients Windows](/S11/annex/SSH.md)
 
 * PRA : Plan de Reprise d'Activité
 
@@ -78,7 +82,8 @@ A - B - C - D - E - F - G - H - I - J - K - L - M - N - O - P - R - S - T - U - 
 
 * Sauvegarde 
 
-* SSH : Secure Shell
+* SSH : Secure Shell  
+    a. [Installation et configuration du service SSH sur debian 12](/S11/annex/SSH.md)  
 
 ## T
 

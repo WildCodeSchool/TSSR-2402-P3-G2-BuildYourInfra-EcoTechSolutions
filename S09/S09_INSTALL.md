@@ -1,6 +1,6 @@
 # **TSSR-2402-P3-G2-BuildYourInfra-EcoTechSolutions**
 
-## **Sommaire**
+## Sommaire
 
 1) Contexte
 
