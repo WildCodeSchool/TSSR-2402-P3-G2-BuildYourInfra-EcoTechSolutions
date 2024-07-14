@@ -15,6 +15,9 @@ A - B - C - D - E - F - G - H - I - J - K - L - M - N - O - P - R - S - T - U - 
     f. [Restriction Horaire des Utilisateurs](/S13/annex/LogonHours.md)  
     g. [Mise en place du Tiering Model](/S14/annex/Tiering_Model.md)  
 
+* Ansible  
+    a. [Automatisation de tâches via Ansible](/S17/annex/Ansible.md)  
+
 ## B
 
 * Backup (voir Section Sauvegarde)  
@@ -139,6 +142,10 @@ A - B - C - D - E - F - G - H - I - J - K - L - M - N - O - P - R - S - T - U - 
 
 * WSUS  
     a. [Mise en place d'un serveur de Gestion des Mises-à-Jour](/S16/annex/WSUS.md) 
+
+* WebServer  
+    a. [Mise en place d'un serveur Web](/S17/annex/Web_Apache.md)  
+    b. [Mise en place d'un serveur Web via Caddy](/S17/annex/Caddy.md)    
 
 ## X
 

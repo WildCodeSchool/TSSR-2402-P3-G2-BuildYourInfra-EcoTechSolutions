@@ -108,7 +108,7 @@ Pour aujourd’hui et demain, ils tracent le chemin,
 Vers un futur radieux, où tout devient plus sain.
 ```
 
-#### Partenariat d'netreprise : Règles du Firewall
+#### Partenariat d'entreprise : Règles du Firewall
 
 **ECO-FW-01**
 * Template : `PFSense` / Type : `VM`.

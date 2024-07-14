@@ -1,5 +1,15 @@
 # Compte-rendu de fin de projet
 
+## Sommaire
+
+1) Schéma d'infrastructure
+
+2) Synthèse des matériels
+
+3) Synthèse de la documentation
+
+4) Index de la documentation
+
 ## Schéma d'infrastructure (mis à jour le 14/07/2024)
 
 ![Ecotech](/S20/ressource/Schema_Infra.PNG)
@@ -24,6 +34,9 @@
 | ECO-ChefGoule | VM | Debian 12 | Apache Guacamole | 10.11.0.2/16 | HDD 1 (16Go/0Go/0%) | 4Go/30% |
 | KatjaBit | CT | Debian 12 | Bitwarden | 10.10.8.117/25 | HDD 1 (25Go/2Go/5%) | 4Go/42% |
 | ECO-Thaddeus | VM | Windows Server 2022 | WSUS | 10.10.8.109/25 | HDD 1 (32Go/9Go/31%) - HDD 2 (32Go/0Go/0%) - HDD 3 (32Go/32Go/100%) | 4Go/55% |
+| ECO-Dane | VM | RedHat FreePBX | FreePBX | 10.10.8.51/25 | HDD 1 (32Go/0Go/0%) | 4Go/57% |
+| MacLeanAnsi | CT | Debian 12 | Ansible | 10.10.8.51/25 | HDD 1 (32Go/0Go/0%) | 4Go/58% |
+| PorcaMiseria | CT | Debian 12 | Apache | 10.11.0.8/16 | HDD 1 (8Go/6Go/82%) | 2Go/3% |
 
 ## Synthèse de la documentation (mis à jour le 14/07/2024)
 
@@ -53,3 +66,10 @@
 | ECO-ChefGoule| Apache Guacamole | [Doc à jour](/S15/annex/Guacamole.md) | [Doc à jour](/S15/annex/Guacamole.md) | Inexistante () |
 | KatjaBit | Bitwarden | [Doc à jour](/S15/annex/Bitwarden.md) | [Doc à jour](/S15/annex/Bitwarden.md) | Inexistante () |
 | ECO-Thaddeus | WSUS | [Doc à jour](/S16/annex/WSUS.md) | [Doc à jour](/S16/annex/WSUS.md) | Inexistante () |
+| ECO-Dane | FreePBX | [Doc à jour](/S17/annex/FreePBX.md) | [Doc à jour](/S17/annex/FreePBX.md) | Inexistante () |
+| MacLeanAnsi | Ansible | [Doc à jour](/S17/annex/Ansible.md) | [Doc à jour](/S17/annex/Ansible.md) | Inexistante () |
+| PorcaMiseria | Apache | [Doc à jour](/S17/annex/Web_Apache.md) | [Doc à jour](/S17/annex/Web_Apache.md) | Inexistante () |
+
+## Index de la documentation (mis à jour le 14/07/2024)
+
+Vous trouverez un Index complet de la documentation répertoriant par ordre alphabétique : [Index](/ressource/Index.md).
