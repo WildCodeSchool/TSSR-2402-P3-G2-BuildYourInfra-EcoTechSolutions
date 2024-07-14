@@ -13,8 +13,11 @@ A - B - C - D - E - F - G - H - I - J - K - L - M - N - O - P - R - S - T - U - 
     d. Automatisation de l'AD via des scripts  
     e. [Gestion de la Télémétrie par GPO](/S12/annex/Telemetry.md)  
     f. [Restriction Horaire des Utilisateurs](/S13/annex/LogonHours.md)  
+    g. [Mise en place du Tiering Model](/S14/annex/Tiering_Model.md)  
 
 ## B
+
+* Backup (voir Section Sauvegarde)  
 
 ## C
 
@@ -26,7 +29,8 @@ A - B - C - D - E - F - G - H - I - J - K - L - M - N - O - P - R - S - T - U - 
 * DNS : Dynamic Name Service  
     a. [Installation et Configuration sur Windows Server 2022 en GUI](/S09/annex/DNS_WinServGUI.md)  
 
-* Dossiers partagés
+* Dossiers partagés  
+    a. [Mapping des lecteurs réseaux pour Dossiers Partagés](/S13/annex/Mapping.md)  
 
 ## E
 
@@ -86,14 +90,22 @@ A - B - C - D - E - F - G - H - I - J - K - L - M - N - O - P - R - S - T - U - 
 
 ## S
 
-* Sauvegarde 
+* Sauvegarde  
+    a. [Mise en place de sauvegarde sur Windows Server 2022 en GUI](/S13/annex/Backup.md)  
+    b. [Mise ne place de sauvegarde sur serveur Debian 12](/S14/annex/Backup_Debian.md)  
+    c. [Mise en place de sauvegarde sur Windows Server en Core](/S14/annex/Backup_Core.md)  
 
 * SSH : Secure Shell  
     a. [Installation et configuration du service SSH sur debian 12](/S11/annex/SSH.md)  
 
+* Supervision  
+    a. [Mise en place de la Supervision de l'Infrastructure](/S14/annex/Supervision.md)  
+
 ## T
 
-* Télémétrie (voir Section ADDS)
+* Télémétrie (voir Section ADDS)  
+
+* Tiering Model (voir Section ADDS)  
 
 ## U
 

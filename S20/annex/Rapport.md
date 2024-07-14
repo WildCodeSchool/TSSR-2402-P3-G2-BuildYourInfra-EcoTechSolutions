@@ -16,6 +16,8 @@
 | ECO-ROOT-02 | VM | VyOS | VyOS | 4 cartes réseaux | HDD 1 (4Go/0G/0%) | 1Go/73% |
 | ECO-ROOT-03 | VM | VyOS | VyOS | 4 cartes réseaux | HDD 1 (4Go/0G/0%) | 1Go/73% |
 | ECO-FW-01 | VM | Debian 12 | PFSense | 4 cartes réseaux | HDD 1 (6Go/0Go/0%) | 2Go/65% |
+| CanigouGrafana | CT | Debian 12 | Grafana | 10.10.8.113/25 | HDD 1 (25Go/0Go/0%) | 512Mo/15% |
+| TychoProm | CT | Debian 12 | Prometheus | 10.10.8.114/25 | HDD 1 (20Go/0Go/0%) | 512Mo/15% |
 
 ## Synthèse de la documentation (mis à jour le 13/07/2024)
 
@@ -34,4 +36,8 @@
 | ECO-FW-01 | PFSense | Inexistante () | [Doc à jour](/S12/annex/PFSense.md) | Inexistante () |
 | ECO-Maximus | Backup | [Doc à jour](/S13/annex/Backup.md) | [Doc à jour](/S13/annex/Backup.md) | Inexistante () |
 | ECO-Maximus | LAPS | [Doc à jour](/S13/annex/LAPS.md) | [Doc à jour](/S13/annex/LAPS.md) | Inexistante () |
-
+| ECO-Lucy | Backup | [Doc à jour](/S14/annex/Backup_Debian.md) | [Doc à jour](/S14/annex/Backup_Debian.md) | Inexistante () |
+| ECO-Moldaver | Backup | [Doc à jour](/S14/annex/Backup_Core.md) | [Doc à jour](/S14/annex/Backup_Core.md) | Inexistante () |
+| CanigouGrafana | Supervision | [Doc à peaufiner](/S14/annex/Supervision.md) | [Doc à peaufiner](/S14/annex/Supervision.md) | Inexistante () |
+| TychoProm | Supervision | [Doc à peaufiner](/S14/annex/Supervision.md) | [Doc à peaufiner](/S14/annex/Supervision.md) | Inexistante () |
+| ECO-Maximus | Tiering Model | Inexistante () | [Doc à peaufiner](/S14/annex/Tiering_Model.md) | Inexistante () |

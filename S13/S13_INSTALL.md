@@ -8,8 +8,6 @@
 
 3) Installation et Configuration des équipements et ressources
 
-4) FAQ : Solutions aux problèmes connus et communs liés à l'installation et à la configuration
-
 ## Contexte
 
 ```
