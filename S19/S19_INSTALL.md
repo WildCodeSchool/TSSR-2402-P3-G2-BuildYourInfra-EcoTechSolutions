@@ -89,8 +89,39 @@ Nmap (Network Mapper) est un outil open-source utilisé pour la découverte de r
   
 Nous nous servons de notre machine Kali, sur laquelle est pré-installé nmap (sinon ``sudo apt install nmap``)
   
-
+Nous appelons le logiciel dans un terminal : ``nmap ip_machine_locale``
   
+![nmap](./ressource/nmap.jpg)
+  
+Nous commençons par scanner un réseau donné pour obtenir les adresses des hôtes connectés :
+  
+```
+#options -sP ou -sn pour découvrir les hôtes actifs; * pour 0-255
+nmap -sP 10.10.8.*
+```
+  
+![nmap1](./ressource/nmap2.jpg)
+  
+Nous pouvons tester les ports ouverts ainsi que les services en écoute et leur version :
+  
+```
+nmap -sV 10.10.8.5
+```
+![nmap2](./ressource/nmap3.jpg)
+  
+On peut déterminer l'OS de l'hôte cible puis effacer la trâce du scan avec l'option -sS :
+  
+![nmap3](./ressource/nmap4.jpg)
+  
+Nous pouvons aussi tester des ports spécifiques...
+  
+![nmap4](./ressource/nmap5.jpg)
+  
+...ou même tester une plage de ports donnée :
+  
+![nmap5](./ressource/nmap7.jpg)
+  
+
 ### Attaques par Force Brute sur serveur Debian avec SSH activé : Medusa
   
 Nous nous servons de notre machine Kali Linux (10.10.200.50), pour simuler une attaque sur notre machine Debian Lucy (10.10.8.50).
