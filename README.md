@@ -266,7 +266,7 @@ Activités et répartitions des tâches
 
 |PO|SM|
 |:-:|:-:|
-|||
+|Nicolas Maggiori|Damien Legay|
 
 Activités et répartitions des tâches
 
