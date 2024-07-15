@@ -79,6 +79,18 @@
 
 ## Installation et Configuration des équipements et ressources
   
+### Scan de ports avec NMAP
+  
+Nmap (Network Mapper) est un outil open-source utilisé pour la découverte de réseaux et les audits de sécurité. Il est couramment utilisé par les administrateurs système et les professionnels de la sécurité pour :
+
+ - Découverte de Réseau : Identifier les hôtes actifs sur un réseau, les services qu'ils proposent, ainsi que les ports ouverts.
+ - Audit de Sécurité : Détecter les vulnérabilités potentielles sur des machines et des réseaux, et vérifier les configurations de sécurité.
+ - Inventaire de Réseau : Recueillir des informations détaillées sur les dispositifs et les services présents sur un réseau.
+  
+Nous nous servons de notre machine Kali, sur laquelle est pré-installé nmap (sinon ``sudo apt install nmap``)
+  
+
+  
 ### Attaques par Force Brute sur serveur Debian avec SSH activé : Medusa
   
 Nous nous servons de notre machine Kali Linux (10.10.200.50), pour simuler une attaque sur notre machine Debian Lucy (10.10.8.50).
