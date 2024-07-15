@@ -105,7 +105,7 @@ Tout d'abord, je vous présente l'outil Ansible qui est un outil open source d'a
 
 **MacLeanAnsi**
 * Template : `CT Debian 12` / Type : `CT`.
-* Configuration IP : `10.10.8.51/25` / Passerelle : `10.10.8.100` / Carte réseau : `vmbr6`.
+* Configuration IP : `10.10.8.104/25` / Passerelle : `10.10.8.100` / Carte réseau : `vmbr6`.
 * Hard Disk : 1 HDD 32Go (Système).
 * Processeur : `2`.
 * RAM : `4Go`.
