@@ -12,7 +12,7 @@
 
 ## Schéma d'infrastructure (mis à jour le 14/07/2024)
 
-![Ecotech](/S20/ressource/EcoTech_Schema.PNG)
+![Ecotech](/S20/ressource/EcoTech_Schema.png)
 
 ## Synthèse des matériels (mis à jour le 14/07/2024)
 
