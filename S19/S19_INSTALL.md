@@ -64,19 +64,46 @@
 - L'infrastructure réseau ne change plus à la fin de ce sprint
 - Attaques possibles à tester :
 
-| Attaque | Cible | Outils Alternatifs |
-| ---- | ---- | ---- |
-| Scan de Ports | N'importe quelle machine avec des ports ouverts | Nmap |
-| Escalade de Privilèges | Windows 10 | - |
-| Attaques par Force Brute | Serveur Debian (avec SSH activé) | Medusa |
-| Attaque Man-in-the-Middle (MITM) | Windows ou Linux | Wireshark |
-| Exploitation de Serveur Web Apache Tomcat | Serveur Linux avec Apache Tomcat | - |
-| Attaques de Réinitialisation de Session TCP | Serveur Linux Debian ou Windows (avec services TCP actifs) | hping3 |
-| Attaques FTP par Injection de Commande | Serveur Linux Debian ou Windows (avec vsFTPd 2.3.4) | - |
+| Attaque                                     | Cible                                                      | Outils Alternatifs |
+| ------------------------------------------- | ---------------------------------------------------------- | ------------------ |
+| Scan de Ports                               | N'importe quelle machine avec des ports ouverts            | Nmap               |
+| Escalade de Privilèges                      | Windows 10                                                 | -                  |
+| Attaques par Force Brute                    | Serveur Debian (avec SSH activé)                           | Medusa             |
+| Attaque Man-in-the-Middle (MITM)            | Windows ou Linux                                           | Wireshark          |
+| Exploitation de Serveur Web Apache Tomcat   | Serveur Linux avec Apache Tomcat                           | -                  |
+| Attaques de Réinitialisation de Session TCP | Serveur Linux Debian ou Windows (avec services TCP actifs) | hping3             |
+| Attaques FTP par Injection de Commande      | Serveur Linux Debian ou Windows (avec vsFTPd 2.3.4)        | -                  |
 ```
 
 ## Pré-requis techniques
 
 ## Installation et Configuration des équipements et ressources
+  
+### Attaques par Force Brute sur serveur Debian avec SSH activé : Medusa
+  
+Nous nous servons de notre machine Kali Linux (10.10.200.50), pour simuler une attaque sur notre machine Debian Lucy (10.10.8.50).
+Le logiciel Medusa est installé sur la machine Kali.
+Son utilisation requiert deux pré-requis pour ce type d'utilisation : 
+ - un fichier *users.txt* dans lequel nous pouvons placer à la main un certain nombre de noms d'utilisateurs que nous souhaitons "tester"
+ - un fichier *passwords.txt* dans lequel nous trouvons les mots de passe pouvant correspondre aux noms d'utilisateurs du fichier précédent
+Pour remplir ces fichiers, nous pouvons utiliser un script (python par exemple), les inscrire directement à la main (dans notre cas, nous avons ajouter **wilder**, **Administrator**... et en mots de passe correspondants **Azerty1***, **Azerty2***, **Azerty3***), ou encore cloner directement des repo GitHub listant un grand nombre de possibilités connues.
+  
+Alors, nous pouvons lancer la commande Medusa avec la syntaxe suivante :
+  
+```
+#-h pour l'adresse cible, -U pour appeler le fichier txt users, -P pour appeler le fichier txt des password  
+ et -M pour le module. -n pourrait être utilisé ici pour spécifier le port cible (qui pourrait être 2222...)
+
+medusa -h 10.10.8.50 -U user.txt -P password.txt -M ssh
+```  
+  
+Nous obtenons la sortie suivante :
+  
+![medusa1](./ressource/medusa1.jpg)
+  
+Nous observons le résultat positif sur la troisième ligne plus haut : ``ACCOUNT FOUND...``
+L'attaque par Force Brute a fonctionné.
+  
+
 
 ## FAQ : Solutions aux problèmes connus et communs liés à l'installation et à la configuration
