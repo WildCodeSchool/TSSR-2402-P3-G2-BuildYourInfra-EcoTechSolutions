@@ -35,7 +35,7 @@
 | KatjaBit | CT | Debian 12 | Bitwarden | 10.10.8.117/25 | HDD 1 (25Go/2Go/5%) | 4Go/42% |
 | ECO-Thaddeus | VM | Windows Server 2022 | WSUS | 10.10.8.109/25 | HDD 1 (32Go/9Go/31%) - HDD 2 (32Go/0Go/0%) - HDD 3 (32Go/32Go/100%) | 4Go/55% |
 | ECO-Dane | VM | RedHat FreePBX | FreePBX | 10.10.8.51/25 | HDD 1 (32Go/0Go/0%) | 4Go/57% |
-| MacLeanAnsi | CT | Debian 12 | Ansible | 10.10.8.51/25 | HDD 1 (32Go/0Go/0%) | 4Go/58% |
+| MacLeanAnsi | CT | Debian 12 | Ansible | 10.10.8.104/25 | HDD 1 (32Go/0Go/0%) | 4Go/58% |
 | PorcaMiseria | CT | Debian 12 | Apache | 10.11.0.8/16 | HDD 1 (8Go/6Go/82%) | 2Go/3% |
 
 ## Synthèse de la documentation (mis à jour le 14/07/2024)
