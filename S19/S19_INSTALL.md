@@ -121,6 +121,64 @@ Nous pouvons aussi tester des ports spécifiques...
   
 ![nmap5](./ressource/nmap7.jpg)
   
+  
+### Attaque Man-in-the-Middle (MITM)
+  
+L'attaque de type Man-in-the-Middle (MiTM) est une forme de cyberattaque où un attaquant intercepte et éventuellement altère la communication entre deux parties qui croient communiquer directement entre elles.
+  
+Ettercap est un outil de cybersécurité open-source utilisé pour effectuer des attaques de type Man-in-the-Middle (MiTM) et pour surveiller les réseaux. Voici une brève description de cet outil :
+
+Fonctionnalités principales :
+ - Interception de données : Ettercap permet de capturer et d'analyser le trafic réseau en temps réel.
+ - ARP Spoofing : Cet outil peut usurper des adresses IP et intercepter les communications entre les hôtes sur un réseau local.
+ - Analyse de protocole : Ettercap est capable d'interpréter et d'afficher les données de nombreux protocoles réseau, facilitant l'analyse.
+ - Injection de paquets : L'outil peut injecter des paquets dans une communication active, permettant des attaques comme l'insertion de commandes ou de données.
+
+Modes d'utilisation :
+ - Sniffing passif : Capture du trafic sans interférence, utile pour la surveillance.
+ - Sniffing actif : Interception et modification du trafic, permettant des attaques MiTM.
+
+Interfaces :
+ - Interface graphique : Offre une interface utilisateur graphique pour une utilisation plus intuitive.
+ - Interface en ligne de commande : Pour les utilisateurs avancés qui préfèrent un contrôle direct et scriptable.
+
+Plateformes supportées : Ettercap fonctionne sur diverses plateformes, y compris Linux, Windows, et macOS.
+  
+Nous utilisons ici notre machine Kali, et ciblons notre serveur principal Maximus.
+  
+Ettercap en graphique n'était pas directement installé sur la machine Kali, nous avons donc lançé la commande suivante : ``sudo apt install ettercap-graphical``
+  
+Nous ouvrons alors le logiciel **Ettercap** depuis le menu d'acceuil de la machine Kali.
+  
+![etter](./ressource/etter2.jpg)
+  
+On clic sur la loupe en haut à gauche pour lancer un scan du réseau :
+  
+![etter1](./ressource/etter3.jpg)
+  
+Nous avons pu détecter la présence des hôtes actifs sur le réseau en cliquant sur la loupe dans le quart en haut à gauche de la fenêtre :
+  
+![etter2](./ressource/etter4.jpg)
+  
+On clic sur l'hôte qui nous intéresse : ECO-Maximus.
+Puis *Add to Target1*.
+  
+![etter3](./ressource/etter5.jpg)
+  
+En haut à droite de la fenêtre, nous cliquons sur la petite 'planète' > **ARP poisoning** > on laisse cocher Sniff remote connections.
+  
+![etter4](./ressource/etter6.jpg)  ![etter5](./ressource/etter7.jpg)
+  
+Le récapitulatif s'affiche alors dans la fenêtre du bas.
+  
+![etter5](./ressource/etter8.jpg)
+  
+En parallèle, sur la machine Maximus, on se rend sur l'URL : http://testphp.vulnweb.com/login.php (site pour tester des login et plusieurs autres paramètres PHP).
+On y rentre le login/mot de passe indiqué pour le test : test/test.
+Puis de retour sur le logiciel **Ettercap**, on observe dans la moitié inférieur de la fenêtre l'apparition en clair du login et du mot de passe utilisés sur le site web depuis Maximus !
+  
+![etter6](./ressource/etter9.jpg)
+  
 
 ### Attaques par Force Brute sur serveur Debian avec SSH activé : Medusa
   
