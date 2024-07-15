@@ -8,8 +8,6 @@
 
 2. Installation et Configurations des matériels nécessaires
 
-3. FAQ : Solutions aux problèmes connus et communs liés à l'utilisation
-
 ### **1. Pré-requis techniques**
 
 **_OpenVPN_** est un logiciel OpenSource qui consiste à simuler un réseau privé en se basant sur des réseaux réels quelconques et donc éventuellement publiques comme Internet.
@@ -45,7 +43,7 @@ Plusieurs étapes de configurations sont nécessaires au bon déroulement :
 
 5. Cliquez sur `Save`.
 
-![FW](/ressource/S18/openvpn/FW_02.PNG)
+![FW](/S18/ressource/openvpn/FW_02.PNG)
 
 ### b. Création du Certificat Serveur
 
@@ -61,7 +59,7 @@ Plusieurs étapes de configurations sont nécessaires au bon déroulement :
 
 6. Cliquez sur `Save`.
 
-![FW](/ressource/S18/openvpn/FW_06.PNG)
+![FW](/S18/ressource/openvpn/FW_06.PNG)
 
 ### c. Création du Certificat Client
 
@@ -77,7 +75,7 @@ Plusieurs étapes de configurations sont nécessaires au bon déroulement :
 
 6. Cliquez sur `Save`.
 
-![FW](/ressource/S18/openvpn/FW_09.PNG)
+![FW](/S18/ressource/openvpn/FW_09.PNG)
 
 ### d. Récupération du Certificat Client et du Certificat d'Autorité
 
@@ -85,11 +83,11 @@ Plusieurs étapes de configurations sont nécessaires au bon déroulement :
 
 2. Cliquez sur `Export Key` (icône en forme de clé) afin de télécharger la Clé du Certificat Client.
 
-![FW](/ressource/S18/openvpn/FW_10.PNG)
+![FW](/S18/ressource/openvpn/FW_10.PNG)
 
 3. Onglet `Authorities` : sur la ligne du Certificat d'Autorité précédement créé, cliquez sur `Export CA` (icône en forme de soleil) afin de télécharger le Certificat d'Autorité.
 
-![FW](/ressource/S18/openvpn/FW_11.PNG)
+![FW](/S18/ressource/openvpn/FW_11.PNG)
 
 ### e. Création du Serveur OpenVPN
 
@@ -117,7 +115,7 @@ Plusieurs étapes de configurations sont nécessaires au bon déroulement :
 
 12. Cliquez sur `Save`
 
-![FW](/ressource/S18/openvpn/FW_17.PNG)
+![FW](/S18/ressource/openvpn/FW_17.PNG)
 
 ### f. Récupération de la Clé TLS
 
@@ -127,7 +125,7 @@ Plusieurs étapes de configurations sont nécessaires au bon déroulement :
 
 3. Copiez le texte dans un nouveau fichier texte et enregistrez le fichier : `TLS_Key_OpenVPN.txt`.
 
-![FW](/ressource/S18/openvpn/FW_18.PNG)
+![FW](/S18/ressource/openvpn/FW_18.PNG)
 
 ### g. Ré-écriture spécifique du Client
 
@@ -145,7 +143,7 @@ Plusieurs étapes de configurations sont nécessaires au bon déroulement :
 
 7. Cliquez sur `Save`.
 
-![FW](/ressource/S18/openvpn/FW_21.PNG)
+![FW](/S18/ressource/openvpn/FW_21.PNG)
 
 ### h. Activation de l'interface VPN
 
@@ -153,7 +151,7 @@ Plusieurs étapes de configurations sont nécessaires au bon déroulement :
 
 2. Sur la ligne `OPT2` : cliquez sur `Add`.
 
-![FW](/ressource/S18/openvpn/FW_22.PNG)
+![FW](/S18/ressource/openvpn/FW_22.PNG)
 
 3. Cliquez sur `Opt2`.
 
@@ -163,7 +161,7 @@ Plusieurs étapes de configurations sont nécessaires au bon déroulement :
 
 6. Cliquez sur `Save`.
 
-![FW](/ressource/S18/openvpn/FW_29.PNG)
+![FW](/S18/ressource/openvpn/FW_29.PNG)
 
 ### i. Création de règles sur le Firewall
 
@@ -181,7 +179,7 @@ Plusieurs étapes de configurations sont nécessaires au bon déroulement :
 
 7. Cliquez sur `Save`.
 
-![FW](/ressource/S18/openvpn/FW_25.PNG)
+![FW](/S18/ressource/openvpn/FW_25.PNG)
 
 8. Onglet `OpenVPN_BillU` : cliquez sur `Add rule to the top of the list`.
 
@@ -189,7 +187,7 @@ Plusieurs étapes de configurations sont nécessaires au bon déroulement :
 
 10. Cliquez sur `Save`.
 
-![FW](/ressource/S18/openvpn/FW_30.PNG)
+![FW](/S18/ressource/openvpn/FW_30.PNG)
 
 ### j. Routage
 
@@ -205,7 +203,7 @@ Plusieurs étapes de configurations sont nécessaires au bon déroulement :
 
 6. Cliquez sur `Save`.
 
-![FW](/ressource/S18/openvpn/FW_31.PNG)
+![FW](/S18/ressource/openvpn/FW_31.PNG)
 
 Il est impératif de transmettre les 4 fichiers à l'autre entité, choisissez la méthode la plus sécurisée pour les envoyer.
 * TLS_Key_OpenVPN.txt
@@ -216,5 +214,3 @@ Il est impératif de transmettre les 4 fichiers à l'autre entité, choisissez l
 L'autre entité doit paramétré son VPN en configuration Client : [OpenVPN Confi Client BillU](https://github.com/WildCodeSchool/TSSR-2402-P3-G1-BuildYourInfra-BillU/blob/main/S18/INSTALL.md#3---serveur-openvpn--openvpn-sur-pfsense)
 
 Une fois toutes ces étapes achévées, le VPN est fonctionnel, vous pouvez avec un `ping` sur un matériel du réseau distant, testez également en allant consulter une interface web d'un des serveurs distants.
-
-### **3. FAQ : Solutions aux problèmes connus et communs liés à l'utilisation**
