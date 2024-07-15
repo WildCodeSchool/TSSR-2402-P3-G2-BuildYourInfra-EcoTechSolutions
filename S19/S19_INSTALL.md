@@ -172,6 +172,36 @@ Puis nous la stoppons :
   
 ![hping3](./ressource/hping33.jpg)
   
+  
+### Attaques FTP par Injection de Commande | Serveur Linux Debian ou Windows (avec vsFTPd 2.3.4)
+  
+Les attaques FTP par injection de commande exploitent des vulnérabilités dans les serveurs FTP, tels que vsFTPd 2.3.4 utilisés sur Linux Debian ou Windows. Ce type d'attaque permet à un attaquant d'injecter des commandes malveillantes via des requêtes FTP afin de prendre le contrôle du serveur ou d'accéder à des informations sensibles.
+  
+Nous utilisons notre machine Kali, depuis laquelle nous simulons une attaque FTP par injection de commandes sur notre machine Debian ChefGoule (Apache Guacamole).
+Pré-requis : nous installons le service ftp (``apt install vsftpd``, modifions son ``/etc/vsftpd.conf`` pour le le rendre vulnérable et effacer la configuration de sécurité...) et nous assurons que le port 21 est bien ouvert. Ce que nous confirmons depuis la machine Kali :
+
+![ftp1](./ressource/ftp1.jpg)
+  
+Alors, nous pouvons tenter d'établir une connexion avce le serveur ftp :
+
+![ftp2](./ressource/ftp5.jpg)
+  
+Il nous est demandé de rentrer un nom. Nous donnons *ftp* car il s'agit de l'utilisateur par défaut crée lors de la configuration du service ftp sur le serveur distant. Le mot de passe par défaut est laissé vide, donc **Entrée** lorsqu'il nous est demandé.
+
+Une fois connecté au serveur FTP, nous pouvons essayer d'exécuter des commandes susceptibles d'exploiter une injection de commandes, si une vulnérabilité est connue, comme plus haut : 
+  
+```
+ftp> ls   #Nous listons les répertoires/fichiers 'à disposition'
+ftp> cd   #Pour accéder au répertoire souhaité
+ftp> get nom_fichier    #Pour télécharger le fichier souhaité depuis le serveur ftp distant
+ftp> quit   #Pour sortir de la session ftp en cours
+```
+  
+Nous vérifions alors que le 'prélèvement' du fichier s'est bien déroulé :
+  
+![ftp3](./ressource/ftp4.jpg)
+  
+
 
 
 ## FAQ : Solutions aux problèmes connus et communs liés à l'installation et à la configuration
