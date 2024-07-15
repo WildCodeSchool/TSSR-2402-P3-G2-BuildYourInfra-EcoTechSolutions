@@ -147,6 +147,31 @@ Nous obtenons la sortie suivante :
 Nous observons le résultat positif sur la troisième ligne plus haut : ``ACCOUNT FOUND...``
 L'attaque par Force Brute a fonctionné.
   
+  
+### Attaques de Réinitialisation de Session TCP | Serveur Linux Debian ou Windows (avec services TCP actifs) | hping3
+  
+Hping3 est un outil de ligne de commande open-source utilisé pour la génération et l'analyse de paquets TCP/IP. Il est souvent utilisé pour les tests de sécurité des réseaux, le dépannage, et l'enseignement des concepts de protocoles réseau. Hping3 est capable de créer des paquets TCP, UDP, ICMP et RAW-IP, et de manipuler presque tous les champs de ces paquets, ce qui en fait un outil très flexible et puissant.
+  
+Nous utilisons notre machine Kali, sur laquelle est présent **hping3**. Nous ciblons notre machine Lucy pour l'attaque.
+  
+![hping31](./ressource/hping31.jpg)
+  
+**sudo** : car requiert l'élévation de privilèges
+**-R** : ajoute le drapeau RST au paquet TCP, utilisé pour réinitialiséer une connexion TCP active
+**-S** : ajouter le drapeau SYN (Synchronize) au paquet TCP, utilisé pour initier une connexion TCP
+**-a** : introduit l'adresse IP source à utiliser dans l'envoi du paquet, et permet de masquer l'IP réelle de l'expéditeur
+**-p** : spécifie le port de destination du paquet 
+**-s** : spécifie le port source du paquet 
+**--rst** : équivalente à **-R**, utilisée pour renforcer l'intention de réinitialisation
+  
+L'attaque se déroule puis s'arrête. On remarque alors que Lucy ne répond plus !
+  
+![hping3](./ressource/hping32.jpg)
+  
+Puis nous la stoppons :
+  
+![hping3](./ressource/hping33.jpg)
+  
 
 
 ## FAQ : Solutions aux problèmes connus et communs liés à l'installation et à la configuration
