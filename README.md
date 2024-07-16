@@ -39,9 +39,12 @@ Un dépôt GitHub a été créé à cet effet : [TSSR-2402-P3-G2-BuildYourInfra-
 
 Seront insérés dans le dépôt :
 * un fichier README.md : documentation générale du projet.
-* un fichier INSTALL.md par sprint (avec la nomenclature Sxx_INSTALL.md) : documentation administrateur.
-* un fichier USER_GUIDE.md par sprint (avec la nomenclature Sxx_USER_GUIDE.md) : documentation utilisateur.
-* un dossier _ressource_ où seront placés toutes les annexes (images, scripts,...).
+* Un dossier Sxx par semaine de sprint contenant :
+    * un fichier INSTALL.md par sprint (avec la nomenclature Sxx_INSTALL.md) : documentation administrateur.
+    * un fichier USER_GUIDE.md par sprint (avec la nomenclature Sxx_USER_GUIDE.md) : documentation utilisateur.
+    * un dossier _annex_ où seront placés le détail de la documentation administrateur et utilisateur
+    * un dossier _ressource_ où seront placés toutes les images, scripts et autres supports.
+
 
 ## **2. Mise en contexte**
 
