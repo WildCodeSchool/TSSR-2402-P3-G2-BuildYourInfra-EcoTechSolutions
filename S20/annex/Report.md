@@ -10,11 +10,11 @@
 
 4) Index de la documentation
 
-## Schéma d'infrastructure (mis à jour le 14/07/2024)
+## Schéma d'infrastructure (mis à jour le 15/07/2024)
 
 ![Ecotech](/S20/ressource/EcoTech_Schema.png)
 
-## Synthèse des matériels (mis à jour le 14/07/2024)
+## Synthèse des matériels (mis à jour le 15/07/2024)
 
 | Nom du Matériel | Type | OS | Fonction | Configuration IP | Hard Disk | RAM |
 | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
@@ -40,7 +40,7 @@
 | ECO-Titus | VM | Windows Server 2022 Core | DNS / ADDS / FSMO (PDC) | HDD 1 (32Go/18Go/56%) | 2Go/44% |
 | ECO-LP-002 | VM | Windows 10 Pro | Putty / Firefox / Thunderbird / 3CXPhone | 10.10.8.2/25 | HDD1 (50Go/19Go/38%) | 4Go/78% |
 
-## Synthèse de la documentation (mis à jour le 14/07/2024)
+## Synthèse de la documentation (mis à jour le 15/07/2024)
 
 | Nom du Matériel | Appliance | Installation | Configuration | Utilisation |
 | :-: | :-: | :-: | :-: | :-: |
