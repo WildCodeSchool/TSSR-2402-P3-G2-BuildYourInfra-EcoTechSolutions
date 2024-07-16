@@ -59,7 +59,7 @@
 **ECO-Dane**
 * Template : `RedHat` / Type : `VM`.
 * Configuration IP : `10.10.8.51/25` / Passerelle : `10.10.8.100` / Carte réseau : `vmbr6`.
-* Hard Disk : 1 HDD 32Go (Système).
+* Hard Disk : `1 HDD 32Go` (Système).
 * Processeur : `2`.
 * RAM : `4Go`.
 * Fonction : `FreePBX`.
@@ -84,7 +84,7 @@ Caddy est un serveur web open source écrit en Go, créé par ZeroSSL. Il est r�
 **PorcaMiseria**
 * Template : `CT Debian 12` / Type : `CT`.
 * Configuration IP : `10.11.0.8/16` / Passerelle : `10.11.0.1` / Carte réseau : `vmbr7`.
-* Hard Disk : 1 HDD 8Go (Système).
+* Hard Disk : `1 HDD 8Go` (Système).
 * Processeur : `2`.
 * RAM : `2Go`.
 * Fonction : `Apache`.
@@ -106,7 +106,7 @@ Tout d'abord, je vous présente l'outil Ansible qui est un outil open source d'a
 **MacLeanAnsi**
 * Template : `CT Debian 12` / Type : `CT`.
 * Configuration IP : `10.10.8.104/25` / Passerelle : `10.10.8.100` / Carte réseau : `vmbr6`.
-* Hard Disk : 1 HDD 32Go (Système).
+* Hard Disk : `1 HDD 32Go` (Système).
 * Processeur : `2`.
 * RAM : `4Go`.
 * Fonction : `Ansible`.
