@@ -272,16 +272,9 @@ Activités et répartitions des tâches
 
 |                Tâches                 | Charles Caulier | Damien Legay | Anthony Javault | Nicolas Maggiori |
 | :-----------------------------------: | :-------------: | :----------: | :-------------: | :--------------: |
-|                                       |                 |              |                 |                  |
-|                                       |                 |              |                 |                  |
-|                                       |                 |              |                 |                  |
-|                                       |                 |              |                 |                  |
-|                                       |                 |              |                 |                  |
-|                                       |                 |              |                 |                  |
-|                                       |                 |              |                 |                  |
-|                                       |                 |              |                 |                  |
-|                                       |                 |              |                 |                  |
-|                                       |                 |              |                 |                  |
+|  Utilisation d'une machine d'attaque  |        x        |              |                 |        x         |
+|                 Snort                 |                 |              |                 |                  |
+|     Compte-rendu de fin de projet     |                 |              |        x        |                  |
 |                                       |                 |              |                 |                  |
 |             Documentation             |        x        |      x       |        x        |        x         |
 |    Préparation slides Présentation    |        x        |      x       |        x        |        x         |
@@ -297,16 +290,7 @@ Activités et répartitions des tâches
 
 |                Tâches                 | Charles Caulier | Damien Legay | Anthony Javault | Nicolas Maggiori |
 | :-----------------------------------: | :-------------: | :----------: | :-------------: | :--------------: |
-|                                       |                 |              |                 |                  |
-|                                       |                 |              |                 |                  |
-|                                       |                 |              |                 |                  |
-|                                       |                 |              |                 |                  |
-|                                       |                 |              |                 |                  |
-|                                       |                 |              |                 |                  |
-|                                       |                 |              |                 |                  |
-|                                       |                 |              |                 |                  |
-|                                       |                 |              |                 |                  |
-|                                       |                 |              |                 |                  |
+|                Demo Day               |        x        |      x       |        x        |        x         |
 |                                       |                 |              |                 |                  |
 |             Documentation             |        x        |      x       |        x        |        x         |
 |    Préparation slides Présentation    |        x        |      x       |        x        |        x         |
@@ -344,3 +328,5 @@ Activités et répartitions des tâches
 ## **7. Next-step : Améliorations possibles envisagées**
 
 ## **8. Conclusion**
+
+Vous trouverez le compte-rendu de fin de projet en annexe [Report](/S20/annex/Report.md) comprenant le schéma de l'infrastructure mis à jour, ainsi qu'un tableau de synthèse sur les matériels et un sur la documentation.
