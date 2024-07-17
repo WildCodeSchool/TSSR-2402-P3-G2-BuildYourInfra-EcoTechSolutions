@@ -143,7 +143,7 @@ Tout d’abord, nous devons configurer notre interface réseau en mode promiscui
 
 Nous pouvons le définir à l'aide de la commande suivante :
 
-**``sudo ip link set dev eth0 promisc on``**
+**``sudo ip link set dev ens18 promisc on``**
 
 Nous pouvons maintenant le vérifier avec la commande suivante :
 
