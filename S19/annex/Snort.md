@@ -151,7 +151,7 @@ Nous pouvons maintenant le vérifier avec la commande suivante :
 
 Ensuite, nous devons également désactiver le déchargement d'interface. Tout d'abord, vérifions si cette fonctionnalité est activée ou non à l'aide de la commande suivante :
 
-**``ethtool -k eth0 | grep receive-offload``**
+**``ethtool -k ens18 | grep receive-offload``**
 
 Si il manque l'outil ethtool, il faut l'installer avec : **``sudo apt install ethtool``**
 
