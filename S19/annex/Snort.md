@@ -220,7 +220,7 @@ Ensuite, modifions le fichier de configuration principal de Snort :
 Définissons notre réseau comme indiqué ci-dessous :
 
 **``
-HOME_NET = '10.10.8.56/16'
+HOME_NET = '10.10.8.56/16' 
 EXTERNAL_NET = '!$HOME_NET'
 ``**
 
