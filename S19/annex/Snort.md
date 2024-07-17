@@ -164,7 +164,7 @@ large-receive-offload: off [fixed]
 
 Nous pouvons désormais le désactiver en utilisant la commande suivante :
 
-**``ethtool -K eth0 gro off lro off``**
+**``ethtool -K ens18 gro off lro off``**
 
 ### Créer un fichier de service Systemd pour la carte réseau Snort
 
