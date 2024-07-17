@@ -178,14 +178,12 @@ Ajoutons les lignes suivantes :
 [Unit]
 Description=Set Snort 3 NIC in promiscuous mode and Disable GRO, LRO on boot
 After=network.target
-
 [Service]
 Type=oneshot
 ExecStart=/usr/sbin/ip link set dev ens18 promisc on
 ExecStart=/usr/sbin/ethtool -K ens18 gro off lro off
 TimeoutStartSec=0
 RemainAfterExit=yes
-
 [Install]
 WantedBy=default.target
 ``**
@@ -233,16 +231,13 @@ ips =
 {
     -- use this to enable decoder and inspector alerts
     --enable_builtin_rules = true,
-
     -- use include for rules files; be sure to set your path
     -- note that rules files can include other rules files
     -- (see also related path vars at the top of snort_defaults.lua)
-
     variables = default_variables,
     rules = [[
     include /usr/local/etc/rules/snort3-community-rules/snort3-community.rules
     ]]
-
 }
 ``**
 
