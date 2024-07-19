@@ -39,6 +39,7 @@
 | PorcaMiseria | CT | Debian 12 | Apache | 10.11.0.8/16 | HDD 1 (8Go/6Go/82%) | 2Go/3% |
 | ECO-Titus | VM | Windows Server 2022 Core | DNS / ADDS / FSMO (PDC) | 10.10.8.121/25 | HDD 1 (32Go/18Go/56%) | 2Go/44% |
 | ECO-LP-002 | VM | Windows 10 Pro | Putty / Firefox / Thunderbird / 3CXPhone | 10.10.8.2/25 | HDD1 (50Go/19Go/38%) | 4Go/78% |
+| ECO-Biscotto | VM | Ubuntu 22.04 | SSH / Snort | 10.10.8.56/25 | HDD 1 (32Go/14Go/45%) | 4Go/ 40% |
 
 ## Synthèse de la documentation (mis à jour le 15/07/2024)
 
@@ -73,6 +74,7 @@
 | PorcaMiseria | Apache | [Doc à jour](/S17/annex/Web_Apache.md) | [Doc à jour](/S17/annex/Web_Apache.md) | Inexistante () |
 | ECO-KaliTest | BloodHound | [Doc à jour](/S18/annex/BloodHound.md) | [Doc à peaufiner](/S18/annex/BloodHound.md) | Inexistante () |
 | ECO-Maximus | PingCastle | [Doc à jour](/S18/annex/PingCastle.md) | [Doc à jour](/S18/annex/PingCastle.md) | Inexistante () |
+| ECO-Biscotto | Snort | [Doc à jour](/S19/annex/Snort.md) | [Doc à jour](/S19/annex/Snort.md) | Inexistante () |
 
 ## Index de la documentation (mis à jour le 14/07/2024)
 

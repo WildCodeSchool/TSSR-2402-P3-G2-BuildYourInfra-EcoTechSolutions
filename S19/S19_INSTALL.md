@@ -91,9 +91,9 @@ Rendez-vous à l'annexe [HackHost](/S19/annex/HackHost.md).
 
 ### Sécurité : Utilisation de Snort
 
-**ECO-Puntu**
+**ECO-Biscotto**
 * Template : `VM Unbuntu 24.04` / Type : `VM`.
-* Configuration IP : `10.10.8.55/25` / Passerelle : `10.10.8.100` / Carte réseau : `vmbr6`.
+* Configuration IP : `10.10.8.56/25` / Passerelle : `10.10.8.100` / Carte réseau : `vmbr6`.
 * Hard Disk : `1 HDD 32Go` (Système).
 * Processeur : `1`.
 * RAM : `4Go`.

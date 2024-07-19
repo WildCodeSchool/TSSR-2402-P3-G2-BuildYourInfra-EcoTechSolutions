@@ -484,6 +484,14 @@ Activités et répartitions des tâches
     * RAM : `4Go`.
     * Fonction : `Client`.
 
+22) **ECO-Biscotto**
+    * Template : `VM Unbuntu 24.04` / Type : `VM`.
+    * Configuration IP : `10.10.8.56/25` / Passerelle : `10.10.8.100` / Carte réseau : `vmbr6`.
+    * Hard Disk : `1 HDD 32Go` (Système).
+    * Processeur : `1`.
+    * RAM : `4Go`.
+    * Fonction : `Snort`.
+
 ## **5. Difficultés rencontrées**
 
 ## **6. Solutions et/ou alternatives trouvées pour palier aux problèmes**
