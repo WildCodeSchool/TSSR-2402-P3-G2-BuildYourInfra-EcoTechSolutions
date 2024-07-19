@@ -37,7 +37,7 @@
 | ECO-Dane | VM | RedHat FreePBX | FreePBX | 10.10.8.51/25 | HDD 1 (32Go/1Go/4%) | 4Go/57% |
 | MacLeanAnsi | CT | Debian 12 | Ansible | 10.10.8.104/25 | HDD 1 (32Go/6Go/80%) | 4Go/58% |
 | PorcaMiseria | CT | Debian 12 | Apache | 10.11.0.8/16 | HDD 1 (8Go/6Go/82%) | 2Go/3% |
-| ECO-Titus | VM | Windows Server 2022 Core | DNS / ADDS / FSMO (PDC) | HDD 1 (32Go/18Go/56%) | 2Go/44% |
+| ECO-Titus | VM | Windows Server 2022 Core | DNS / ADDS / FSMO (PDC) | 10.10.8.121/25 | HDD 1 (32Go/18Go/56%) | 2Go/44% |
 | ECO-LP-002 | VM | Windows 10 Pro | Putty / Firefox / Thunderbird / 3CXPhone | 10.10.8.2/25 | HDD1 (50Go/19Go/38%) | 4Go/78% |
 
 ## Synthèse de la documentation (mis à jour le 15/07/2024)
