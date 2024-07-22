@@ -500,4 +500,4 @@ Activités et répartitions des tâches
 
 ## **8. Conclusion**
 
-Vous trouverez le compte-rendu de fin de projet en annexe [Report](/S20/annex/Report.md) comprenant le schéma de l'infrastructure mis à jour, ainsi qu'un tableau de synthèse sur les matériels et un sur la documentation.
+Vous trouverez le compte-rendu de fin de projet en annexe [Report](./S20/annex/Report.md) comprenant le schéma de l'infrastructure mis à jour, ainsi qu'un tableau de synthèse sur les matériels et un sur la documentation.
