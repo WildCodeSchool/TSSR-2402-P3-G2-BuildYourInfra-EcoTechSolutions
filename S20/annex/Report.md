@@ -20,7 +20,7 @@
 | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
 | ECO-Maximus | VM | Windows Server 2022 | DHCP / DNS / ADDS / FSMO/ PingCastle | 10.10.8.100/25 | HDD1(100Go/54Go/64%) HDD2(100Go/54Go/64%) HDD3(100Go/5Go/5%) | 8Go/62% |
 | ECO-Moldaver | VM | Windows Server 2022 Core | DNS / ADDS / FSMO (RID) | 10.10.8.120/25 | HDD1(32Go/18Go/56%) | 2Go/44% |
-| ECO-Lucy | VM | Debian 12 | SSH / GLPI | 10.10.8.50/25 | HDD1(32Go/25Go/80%) HDD2(32Go/25Go/82%) - HDD3 (35Go/34Go/98%) | 8Go/15% |
+| ECO-Lucy | VM | Debian 12 | SSH / GLPI | 10.10.8.50/25 | HDD1(32Go/25Go/80%) HDD2(32Go/25Go/82%) HDD3(35Go/34Go/98%) | 8Go/15% |
 | ECO-LP-001 | VM | Windows 10 Pro | Putty / Firefox / Thunderbird / 3CXPhone | 10.10.8.2/25 | HDD1(50Go/19Go/38%) | 4Go/78% |
 | ECO-ROOT-01 | VM | VyOS | VyOS | 5 cartes réseaux | HDD1(4Go/0G/0%) | 1Go/73% |
 | ECO-ROOT-02 | VM | VyOS | VyOS | 4 cartes réseaux | HDD1(4Go/0G/0%) | 1Go/73% |
