@@ -18,28 +18,28 @@
 
 | Nom du Matériel | Type | OS | Fonction | Configuration IP | Hard Disk | RAM |
 | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
-| ECO-Maximus | VM | Windows Server 2022 | DHCP / DNS / ADDS / FSMO/ PingCastle | 10.10.8.100/25 | HDD 1 (100Go/54Go/64%) - HDD2 (100Go/54Go/64%) - HDD3 (100Go/5Go/5%) | 8Go/62% |
-| ECO-Moldaver | VM | Windows Server 2022 Core | DNS / ADDS / FSMO (RID) | 10.10.8.120/25 | HDD 1 (32Go/18Go/56%) | 2Go/44% |
-| ECO-Lucy | VM | Debian 12 | SSH / GLPI | 10.10.8.50/25 | HDD 1 (32Go/25Go/80%) - HDD 2 (32Go/25Go/82%) - HDD3 (35Go/34Go/98%) | 8Go/15% |
-| ECO-LP-001 | VM | Windows 10 Pro | Putty / Firefox / Thunderbird / 3CXPhone | 10.10.8.2/25 | HDD1 (50Go/19Go/38%) | 4Go/78% |
-| ECO-ROOT-01 | VM | VyOS | VyOS | 5 cartes réseaux | HDD 1 (4Go/0G/0%) | 1Go/73% |
-| ECO-ROOT-02 | VM | VyOS | VyOS | 4 cartes réseaux | HDD 1 (4Go/0G/0%) | 1Go/73% |
-| ECO-ROOT-03 | VM | VyOS | VyOS | 4 cartes réseaux | HDD 1 (4Go/0G/0%) | 1Go/73% |
-| ECO-FW-01 | VM | Debian 12 | PFSense | 4 cartes réseaux | HDD 1 (6Go/3Go/60%) | 2Go/65% |
-| CanigouGrafana | CT | Debian 12 | Grafana | 10.10.8.113/25 | HDD 1 (25Go/23Go/93%) | 512Mo/15% |
-| TychoProm | CT | Debian 12 | Prometheus | 10.10.8.114/25 | HDD 1 (20Go/17Go/87%) | 512Mo/15% |
-| IanMail | CT | Debian 12 | IRedMail | 10.10.8.116/25 | HDD 1 (20Go/1Go/5%) | 2Go/28% |
-| Tandy | CT | Debian 12 | Redmine | 10.10.8.118/25 | HDD 1 (30Go/27Go/91%) | 3Go/12% |
-| ECO-KaliTest | VM | Kali Linux | Pentest / BloodHound | 10.10.200.50/16 | HDD 1 (100Go/0Go/0%) | 4Go/ 90% |
-| ECO-ChefGoule | VM | Debian 12 | Apache Guacamole | 10.11.0.2/16 | HDD 1 (16Go/0Go/0%) | 4Go/30% |
-| KatjaBit | CT | Debian 12 | Bitwarden | 10.10.8.117/25 | HDD 1 (25Go/2Go/5%) | 4Go/42% |
-| ECO-Thaddeus | VM | Windows Server 2022 | WSUS | 10.10.8.109/25 | HDD 1 (32Go/9Go/31%) - HDD 2 (32Go/0Go/0%) - HDD 3 (32Go/Unallocated) | 4Go/55% |
-| ECO-Dane | VM | RedHat FreePBX | FreePBX | 10.10.8.51/25 | HDD 1 (32Go/1Go/4%) | 4Go/57% |
-| MacLeanAnsi | CT | Debian 12 | Ansible | 10.10.8.104/25 | HDD 1 (32Go/6Go/80%) | 4Go/58% |
-| PorcaMiseria | CT | Debian 12 | Apache | 10.11.0.8/16 | HDD 1 (8Go/6Go/82%) | 2Go/3% |
-| ECO-Titus | VM | Windows Server 2022 Core | DNS / ADDS / FSMO (PDC) | 10.10.8.121/25 | HDD 1 (32Go/18Go/56%) | 2Go/44% |
-| ECO-LP-002 | VM | Windows 10 Pro | Putty / Firefox / Thunderbird / 3CXPhone | 10.10.8.2/25 | HDD1 (50Go/19Go/38%) | 4Go/78% |
-| ECO-Biscotto | VM | Ubuntu 22.04 | SSH / Snort | 10.10.8.56/25 | HDD 1 (32Go/14Go/45%) | 4Go/ 40% |
+| ECO-Maximus | VM | Windows Server 2022 | DHCP / DNS / ADDS / FSMO/ PingCastle | 10.10.8.100/25 | HDD1(100Go/54Go/64%) HDD2(100Go/54Go/64%) HDD3(100Go/5Go/5%) | 8Go/62% |
+| ECO-Moldaver | VM | Windows Server 2022 Core | DNS / ADDS / FSMO (RID) | 10.10.8.120/25 | HDD1(32Go/18Go/56%) | 2Go/44% |
+| ECO-Lucy | VM | Debian 12 | SSH / GLPI | 10.10.8.50/25 | HDD1(32Go/25Go/80%) HDD2(32Go/25Go/82%) - HDD3 (35Go/34Go/98%) | 8Go/15% |
+| ECO-LP-001 | VM | Windows 10 Pro | Putty / Firefox / Thunderbird / 3CXPhone | 10.10.8.2/25 | HDD1(50Go/19Go/38%) | 4Go/78% |
+| ECO-ROOT-01 | VM | VyOS | VyOS | 5 cartes réseaux | HDD1(4Go/0G/0%) | 1Go/73% |
+| ECO-ROOT-02 | VM | VyOS | VyOS | 4 cartes réseaux | HDD1(4Go/0G/0%) | 1Go/73% |
+| ECO-ROOT-03 | VM | VyOS | VyOS | 4 cartes réseaux | HDD1(4Go/0G/0%) | 1Go/73% |
+| ECO-FW-01 | VM | Debian 12 | PFSense | 4 cartes réseaux | HDD1(6Go/3Go/60%) | 2Go/65% |
+| CanigouGrafana | CT | Debian 12 | Grafana | 10.10.8.113/25 | HDD1(25Go/23Go/93%) | 512Mo/15% |
+| TychoProm | CT | Debian 12 | Prometheus | 10.10.8.114/25 | HDD1(20Go/17Go/87%) | 512Mo/15% |
+| IanMail | CT | Debian 12 | IRedMail | 10.10.8.116/25 | HDD1(20Go/1Go/5%) | 2Go/28% |
+| Tandy | CT | Debian 12 | Redmine | 10.10.8.118/25 | HDD1(30Go/27Go/91%) | 3Go/12% |
+| ECO-KaliTest | VM | Kali Linux | Pentest / BloodHound | 10.10.200.50/16 | HDD1(100Go/0Go/0%) | 4Go/ 90% |
+| ECO-ChefGoule | VM | Debian 12 | Apache Guacamole | 10.11.0.2/16 | HDD1(16Go/0Go/0%) | 4Go/30% |
+| KatjaBit | CT | Debian 12 | Bitwarden | 10.10.8.117/25 | HDD1(25Go/2Go/5%) | 4Go/42% |
+| ECO-Thaddeus | VM | Windows Server 2022 | WSUS | 10.10.8.109/25 | HDD1(32Go/9Go/31%) HDD2(32Go/0Go/0%) HDD3(32Go/Unallocated) | 4Go/55% |
+| ECO-Dane | VM | RedHat FreePBX | FreePBX | 10.10.8.51/25 | HDD1(32Go/1Go/4%) | 4Go/57% |
+| MacLeanAnsi | CT | Debian 12 | Ansible | 10.10.8.104/25 | HDD1(32Go/6Go/80%) | 4Go/58% |
+| PorcaMiseria | CT | Debian 12 | Apache | 10.11.0.8/16 | HDD1(8Go/6Go/82%) | 2Go/3% |
+| ECO-Titus | VM | Windows Server 2022 Core | DNS / ADDS / FSMO (PDC) | 10.10.8.121/25 | HDD1(32Go/18Go/56%) | 2Go/44% |
+| ECO-LP-002 | VM | Windows 10 Pro | Putty / Firefox / Thunderbird / 3CXPhone | 10.10.8.2/25 | HDD1(50Go/19Go/38%) | 4Go/78% |
+| ECO-Biscotto | VM | Ubuntu 22.04 | SSH / Snort | 10.10.8.56/25 | HDD1(32Go/14Go/45%) | 4Go/ 40% |
 
 ## Synthèse de la documentation (mis à jour le 15/07/2024)
 
